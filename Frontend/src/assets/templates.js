@@ -380,7 +380,7 @@ export const exampleList = [
                     "name": "wap-text",
                     "info": {
                         "class": "logo",
-                        "value": "Nadav Mazgana"
+                        "value": "Sinker."
                     },
                     "cmps": []
                 },
