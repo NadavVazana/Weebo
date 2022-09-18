@@ -1,0 +1,54 @@
+.wap-header-1 {
+    font-family: Monsterrat;
+    padding: 20px 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #0c0e0f;
+    border-bottom: rgba(53, 48, 48, 0.055) 1px solid;
+    color: rgb(219, 216, 216);
+
+    .wap-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & button {
+            color: #fff;
+            background: none;
+            padding: 1.2rem 2.004rem;
+            border-radius: 0.4rem;
+            border: none;
+            cursor: pointer;
+            background-color: #61605c;
+
+            &:hover {
+                background-color: #3a3936;
+                color: rgb(219, 216, 216);
+            }
+        }
+
+    }
+
+    .wap-text {
+        color: rgb(17, 16, 16)
+    }
+
+    .logo{
+
+        font-family: Monsterrat;
+        cursor: text;
+        font-size: 1.7rem;
+    }
+
+    .nav-item{
+        padding: 10px;
+        color: rgb(219, 216, 216);
+        font-size: 1rem;
+        cursor: text;
+    }
+
+    .nav-item:hover{
+        color: rgb(197, 190, 190)
+    }  
+}

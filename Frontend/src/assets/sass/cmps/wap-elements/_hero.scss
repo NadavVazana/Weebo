@@ -1,0 +1,45 @@
+.wap-hero-1 {
+    background-image: url(https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663319227/tomas-williams-Ic_lvVv3Dz0-unsplash_1_mdvdik.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Monsterrat;
+    color: white;
+    > * {
+        padding: 10px;
+    }
+    .hero-item-1 {
+        font-size: 0.9rem;
+        font-weight: 300;
+        cursor: text;
+    }
+
+    .hero-item-2 {
+        font-size: 3.4rem;
+        padding: 10px;
+        cursor: text;
+
+    }
+
+    .hero-item-3 {
+       
+            color: #fff;
+            background: none;
+            padding: 1.2rem 2.004rem;
+            border-radius: 0.4rem;
+            border: none;
+            cursor: pointer;
+            background-color: #A8A6A1;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        
+        .hero-item-3:hover {
+            opacity: 0.6;
+        }
+}

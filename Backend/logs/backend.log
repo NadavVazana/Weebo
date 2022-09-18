@@ -1,0 +1,1122 @@
+9/14/2021, 12:34:51 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:42:49 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:47:44 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:47:55 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:55:49 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:56:00 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:56:05 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:56:27 PM - INFO - Server is running on port: 3030
+9/14/2021, 12:56:38 PM - INFO - Req!!!
+9/14/2021, 12:57:17 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:24:37 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:24:47 PM - INFO - Req!!!
+5/16/2022, 1:29:44 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:38:14 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:39:58 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:54:04 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:54:09 PM - INFO - Req!!!
+5/16/2022, 1:54:09 PM - DEBUG - Getting Cars
+5/16/2022, 1:55:17 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:55:24 PM - INFO - Server is running on port: 3030
+5/16/2022, 1:55:50 PM - INFO - Req was made
+5/16/2022, 1:55:50 PM - DEBUG - Getting Cars
+9/11/2022, 12:49:19 PM - INFO - Server is running on port: 3030
+9/11/2022, 12:50:51 PM - INFO - Server is running on port: 3030
+9/11/2022, 12:51:00 PM - DEBUG - Getting Cars
+9/11/2022, 12:51:23 PM - INFO - Server is running on port: 3030
+9/11/2022, 12:51:25 PM - DEBUG - Getting Cars
+9/11/2022, 12:52:39 PM - INFO - Server is running on port: 3030
+9/11/2022, 12:55:15 PM - INFO - Server is running on port: 3030
+9/11/2022, 12:55:43 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:02:04 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:02:33 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:10:57 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:12:29 PM - DEBUG - Getting Cars
+9/11/2022, 1:13:21 PM - DEBUG - auth.service - signup with username: guli, fullname: Guli Yat112233
+9/11/2022, 1:13:21 PM - DEBUG - auth.route - new account created: {"username":"guli","password":"$2b$10$Ue4vHCrHI1IaXKPkfwSoYOO6e5DQHbSG/Zf6OEtNMEmJVT.3h.v4y","fullname":"Guli Yat112233","score":0,"_id":"631db4c1c4d96900f845e12c"}
+9/11/2022, 1:13:21 PM - DEBUG - auth.service - login with username: guli
+9/11/2022, 1:13:21 PM - INFO - User login:  | {"_id":"631db4c1c4d96900f845e12c","username":"guli","fullname":"Guli Yat112233","score":0}
+9/11/2022, 1:14:38 PM - DEBUG - auth.service - login with username: guli
+9/11/2022, 1:14:38 PM - INFO - User login:  | {"_id":"631db4c1c4d96900f845e12c","username":"guli","fullname":"Guli Yat112233","score":0}
+9/11/2022, 1:15:06 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:15:08 PM - DEBUG - auth.service - login with username: guli
+9/11/2022, 1:15:08 PM - ERROR - Failed to Login ReferenceError: user is not defined
+9/11/2022, 1:15:16 PM - DEBUG - auth.service - login with username: guli
+9/11/2022, 1:15:16 PM - ERROR - Failed to Login ReferenceError: user is not defined
+9/11/2022, 1:15:26 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:15:35 PM - DEBUG - auth.service - login with username: guli
+9/11/2022, 1:15:35 PM - INFO - User login:  | {"_id":"631db4c1c4d96900f845e12c","username":"guli","fullname":"Guli Yat112233","score":0}
+9/11/2022, 1:20:10 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:14 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:19 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:26 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:40 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:49 PM - INFO - Server is running on port: 3030
+9/11/2022, 1:21:52 PM - INFO - Server is running on port: 3030
+9/11/2022, 4:57:30 PM - INFO - Server is running on port: 3030
+9/11/2022, 5:05:03 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:18:16 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:18:45 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:19:40 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:21:12 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:21:39 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:23:40 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:24:01 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:24:59 PM - INFO - Server is running on port: 3030
+9/11/2022, 9:25:35 PM - DEBUG - Getting Toys
+9/11/2022, 9:29:31 PM - DEBUG - Getting Toys
+9/11/2022, 9:30:07 PM - INFO - Server is running on port: 3030
+9/11/2022, 10:12:51 PM - DEBUG - Getting Toys
+9/11/2022, 10:13:00 PM - ERROR - while finding toy t101 | {}
+9/11/2022, 10:13:00 PM - ERROR - Failed to get toy | {}
+9/11/2022, 10:59:58 PM - DEBUG - Getting Toys
+9/11/2022, 11:02:08 PM - INFO - Server is running on port: 3030
+9/11/2022, 11:03:49 PM - INFO - Server is running on port: 3030
+9/11/2022, 11:04:04 PM - DEBUG - Getting Toys
+9/11/2022, 11:04:32 PM - INFO - Server is running on port: 3030
+9/11/2022, 11:04:55 PM - DEBUG - Getting Toys
+9/11/2022, 11:05:15 PM - DEBUG - Getting Toys
+9/11/2022, 11:05:37 PM - INFO - Server is running on port: 3030
+9/12/2022, 6:24:11 AM - INFO - Server is running on port: 3030
+9/12/2022, 6:24:42 AM - DEBUG - Getting Toys
+9/12/2022, 6:30:20 AM - INFO - Server is running on port: 3030
+9/12/2022, 6:31:07 AM - INFO - Server is running on port: 3030
+9/12/2022, 6:33:57 AM - INFO - Server is running on port: 3030
+9/12/2022, 6:41:25 AM - INFO - Server is running on port: 3030
+9/12/2022, 6:59:34 AM - INFO - Server is running on port: 3030
+9/12/2022, 7:13:46 AM - INFO - Server is running on port: 3030
+9/12/2022, 7:20:03 AM - DEBUG - auth.service - signup with username: puku, fullname: Puku Ja
+9/12/2022, 7:20:03 AM - DEBUG - auth.route - new account created: {"username":"puku","password":"$2b$10$tXWyUjuMqhNwcDT/Jog4ju/0PRnETlxOpp6Z.nw5Bt/9HO0ukX4Ie","fullname":"Puku Ja","_id":"631eb373d22d242d17b6b54e"}
+9/12/2022, 7:20:03 AM - DEBUG - auth.service - login with username: puku
+9/12/2022, 7:20:03 AM - INFO - User login:  | {"_id":"631eb373d22d242d17b6b54e","username":"puku","fullname":"Puku Ja"}
+9/12/2022, 7:24:17 AM - INFO - Server is running on port: 3030
+9/12/2022, 7:24:31 AM - WARN - Puku Jaattempted to perform admin action
+9/12/2022, 7:24:48 AM - INFO - Server is running on port: 3030
+9/12/2022, 7:25:09 AM - DEBUG - auth.service - signup with username: puku, fullname: Puku Ja
+9/12/2022, 7:25:09 AM - DEBUG - auth.route - new account created: {"username":"puku","password":"$2b$10$DsaKBBLl8E3NrJQUDNa2HutmNw9S5agfEVydzb6l6hozJ.NOJ8/zC","fullname":"Puku Ja","_id":"631eb4a5d637800e157ab94f"}
+9/12/2022, 7:25:09 AM - DEBUG - auth.service - login with username: puku
+9/12/2022, 7:25:10 AM - INFO - User login:  | {"_id":"631eb4a5d637800e157ab94f","username":"puku","fullname":"Puku Ja"}
+9/12/2022, 7:25:20 AM - INFO - Server is running on port: 3030
+9/12/2022, 7:25:48 AM - DEBUG - auth.service - signup with username: puku, fullname: Puku Ja
+9/12/2022, 7:25:48 AM - DEBUG - auth.route - new account created: {"username":"puku","password":"$2b$10$iYG926u0lrNkPki/cZJHreJnGPEQKoH.QE7ehpheWg/NzyIH0/UfW","fullname":"Puku Ja","_id":"631eb4cc7a0d25a5a7442207"}
+9/12/2022, 7:25:48 AM - DEBUG - auth.service - login with username: puku
+9/12/2022, 7:25:48 AM - INFO - User login:  | {"_id":"631eb4a5d637800e157ab94f","username":"puku","fullname":"Puku Ja"}
+9/12/2022, 7:31:55 AM - DEBUG - auth.service - signup with username: undefined, fullname: undefined
+9/12/2022, 7:31:55 AM - ERROR - Failed to signup fullname, username and password are required!
+9/12/2022, 7:32:54 AM - DEBUG - auth.service - signup with username: mumu, fullname: Mumu Ja
+9/12/2022, 7:32:54 AM - ERROR - Failed to signup fullname, username and password are required!
+9/12/2022, 7:33:29 AM - DEBUG - auth.service - signup with username: mumu, fullname: Mumu Ja
+9/12/2022, 7:33:29 AM - DEBUG - auth.route - new account created: {"username":"mumu","password":"$2b$10$5WC1/OqVTqiX1afdmfY1Au5MUY3rn9LbZbtQSJ6GZV5DskY5MVgtu","fullname":"Mumu Ja","_id":"631eb6997a0d25a5a744220a"}
+9/12/2022, 7:33:29 AM - DEBUG - auth.service - login with username: mumu
+9/12/2022, 7:33:30 AM - INFO - User login:  | {"_id":"631eb6997a0d25a5a744220a","username":"mumu","fullname":"Mumu Ja"}
+9/12/2022, 4:13:41 PM - INFO - Server is running on port: 3030
+9/12/2022, 4:15:20 PM - INFO - Server is running on port: 3030
+9/12/2022, 9:24:24 PM - INFO - Server is running on port: 3030
+9/12/2022, 9:24:30 PM - DEBUG - Getting Toys
+9/12/2022, 9:40:06 PM - DEBUG - Getting Toys
+9/12/2022, 10:02:15 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:02:15 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$hQVwrahnKPEuZJenrlGY4.E0esXs0/uvkGISSOIBrbcbaJtVL6j6S","fullname":"Puki Norma","_id":"631f823757a8dc8a792e7198"}
+9/12/2022, 10:02:15 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:02:16 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:02:16 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:02:16 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$o4zVN/GirRqeYXDTQByYl.mjPuMD2HEW/Z4IWwipopoOdZxRFfW9C","fullname":"Master Adminov","_id":"631f823857a8dc8a792e7199"}
+9/12/2022, 10:02:16 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:02:16 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:02:20 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:02:20 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$3j/QlfTFmpyP.7A1GyAQu.KJ8KOk2v34TG0q8wSJMQ28oWKEN/Kqe","fullname":"Puki Norma","_id":"631f823c57a8dc8a792e719a"}
+9/12/2022, 10:02:20 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:02:20 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:02:21 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:02:21 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$8pIAGh695llwVLNrgH9WSOOA6q.EoSHI.VLiA/vTLeod/u3yn2BIq","fullname":"Master Adminov","_id":"631f823d57a8dc8a792e719b"}
+9/12/2022, 10:02:21 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:02:21 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:02:31 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:02:31 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$fu9I/vtD.PHHecttj8b3eOh7LSiw/afCLxQVcqpOBcT6teKyWxfoC","fullname":"Puki Norma","_id":"631f824757a8dc8a792e719c"}
+9/12/2022, 10:02:31 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:02:32 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:02:32 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:02:32 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$LXEv4Sccb9v.WZtTTrPqsuDh.4zMhzGnYYrO98Nfyd90QF1fx1bSC","fullname":"Master Adminov","_id":"631f824857a8dc8a792e719d"}
+9/12/2022, 10:02:32 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:02:32 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:06:29 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:06:29 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$Vuv6k4NCfXK1fGdRNKzoRuhDLd3IzJnne1HuHdEwmkhM.xTTVejxu","fullname":"Puki Norma","_id":"631f833557a8dc8a792e719e"}
+9/12/2022, 10:06:29 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:06:29 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:06:29 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:06:30 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$0QdHfjIa2UGKfhJ6tmRtEugQwaxHptPD8cjxtV5o49Lcmoy3.jlBK","fullname":"Master Adminov","_id":"631f833657a8dc8a792e719f"}
+9/12/2022, 10:06:30 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:06:30 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:12:49 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:12:49 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$S6tC4J.aiivVH9SROZP6TuTD8/Ddp5pn4wHYxsXKV4MZ6zSiH4O36","fullname":"Puki Norma","_id":"631f84b157a8dc8a792e71a0"}
+9/12/2022, 10:12:49 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:12:49 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:12:49 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:12:49 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$qsBWdIkLdcBcz9Zy0OWIEudkjw2xz8FD7dRq9x.FpWgaQ128u857S","fullname":"Master Adminov","_id":"631f84b157a8dc8a792e71a1"}
+9/12/2022, 10:12:49 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:12:49 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:13:56 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:13:56 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$uBT36hdFrQ1rlY4pMiYEf..wsJeh2HmC6FAnaKTtxqESvcW0SYfU2","fullname":"Puki Norma","_id":"631f84f457a8dc8a792e71a2"}
+9/12/2022, 10:13:56 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:13:57 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:13:57 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:13:57 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$bDZxKDkUuNVtl67HEdNsVO25CV09wUqpWlWrZa0h6iihOQ4sKwCw.","fullname":"Master Adminov","_id":"631f84f557a8dc8a792e71a3"}
+9/12/2022, 10:13:57 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:13:57 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:14:33 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:14:33 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$nyS6zIbx/7nbazArfphwYOux/h7gvoDZXjbKKlBS8T3DrexTtYX8.","fullname":"Puki Norma","_id":"631f851957a8dc8a792e71a4"}
+9/12/2022, 10:14:33 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:14:33 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:14:33 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:14:33 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$N9oSHfhPdFK1H7f.w05k2uAOR553.hsYg6Vt9vIMNI/JOFVqwZo/S","fullname":"Master Adminov","_id":"631f851957a8dc8a792e71a5"}
+9/12/2022, 10:14:33 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:14:33 PM - ERROR - Failed to signup Invalid username or password
+9/12/2022, 10:15:05 PM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/12/2022, 10:15:05 PM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$DzARA84Js4/lJNbPH3eZAukkoNJvmyAvjwqQ2jh19.SMs8od3jTwm","fullname":"Puki Norma","_id":"631f853957a8dc8a792e71a6"}
+9/12/2022, 10:15:05 PM - DEBUG - auth.service - login with username: user1
+9/12/2022, 10:15:05 PM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/12/2022, 10:15:05 PM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/12/2022, 10:15:05 PM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$2OxmHHFwKb/EswcZaZhcF.ZfnVSdkdm7srhIE9yQtXHZb5RSKL3iu","fullname":"Master Adminov","_id":"631f853957a8dc8a792e71a7"}
+9/12/2022, 10:15:05 PM - DEBUG - auth.service - login with username: admin
+9/12/2022, 10:15:05 PM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 6:53:19 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 6:53:19 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$I1ZL.rTxLILkqMWpFkYhJuDFZ6NLr7bYz3t7DLlVWDPSCxEna0qga","fullname":"Puki Norma","_id":"631ffeaf57a8dc8a792e71a8"}
+9/13/2022, 6:53:19 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 6:53:19 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 6:53:19 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 6:53:19 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$K5rbXoVLaprYY9kr71UijOP5etDoHAziNCMmcl5kvAYD//bdVa8CC","fullname":"Master Adminov","_id":"631ffeaf57a8dc8a792e71a9"}
+9/13/2022, 6:53:19 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 6:53:19 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 6:53:23 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 6:53:23 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$u/pTh1bfIQCD85Zh8o7eTunQZYv8kLCMxbfe5iMgpLfYmc/Aku9TS","fullname":"Puki Norma","_id":"631ffeb357a8dc8a792e71aa"}
+9/13/2022, 6:53:23 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 6:53:24 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 6:53:24 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 6:53:24 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$xneFwuT3Np.mQQNJ1NuRbOpXit5MlT6vrTKO7T4uXp.rwHLTCyk0C","fullname":"Master Adminov","_id":"631ffeb457a8dc8a792e71ab"}
+9/13/2022, 6:53:24 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 6:53:24 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 6:55:21 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 6:55:22 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$hfwKPVGnSmCCsTPbjss.xupqvVdEBZuD2XuMqQa4rP2vBsod2ETC.","fullname":"Puki Norma","_id":"631fff2a57a8dc8a792e71ac"}
+9/13/2022, 6:55:22 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 6:55:22 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 6:55:22 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 6:55:22 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$5CdeaIi3G5BlPqLt.T0NDe.vD9z6ykpojcM7ZVBf6seOXkg2n/bj2","fullname":"Master Adminov","_id":"631fff2a57a8dc8a792e71ad"}
+9/13/2022, 6:55:22 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 6:55:22 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 7:00:37 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 7:00:37 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$PGoH8oo4ZODsEvIg0/lG0OvXlgKg6ji7Q3oIWVVNZnJwxEnutvn8i","fullname":"Puki Norma","_id":"6320006557a8dc8a792e71ae"}
+9/13/2022, 7:00:37 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 7:00:37 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 7:00:37 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 7:00:37 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$zFBoB.WMSgAeuFHa83Dwj.vnTJ/1fCQPGii.lkfM7D4wzbR7n5.P6","fullname":"Master Adminov","_id":"6320006557a8dc8a792e71af"}
+9/13/2022, 7:00:37 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 7:00:37 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 7:02:23 AM - DEBUG - Getting Toys
+9/13/2022, 7:04:32 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 7:04:32 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$tZEQ6DllAz2HUGPQkbT3vOs8GqJnpeBoJRbjqj6osw60LGoOOWs3K","fullname":"Puki Norma","_id":"6320015057a8dc8a792e71b0"}
+9/13/2022, 7:04:32 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 7:04:32 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 7:04:32 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 7:04:32 AM - DEBUG - Getting Toys
+9/13/2022, 7:04:32 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$a.ZXjUW9RdQ5z6ChCWPzEeikugp8B6OSD0RddQe1z8GMWuEyRTTWK","fullname":"Master Adminov","_id":"6320015057a8dc8a792e71b1"}
+9/13/2022, 7:04:32 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 7:04:32 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 7:05:00 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 7:05:00 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$zCpcnRZK0Om5AfGvRCJJV.zKBblLSQStIyHjpT1plmF7wqfHNrbVi","fullname":"Puki Norma","_id":"6320016c57a8dc8a792e71b2"}
+9/13/2022, 7:05:00 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 7:05:00 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 7:05:01 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 7:05:01 AM - DEBUG - Getting Toys
+9/13/2022, 7:05:01 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$SnSVbor3x6cmoPF42nV6C.tK9bq0HutX29pOSEN8XxOcIQB6/bZ1e","fullname":"Master Adminov","_id":"6320016d57a8dc8a792e71b3"}
+9/13/2022, 7:05:01 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 7:05:01 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 7:05:04 AM - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma
+9/13/2022, 7:05:04 AM - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$UQzpjfcrftSwElNakigD6uir6boZ6QS6mQ2G8llha0BQu0mLCUhfq","fullname":"Puki Norma","_id":"6320017057a8dc8a792e71b4"}
+9/13/2022, 7:05:04 AM - DEBUG - auth.service - login with username: user1
+9/13/2022, 7:05:04 AM - INFO - User login:  | {"_id":"631f823757a8dc8a792e7198","username":"user1","fullname":"Puki Norma"}
+9/13/2022, 7:05:04 AM - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov
+9/13/2022, 7:05:04 AM - DEBUG - Getting Toys
+9/13/2022, 7:05:04 AM - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$1iVM5d3NOci21DWGrqznDuHjYsGVMS7VfHYyBWdGCVnijG8lnKbmS","fullname":"Master Adminov","_id":"6320017057a8dc8a792e71b5"}
+9/13/2022, 7:05:04 AM - DEBUG - auth.service - login with username: admin
+9/13/2022, 7:05:04 AM - ERROR - Failed to signup Invalid username or password
+9/13/2022, 7:05:13 AM - DEBUG - Getting Toys
+9/13/2022, 7:05:16 AM - DEBUG - Getting Toys
+9/13/2022, 7:06:58 AM - DEBUG - Getting Toys
+9/13/2022, 7:13:55 AM - DEBUG - Getting Toys
+9/13/2022, 11:27:48 AM - INFO - Server is running on port: 3030
+9/13/2022, 11:29:31 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:32 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:32 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:32 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:32 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:32 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:33 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:33 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:33 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:33 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:33 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:33 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:34 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:34 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:34 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:34 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:35 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:35 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:35 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:35 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:35 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:35 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:35 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:35 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:36 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:36 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:36 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:36 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:37 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:37 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:37 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:37 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:37 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:37 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:38 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:38 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:38 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:38 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:38 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:38 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:39 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:39 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:39 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:39 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:40 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:40 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:40 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:40 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:40 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:40 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:40 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:40 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:41 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:41 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:41 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:41 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:42 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:42 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:42 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:42 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:42 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:42 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:42 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:42 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:43 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:43 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:43 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:43 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:43 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:43 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:44 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:44 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:44 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:44 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:45 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:45 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:45 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:45 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:46 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:46 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:46 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:46 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:47 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:47 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:47 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:47 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:47 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:47 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:29:48 AM - DEBUG - auth.service - login with username: muki
+9/13/2022, 11:29:48 AM - ERROR - Failed to Login TypeError: Cannot read properties of null (reading 'password')
+9/13/2022, 11:31:00 AM - DEBUG - Getting Toys
+9/13/2022, 11:31:17 AM - DEBUG - Getting Toys
+13.9.2022, 12:09:57 - INFO - Server is running on port: 3030 
+13.9.2022, 12:10:19 - INFO - Server is running on port: 3030 
+13.9.2022, 12:11:54 - INFO - Server is running on port: 3030 
+13.9.2022, 13:50:02 - INFO - Server is running on port: 3030 
+13.9.2022, 13:50:07 - DEBUG - Getting Toys 
+13.9.2022, 14:22:36 - DEBUG - Getting Toys 
+13.9.2022, 14:25:57 - DEBUG - Getting Toys 
+13.9.2022, 14:27:20 - DEBUG - Getting Toys 
+13.9.2022, 14:28:09 - DEBUG - Getting Toys 
+13.9.2022, 14:36:29 - DEBUG - Getting Toys 
+13.9.2022, 14:37:12 - DEBUG - Getting Toys 
+13.9.2022, 14:37:38 - DEBUG - Getting Toys 
+13.9.2022, 14:38:27 - DEBUG - Getting Toys 
+13.9.2022, 14:39:02 - DEBUG - Getting Toys 
+13.9.2022, 14:40:26 - DEBUG - Getting Toys 
+13.9.2022, 14:40:43 - DEBUG - Getting Toys 
+13.9.2022, 14:45:21 - DEBUG - Getting Toys 
+13.9.2022, 14:46:29 - DEBUG - Getting Toys 
+13.9.2022, 14:54:42 - DEBUG - Getting Toys 
+13.9.2022, 14:54:44 - DEBUG - Getting Toys 
+13.9.2022, 15:08:47 - DEBUG - Getting Toys 
+13.9.2022, 15:08:47 - DEBUG - Getting Toys 
+13.9.2022, 15:14:47 - DEBUG - Getting Toys 
+13.9.2022, 15:14:48 - DEBUG - Getting Toys 
+13.9.2022, 15:14:50 - DEBUG - Getting Toys 
+13.9.2022, 15:17:10 - DEBUG - Getting Toys 
+13.9.2022, 15:28:00 - DEBUG - Getting Toys 
+13.9.2022, 15:29:14 - DEBUG - Getting Toys 
+13.9.2022, 15:42:36 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 15:42:36 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 15:42:36 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$JxOnHAJHzG1skQ64UhL7EeOqQrPIHMGVu4iRUEH161ZjnJKhN.Up2","fullname":"Puki Norma","_id":"63207abc834022161dd62354"} 
+13.9.2022, 15:42:36 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 15:42:36 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$b/xpNRvX0fipf/bNGYh8iuaBZubikTKRFOiWDW4Vr93SVQD9l9ZnS","fullname":"Puki Norma","_id":"63207abc834022161dd62355"} 
+13.9.2022, 15:42:36 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 15:42:36 - INFO - User login:  | {"_id":"63207abc834022161dd62354","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 15:42:36 - INFO - User login:  | {"_id":"63207abc834022161dd62354","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 15:42:36 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 15:42:36 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 15:42:36 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$0zSSDfCg52mpYRQKmVnvheoGraCMv4Sc99Y8lcEQ2kNDtaQogA59G","fullname":"Master Adminov","_id":"63207abc834022161dd62356"} 
+13.9.2022, 15:42:36 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 15:42:36 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$7uj9XDbYBzkgUCFC/LE.nOET1vNPiIMYGmOCy84.JLEc/ogfR5Z4m","fullname":"Master Adminov","_id":"63207abc834022161dd62357"} 
+13.9.2022, 15:42:36 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 15:42:36 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 15:42:37 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 15:43:38 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 15:43:38 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 15:43:38 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$szIdTdrzn5Qi1dhX7nXWCunAbldae82yDk4k3HHgyvSiYy99BdHe2","fullname":"Puki Norma","_id":"63207afa834022161dd62358"} 
+13.9.2022, 15:43:38 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 15:43:38 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$ebaJS2FFliffPnb2NHeIBuqzLqERM9jeArAD.MdQH/As4tjrNl.qu","fullname":"Puki Norma","_id":"63207afa834022161dd62359"} 
+13.9.2022, 15:43:38 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 15:43:38 - INFO - User login:  | {"_id":"63207abc834022161dd62354","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 15:43:38 - INFO - User login:  | {"_id":"63207abc834022161dd62354","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 15:43:38 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 15:43:38 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 15:43:38 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$YYSGFuLAZgAkrqzcRSRcsO2p.ZlSRXmWgdKmYUvQFuh76yZKuaMBu","fullname":"Master Adminov","_id":"63207afa834022161dd6235a"} 
+13.9.2022, 15:43:38 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 15:43:38 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 15:43:38 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$PH52xmhSM.D4MyGuoygmQuNsxhDW0.ih3knJd0HjWm3AB8z2y61PS","fullname":"Master Adminov","_id":"63207afa834022161dd6235b"} 
+13.9.2022, 15:43:38 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 15:43:38 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 15:53:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:06 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:06 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:07 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:07 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:07 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:09 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:09 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:10 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:10 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:10 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:10 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:10 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:10 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:11 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:11 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:11 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:11 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:12 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:12 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:12 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:12 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:13 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:13 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:14 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:14 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:14 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:14 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:15 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:15 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:15 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:16 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:16 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:16 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:16 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:17 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:17 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:17 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:17 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:18 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:18 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:18 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:18 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:18 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:18 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:20 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:20 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:21 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:21 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:21 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:21 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:22 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:22 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:22 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:22 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:23 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:23 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:23 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:25 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:25 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:25 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:25 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:27 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:27 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:27 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:27 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:29 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:29 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:30 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:30 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:31 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:31 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 15:53:31 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 15:53:31 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:04 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:04 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:04 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:04 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:05 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:05 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:05 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:05 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:06 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:06 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:06 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:07 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:07 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:09 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:09 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:09 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:10 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:10 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:10 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:10 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:11 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:11 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:11 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:11 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:11 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:11 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:12 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:12 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:12 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:12 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:13 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:13 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:13 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:13 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:13 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:13 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:14 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:14 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:14 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:14 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:14 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:14 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:15 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:15 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:16 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:16 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:16 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:16 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:16 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:16 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:17 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:17 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:17 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:17 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:18 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:18 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:18 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:18 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:19 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:20 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:20 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:20 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:20 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:21 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:21 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:21 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:21 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:22 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:22 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:22 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:22 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:23 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:23 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:24 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:24 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:25 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:25 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:25 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:25 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:27 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:27 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:27 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:27 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:28 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:28 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:29 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:30 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:30 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:30 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:31 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:31 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:31 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:31 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:32 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:32 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:32 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:32 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:33 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:33 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:33 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:33 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:33 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:33 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:33 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:33 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:34 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:34 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:34 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:34 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:35 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:35 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:35 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:35 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:36 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:36 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:36 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:36 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:36 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:36 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:37 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:37 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:37 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:37 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:37 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:37 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:38 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:38 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:38 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:38 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:39 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:39 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:39 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:39 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:39 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:39 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:40 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:40 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:40 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:40 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:41 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:41 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:41 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:41 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:41 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:41 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:42 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:42 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:42 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:42 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:43 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:43 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:43 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:43 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:44 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:44 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:44 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:44 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:44 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:44 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:45 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:45 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:45 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:45 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:45 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:45 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:46 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:46 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:46 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:46 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:47 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:47 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:47 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:47 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:48 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:48 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:48 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:48 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:13:49 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:13:49 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:50:00 - DEBUG - Getting Toys 
+13.9.2022, 16:51:04 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:51:04 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:53:41 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:53:41 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:54:54 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:54:54 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:55:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:55:29 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:56:26 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:56:26 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:56:34 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:56:34 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:57:20 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:57:20 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:59:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:59:08 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 16:59:46 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 16:59:46 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 17:01:00 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:01:00 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 17:02:42 - INFO - Server is running on port: 3030 
+13.9.2022, 17:02:46 - INFO - Server is running on port: 3030 
+13.9.2022, 17:03:00 - INFO - Server is running on port: 3030 
+13.9.2022, 17:03:33 - INFO - Server is running on port: 3030 
+13.9.2022, 17:03:53 - INFO - Server is running on port: 3030 
+13.9.2022, 17:04:02 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:04:02 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 17:04:51 - INFO - Server is running on port: 3030 
+13.9.2022, 17:04:59 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:04:59 - ERROR - Failed to Login Invalid username or password 
+13.9.2022, 17:05:23 - INFO - Server is running on port: 3030 
+13.9.2022, 17:05:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:07:50 - INFO - Server is running on port: 3030 
+13.9.2022, 17:07:53 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:10:35 - DEBUG - auth.service - signup with username: puki, fullname: Puki Jaaa 
+13.9.2022, 17:10:35 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$arb2c2QdEIktOFQwUlnbzufNqNl3IkDT1tX3AZWmqrAPRE4JDZVpK","fullname":"Puki Jaaa","_id":"63208f5b9f297f976bc3cbe9"} 
+13.9.2022, 17:10:35 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:10:35 - INFO - User login:  | {"_id":"631ea4d8348e561cc0bf12a2","username":"puki","fullname":"Puki Ja","isAdmin":false} 
+13.9.2022, 17:11:37 - INFO - Server is running on port: 3030 
+13.9.2022, 17:11:44 - INFO - Server is running on port: 3030 
+13.9.2022, 17:11:49 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:12:09 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:13:27 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:14:30 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:32:34 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:33:15 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:35:07 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:36:54 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:38:42 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:40:19 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:41:31 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:43:56 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:44:43 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:46:28 - INFO - Server is running on port: 3030 
+13.9.2022, 17:46:29 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:46:35 - INFO - Server is running on port: 3030 
+13.9.2022, 17:47:03 - INFO - Server is running on port: 3030 
+13.9.2022, 17:47:12 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:47:12 - INFO - User login:  | {"_id":"63208f5b9f297f976bc3cbe9","username":"puki","fullname":"Puki Jaaa"} 
+13.9.2022, 17:51:11 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 17:51:11 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$F0cRscWEXIqF/vjpCjfQUOhuB.mNa43pWCt.iHJFZZ6G.pOOjNUBO","fullname":"Puki Norma","_id":"632098df9b8f1da268e5c6a9"} 
+13.9.2022, 17:51:11 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 17:51:11 - INFO - User login:  | {"_id":"632098df9b8f1da268e5c6a9","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 17:51:11 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:51:11 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$x2uTDqiVtFpVg3RSI75ieOxQTzw62mXlPOpiRDkJvp4gYsbV7x9G2","fullname":"Master Adminov","_id":"632098df9b8f1da268e5c6aa"} 
+13.9.2022, 17:51:11 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:51:11 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 17:51:21 - DEBUG - auth.service - signup with username: user1, fullname: Puki Norma 
+13.9.2022, 17:51:21 - DEBUG - auth.route - new account created: {"username":"user1","password":"$2b$10$/rwMTqcdtzF7VwI/lOMq8.j/bbY.T/2tQO2tkBfruhKBwaC.HIOSK","fullname":"Puki Norma","_id":"632098e99b8f1da268e5c6ab"} 
+13.9.2022, 17:51:21 - DEBUG - auth.service - login with username: user1 
+13.9.2022, 17:51:21 - INFO - User login:  | {"_id":"632098df9b8f1da268e5c6a9","username":"user1","fullname":"Puki Norma"} 
+13.9.2022, 17:51:21 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:51:22 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$T4TRNR25g/PjTnzhXgerI.II1Ko7dSR42WfUn2FOcZ4JWPqTN1JJq","fullname":"Master Adminov","_id":"632098ea9b8f1da268e5c6ac"} 
+13.9.2022, 17:51:22 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:51:22 - ERROR - Failed to signup Invalid username or password 
+13.9.2022, 17:53:58 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:53:58 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$8i7ZwFS7Lwu2EmqPggwNC.tkG05/.CrStyK6is7ocZsIj.K6oqaR2","fullname":"Puki Norma","_id":"632099869b8f1da268e5c6ad"} 
+13.9.2022, 17:53:58 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:53:59 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:53:59 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:53:59 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$7/JpBAO2jLxQWzKS81BkWOjPXghaikHBOx3E6Z3TvXWfrWxJcjBgq","fullname":"Master Adminov","_id":"632099879b8f1da268e5c6ae"} 
+13.9.2022, 17:53:59 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:53:59 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:54:08 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:54:08 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$bQjDroLzdfapvtHtGN4l8e8WbCUn/F2gn9VBriF7M9ZsuQNE.J/iS","fullname":"Puki Norma","_id":"632099909b8f1da268e5c6af"} 
+13.9.2022, 17:54:08 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:54:08 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:54:09 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:54:09 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$z/mLWZKJPeLA3p.gcAZJgeNnO1w0wo1IHPqy1tSLbZmpGZbu3Q2B2","fullname":"Master Adminov","_id":"632099919b8f1da268e5c6b0"} 
+13.9.2022, 17:54:09 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:54:09 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:54:09 - DEBUG - auth.service - signup with username: muki, fullname: Muki G 
+13.9.2022, 17:54:10 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$S5rggJnYTTcbEqSxv3.1Ou8l/Rss0RGq12LJgTCUEV1ZioYLO7xda","fullname":"Muki G","_id":"632099929b8f1da268e5c6b1"} 
+13.9.2022, 17:54:10 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:54:10 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:55:06 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$ucodDRbD5UIM4asBkyoVXe8FkpDyFw3RMF2WrDXnr/SP5GCkpGZNK","fullname":"Puki Norma","_id":"632099ca9b8f1da268e5c6b2"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:55:06 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:55:06 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$3lWRQc3XTcIhANpbbQ71C.jZ/GZexYmZy/HRcdKcsOY9.cD7CPt6q","fullname":"Master Adminov","_id":"632099ca9b8f1da268e5c6b3"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:55:06 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - signup with username: muki, fullname: Muki G 
+13.9.2022, 17:55:06 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$Tqe5JpdYXYXkPSuWZDfI2OPpFBUq4F7GNQb6.uWUtxmalIkBs6ag2","fullname":"Muki G","_id":"632099ca9b8f1da268e5c6b4"} 
+13.9.2022, 17:55:06 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:55:07 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:56:32 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$zw92J2rhGpy72Y16Ew5jxubDuLnIcVIQLRDZtBc7.e0avfjoAcc6y","fullname":"Puki Norma","_id":"63209a209b8f1da268e5c6b5"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:56:32 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:56:32 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$YSBa2SCK3aoli4wscU7oBuX/yct3Ibaz8dhpuJDb7gWrydABFVL1q","fullname":"Master Adminov","_id":"63209a209b8f1da268e5c6b6"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:56:32 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - signup with username: muki, fullname: Muki G 
+13.9.2022, 17:56:32 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$EBJIQaMTiXQgZqJtxiD.EuEquMNkYOvWNosK85uaQwdxfNnce7Yoq","fullname":"Muki G","_id":"63209a209b8f1da268e5c6b7"} 
+13.9.2022, 17:56:32 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:56:33 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 17:56:53 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:56:53 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$ckHUQjaoE..uui/1qDlwOOs15JNTSCPOcTrza8qjtuVwTsB.G2i5.","fullname":"Puki Norma","_id":"63209a359b8f1da268e5c6b8"} 
+13.9.2022, 17:56:53 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:56:53 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:56:54 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:56:54 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$shB41UDZ1cNv8SOpfnOzTOONJrjn0eST2WA9SymLrPCMKdNR4VQJu","fullname":"Master Adminov","_id":"63209a369b8f1da268e5c6b9"} 
+13.9.2022, 17:56:54 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:56:54 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:56:55 - DEBUG - auth.service - signup with username: muki, fullname: Muki G 
+13.9.2022, 17:56:55 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$kf6HHI1dU6h6QHMCCdTQcO.ka3HZe4qHL/a4SZs97xL2JUlh.soJq","fullname":"Muki G","_id":"63209a379b8f1da268e5c6ba"} 
+13.9.2022, 17:56:55 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:56:55 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 17:57:39 - DEBUG - auth.service - signup with username: puki, fullname: Puki Norma 
+13.9.2022, 17:57:39 - DEBUG - auth.route - new account created: {"username":"puki","password":"$2b$10$Fd8Qo5ukcFe7tipYginfEeaClw0TKMNpEiuTS7MciP3xcK8xX2tOa","fullname":"Puki Norma","_id":"63209a639b8f1da268e5c6bb"} 
+13.9.2022, 17:57:39 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:57:39 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:57:39 - DEBUG - auth.service - signup with username: admin, fullname: Master Adminov 
+13.9.2022, 17:57:40 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:57:40 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$eA6ISMcEvTU5U/VJrvEqQ.a5basP3XfChBAtxZHwZc4M1V11lF1B.","fullname":"Master Adminov","_id":"63209a649b8f1da268e5c6bc"} 
+13.9.2022, 17:57:40 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:57:40 - DEBUG - auth.service - signup with username: muki, fullname: Muki G 
+13.9.2022, 17:57:40 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$cHNN798vTR3cJMBXlOKTlOB57XSL3HiLy8hVlPti2ZNlDNbb8myMO","fullname":"Muki G","_id":"63209a649b8f1da268e5c6bd"} 
+13.9.2022, 17:57:40 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:57:40 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 17:57:52 - DEBUG - Getting Toys 
+13.9.2022, 17:58:23 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 17:58:23 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 17:58:32 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 17:58:32 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 17:59:26 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 17:59:26 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 18:01:55 - DEBUG - Getting Toys 
+13.9.2022, 18:09:39 - DEBUG - Getting Toys 
+13.9.2022, 18:09:44 - DEBUG - Getting Toys 
+13.9.2022, 19:27:13 - INFO - Server is running on port: 3030 
+13.9.2022, 19:27:25 - INFO - Server is running on port: 3030 
+13.9.2022, 19:37:08 - INFO - Server is running on port: 3030 
+13.9.2022, 19:37:08 - INFO - New connected socket [id: zpJYBIvcQCFJ6z9MAAAB] 
+13.9.2022, 19:37:08 - INFO - Setting socket.userId = 632099879b8f1da268e5c6ae for socket [id: zpJYBIvcQCFJ6z9MAAAB] 
+13.9.2022, 19:37:10 - INFO - New connected socket [id: ZA8hOYEeQba1npwdAAAD] 
+13.9.2022, 19:37:10 - INFO - Setting socket.userId = 632099929b8f1da268e5c6b1 for socket [id: ZA8hOYEeQba1npwdAAAD] 
+13.9.2022, 19:37:10 - INFO - New connected socket [id: l4IRewMxMMIphfMAAAAF] 
+13.9.2022, 19:37:10 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: l4IRewMxMMIphfMAAAAF] 
+13.9.2022, 19:37:23 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:37:23 - INFO - New connected socket [id: JhZ9dmow_PniHkRUAAAH] 
+13.9.2022, 19:37:24 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: JhZ9dmow_PniHkRUAAAH] 
+13.9.2022, 19:38:20 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:38:20 - INFO - New connected socket [id: TpiZxXfNm6Fd9dfGAAAJ] 
+13.9.2022, 19:38:21 - INFO - Setting socket.userId = 632099929b8f1da268e5c6b1 for socket [id: TpiZxXfNm6Fd9dfGAAAJ] 
+13.9.2022, 19:38:32 - INFO - New chat msg from socket [id: JhZ9dmow_PniHkRUAAAH], emitting to topic Weather 
+13.9.2022, 19:38:37 - INFO - New chat msg from socket [id: zpJYBIvcQCFJ6z9MAAAB], emitting to topic Weather 
+13.9.2022, 19:38:45 - INFO - New chat msg from socket [id: TpiZxXfNm6Fd9dfGAAAJ], emitting to topic Weather 
+13.9.2022, 19:39:06 - DEBUG - Getting Toys 
+13.9.2022, 19:39:11 - DEBUG - Getting Toys 
+13.9.2022, 19:39:17 - DEBUG - Getting Toys 
+13.9.2022, 19:46:00 - INFO - New chat msg from socket [id: JhZ9dmow_PniHkRUAAAH], emitting to topic Weather 
+13.9.2022, 19:48:12 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:48:13 - INFO - New connected socket [id: flnJao61Xrepv_73AAAL] 
+13.9.2022, 19:48:13 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: flnJao61Xrepv_73AAAL] 
+13.9.2022, 19:49:13 - DEBUG - Getting Toys 
+13.9.2022, 19:49:28 - INFO - New chat msg from socket [id: flnJao61Xrepv_73AAAL], emitting to topic Weather 
+13.9.2022, 19:50:15 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:50:16 - INFO - New connected socket [id: yY_5c34Z-DFvSCMuAAAN] 
+13.9.2022, 19:50:17 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: yY_5c34Z-DFvSCMuAAAN] 
+13.9.2022, 19:50:22 - INFO - New chat msg from socket [id: yY_5c34Z-DFvSCMuAAAN], emitting to topic Weather 
+13.9.2022, 19:50:39 - INFO - New chat msg from socket [id: TpiZxXfNm6Fd9dfGAAAJ], emitting to topic Weather 
+13.9.2022, 19:50:45 - INFO - New chat msg from socket [id: zpJYBIvcQCFJ6z9MAAAB], emitting to topic Weather 
+13.9.2022, 19:50:46 - INFO - Socket is leaving topic Weather [id: zpJYBIvcQCFJ6z9MAAAB] 
+13.9.2022, 19:50:50 - INFO - New chat msg from socket [id: zpJYBIvcQCFJ6z9MAAAB], emitting to topic Music 
+13.9.2022, 19:50:57 - INFO - Socket is leaving topic Weather [id: yY_5c34Z-DFvSCMuAAAN] 
+13.9.2022, 19:50:58 - INFO - New chat msg from socket [id: yY_5c34Z-DFvSCMuAAAN], emitting to topic Music 
+13.9.2022, 19:51:07 - INFO - New chat msg from socket [id: TpiZxXfNm6Fd9dfGAAAJ], emitting to topic Weather 
+13.9.2022, 19:51:12 - INFO - Socket is leaving topic Weather [id: TpiZxXfNm6Fd9dfGAAAJ] 
+13.9.2022, 19:51:13 - INFO - New chat msg from socket [id: TpiZxXfNm6Fd9dfGAAAJ], emitting to topic Music 
+13.9.2022, 19:52:52 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:52:53 - INFO - New connected socket [id: EhKNf9NPq8KWrFjhAAAP] 
+13.9.2022, 19:52:53 - INFO - Setting socket.userId = 632099879b8f1da268e5c6ae for socket [id: EhKNf9NPq8KWrFjhAAAP] 
+13.9.2022, 19:52:56 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:52:57 - INFO - New connected socket [id: pbsOiLk0G6RIAbMMAAAR] 
+13.9.2022, 19:52:58 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: pbsOiLk0G6RIAbMMAAAR] 
+13.9.2022, 19:52:59 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:52:59 - INFO - New connected socket [id: tOClyIGZNibkwhNWAAAT] 
+13.9.2022, 19:53:00 - INFO - Setting socket.userId = 632099929b8f1da268e5c6b1 for socket [id: tOClyIGZNibkwhNWAAAT] 
+13.9.2022, 19:55:27 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:55:27 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:55:27 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:55:28 - INFO - New connected socket [id: HlZlpMhn5EURseZHAAAX] 
+13.9.2022, 19:55:28 - INFO - New connected socket [id: kbfNR0BtEX3SERarAAAY] 
+13.9.2022, 19:55:28 - INFO - New connected socket [id: 2fNHyI0x1txfwvcqAAAZ] 
+13.9.2022, 19:55:28 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: HlZlpMhn5EURseZHAAAX] 
+13.9.2022, 19:55:28 - INFO - Setting socket.userId = 632099879b8f1da268e5c6ae for socket [id: kbfNR0BtEX3SERarAAAY] 
+13.9.2022, 19:55:28 - INFO - Setting socket.userId = 632099929b8f1da268e5c6b1 for socket [id: 2fNHyI0x1txfwvcqAAAZ] 
+13.9.2022, 19:55:42 - DEBUG - auth.service - login with username: puki 
+13.9.2022, 19:55:42 - INFO - User login:  | {"_id":"632099869b8f1da268e5c6ad","username":"puki","fullname":"Puki Norma"} 
+13.9.2022, 19:55:42 - INFO - Setting socket.userId = 632099869b8f1da268e5c6ad for socket [id: kbfNR0BtEX3SERarAAAY] 
+13.9.2022, 19:55:50 - DEBUG - auth.service - login with username: admin 
+13.9.2022, 19:55:50 - INFO - User login:  | {"_id":"632099879b8f1da268e5c6ae","username":"admin","fullname":"Master Adminov"} 
+13.9.2022, 19:55:50 - INFO - Setting socket.userId = 632099879b8f1da268e5c6ae for socket [id: HlZlpMhn5EURseZHAAAX] 
+13.9.2022, 19:55:56 - DEBUG - auth.service - login with username: muki 
+13.9.2022, 19:55:56 - INFO - User login:  | {"_id":"632099929b8f1da268e5c6b1","username":"muki","fullname":"Muki G"} 
+13.9.2022, 19:55:56 - INFO - Setting socket.userId = 632099929b8f1da268e5c6b1 for socket [id: 2fNHyI0x1txfwvcqAAAZ] 
+13.9.2022, 19:56:07 - INFO - Removing socket.userId for socket [id: kbfNR0BtEX3SERarAAAY] 
+13.9.2022, 19:56:09 - INFO - Removing socket.userId for socket [id: HlZlpMhn5EURseZHAAAX] 
+13.9.2022, 19:56:11 - INFO - Removing socket.userId for socket [id: 2fNHyI0x1txfwvcqAAAZ] 
+13.9.2022, 19:56:30 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:56:31 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 19:56:39 - DEBUG - Getting Toys 
+13.9.2022, 19:56:42 - DEBUG - Getting Toys 
+13.9.2022, 19:56:46 - DEBUG - Getting Toys 
+13.9.2022, 19:56:47 - DEBUG - Getting Toys 
+13.9.2022, 20:06:31 - INFO - New connected socket [id: ZpbhbEJqLgERaTkIAAAb] 
+13.9.2022, 20:06:32 - INFO - Setting socket.userId = 632099879b8f1da268e5c6ae for socket [id: ZpbhbEJqLgERaTkIAAAb] 
+13.9.2022, 20:16:05 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 20:16:05 - INFO - Socket disconnected [id: undefined] 
+13.9.2022, 21:18:32 - INFO - New connected socket [id: zFTayRfJW6P_x99ZAAAe] 
+13.9.2022, 21:18:32 - INFO - New connected socket [id: 6pbwaN6uVUqL3jlXAAAf] 
+13.9.2022, 21:19:35 - INFO - Server is running on port: 3030 
+13.9.2022, 21:19:35 - INFO - New connected socket [id: IJ8taSAdz5VkD2UxAAAC] 
+13.9.2022, 21:19:35 - INFO - New connected socket [id: 7k-tRsF12wJ6sTHPAAAD] 
+13.9.2022, 21:19:40 - INFO - Server is running on port: 3030 
+13.9.2022, 21:19:40 - INFO - New connected socket [id: WZ0TglK1sBb_nG4oAAAC] 
+13.9.2022, 21:19:41 - INFO - New connected socket [id: oH0fgjZCc3dQjt7IAAAD] 
+18.9.2022, 1:20:55 - INFO - Server is running on port: 3030 
+18.9.2022, 1:48:19 - DEBUG - Getting Toys 
+18.9.2022, 1:49:34 - DEBUG - Getting Toys 
+18.9.2022, 1:49:54 - DEBUG - Getting Toys 
+18.9.2022, 1:50:20 - DEBUG - Getting Toys 
+18.9.2022, 1:51:15 - DEBUG - Getting Toys 
+18.9.2022, 1:51:26 - DEBUG - Getting Toys 
+18.9.2022, 1:52:32 - DEBUG - Getting Toys 
+18.9.2022, 1:53:10 - DEBUG - Getting Toys 
+18.9.2022, 1:54:11 - DEBUG - Getting Toys 
+18.9.2022, 1:54:25 - INFO - Server is running on port: 3030 
+18.9.2022, 1:54:30 - DEBUG - Getting Waps 
+18.9.2022, 1:55:35 - INFO - Server is running on port: 3030 
+18.9.2022, 1:55:38 - DEBUG - Getting Waps 
+18.9.2022, 1:55:49 - INFO - Server is running on port: 3030 
+18.9.2022, 1:55:52 - DEBUG - Getting Waps 
+18.9.2022, 1:56:41 - DEBUG - Getting Waps 
+18.9.2022, 1:56:49 - DEBUG - Getting Waps 
+18.9.2022, 1:56:57 - INFO - Server is running on port: 3030 
+18.9.2022, 1:56:59 - DEBUG - Getting Waps 
+18.9.2022, 1:58:21 - INFO - Server is running on port: 3030 
+18.9.2022, 1:58:25 - DEBUG - Getting Waps 
+18.9.2022, 1:59:06 - INFO - Server is running on port: 3030 
+18.9.2022, 1:59:07 - DEBUG - Getting Waps 
+18.9.2022, 1:59:51 - INFO - Server is running on port: 3030 
+18.9.2022, 2:01:45 - INFO - Server is running on port: 3030 
+18.9.2022, 2:01:50 - DEBUG - Getting Waps 
+18.9.2022, 2:02:10 - INFO - Server is running on port: 3030 
+18.9.2022, 2:02:37 - DEBUG - Getting Waps 
+18.9.2022, 2:02:49 - DEBUG - Getting Waps 
+18.9.2022, 2:05:26 - DEBUG - Getting Waps 
+18.9.2022, 2:06:10 - DEBUG - Getting Waps 
+18.9.2022, 2:06:12 - DEBUG - Getting Waps 
+18.9.2022, 2:06:27 - DEBUG - Getting Waps 
+18.9.2022, 2:09:25 - DEBUG - Getting Waps 
+18.9.2022, 2:12:33 - DEBUG - Getting Waps 
+18.9.2022, 2:12:43 - DEBUG - Getting Waps 
+18.9.2022, 2:12:56 - DEBUG - Getting Waps 
+18.9.2022, 2:14:15 - DEBUG - Getting Waps 
+18.9.2022, 2:16:12 - INFO - Server is running on port: 3030 
+18.9.2022, 2:16:14 - DEBUG - Getting Waps 
+18.9.2022, 2:17:38 - DEBUG - Getting Waps 
+18.9.2022, 2:17:41 - DEBUG - Getting Waps 
+18.9.2022, 2:17:56 - DEBUG - Getting Waps 
+18.9.2022, 2:17:56 - DEBUG - Getting Waps 
+18.9.2022, 2:18:12 - DEBUG - Getting Waps 
+18.9.2022, 2:18:30 - INFO - Server is running on port: 3030 
+18.9.2022, 2:18:33 - DEBUG - Getting Waps 
+18.9.2022, 2:18:51 - INFO - Server is running on port: 3030 
+18.9.2022, 2:18:55 - DEBUG - Getting Waps 
+18.9.2022, 2:20:37 - DEBUG - Getting Waps 
+18.9.2022, 2:20:51 - INFO - Server is running on port: 3030 
+18.9.2022, 2:20:51 - DEBUG - Getting Waps 
+18.9.2022, 2:20:56 - DEBUG - Getting Waps 
+18.9.2022, 2:21:15 - INFO - Server is running on port: 3030 
+18.9.2022, 2:22:36 - DEBUG - Getting Waps 
+18.9.2022, 2:22:53 - DEBUG - Getting Waps 
+18.9.2022, 2:23:09 - DEBUG - Getting Waps 
+18.9.2022, 2:23:34 - DEBUG - Getting Waps 
+18.9.2022, 2:23:48 - DEBUG - Getting Waps 
+18.9.2022, 2:23:57 - DEBUG - Getting Waps 
+18.9.2022, 2:24:52 - DEBUG - Getting Waps 
+18.9.2022, 2:24:56 - DEBUG - Getting Waps 
+18.9.2022, 2:25:41 - DEBUG - Getting Waps 
+18.9.2022, 2:26:03 - DEBUG - Getting Waps 
+18.9.2022, 2:26:28 - DEBUG - Getting Waps 
+18.9.2022, 2:27:27 - DEBUG - Getting Waps 
+18.9.2022, 2:28:15 - DEBUG - Getting Waps 
+18.9.2022, 2:28:23 - DEBUG - Getting Waps 
+18.9.2022, 2:30:10 - INFO - Server is running on port: 3030 
+18.9.2022, 2:30:13 - INFO - Server is running on port: 3030 
+18.9.2022, 2:30:14 - INFO - Server is running on port: 3030 
+18.9.2022, 2:30:50 - INFO - Server is running on port: 3030 
+18.9.2022, 2:31:39 - DEBUG - Getting Waps 
+18.9.2022, 2:32:30 - DEBUG - Getting Waps 
+18.9.2022, 2:39:32 - DEBUG - Getting Waps 
+18.9.2022, 2:44:39 - DEBUG - Getting Waps 
+18.9.2022, 2:49:38 - DEBUG - Getting Waps 
+18.9.2022, 2:49:51 - INFO - Server is running on port: 3030 
+18.9.2022, 2:49:55 - DEBUG - Getting Waps 
+18.9.2022, 2:50:06 - DEBUG - Getting Waps 
+18.9.2022, 2:50:09 - DEBUG - Getting Waps 
+18.9.2022, 2:50:36 - DEBUG - Getting Waps 
+18.9.2022, 2:50:38 - DEBUG - Getting Waps 
+18.9.2022, 2:50:51 - DEBUG - Getting Waps 
+18.9.2022, 2:50:57 - INFO - Server is running on port: 3030 
+18.9.2022, 2:51:00 - DEBUG - Getting Waps 
+18.9.2022, 2:51:06 - DEBUG - Getting Waps 
+18.9.2022, 2:51:07 - DEBUG - Getting Waps 
+18.9.2022, 2:51:20 - DEBUG - Getting Waps 
+18.9.2022, 2:51:22 - DEBUG - Getting Waps 
+18.9.2022, 2:51:47 - INFO - Server is running on port: 3030 
+18.9.2022, 2:51:50 - DEBUG - Getting Waps 
+18.9.2022, 2:52:23 - INFO - Server is running on port: 3030 
+18.9.2022, 2:52:43 - INFO - Server is running on port: 3030 
+18.9.2022, 2:52:45 - DEBUG - Getting Waps 
+18.9.2022, 2:52:52 - INFO - Server is running on port: 3030 
+18.9.2022, 2:52:56 - INFO - Server is running on port: 3030 
+18.9.2022, 2:52:58 - DEBUG - Getting Waps 
+18.9.2022, 2:53:16 - INFO - Server is running on port: 3030 
+18.9.2022, 2:53:18 - DEBUG - Getting Waps 
+18.9.2022, 2:53:41 - INFO - Server is running on port: 3030 
+18.9.2022, 2:53:43 - DEBUG - Getting Waps 
+18.9.2022, 2:54:05 - INFO - Server is running on port: 3030 
+18.9.2022, 2:54:08 - DEBUG - Getting Waps 
+18.9.2022, 2:54:49 - DEBUG - Getting Waps 
+18.9.2022, 2:54:53 - INFO - Server is running on port: 3030 
+18.9.2022, 2:54:54 - DEBUG - Getting Waps 
+18.9.2022, 2:55:07 - DEBUG - Getting Waps 
+18.9.2022, 2:55:08 - DEBUG - Getting Waps 
+18.9.2022, 2:56:19 - DEBUG - Getting Waps 
+18.9.2022, 2:56:44 - DEBUG - Getting Waps 
+18.9.2022, 2:57:11 - DEBUG - Getting Waps 
+18.9.2022, 2:58:22 - INFO - Server is running on port: 3030 
+18.9.2022, 3:00:00 - INFO - Server is running on port: 3030 
+18.9.2022, 3:01:41 - INFO - Server is running on port: 3030 
+18.9.2022, 3:02:12 - INFO - Server is running on port: 3030 
+18.9.2022, 3:02:25 - INFO - Server is running on port: 3030 
+18.9.2022, 3:02:33 - ERROR - Failed to get wap | ReferenceError: toyId is not defined 
+18.9.2022, 3:03:04 - INFO - Server is running on port: 3030 
+18.9.2022, 3:03:40 - DEBUG - Getting Waps 
+18.9.2022, 3:03:43 - DEBUG - Getting Waps 
+18.9.2022, 3:03:44 - ERROR - Failed to get wap | ReferenceError: toyId is not defined 
+18.9.2022, 3:03:46 - DEBUG - Getting Waps 
+18.9.2022, 3:03:47 - ERROR - Failed to get wap | ReferenceError: toyId is not defined 
+18.9.2022, 3:03:48 - DEBUG - Getting Waps 
+18.9.2022, 3:03:49 - ERROR - Failed to get wap | ReferenceError: toyId is not defined 
+18.9.2022, 3:04:03 - INFO - Server is running on port: 3030 
+18.9.2022, 3:04:05 - ERROR - Failed to get wap | ReferenceError: toyId is not defined 
+18.9.2022, 3:04:13 - INFO - Server is running on port: 3030 
+18.9.2022, 3:04:23 - DEBUG - Getting Waps 
+18.9.2022, 3:04:31 - DEBUG - Getting Waps 
+18.9.2022, 3:04:33 - DEBUG - Getting Waps 
+18.9.2022, 3:04:42 - INFO - Server is running on port: 3030 
+18.9.2022, 3:06:18 - DEBUG - Getting Waps 
+18.9.2022, 3:06:35 - DEBUG - Getting Waps 
+18.9.2022, 3:06:37 - DEBUG - Getting Waps 
+18.9.2022, 3:06:47 - DEBUG - Getting Waps 
+18.9.2022, 3:06:50 - DEBUG - Getting Waps 
+18.9.2022, 3:50:22 - DEBUG - Getting Waps 
+18.9.2022, 3:50:27 - DEBUG - Getting Waps 
+18.9.2022, 3:50:32 - DEBUG - Getting Waps 
+18.9.2022, 3:50:36 - DEBUG - Getting Waps 
+18.9.2022, 3:51:38 - INFO - Server is running on port: 3030 
+18.9.2022, 3:53:07 - INFO - Server is running on port: 3030 

@@ -1,0 +1,57 @@
+.wap-form-1 {
+    font-family: Monsterrat;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    color: rgb(53, 51, 51);
+
+    .title {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        cursor: text;
+    }
+
+    .paragraph {
+        font-size: 1em;
+        cursor: text;
+        font-weight: lighter;
+        margin: 0;
+        margin-bottom: 3em;
+    }
+
+    .wap-form {
+        display: flex;
+    }
+
+    input {
+        padding: 18px 28px;
+        border: 1px solid darken($color: #F7F7F7, $amount: 20);
+        border-radius: 3px;
+        margin-right: 1em;
+
+        &::placeholder {
+            color: darken($color: #F7F7F7, $amount: 20);
+        }
+    }
+
+    & button {
+        color: #fff;
+        background: none;
+        padding: 1.2rem 2.004rem;
+        border-radius: 0.4rem;
+        border: none;
+        cursor: pointer;
+        background-color: #A8A6A1;
+        height: 100%;
+
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+
+}

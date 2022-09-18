@@ -1,0 +1,34 @@
+.side-bar{
+    font-family: Monsterrat;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+
+    justify-content: space-between;
+    min-width: 100px;
+    border-right: 1px rgb(75, 72, 72) solid;
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        
+        border:none;
+        background: none;
+        color: rgb(167, 165, 165);
+        font-weight: 500;
+        padding: 20px  0;
+
+        &:hover{
+            color: whitesmoke;
+
+        }
+        img{
+            width: 1.5rem;
+            cursor: pointer;
+            filter : invert(1)
+            
+        }
+    }
+
+}

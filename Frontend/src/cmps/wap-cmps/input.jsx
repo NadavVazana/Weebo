@@ -1,0 +1,12 @@
+
+export const Input=({cmp, onEditElement})=>{
+
+    return (
+        <section>
+            <input 
+            type={cmp.input_type} 
+            placeholder={cmp.info.placeholder} 
+            onClick={() => onEditElement(cmp)}/>
+        </section>
+    )
+}

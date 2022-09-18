@@ -1,0 +1,20 @@
+.editor-nav{
+    background-color: rgb(37, 36, 36);
+    display: flex;
+    
+    h1{
+        color: grey;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 300;
+
+
+
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.wap-card-1{
+    font-family: Monsterrat;
+    // padding: 50px;
+    padding: 50px 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+
+    justify-content: center;
+    align-items: center;
+    color: rgb(53, 51, 51);
+
+
+   .card-1-container{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .info-container{
+        padding-inline-start: 50px;
+        .title{
+            cursor: text;
+            font-size: 2.8rem;
+        }
+    }
+   }
+   .card-2-container{
+    .info-container{
+        .title{
+            cursor: text;
+            font-size: 2.8rem;
+        }
+        padding-inline-end: 50px;
+    }
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 100px;
+   }
+    .info-container{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 50px;
+        
+        
+        
+        
+        
+    }
+
+    button{
+        color: #fff;
+        background: none;
+        padding: 1.2rem 2.004rem;
+        border-radius: 0.4rem;
+        border: none;
+        cursor: pointer;
+        background-color: #A8A6A1;
+        height: 100%;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+
+
+    .paragraph{
+        cursor: text;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+    img{
+        width: 100%;
+    }
+    .image{
+        max-width: 50%;
+        
+        
+        
+        }}
+    
+    
+   
