@@ -3,6 +3,19 @@
     background-color: rgb(56, 55, 55);
     width: 0;
     transition: 0.3s;
+
+    .edit-container{
+
+        button{
+            background: none;
+            border: none;
+        }
+        .trash-icon{
+            width: 15%;
+            filter: invert(1);
+            cursor: pointer;
+        }
+    }
     .mini-cmp{
         width: 100%;
         border-radius: 13px;

@@ -49,7 +49,7 @@ export const EditorNav = ({ addElement, setOptionList }) => {
                         <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
                     </button>
                     <button className="themes-btn" onClick={toggleThemesMenu}>
-                        <img src={require('../assets/img/icons/themes-icon.svg').default} alt="" />
+                        <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
                     </button>
                     <button onClick={() => { setMenu(!isMenu) }}><img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" /></button>
                     {isMenu && <div  >
@@ -61,8 +61,8 @@ export const EditorNav = ({ addElement, setOptionList }) => {
                     </div>}
                 </div>
                 <div className="side-bar-features">
-                    <button><img src={require('../assets/img/icons/work-together-icon.svg').default} alt="" /></button>
-                    <button><img src={require('../assets/img/icons/puslish-icon.svg').default} alt="" /></button>
+                    <button><img src={require('../assets/img/icons/work-together-icon.svg').default} alt="together-icon" /></button>
+                    <button><img src={require('../assets/img/icons/publish-icon.svg').default} alt="publish-icon" /></button>
                 </div>
             </div>
             <div className={`side-bar-actions ${(isOptionsMenu.isOpen || isEditMenu || isThemesMenu) ? 'open' : ''} `}>

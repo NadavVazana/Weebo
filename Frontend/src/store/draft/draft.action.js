@@ -8,6 +8,7 @@ export function getDraft() {
     }
 }
 
+
 export function setDraft(draft) {
     return (dispatch) => {
         wapService.setDraft(draft)

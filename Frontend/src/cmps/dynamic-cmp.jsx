@@ -13,7 +13,7 @@ export const DynamicCmp = ({ cmp, onEditElement }) => {
 
     switch (cmp.type) {
         case 'container':
-            return <Container cmp={{ cmps: cmp.cmps, cls: cmp.name }} onEditElement={onEditElement} />
+            return <Container cmp={cmp} onEditElement={onEditElement} />
         case 'text':
             return <Text cmp={cmp} onEditElement={onEditElement} />
         case 'button':

@@ -19,6 +19,10 @@ export const exampleList = [
             "id": "wh01",
             "type": "container",
             "name": "wap-header-1",
+            "info":{
+                "isFocus":false,
+
+            },
             "drag": "true",
             "cmps": [
                 {
@@ -41,6 +45,7 @@ export const exampleList = [
                             "type": "text",
                             "name": "wap-text",
                             "info": {
+                                
                                 "class": "nav-item",
                                 "value": "About"
                             },
@@ -90,6 +95,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "hero-item-1",
                         "value": "Sustainability"
                     },
@@ -130,6 +136,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "title",
                         "value": "We conserve land through outreach and restoration."
                     },
@@ -150,6 +157,9 @@ export const exampleList = [
             "id": "wc01",
             "type": "container",
             "name": "wap-card-1",
+            "info":{
+                "isFocus":false,
+            },
             "cmps": [
                 {
                     "id": "wc02",
@@ -161,6 +171,7 @@ export const exampleList = [
                             "type": "image",
                             "name": "wap-image",
                             "info": {
+                                
                                 "image": "card1/card1.jpg"
                             },
                             "cmps": [
@@ -274,6 +285,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "title",
                         "value": "Subscribe"
                     },
@@ -331,6 +343,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "logo",
                         "value": "Weebo."
                     },
@@ -379,6 +392,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "logo",
                         "value": "Sinker."
                     },
@@ -443,6 +457,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "hero-item-1",
                         "value": "Sustainability"
                     },
@@ -483,6 +498,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "title",
                         "value": "We conserve land through outreach and restoration."
                     },
@@ -503,6 +519,9 @@ export const exampleList = [
             "id": "wc01",
             "type": "container",
             "name": "wap-card-1",
+            "info" : {
+                "isFocus":false,
+            },
             "cmps": [
                 {
                     "id": "wc02",
@@ -627,6 +646,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "title",
                         "value": "Subscribe"
                     },
@@ -684,6 +704,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
+                        "isFocus":false,
                         "class": "logo",
                         "value": "Weebo."
                     },

@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { EditText } from '../edit-elements/edit-text'
 import { EditButton } from '../edit-elements/edit-button'
-
+import { EditContainer } from './edit-container'
 
 export const EditElements = () => {
 
@@ -9,6 +9,8 @@ export const EditElements = () => {
 
     //EditElementsText
     switch (currElement.type) {
+        case 'container':
+            return <EditContainer />
         case 'text':
             return <EditText />
         case 'button':

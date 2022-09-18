@@ -19,7 +19,7 @@ export const Text = ({ cmp, onEditElement }) => {
                 suppressContentEditableWarning
                 style={{ ...cmp.info?.styles }}
                 className={cmp.info.class}
-                onClick={() => onEditElement(cmp)}
+                onClick={(event) => onEditElement(cmp,event)}
                 onInput={handleChange}
             >{cmp.info.value}</h1>
         </section>

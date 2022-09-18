@@ -40,7 +40,9 @@ export const Editor = () => {
     }, [])
 
 
-    const onEditElement = (clickedElement) => {
+    const onEditElement = (clickedElement,ev) => {
+        ev?.stopPropagation()
+
         dispatch(setElement(clickedElement))
     }
 
