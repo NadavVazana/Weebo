@@ -1,35 +1,38 @@
-import { useState } from "react"
+import {  useState } from "react"
 import { EditElements } from './edit-elements/edit-elements'
 import { ThemesList } from "./themes-list"
 import { AddOptions } from "./add-options"
 import { useSelector } from 'react-redux'
-import { NavLink } from "react-router-dom"
 
 export const EditorNav = ({ addElement, setOptionList }) => {
-
-    // const { wap } = useSelector(state => state.wapModule)
     const [isMenu, setMenu] = useState(false)
-
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [isEditMenu, setEditMenu] = useState(false)
     const [isThemesMenu, setThemesMenu] = useState(false)
     const [activeOption, setActiveOption] = useState(null)
-
-    const cmpTypes = ['Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
-
+    const {currElement} = useSelector(state=> state.draftModule)
+    const cmpTypes = ['All','Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
+    const [currentElement,setCurrentElement] = useState({})
+    
+    
+    
     const toggleOptionsMenu = (cmp, event) => {
-
-
-        // event.target.classList.toggle('active')
         if (!isOptionsMenu.cmpType) setOptionsMenu(prevState => ({ isOpen: !prevState.isOpen, cmpType: cmp }))
         else if (isOptionsMenu.cmpType === cmp) setOptionsMenu({ isOpen: false, cmpType: null })
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
         if (isEditMenu)
-            setEditMenu(false)
-        setActiveOption(cmp)
+        setEditMenu(false)
+    setActiveOption(cmp)
+
     }
 
+
     const toggleEditMenu = () => {
+        if(currElement.id !== currentElement.id) {
+            setEditMenu(true)
+            setCurrentElement(currElement)
+            return
+        }
         setEditMenu(prevState => !prevState)
         if (isOptionsMenu.isOpen)
             setOptionsMenu({ cmpType: null, isOpen: false })
@@ -47,11 +50,21 @@ export const EditorNav = ({ addElement, setOptionList }) => {
                 <div>
                     <button className="edit-btn" onClick={() => { toggleEditMenu() }}>
                         <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
+                        <span>Edit</span>
                     </button>
+                  
+                    
                     <button className="themes-btn" onClick={toggleThemesMenu}>
-                        <img src={require('../assets/img/icons/themes-icon.svg').default} alt="" />
+                        <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
+                    <span>Themes</span>
                     </button>
-                    <button onClick={() => { setMenu(!isMenu) }}><img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" /></button>
+                   
+                    
+                    <button onClick={() => { setMenu(!isMenu) }}>
+                        <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
+                    <span>Add</span>
+                        </button>
+                      
                     {isMenu && <div  >
                         {cmpTypes.map(cmp => {
                             let cls
@@ -60,10 +73,7 @@ export const EditorNav = ({ addElement, setOptionList }) => {
                         })}
                     </div>}
                 </div>
-                <div className="side-bar-features">
-                    <button><img src={require('../assets/img/icons/work-together-icon.svg').default} alt="" /></button>
-                    <button><img src={require('../assets/img/icons/puslish-icon.svg').default} alt="" /></button>
-                </div>
+      
             </div>
             <div className={`side-bar-actions ${(isOptionsMenu.isOpen || isEditMenu || isThemesMenu) ? 'open' : ''} `}>
                 {isOptionsMenu.isOpen && !isEditMenu && <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu} />}

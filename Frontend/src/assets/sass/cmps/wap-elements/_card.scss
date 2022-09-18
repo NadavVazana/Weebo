@@ -1,7 +1,7 @@
-.wap-card-1{
+.wap-card-1 {
     font-family: Monsterrat;
     // padding: 50px;
-    padding: 50px 50px;
+
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -12,59 +12,64 @@
     color: rgb(53, 51, 51);
 
 
-   .card-1-container{
-    
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    .card-1-container {
 
-    .info-container{
-        padding-inline-start: 50px;
-        .title{
-            cursor: text;
-            font-size: 2.8rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .info-container {
+            
+
+            .title {
+                cursor: text;
+
+            }
         }
     }
-   }
-   .card-2-container{
-    .info-container{
-        .title{
-            cursor: text;
-            font-size: 2.8rem;
-        }
-        padding-inline-end: 50px;
-    }
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    padding-top: 100px;
-   }
-    .info-container{
+    .card-2-container {
+        .info-container {
+            .title {
+                cursor: text;
+            }
+
+            
+        }
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 100px;
+    }
+
+    .info-container {
         display: flex;
         text-align: center;
         flex-direction: column;
         gap: 50px;
-        
-        
-        
-        
-        
+
+
+
+
+
     }
 
-    button{
+    button {
         color: #fff;
         background: none;
         padding: 1.2rem 2.004rem;
         border-radius: 0.4rem;
         border: none;
         cursor: pointer;
-        background-color: #A8A6A1;
+        background-color: #4b4a48;
         height: 100%;
+
         &:hover {
             opacity: 0.6;
         }
@@ -72,20 +77,99 @@
 
 
 
-    .paragraph{
+    .paragraph {
         cursor: text;
         font-weight: 300;
-        font-size: 1.4rem;
     }
-    img{
+
+    img {
         width: 100%;
     }
-    .image{
-        max-width: 50%;
+
+
+    @include for-mobile-layout {
+        .card-1-container {
+            flex-direction: column;
+            gap: 20px;
+            .image {
+                max-width: 100%;
+            }
+
+            
+
+        }
+
+        .card-2-container {
+            gap: 20px;
+            margin-bottom: 100px;
+            padding-inline-end: 0;
+            .image {
+                max-width: 100%;
+            }
+
+            flex-direction: column-reverse;
+
+
+            .title {
+                font-size: 1.9rem;
+            }
+
+
+
+        }
+
+        .paragraph {
+            font-size: 1.1rem;
+        }
+    }
+
+    @include for-narrow-layout {}
+
+    @include for-mid-layout {
+        padding: 50px 50px;
+    }
+
+    @include for-normal-layout {
+
         
-        
-        
-        }}
-    
-    
-   
+
+        .card-1-container {
+            .info-container{
+                padding-inline-start: 50px;
+            }
+            flex-direction: row;
+            .image {
+                max-width: 50%;
+            }
+            .title {
+
+                font-size: 2.8rem;
+            }  }
+
+            .card-2-container {
+                .info-container{
+                    padding-inline-start: 50px;
+                }
+                flex-direction: row;
+                .image {
+                    max-width: 50%;
+                }
+                .title{
+                    font-size: 2.8rem;
+
+                }
+            }
+
+            .paragraph {
+                font-size: 1.4rem;
+
+            }
+      
+    }
+
+    @include for-wide-layout {}
+
+
+
+
+}

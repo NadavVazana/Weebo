@@ -4,12 +4,13 @@ a {
     text-decoration: none;
     padding: 10px;
   }
+ 
   
   a:hover {
     color: #000;
   }
 
-  a::before {
+  a .main-logo::before{
     content: "";
     position: absolute;
     display: block;
@@ -26,8 +27,13 @@ a {
     transform: scaleX(1);
   }
 
+  section > [contenteditable]:focus{
+    padding: 10px;
+    transition: padding 0.3s;
+  }
+
   html {
-    
+
 ::-webkit-scrollbar {
   width: 10px;
 }

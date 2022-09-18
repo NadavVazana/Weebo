@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import { Draggable, Droppable } from "react-beautiful-dnd"
-import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms } from "../assets/templates"
+import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms, All } from "../assets/templates"
 
 export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
     const [items, setItems] = useState('')
+    
     useEffect(() => {
         switch (isOptionsMenu.cmpType) {
             case 'Headers':
@@ -30,7 +31,9 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
             case 'Forms':
                 setItems(Forms)
                 break
-
+            case 'All':
+                setItems(All)
+                break
             default: break
 
         }

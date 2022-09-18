@@ -5,7 +5,6 @@ import { Image } from "./wap-cmps/image"
 import { Video } from "./wap-cmps/video"
 import { Map } from "./wap-cmps/map"
 import { Gallery } from "./wap-cmps/gallery"
-import { useEffect, useRef } from "react"
 import { Input } from "./wap-cmps/input"
 
 
@@ -13,7 +12,7 @@ export const DynamicCmp = ({ cmp, onEditElement }) => {
 
     switch (cmp.type) {
         case 'container':
-            return <Container cmp={{ cmps: cmp.cmps, cls: cmp.name }} onEditElement={onEditElement} />
+            return <Container cmp={cmp} onEditElement={onEditElement} />
         case 'text':
             return <Text cmp={cmp} onEditElement={onEditElement} />
         case 'button':

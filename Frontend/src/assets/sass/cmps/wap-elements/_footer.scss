@@ -21,4 +21,35 @@
        
         font-family: Monsterrat;
     }
+
+    @include for-mobile-layout{
+        .logo{
+            font-size: 1.2rem;
+            margin-inline-start: 20px;
+        }
+        .rights{
+            font-size: .9rem;
+            margin-inline-end: 20px;
+        }
+    }
+    @include for-narrow-layout{
+        .logo{
+            font-size: 1.5rem;
+            margin-inline-start: 70px;
+        }
+        .rights{
+            font-size: 1rem;
+            margin-inline-end: 70px;
+        }
+
+    }
+    @include for-mid-layout{
+
+    }
+    @include for-normal-layout{
+
+    }
+    @include for-wide-layout{
+
+    }
 }

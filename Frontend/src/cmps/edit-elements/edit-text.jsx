@@ -43,7 +43,6 @@ export const EditText = () => {
     }
 
     const onSelectFontColor = (ev) => {
-        console.log('ev', ev)
         const color = ev.target.id
         let copyCurrElement = { ...currElement }
         copyCurrElement = {

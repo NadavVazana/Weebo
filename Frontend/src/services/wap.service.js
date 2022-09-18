@@ -19,7 +19,6 @@ const DRAFT_KEY = 'draft_DB'
 async function getWaps(exampleId) {
     try {
         const waps = await httpService.get(WAP, exampleId)
-        // let waps = await storageService.query(DRAFT_KEY, exampleId)
         return waps
     } catch (err) {
         console.log('oops! could not fetch waps:', err)

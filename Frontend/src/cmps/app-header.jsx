@@ -10,14 +10,17 @@ export const AppHeader = () => {
     
     return (
         <section className="app-header">
-            <Link to={'/'}><h1>WEEBO.</h1></Link>
+            <Link to={'/'}><h1 className='main-logo'>WEEBO.</h1></Link>
             <nav className='app-header-nav'>
                 <NavLink to="/templates">Templates</NavLink>
                 <NavLink to={`/editor/${draftId}`}>Editor</NavLink>
                 <NavLink to="/dashboard">Dashboard</NavLink>
             </nav>
-
+            <div className='right-header-btns'>
+            <button>Publish</button>
+                    <button>Work Together</button>
             <button onClick={()=>{navigate('/login')}}>LOGIN</button>
+            </div>
         </section>
     )
 }

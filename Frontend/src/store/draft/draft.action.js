@@ -8,6 +8,7 @@ export function getDraft() {
     }
 }
 
+
 export function setDraft(draft) {
     return (dispatch) => {
         wapService.setDraft(draft)
@@ -19,7 +20,6 @@ export function setDraft(draft) {
 export function setElement(element) {
     return (dispatch) => {
         try {
-
             dispatch({ type: 'SET_ELEMENT', element })
         } catch (err) {
             console.log('could not load element!:', err)
@@ -31,7 +31,7 @@ export function setElement(element) {
 export function updateDraft(draft, element) {
     return (dispatch) => {
         try {
-            const copyDraft={...draft}
+            const copyDraft = { ...draft }
             draft = wapService.updateDraft(copyDraft, element)
             dispatch({ type: 'SET_DRAFT', draft })
         } catch (err) {

@@ -38,17 +38,61 @@
 
         font-family: Monsterrat;
         cursor: text;
-        font-size: 1.7rem;
     }
 
     .nav-item{
         padding: 10px;
         color: rgb(219, 216, 216);
-        font-size: 1rem;
         cursor: text;
     }
 
     .nav-item:hover{
         color: rgb(197, 190, 190)
-    }  
+    } 
+    @include for-mobile-layout{
+        .nav-item{
+            display: none;
+        }
+        .image{
+            display: inline;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                width: 35px;
+                
+            }
+        }
+
+        .logo{
+            font-size: 1.4rem;
+           }
+    }
+   
+    @include for-narrow-layout{
+     
+     
+    }
+    @include for-mid-layout{
+        .logo{
+            font-size: 1.7rem;
+        }
+        
+        .nav-item{
+            display: inline;
+            font-size: .8rem;
+        }
+        .image{
+            display: none;
+        }
+    }
+    @include for-normal-layout{
+      
+ 
+    }
+    @include for-wide-layout{
+        
+    }
+  
 }
