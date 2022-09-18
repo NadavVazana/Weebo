@@ -1,29 +1,30 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement } from '../../store/draft/draft.action'
+import { setElement, updateDraft } from '../../store/draft/draft.action'
 
 export const Text = ({ cmp, onEditElement }) => {
 
-    const { currElement } = useSelector(state => state.draftModule)
+    const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
-    const handleChange = (ev) => {
-        const {innerText} = ev.target
 
-        const copyCurrElement = {...currElement}
-        copyCurrElement.info.value = innerText
+    const handleChange = (ev) => {
+        const { innerText } = ev.target
+        let copyCurrElement = { ...cmp }
+        copyCurrElement = {
+            ...copyCurrElement, info: { ...copyCurrElement?.info, value: innerText }
+        }
+        dispatch(updateDraft(draft, copyCurrElement))
         dispatch(setElement(copyCurrElement))
     }
     return (
         <section className="text">
-            <h1 contentEditable
+            <h1 
+                contentEditable
                 suppressContentEditableWarning
-                style={{ ...cmp.info?.styles }}
+                style={{ ...cmp?.styles }}
                 className={cmp.info.class}
-                onClick={() => onEditElement(cmp)}
-                onInput={handleChange}
+                onClick={() => onEditElement(cmp)} onInput={handleChange}
             >{cmp.info.value}</h1>
         </section>
     )
 }
-
-
