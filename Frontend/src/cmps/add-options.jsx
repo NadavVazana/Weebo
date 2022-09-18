@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Draggable, Droppable } from "react-beautiful-dnd"
-import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms } from "../assets/templates"
+import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms, All } from "../assets/templates"
 
 export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
     const [items, setItems] = useState('')
@@ -30,13 +30,16 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
             case 'Forms':
                 setItems(Forms)
                 break
-
+            case 'All':
+                setItems(All)
+                break
             default: break
 
         }
     }, [isOptionsMenu.cmpType])
 
     setOptionList(items)
+    console.log(items);
 
 
     return (
@@ -44,6 +47,7 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
             {(provided) => {
                 return <section ref={provided.innerRef} {...provided.droppableProps} >
                     {Object.values(items).map((cmp, index) => {
+                        console.log(cmp);
                         return <Draggable key={cmp.id} index={index} draggableId={cmp.name}>
                             {(provided) => {
                                 return <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps} onClick={() => addElement(isOptionsMenu.cmpType)}><img className={`mini-cmp ${cmp.name}-mini`} src={require(`../assets/img/templates/example 1 elements/${cmp.name}.png`)} alt={`${cmp.name}`} /></div>

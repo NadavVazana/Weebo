@@ -90,7 +90,7 @@ export const header1 = {
 				"value": "Bailard Foundation"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -108,7 +108,7 @@ export const header1 = {
 						"value": "About"
 					},
 					"styles": {
-						"fontSize": '14px', 
+						"fontSize": '14px',
 					},
 					"cmps": []
 				},
@@ -121,7 +121,7 @@ export const header1 = {
 						"value": "News"
 					},
 					"styles": {
-						"fontSize": '14px', 
+						"fontSize": '14px',
 					},
 					"cmps": []
 				},
@@ -134,7 +134,7 @@ export const header1 = {
 						"value": "Read Me"
 					},
 					"styles": {
-						"fontSize": '14px', 
+						"fontSize": '14px',
 					},
 					"cmps": []
 				},
@@ -147,12 +147,23 @@ export const header1 = {
 						"value": "Take Action"
 					},
 					"styles": {
-						"fontSize": '14px', 
+						"fontSize": '14px',
 					},
 					"cmps": []
-				}
+				},
+				
 			]
-		}
+		},
+		{
+			"id": "wc02",
+			"type": "image",
+			"info": {
+				"image": "icons/hamburger.png"
+			},
+			"name": "wap-hamburger-1",
+			"cmps": [
+
+			]}
 	]
 }
 
@@ -172,7 +183,7 @@ export const hero1 = {
 				"value": "Sustainability"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -185,7 +196,7 @@ export const hero1 = {
 				"value": "Starts With You"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -199,7 +210,7 @@ export const hero1 = {
 				"value": "Learn more",
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		}
@@ -222,7 +233,7 @@ export const form1 = {
 				"value": "Subscribe"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": [
 
@@ -237,7 +248,7 @@ export const form1 = {
 				"value": "Sign up with your email address to receive news and updates."
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": [
 
@@ -289,7 +300,7 @@ export const footer1 = {
 				"value": "Weebo."
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -302,7 +313,7 @@ export const footer1 = {
 				"value": "all rights reserved Ⓒ 2022"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		}
@@ -326,7 +337,7 @@ export const gallery1 = {
 				"value": "Our Gallery"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": [
 
@@ -360,7 +371,7 @@ export const map1 = {
 				"value": "Where are we?"
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": [
 
@@ -413,7 +424,7 @@ export const card1 = {
 								"value": "Our Organization"
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": [
 
@@ -428,7 +439,7 @@ export const card1 = {
 								"value": "Find out about our mission, methods, and the results of our decades of advocacy."
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": [
 							]
@@ -442,7 +453,7 @@ export const card1 = {
 								"value": "Learn more"
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": []
 						}]
@@ -468,7 +479,7 @@ export const card1 = {
 								"value": "Our Organization"
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": [
 							]
@@ -482,7 +493,7 @@ export const card1 = {
 								"value": "Find out about our mission, methods, and the results of our decades of advocacy."
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": [
 							]
@@ -496,7 +507,7 @@ export const card1 = {
 								"value": "Learn more"
 							},
 							"styles": {
-								"fontSize": '14px', 
+								"fontSize": '14px',
 							},
 							"cmps": []
 						},
@@ -510,7 +521,7 @@ export const card1 = {
 						"image": "card1/card1.jpg"
 					},
 					"styles": {
-						"fontSize": '14px', 
+						"fontSize": '14px',
 					},
 					"cmps": []
 				}]
@@ -533,7 +544,7 @@ export const mission1 = {
 				"value": "We conserve land through outreach and restoration."
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -546,7 +557,7 @@ export const mission1 = {
 				"value": "Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help."
 			},
 			"styles": {
-				"fontSize": '14px', 
+				"fontSize": '14px',
 			},
 			"cmps": []
 		},
@@ -555,11 +566,11 @@ export const mission1 = {
 
 export const Example1 = {
 	'wap-header-1': header1,
-	'wap-card-1':card1,
-	'wap-hero-1':hero1,
-	'wap-mission-1':mission1,
-	'wap-form-1':form1,
-	'wap-footer-1':footer1,
+	'wap-card-1': card1,
+	'wap-hero-1': hero1,
+	'wap-mission-1': mission1,
+	'wap-form-1': form1,
+	'wap-footer-1': footer1,
 
 }
 

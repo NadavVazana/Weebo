@@ -23,10 +23,11 @@ export const Editor = () => {
 
     const addElement = (cmp) => {
 
-        draft.cmps.push(cmps[cmp])
+        draft.cmp.push(cmps[cmp])
     }
 
     useEffect(() => {
+        dispatch(setElement(null))
         if (!draft || draft._id === 'empty' || draft._id !== exampleId) draft = null
         if (!draft) {
 
@@ -42,7 +43,7 @@ export const Editor = () => {
 
     const onEditElement = (clickedElement,ev) => {
         ev?.stopPropagation()
-        
+
         dispatch(setElement(clickedElement))
     }
 

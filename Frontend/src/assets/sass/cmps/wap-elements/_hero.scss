@@ -14,7 +14,7 @@
         padding: 10px;
     }
     .hero-item-1 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         font-weight: 300;
         cursor: text;
     }
@@ -30,16 +30,35 @@
        
             color: #fff;
             background: none;
-            padding: 1.2rem 2.004rem;
+            
             border-radius: 0.4rem;
             border: none;
             cursor: pointer;
-            background-color: #A8A6A1;
-            font-size: 0.9rem;
+            background-color: #4b4a48;
             font-weight: 300;
         }
         
         .hero-item-3:hover {
             opacity: 0.6;
+        }
+
+        @include for-mobile-layout{
+            .hero-item-2{
+                font-size: 2rem;
+            }
+            .hero-item-3{
+                padding: .8rem 1.2rem;
+
+            }
+        }
+        @include for-narrow-layout{
+            .hero-item-3{
+                padding: 1.2rem 2.004rem;
+            }
+        }
+        @include for-mid-layout{
+            .hero-item-2{
+                font-size: 2.5rem;
+            }
         }
 }

@@ -1,7 +1,6 @@
 
 
 export const Image = ({cmp, onEditElement}) => {
-
     return (
     <section className='image'>
         <img className={cmp.name} 

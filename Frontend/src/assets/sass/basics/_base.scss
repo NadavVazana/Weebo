@@ -4,12 +4,13 @@ a {
     text-decoration: none;
     padding: 10px;
   }
+ 
   
   a:hover {
     color: #000;
   }
 
-  a::before {
+  a::before:not(.btn-link) {
     content: "";
     position: absolute;
     display: block;

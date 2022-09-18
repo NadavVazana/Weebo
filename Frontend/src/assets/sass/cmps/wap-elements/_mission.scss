@@ -13,12 +13,32 @@
     }
     .title {
         font-weight: 700;
-        font-size: 2.8rem;
+        
     }
     .paragraph {
 
         font-weight: 300;
-        font-size: 1.4rem;
+        
     }
+
+    @include for-mobile-layout{
+        .title{
+            font-size: 1.8rem;
+        }
+        .paragraph{
+            font-size: 1.1rem;
+        }
+    }
+    @include for-mid-layout{
+        .title{
+            font-size: 2.8rem;
+            
+        }
+        .paragraph{
+            font-size: 1.4rem;
+        }
+    }
+
+   
 
 }

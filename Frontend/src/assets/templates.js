@@ -19,8 +19,8 @@ export const exampleList = [
             "id": "wh01",
             "type": "container",
             "name": "wap-header-1",
-            "info":{
-                "isFocus":false,
+            "info": {
+                "isFocus": false,
 
             },
             "drag": "true",
@@ -31,7 +31,7 @@ export const exampleList = [
                     "name": "wap-text",
                     "info": {
                         "class": "logo",
-                        "value": "Bailard Foundationa"
+                        "value": "Bailard Foundation"
                     },
                     "cmps": []
                 },
@@ -45,7 +45,7 @@ export const exampleList = [
                             "type": "text",
                             "name": "wap-text",
                             "info": {
-                                
+
                                 "class": "nav-item",
                                 "value": "About"
                             },
@@ -80,308 +80,324 @@ export const exampleList = [
                                 "value": "Take Action"
                             },
                             "cmps": []
-                        }
-                    ]
-                }
-            ]
-        }, {
-            "id": "whe01",
-            "type": "container",
-            "name": "wap-hero-1",
-            "drag": "true",
-            "cmps": [
-                {
-                    "id": "whe02",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "isFocus":false,
-                        "class": "hero-item-1",
-                        "value": "Sustainability"
-                    },
-                    "cmps": []
-                },
-                {
-                    "id": "whe03",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "class": "hero-item-2",
-                        "value": "Starts With You"
-                    },
-                    "cmps": []
-                },
-
-                {
-                    "id": "whe05",
-                    "type": "button",
-                    "name": "wap-button",
-                    "info": {
-                        "class": "hero-item-3",
-                        "value": "Learn more",
-                        "styles": {
-                            "fontSize": '14px'
-                        }
-                    },
-                    "cmps": []
-                }
-            ]
-        }, {
-            "id": "wm01",
-            "type": "container",
-            "name": "wap-mission-1",
-            "cmps": [
-                {
-                    "id": "wm02",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "isFocus":false,
-                        "class": "title",
-                        "value": "We conserve land through outreach and restoration."
-                    },
-                    "cmps": []
-                },
-                {
-                    "id": "wm03",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "class": "paragraph",
-                        "value": "Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help."
-                    },
-                    "cmps": []
-                },
-            ]
-        }, {
-            "id": "wc01",
-            "type": "container",
-            "name": "wap-card-1",
-            "info":{
-                "isFocus":false,
-            },
-            "cmps": [
-                {
-                    "id": "wc02",
-                    "type": "container",
-                    "name": "card-1-container",
-                    "cmps": [
-                        {
-                            "id": "wc02",
-                            "type": "image",
-                            "name": "wap-image",
-                            "info": {
-                                
-                                "image": "card1/card1.jpg"
-                            },
-                            "cmps": [
-                            ]
                         },
-                        {
-                            "id": "wc03",
-                            "type": "container",
-                            "name": "info-container",
-
-                            "cmps": [
-                                {
-                                    "id": "wc03",
-                                    "type": "text",
-                                    "name": "wap-text",
-                                    "info": {
-                                        "class": "title",
-                                        "value": "Our Organization"
-                                    },
-                                    "cmps": [
-
-                                    ]
-                                },
-                                {
-                                    "id": "wc04",
-                                    "type": "text",
-                                    "name": "wap-text",
-                                    "info": {
-                                        "class": "paragraph",
-                                        "value": "Find out about our mission, methods, and the results of our decades of advocacy."
-                                    },
-                                    "cmps": [
-                                    ]
-                                },
-                                {
-                                    "id": "wc05",
-                                    "type": "button",
-                                    "name": "wap-button",
-                                    "info": {
-                                        "class": "button",
-                                        "value": "Learn more"
-                                    },
-                                    "cmps": []
-                                }]
-                        },
-                    ]
-                },
-                {
-                    "id": "wc03",
-                    "type": "container",
-                    "name": "card-2-container",
-                    "cmps": [
-                        {
-                            "id": "wc03",
-                            "type": "container",
-                            "name": "info-container",
-                            "cmps": [
-                                {
-                                    "id": "wc03",
-                                    "type": "text",
-                                    "name": "wap-text",
-                                    "info": {
-                                        "class": "title",
-                                        "value": "Our Organization"
-                                    },
-                                    "cmps": [
-                                    ]
-                                },
-                                {
-                                    "id": "wc04",
-                                    "type": "text",
-                                    "name": "wap-text",
-                                    "info": {
-                                        "class": "paragraph",
-                                        "value": "Find out about our mission, methods, and the results of our decades of advocacy."
-                                    },
-                                    "cmps": [
-                                    ]
-                                },
-                                {
-                                    "id": "wc05",
-                                    "type": "button",
-                                    "name": "wap-button",
-                                    "info": {
-                                        "class": "button",
-                                        "value": "Learn more"
-                                    },
-                                    "cmps": []
-                                },
-                            ]
-                        },
-                        {
-                            "id": "wc02",
-                            "type": "image",
-                            "name": "wap-image",
-                            "info": {
-                                "image": "card1/card1.jpg"
-                            },
-                            "cmps": []
-                        }]
-                }
+                        
+                      
             ]
-        }, {
-            "id": "wf01",
-            "type": "container",
-            "name": "wap-form-1",
-            "drag": "true",
-            "cmps": [
-                {
-                    "id": "wf02",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "isFocus":false,
-                        "class": "title",
-                        "value": "Subscribe"
-                    },
-                    "cmps": [
-
-                    ]
+        },{
+            
+            
+                "id": "wc02",
+                "type": "image",
+                "info": {
+                    "image": "icons/hamburger.png"
                 },
-                {
-                    "id": "wf03",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "class": "paragraph",
-                        "value": "Sign up with your email address to receive news and updates."
-                    },
-                    "cmps": [
+                "name": "wap-hamburger-1",
+                "cmps": [
 
-                    ]
-                },
-                {
-                    "id": "wf07",
-                    "type": "container",
-                    "name": "wap-form",
-                    "cmps": [{
-                        "id": "wf01",
-                        "type": "input",
-                        "input_type": "email",
-                        "info": {
-                            "placeholder": "Email Address"
-                        },
-                        "name": "wap-input",
-                        "cmps": []
-                    },
-                    {
-                        "id": "wf06",
-                        "type": "button",
-                        "info": {
-                            "class": "button",
-                            "value": "Sign Up"
-                        },
-                        "name": "wap-button",
-                        "cmps": []
-                    }]
-                }
-            ]
+                ]
+        
+        
         }
-            , {
-            "id": "wft01",
-            "type": "container",
-            "name": "wap-footer-1",
-            "drag": "true",
-            "cmps": [
-                {
-                    "id": "wft02",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "isFocus":false,
-                        "class": "logo",
-                        "value": "Weebo."
-                    },
-                    "cmps": []
-                },
-                {
-                    "id": "wft03",
-                    "type": "text",
-                    "name": "wap-text",
-                    "info": {
-                        "class": "rights",
-                        "value": "all rights reserved Ⓒ 2022"
-                    },
-                    "cmps": []
-                }
-
-            ]
-        }],
-        // "isPublic": true,
-        "isEdit": true
-    },
-    {
-        "_id": "5e28393890dd8888a06d4e43",
+        ]
+    }, {
+        "id": "whe01",
         "type": "container",
-        "name": "Travel",
-        "subcategory": "Explore",
-        "imgUrl": `https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png`,
-        "createdBy": {
-            "_id": "5e26e0b718a8888d4c995527",
-            "fullname": "Noris Special",
-            "imgUrl": "img.jpg",
-        },
-        "usersData": {
-            "contacts": [{ "email": "noris@user.com", "msg": "Please send me stuff", "at": 123 }],
-            "signups": [{ "email": "noris@user.com", "at": 123 }]
+        "name": "wap-hero-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "whe02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "isFocus": false,
+                    "class": "hero-item-1",
+                    "value": "Sustainability"
+                },
+                "cmps": []
+            },
+            {
+                "id": "whe03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "hero-item-2",
+                    "value": "Starts With You"
+                },
+                "cmps": []
+            },
+
+            {
+                "id": "whe05",
+                "type": "button",
+                "name": "wap-button",
+                "info": {
+                    "class": "hero-item-3",
+                    "value": "Learn more",
+                    "styles": {
+                        "fontSize": '14px'
+                    }
+                },
+                "cmps": []
+            }
+        ]
+    }, {
+        "id": "wm01",
+        "type": "container",
+        "name": "wap-mission-1",
+        "cmps": [
+            {
+                "id": "wm02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "isFocus": false,
+                    "class": "title",
+                    "value": "We conserve land through outreach and restoration."
+                },
+                "cmps": []
+            },
+            {
+                "id": "wm03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "paragraph",
+                    "value": "Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help."
+                },
+                "cmps": []
+            },
+        ]
+    }, {
+        "id": "wc01",
+        "type": "container",
+        "name": "wap-card-1",
+        "info": {
+            "isFocus": false,
         },
         "cmps": [
             {
+                "id": "wc02",
+                "type": "container",
+                "name": "card-1-container",
+                "cmps": [
+                    {
+                        "id": "wc02",
+                        "type": "image",
+                        "name": "wap-image",
+                        "info": {
+
+                            "image": "card1/card1.jpg"
+                        },
+                        "cmps": [
+                        ]
+                    },
+                    {
+                        "id": "wc03",
+                        "type": "container",
+                        "name": "info-container",
+
+                        "cmps": [
+                            {
+                                "id": "wc03",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "title",
+                                    "value": "Our Organization"
+                                },
+                                "cmps": [
+
+                                ]
+                            },
+                            {
+                                "id": "wc04",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "paragraph",
+                                    "value": "Find out about our mission, methods, and the results of our decades of advocacy."
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc05",
+                                "type": "button",
+                                "name": "wap-button",
+                                "info": {
+                                    "class": "button",
+                                    "value": "Learn more"
+                                },
+                                "cmps": []
+                            }]
+                    },
+                ]
+            },
+            {
+                "id": "wc03",
+                "type": "container",
+                "name": "card-2-container",
+                "cmps": [
+                    {
+                        "id": "wc03",
+                        "type": "container",
+                        "name": "info-container",
+                        "cmps": [
+                            {
+                                "id": "wc03",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "title",
+                                    "value": "Our Organization"
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc04",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "paragraph",
+                                    "value": "Find out about our mission, methods, and the results of our decades of advocacy."
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc05",
+                                "type": "button",
+                                "name": "wap-button",
+                                "info": {
+                                    "class": "button",
+                                    "value": "Learn more"
+                                },
+                                "cmps": []
+                            },
+                        ]
+                    },
+                    {
+                        "id": "wc02",
+                        "type": "image",
+                        "name": "wap-image",
+                        "info": {
+                            "image": "card1/card1.jpg"
+                        },
+                        "cmps": []
+                    }]
+            }
+        ]
+    }, {
+        "id": "wf01",
+        "type": "container",
+        "name": "wap-form-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wf02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "isFocus": false,
+                    "class": "title",
+                    "value": "Subscribe"
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wf03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "paragraph",
+                    "value": "Sign up with your email address to receive news and updates."
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wf07",
+                "type": "container",
+                "name": "wap-form",
+                "cmps": [{
+                    "id": "wf01",
+                    "type": "input",
+                    "input_type": "email",
+                    "info": {
+                        "placeholder": "Email Address"
+                    },
+                    "name": "wap-input",
+                    "cmps": []
+                },
+                {
+                    "id": "wf06",
+                    "type": "button",
+                    "info": {
+                        "class": "button",
+                        "value": "Sign Up"
+                    },
+                    "name": "wap-button",
+                    "cmps": []
+                }]
+            }
+        ]
+    }
+    , {
+        "id": "wft01",
+        "type": "container",
+        "name": "wap-footer-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wft02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "isFocus": false,
+                    "class": "logo",
+                    "value": "Weebo."
+                },
+                "cmps": []
+            },
+            {
+                "id": "wft03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "rights",
+                    "value": "all rights reserved Ⓒ 2022"
+                },
+                "cmps": []
+            }
+
+        ]
+    }],
+// "isPublic": true,
+"isEdit": true
+    },
+{
+    "_id": "5e28393890dd8888a06d4e43",
+        "type": "container",
+            "name": "Travel",
+                "subcategory": "Explore",
+                    "imgUrl": `https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png`,
+                        "createdBy": {
+        "_id": "5e26e0b718a8888d4c995527",
+            "fullname": "Noris Special",
+                "imgUrl": "img.jpg",
+        },
+    "usersData": {
+        "contacts": [{ "email": "noris@user.com", "msg": "Please send me stuff", "at": 123 }],
+            "signups": [{ "email": "noris@user.com", "at": 123 }]
+    },
+    "cmps": [
+        {
             "id": "wh01",
             "type": "container",
             "name": "wap-header-1",
@@ -392,7 +408,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus":false,
+                        "isFocus": false,
                         "class": "logo",
                         "value": "Sinker."
                     },
@@ -457,7 +473,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus":false,
+                        "isFocus": false,
                         "class": "hero-item-1",
                         "value": "Sustainability"
                     },
@@ -498,7 +514,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus":false,
+                        "isFocus": false,
                         "class": "title",
                         "value": "We conserve land through outreach and restoration."
                     },
@@ -519,8 +535,8 @@ export const exampleList = [
             "id": "wc01",
             "type": "container",
             "name": "wap-card-1",
-            "info" : {
-                "isFocus":false,
+            "info": {
+                "isFocus": false,
             },
             "cmps": [
                 {
@@ -646,7 +662,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus":false,
+                        "isFocus": false,
                         "class": "title",
                         "value": "Subscribe"
                     },
@@ -693,7 +709,7 @@ export const exampleList = [
                 }
             ]
         }
-            , {
+        , {
             "id": "wft01",
             "type": "container",
             "name": "wap-footer-1",
@@ -704,7 +720,7 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus":false,
+                        "isFocus": false,
                         "class": "logo",
                         "value": "Weebo."
                     },
@@ -725,27 +741,27 @@ export const exampleList = [
         }],
         // "isPublic": true,
         "isEdit": true
-    }
+}
     ,
-    {
-        "_id": "empty",
+{
+    "_id": "empty",
         "type": "container",
-        "name": "Health & Beauty",
-        "subcategory": "Wellness",
-        "imgUrl": `https://images.squarespace-cdn.com/content/5ce592c8732098000152407a/a5aef4b2-4b9c-4279-b780-57302c077519/image-asset.jpeg?content-type=image%2Fjpeg&format=750w`,
-        "createdBy": {
-            "_id": "5e26e0b718a7777d4c995527",
+            "name": "Health & Beauty",
+                "subcategory": "Wellness",
+                    "imgUrl": `https://images.squarespace-cdn.com/content/5ce592c8732098000152407a/a5aef4b2-4b9c-4279-b780-57302c077519/image-asset.jpeg?content-type=image%2Fjpeg&format=750w`,
+                        "createdBy": {
+        "_id": "5e26e0b718a7777d4c995527",
             "fullname": "Special Noris",
-            "imgUrl": "img.jpg",
+                "imgUrl": "img.jpg",
         },
-        "usersData": {
-            "contacts": [{ "email": "spacial@user.com", "msg": "Please send me stuff", "at": 123 }],
+    "usersData": {
+        "contacts": [{ "email": "spacial@user.com", "msg": "Please send me stuff", "at": 123 }],
             "signups": [{ "email": "spacial@user.com", "at": 123 }]
-        },
-        "cmps": [],
+    },
+    "cmps": [],
         // "isPublic": true,
         "isEdit": true
-    },
+},
 
 
 ]
@@ -770,7 +786,7 @@ export const emptyWap = {
 }
 
 export const Headers = {
-    "wap-header-1" : {
+    "wap-header-1": {
         "id": "wh01",
         "type": "container",
         "name": "wap-header-1",
@@ -832,13 +848,25 @@ export const Headers = {
                         "cmps": []
                     }
                 ]
-            }
+            },{
+            
+                "id": "wc02",
+                "type": "image",
+                "info": {
+                    "image": "icons/hamburger.png"
+                },
+                "name": "wap-hamburger-1",
+                "cmps": [
+
+                ]
+        
+        }
         ]
     },
-    
+
 }
 
-export const Heroes={
+export const Heroes = {
     "wap-hero-1": {
         "id": "whe01",
         "type": "container",
@@ -865,7 +893,7 @@ export const Heroes={
                 },
                 "cmps": []
             },
-    
+
             {
                 "id": "whe05",
                 "type": "button",
@@ -884,7 +912,7 @@ export const Heroes={
 }
 
 export const Forms = {
-    "wap-form-1":{
+    "wap-form-1": {
         "id": "wf01",
         "type": "container",
         "name": "wap-form-1",
@@ -899,7 +927,7 @@ export const Forms = {
                     "value": "Subscribe"
                 },
                 "cmps": [
-    
+
                 ]
             },
             {
@@ -911,7 +939,7 @@ export const Forms = {
                     "value": "Sign up with your email address to receive news and updates."
                 },
                 "cmps": [
-    
+
                 ]
             },
             {
@@ -943,8 +971,8 @@ export const Forms = {
     }
 }
 
-export const Footers={
-    "wap-footer-1":{
+export const Footers = {
+    "wap-footer-1": {
         "id": "wft01",
         "type": "container",
         "name": "wap-footer-1",
@@ -970,12 +998,12 @@ export const Footers={
                 },
                 "cmps": []
             }
-    
+
         ]
     }
 }
 
-export const Galleries={
+export const Galleries = {
     "wap-gallery-1": {
         "id": "wg01",
         "type": "container",
@@ -991,7 +1019,7 @@ export const Galleries={
                     "value": "Our Gallery"
                 },
                 "cmps": [
-    
+
                 ]
             },
             {
@@ -1023,7 +1051,7 @@ export const Maps = {
                     "value": "Where are we?"
                 },
                 "cmps": [
-    
+
                 ]
             },
             {
@@ -1031,17 +1059,17 @@ export const Maps = {
                 "type": "map",
                 "name": "wap-map",
                 "cmps": [
-    
+
                 ]
             }
         ]
     }
-    
+
 }
 
 
 export const Cards = {
-    "wap-card-1":{
+    "wap-card-1": {
         "id": "wc01",
         "type": "container",
         "name": "wap-card-1",
@@ -1065,7 +1093,7 @@ export const Cards = {
                         "id": "wc03",
                         "type": "container",
                         "name": "info-container",
-    
+
                         "cmps": [
                             {
                                 "id": "wc03",
@@ -1076,7 +1104,7 @@ export const Cards = {
                                     "value": "Our Organization"
                                 },
                                 "cmps": [
-    
+
                                 ]
                             },
                             {
@@ -1190,7 +1218,421 @@ export const Missions = {
         ]
     }
 }
-    
+
+export const All = {
+    "wap-header-1": {
+        "id": "wh01",
+        "type": "container",
+        "name": "wap-header-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wh02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "logo",
+                    "value": "Bailard Foundation"
+                },
+                "cmps": []
+            },
+            {
+                "id": "wh03",
+                "type": "container",
+                "name": "wap-container",
+                "cmps": [
+                    {
+                        "id": "wc02",
+                        "type": "text",
+                        "name": "wap-text",
+                        "info": {
+                            "class": "nav-item",
+                            "value": "About"
+                        },
+                        "cmps": []
+                    },
+                    {
+                        "id": "wh04",
+                        "type": "text",
+                        "name": "wap-text",
+                        "info": {
+                            "class": "nav-item",
+                            "value": "News"
+                        },
+                        "cmps": []
+                    },
+                    {
+                        "id": "wh05",
+                        "type": "text",
+                        "name": "wap-text",
+                        "info": {
+                            "class": "nav-item",
+                            "value": "Read Me"
+                        },
+                        "cmps": []
+                    },
+                    {
+                        "id": "wh08",
+                        "type": "button",
+                        "name": "wap-button",
+                        "info": {
+                            "class": "nav-item",
+                            "value": "Take Action"
+                        },
+                        "cmps": []
+                    }
+                ]
+            },{
+            
+                "id": "wc02",
+                "type": "image",
+                "info": {
+                    "image": "icons/hamburger.png"
+                },
+                "name": "wap-hamburger-1",
+                "cmps": [
+
+                ]
+        
+        }
+        ]
+    },
+    "wap-mission-1": {
+        "id": "wma01",
+        "type": "container",
+        "name": "wap-mission-1",
+        "cmps": [
+            {
+                "id": "wm02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "title",
+                    "value": "We conserve land through outreach and restoration."
+                },
+                "cmps": []
+            },
+            {
+                "id": "wm03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "paragraph",
+                    "value": "Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help."
+                },
+                "cmps": []
+            },
+        ]
+    },
+    "wap-card-1": {
+        "id": "wc01",
+        "type": "container",
+        "name": "wap-card-1",
+        "cmps": [
+            {
+                "id": "wc02",
+                "type": "container",
+                "name": "card-1-container",
+                "cmps": [
+                    {
+                        "id": "wc02",
+                        "type": "image",
+                        "name": "wap-image",
+                        "info": {
+                            "image": "card1/card1.jpg"
+                        },
+                        "cmps": [
+                        ]
+                    },
+                    {
+                        "id": "wc03",
+                        "type": "container",
+                        "name": "info-container",
+
+                        "cmps": [
+                            {
+                                "id": "wc03",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "title",
+                                    "value": "Our Organization"
+                                },
+                                "cmps": [
+
+                                ]
+                            },
+                            {
+                                "id": "wc04",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "paragraph",
+                                    "value": "Find out about our mission, methods, and the results of our decades of advocacy."
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc05",
+                                "type": "button",
+                                "name": "wap-button",
+                                "info": {
+                                    "class": "button",
+                                    "value": "Learn more"
+                                },
+                                "cmps": []
+                            }]
+                    },
+                ]
+            },
+            {
+                "id": "wc03",
+                "type": "container",
+                "name": "card-2-container",
+                "cmps": [
+                    {
+                        "id": "wc03",
+                        "type": "container",
+                        "name": "info-container",
+                        "cmps": [
+                            {
+                                "id": "wc03",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "title",
+                                    "value": "Our Organization"
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc04",
+                                "type": "text",
+                                "name": "wap-text",
+                                "info": {
+                                    "class": "paragraph",
+                                    "value": "Find out about our mission, methods, and the results of our decades of advocacy."
+                                },
+                                "cmps": [
+                                ]
+                            },
+                            {
+                                "id": "wc05",
+                                "type": "button",
+                                "name": "wap-button",
+                                "info": {
+                                    "class": "button",
+                                    "value": "Learn more"
+                                },
+                                "cmps": []
+                            },
+                        ]
+                    },
+                    {
+                        "id": "wc02",
+                        "type": "image",
+                        "name": "wap-image",
+                        "info": {
+                            "image": "card1/card1.jpg"
+                        },
+                        "cmps": []
+                    }]
+            }
+        ]
+    },
+    "wap-map-1": {
+        "id": "wm01",
+        "type": "container",
+        "name": "wap-map-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wm02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "title",
+                    "value": "Where are we?"
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wm03",
+                "type": "map",
+                "name": "wap-map",
+                "cmps": [
+
+                ]
+            }
+        ]
+    },
+    "wap-gallery-1": {
+        "id": "wg01",
+        "type": "container",
+        "name": "wap-gallery-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wg02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "title",
+                    "value": "Our Gallery"
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wg03",
+                "type": "gallery",
+                "name": "wap-gallery",
+                "info": {
+                    "images": [{ "src": "gallery-1/cowboy", "alt": "cowboy" }, { "src": "gallery-1/piano", "alt": "piano" }, { "src": "gallery-1/woman-flowers", "alt": "flowers" }]
+                },
+                "cmps": []
+            }
+        ]
+    },
+    "wap-footer-1": {
+        "id": "wft01",
+        "type": "container",
+        "name": "wap-footer-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wft02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "logo",
+                    "value": "Weebo."
+                },
+                "cmps": []
+            },
+            {
+                "id": "wft03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "rights",
+                    "value": "all rights reserved Ⓒ 2022"
+                },
+                "cmps": []
+            }
+
+        ]
+    },
+    "wap-form-1": {
+        "id": "wf01",
+        "type": "container",
+        "name": "wap-form-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "wf02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "title",
+                    "value": "Subscribe"
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wf03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "paragraph",
+                    "value": "Sign up with your email address to receive news and updates."
+                },
+                "cmps": [
+
+                ]
+            },
+            {
+                "id": "wf07",
+                "type": "container",
+                "name": "wap-form",
+                "cmps": [{
+                    "id": "wf01",
+                    "type": "input",
+                    "input_type": "email",
+                    "info": {
+                        "placeholder": "Email Address"
+                    },
+                    "name": "wap-input",
+                    "cmps": []
+                },
+                {
+                    "id": "wf06",
+                    "type": "button",
+                    "info": {
+                        "class": "button",
+                        "value": "Sign Up"
+                    },
+                    "name": "wap-button",
+                    "cmps": []
+                }]
+            }
+        ]
+    },
+    "wap-hero-1": {
+        "id": "whe01",
+        "type": "container",
+        "name": "wap-hero-1",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "whe02",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "hero-item-1",
+                    "value": "Sustainability"
+                },
+                "cmps": []
+            },
+            {
+                "id": "whe03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "hero-item-2",
+                    "value": "Starts With You"
+                },
+                "cmps": []
+            },
+
+            {
+                "id": "whe05",
+                "type": "button",
+                "name": "wap-button",
+                "info": {
+                    "class": "hero-item-3",
+                    "value": "Learn more",
+                    "styles": {
+                        "fontSize": '14px'
+                    }
+                },
+                "cmps": []
+            }
+        ]
+    },
+   
+
+}
+
+
+
 
 
 // "id": "wc02",

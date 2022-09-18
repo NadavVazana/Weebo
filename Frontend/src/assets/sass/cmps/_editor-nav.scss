@@ -1,10 +1,12 @@
 .editor-nav{
     background-color: rgb(37, 36, 36);
     display: flex;
+    font-family: Monsterrat;
+
     
     h1{
         color: grey;
-        font-size: 1rem;
+        font-size: .8rem;
         text-align: center;
         margin-bottom: 10px;
         padding: 10px;
@@ -19,5 +21,91 @@
         &:hover{
             color: whitesmoke;
         }
+    }
+
+
+
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+    
+        justify-content: space-between;
+        min-width: 75px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            border:none;
+            background: none;
+            color: rgb(167, 165, 165);
+            font-weight: 500;
+            padding: 20px  0;
+    
+            &:hover{
+                color: whitesmoke;
+    
+            }
+            img{
+                width: 1.5rem;
+                cursor: pointer;
+                filter : invert(1)
+                
+            }
+        }
+    
+    }
+
+
+
+
+
+
+
+    .side-bar-actions {
+        overflow-y: scroll;
+        height: 92.5vh;
+        background-color: rgb(56, 55, 55);
+        width: 0;
+        transition: 0.3s;
+    
+        .edit-container{
+    
+            button{
+                background: none;
+                border: none;
+            }
+            .trash-icon{
+                width: 15%;
+                filter: invert(1);
+                cursor: pointer;
+            }
+        }
+        .mini-cmp{
+            width: 100%;
+            border-radius: 13px;
+            transition: all 0.3s;
+            margin-top: 15px;
+            user-select: none;
+            
+            &:hover{
+                transform: scale(103%);
+                transition: all 0.3s;
+                
+            }
+        }
+    
+        &.open {
+            padding: 0 15px 0;
+            width: 280px;
+        }
+    
     }
 }
