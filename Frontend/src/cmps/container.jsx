@@ -5,7 +5,7 @@ import { DynamicCmp } from "./dynamic-cmp"
 
 export function Container({ cmp, onEditElement }) {
     let { cmps, name } = cmp
-    console.log(cmp);
+    
     return (
         <section  onClick={()=>onEditElement(cmp)}>
             <div className={`container ${name}`}>
