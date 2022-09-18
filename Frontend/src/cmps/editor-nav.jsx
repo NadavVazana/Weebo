@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { EditElements } from './edit-elements/edit-elements'
 import { ThemesList } from "./themes-list"
 import { AddOptions } from "./add-options"
@@ -14,9 +14,9 @@ export const EditorNav = ({ addElement, setOptionList }) => {
     const [isEditMenu, setEditMenu] = useState(false)
     const [isThemesMenu, setThemesMenu] = useState(false)
     const [activeOption, setActiveOption] = useState(null)
-
+    const {currElement} = useSelector(state=> state.draftModule)
     const cmpTypes = ['Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
-
+    const [currentElement,setCurrentElement] = useState({})
     const toggleOptionsMenu = (cmp, event) => {
 
 
@@ -26,11 +26,18 @@ export const EditorNav = ({ addElement, setOptionList }) => {
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
         if (isEditMenu) setEditMenu(false)
         if (cmp === activeOption) setActiveOption(null)
-        else  setActiveOption(cmp)
-       
-    }
+        else setActiveOption(cmp)
 
+    }
+    useEffect(()=>{
+        toggleEditMenu()
+    },[currElement])
     const toggleEditMenu = () => {
+        if(currElement.id !== currentElement.id) {
+            setEditMenu(true)
+            setCurrentElement(currElement)
+            return
+        }
         setEditMenu(prevState => !prevState)
         if (isOptionsMenu.isOpen)
             setOptionsMenu({ cmpType: null, isOpen: false })
@@ -61,10 +68,7 @@ export const EditorNav = ({ addElement, setOptionList }) => {
                         })}
                     </div>}
                 </div>
-                <div className="side-bar-features">
-                    <button><img src={require('../assets/img/icons/work-together-icon.svg').default} alt="together-icon" /></button>
-                    <button><img src={require('../assets/img/icons/publish-icon.svg').default} alt="publish-icon" /></button>
-                </div>
+      
             </div>
             <div className={`side-bar-actions ${(isOptionsMenu.isOpen || isEditMenu || isThemesMenu) ? 'open' : ''} `}>
                 {isOptionsMenu.isOpen && !isEditMenu && <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu} />}

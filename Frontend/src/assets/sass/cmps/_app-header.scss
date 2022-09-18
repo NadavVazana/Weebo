@@ -7,9 +7,30 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    // border-bottom: 1px solid grey;
-    padding-inline-start: 120px ;
-    padding-inline-end: 110px;
+    padding-inline-start: 20px ;
+    padding-inline-end: 20px;
+    .right-header-btns{
+        display: flex;
+        gap: 20px;
+    }
+    .right-header-btns >:nth-child(1){
+       border-radius: 20px;
+       background-color: #61605c;
+       border: none;
+       color: rgb(255, 255, 255);
+    }
+    .right-header-btns >:nth-child(2){
+       border-radius: 20px;
+       background-color: #61605c;
+       border: none;
+       color: rgb(255, 255, 255);
+    }
+    .right-header-btns >:nth-child(1):hover{
+        background-color: black;
+    }
+    .right-header-btns >:nth-child(2):hover{
+        background-color: black;
+    }
 
     nav {
         display: flex;

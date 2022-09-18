@@ -16,8 +16,11 @@ export const AppHeader = () => {
                 <NavLink to={`/editor/${draftId}`}>Editor</NavLink>
                 <NavLink to="/dashboard">Dashboard</NavLink>
             </nav>
-
+            <div className='right-header-btns'>
+            <button>Publish</button>
+                    <button>Work Together</button>
             <button onClick={()=>{navigate('/login')}}>LOGIN</button>
+            </div>
         </section>
     )
 }
