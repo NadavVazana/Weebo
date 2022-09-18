@@ -24,9 +24,10 @@ export const EditorNav = ({ addElement, setOptionList }) => {
         if (!isOptionsMenu.cmpType) setOptionsMenu(prevState => ({ isOpen: !prevState.isOpen, cmpType: cmp }))
         else if (isOptionsMenu.cmpType === cmp) setOptionsMenu({ isOpen: false, cmpType: null })
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
-        if (isEditMenu)
-            setEditMenu(false)
-        setActiveOption(cmp)
+        if (isEditMenu) setEditMenu(false)
+        if (cmp === activeOption) setActiveOption(null)
+        else  setActiveOption(cmp)
+       
     }
 
     const toggleEditMenu = () => {
