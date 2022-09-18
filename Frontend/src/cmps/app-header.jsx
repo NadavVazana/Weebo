@@ -10,7 +10,7 @@ export const AppHeader = () => {
     
     return (
         <section className="app-header">
-            <Link to={'/'}><h1>WEEBO.</h1></Link>
+            <Link to={'/'}><h1 className='main-logo'>WEEBO.</h1></Link>
             <nav className='app-header-nav'>
                 <NavLink to="/templates">Templates</NavLink>
                 <NavLink to={`/editor/${draftId}`}>Editor</NavLink>

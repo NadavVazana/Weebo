@@ -10,7 +10,7 @@ a {
     color: #000;
   }
 
-  a::before:not(.btn-link) {
+  a .main-logo::before{
     content: "";
     position: absolute;
     display: block;
