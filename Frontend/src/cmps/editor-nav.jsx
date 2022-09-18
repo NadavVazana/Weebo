@@ -5,23 +5,28 @@ import { AddOptions } from "./add-options"
 import { useSelector } from 'react-redux'
 import { NavLink } from "react-router-dom"
 
-export const EditorNav = ({ addElement,setOptionList }) => {
+export const EditorNav = ({ addElement, setOptionList }) => {
 
     // const { wap } = useSelector(state => state.wapModule)
     const [isMenu, setMenu] = useState(false)
-    
+
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [isEditMenu, setEditMenu] = useState(false)
     const [isThemesMenu, setThemesMenu] = useState(false)
+    const [activeOption, setActiveOption] = useState(null)
 
     const cmpTypes = ['Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
 
-    const toggleOptionsMenu = (cmp) => {
+    const toggleOptionsMenu = (cmp, event) => {
+
+
+        // event.target.classList.toggle('active')
         if (!isOptionsMenu.cmpType) setOptionsMenu(prevState => ({ isOpen: !prevState.isOpen, cmpType: cmp }))
         else if (isOptionsMenu.cmpType === cmp) setOptionsMenu({ isOpen: false, cmpType: null })
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
         if (isEditMenu)
             setEditMenu(false)
+        setActiveOption(cmp)
     }
 
     const toggleEditMenu = () => {
@@ -37,7 +42,6 @@ export const EditorNav = ({ addElement,setOptionList }) => {
     }
 
     return (
-
         <section className="editor-nav">
             <div className="side-bar">
                 <div>
@@ -49,7 +53,11 @@ export const EditorNav = ({ addElement,setOptionList }) => {
                     </button>
                     <button onClick={() => { setMenu(!isMenu) }}><img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" /></button>
                     {isMenu && <div  >
-                        {cmpTypes.map(cmp => <h1   key={cmp} onClick={() => { toggleOptionsMenu(cmp) }} >{cmp}</h1>)}
+                        {cmpTypes.map(cmp => {
+                            let cls
+                            cls = cmp === activeOption ? 'active' : ''
+                            return <h1 key={cmp} className={cls} onClick={(event) => { toggleOptionsMenu(cmp, event) }} >{cmp}</h1>
+                        })}
                     </div>}
                 </div>
                 <div className="side-bar-features">
