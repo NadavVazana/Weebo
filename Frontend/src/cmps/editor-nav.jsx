@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { EditElements } from './edit-elements/edit-elements'
 import { ThemesList } from "./themes-list"
 import { AddOptions } from "./add-options"
 import { useSelector } from 'react-redux'
-import { NavLink } from "react-router-dom"
 
 export const EditorNav = ({ addElement, setOptionList }) => {
-
-    // const { wap } = useSelector(state => state.wapModule)
     const [isMenu, setMenu] = useState(false)
-
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [isEditMenu, setEditMenu] = useState(false)
     const [isThemesMenu, setThemesMenu] = useState(false)
@@ -55,7 +51,6 @@ export const EditorNav = ({ addElement, setOptionList }) => {
         <section className="editor-nav">
             <div className="side-bar">
                 <div>
-
                     <button className="edit-btn" onClick={() => { toggleEditMenu() }}>
                         <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
                         <span>Edit</span>

@@ -17,10 +17,8 @@ async function getWaps(req, res) {
 // GET BY ID 
 async function getWapById(req, res) {
   try {
-    console.log('eeeeeee');
     const wapId = req.params.id
     const wap = await wapService.getById(wapId)
-    console.log('waaaap',wap);
     res.json(wap)
   } catch (err) {
     logger.error('Failed to get wap', err)

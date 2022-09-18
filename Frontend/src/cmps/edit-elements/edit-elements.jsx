@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux'
 import { EditText } from '../edit-elements/edit-text'
 import { EditButton } from '../edit-elements/edit-button'
+import { EditImage} from '../edit-elements/edit-image'
 import { EditContainer } from './edit-container'
 
 export const EditElements = () => {
@@ -15,8 +16,8 @@ export const EditElements = () => {
             return <EditText />
         case 'button':
             return <EditButton />
-        // case 'image':
-        //     return <EditImage/>
+        case 'image':
+            return <EditImage/>
         // case 'video':
         //     return <EditVideo/>
         // case 'input':

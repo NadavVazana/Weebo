@@ -6,12 +6,10 @@ import { useRef, useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { wapService } from '../services/wap.service'
-import { setDraft, getDraft } from '../store/draft/draft.action'
+import { setDraft } from '../store/draft/draft.action'
 import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
-import { utilService } from '../services/util.service'
 
 export const Editor = () => {
     const navigate = useNavigate()
@@ -28,9 +26,8 @@ export const Editor = () => {
 
     useEffect(() => {
         dispatch(setElement(null))
-        if (!draft || draft._id === 'empty' || draft._id !== exampleId) draft = null
-        if (!draft) {
-
+        if (!draft || draft._id === 'empty' || draft._id !== exampleId) {
+            dispatch(setElement(null))
             dispatch(loadWap(exampleId)).then(wap => {
                 dispatch(setDraft(wap))
             })

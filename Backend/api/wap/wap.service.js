@@ -23,7 +23,7 @@ async function getById(wapId) {
         const wap = collection.findOne({ _id: (wapId) })
         return wap
     } catch (err) {
-        logger.error(`while finding toy ${toyId}`, err)
+        logger.error(`while finding wap ${wapId}`, err)
         throw err
     }
 }

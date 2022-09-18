@@ -1,8 +1,9 @@
 import { wapService } from "../../services/wap.service"
+
 const initialState = {
     cmp: null,
     currElement: {},
-
+    // draft: {}
     draft: wapService.getDraft()
 }
 

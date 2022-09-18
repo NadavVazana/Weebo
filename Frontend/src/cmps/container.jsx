@@ -17,7 +17,6 @@ export function Container({ cmp, onEditElement }) {
             <div className={`container ${name} ${cmp.id === currElement.id ? 'focus' : ''}`}>
                 {cmps.map((cmp) => <DynamicCmp key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
             </div>
-
         </section>
     )
 }

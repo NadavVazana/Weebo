@@ -5,7 +5,6 @@ async function login(req, res) {
     const { username, password } = req.body
     try {
         const user = await authService.login(username, password)
-        console.log('user', user)
         const loginToken = authService.getLoginToken(user)
         logger.info('User login: ', user)
         res.cookie('loginToken', loginToken)

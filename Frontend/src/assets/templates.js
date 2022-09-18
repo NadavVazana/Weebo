@@ -1,4 +1,4 @@
-import { header1, hero1, map1, form1, gallery1, mission1, card1, footer1 } from './wap'
+// import { hero1, map1, form1, gallery1, mission1, card1, footer1 } from './wap'
 export const exampleList = [
     {
         "_id": "5e28393890dd8888a06d4e44",

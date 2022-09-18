@@ -11,18 +11,14 @@ export const storageService = {
 
 function query(entityType) {
     var entities = JSON.parse(localStorage.getItem(entityType)) || exampleList
-    console.log(entities);
     return new Promise((resolve, reject) => {
             resolve(entities)
-        
     })
-    // return Promise.resolve(entities)
 }
 
 function get(entityType, entityId) {
     return query(entityType)
         .then(entities => {
-
             return entities.find(entity => entity._id === entityId)
         })
 }
@@ -30,12 +26,6 @@ function get(entityType, entityId) {
 function post(entityType, newEntity) {
     newEntity._id = _makeId(15)
     _save(entityType,newEntity)
-    // return query(entityType)
-    //     .then(entities => {
-    //         entities.push(newEntity)
-    //         _save(entityType, entities)
-    //         return newEntity
-    //     })
 }
 
 function put(entityType, updatedEntity) {
@@ -80,13 +70,13 @@ function postMany(entityType, newEntities) {
         })
 }
 
-function _findInObject(object, elementId) {
-    for (let prop in object) {
-        if (prop === 'id' && object[prop] === elementId) {
-            return object
-        }
-        else if (typeof (object[prop]) === 'object') {
-            _findInObject(object[prop])
-        }
-    }
-}
+// function _findInObject(object, elementId) {
+//     for (let prop in object) {
+//         if (prop === 'id' && object[prop] === elementId) {
+//             return object
+//         }
+//         else if (typeof (object[prop]) === 'object') {
+//             _findInObject(object[prop])
+//         }
+//     }
+// }
