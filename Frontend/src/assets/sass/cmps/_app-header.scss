@@ -1,25 +1,32 @@
-.app-header{
+.app-header {
     height: $header-height;
-    font-family: Orbitron;
+    font-family: Monsterrat;
     user-select: none;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-margin: auto;
+    margin: auto;
     // border-bottom: 1px solid grey;
-    width: 75%;
+    padding-inline-start: 120px ;
+    padding-inline-end: 110px;
 
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
 
-        a{
+
+        a {
             padding: 10px;
+
+            &.active {
+                box-shadow: inset 0 -2px black;
+               
+            }
         }
     }
 
-    button{
+    button {
         background-color: black;
         color: white;
         padding: 10px 20px 10px 20px;
