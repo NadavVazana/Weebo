@@ -11,8 +11,8 @@ export function draftReducer(state = initialState, action = {}) {
         case 'SET_DRAFT':
             return { ...state, draft: action.draft }
 
-            case 'SET_ELEMENT':
-                return { ...state, currElement: {...action.element,info:{isFocus:true}} } 
+        case 'SET_ELEMENT':
+            return { ...state, currElement: { ...action.element, info: { isFocus: true } } }
         default: return state
     }
 }

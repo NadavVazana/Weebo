@@ -1,8 +1,12 @@
 .wap{
     overflow:scroll;
     overflow-x: hidden;
+}
 
-    /* width */
+.cmp-hovered {
+  outline: 1px dotted yellowgreen;
+}
 
-
+.focus {
+  outline: 3px dotted yellowgreen;
 }

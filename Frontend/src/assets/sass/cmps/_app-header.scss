@@ -1,6 +1,6 @@
 .app-header {
     height: $header-height;
-    font-family: Monsterrat;
+    font-family: Madefor;
     user-select: none;
     display: flex;
     justify-content: space-between;
@@ -8,10 +8,61 @@
     margin: auto;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    
 
     .right-header-btns {
         display: flex;
         gap: 20px;
+    }
+
+    .main-logo {
+        position: relative;
+        font-family: eurofurence;
+        letter-spacing: 5px;
+        font-size: 2.5rem;
+
+
+        .underline {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #272727;
+            transition: width 0.8s cubic-bezier(.7,-0.13,.36,1.22);
+        }
+
+        &:hover .underline{
+            width: 98%;
+            transition: width 0.8s cubic-bezier(.7,-0.13,.36,1.22);
+        }
+
+        .dot {
+            display: inline-block;
+            animation-play-state:paused;
+        }
+
+        &:hover .dot {
+            animation-play-state:running;
+            animation-name: bounce;
+            animation-duration: 0.6s;
+            animation-delay: 0.4s;
+            animation-fill-mode: forwards
+        }
+
+        @keyframes bounce { 
+            0% {
+                transform: translateY(0%);
+            } 
+            50% {
+                transform: translateY(-30%);
+            }
+            100% {
+                transform: translateY(0%);
+                color: #0047AB;
+            }
+         }
+
     }
 
     .right-header-btns>:nth-child(1) {
@@ -45,11 +96,15 @@
         a {
             padding: 10px;
 
+            &:hover {
+                color: 	#0047AB;
+            }
+
             &.active {
                 box-shadow: inset 0 -2px black;
-
             }
         }
+
     }
 
     button {
@@ -62,3 +117,4 @@
 
 
 }
+

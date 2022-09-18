@@ -2,7 +2,7 @@ import { DynamicCmp } from '../cmps/dynamic-cmp'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { header1 as Header, hero1 as Hero, footer1 as Footer, map1 as Map, gallery1 as Gallery, card1 as Card, mission1 as Mission, form1 as Form } from "../assets/wap"
 import { EditorNav } from '../cmps/editor-nav'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -18,11 +18,11 @@ export const Editor = () => {
     const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
     let { exampleId } = useParams()
     let { draft } = useSelector(state => state.draftModule)
+    let currElement = useSelector(state => state.draftModule.currElement)
     const dispatch = useDispatch()
     const [optionList, setOptionList] = useState({})
 
     const addElement = (cmp) => {
-
         draft.cmp.push(cmps[cmp])
     }
 
@@ -41,9 +41,12 @@ export const Editor = () => {
     }, [])
 
 
-    const onEditElement = (clickedElement,ev) => {
+    const onEditElement = (clickedElement, ev) => {
         ev?.stopPropagation()
-
+        if (clickedElement.id === currElement.id) {
+            dispatch(setElement(null))
+            return
+        }
         dispatch(setElement(clickedElement))
     }
 
@@ -51,16 +54,14 @@ export const Editor = () => {
     const handleOnDragEnd = (result) => {
         const newItems = Array.from(draft.cmps)
         if (result.source.droppableId !== 'editor') {
-            newItems.splice(result.destination.index, 0, optionList[result.draggableId])
+            let cmp = { ...optionList[result.draggableId] }
+            cmp.id = utilService.makeId(15)
+            newItems.splice(result.destination.index, 0, cmp)
         }
-
-
         else {
             const [reorderedItem] = newItems.splice(result.source.index, 1)
             newItems.splice(result.destination.index, 0, reorderedItem)
         }
-
-
         draft.cmps = [...newItems]
         if (draft._id === 'empty') {
             navigate('/editor/draft')
@@ -68,7 +69,6 @@ export const Editor = () => {
         }
         dispatch(setDraft(draft))
     }
-
 
     if (!draft) return <section></section>
     return (
