@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { EditElements } from './edit-elements/edit-elements'
 import { ThemesList } from "./themes-list"
 import { AddOptions } from "./add-options"
 import { useSelector } from 'react-redux'
+
 
 export const EditorNav = ({ addElement, setOptionList }) => {
     const [isMenu, setMenu] = useState(false)
@@ -10,10 +11,10 @@ export const EditorNav = ({ addElement, setOptionList }) => {
     const [isEditMenu, setEditMenu] = useState(false)
     const [isThemesMenu, setThemesMenu] = useState(false)
     const [activeOption, setActiveOption] = useState(null)
-    const { currElement } = useSelector(state => state.draftModule)
+    const currElement = useSelector(state => state.draftModule.currElement)
     const cmpTypes = ['All', 'Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
     const [currentElement, setCurrentElement] = useState({})
-
+    const _ = require('lodash')
 
 
     const toggleOptionsMenu = (cmp, event) => {
@@ -47,6 +48,7 @@ export const EditorNav = ({ addElement, setOptionList }) => {
         setOptionsMenu({ cmpType: null, isOpen: false })
     }
 
+    console.log('currElement:', !_.isEmpty(currElement))
     return (
         <section className="editor-nav">
             <div className="side-bar">

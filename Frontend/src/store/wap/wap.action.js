@@ -18,7 +18,7 @@ export function loadWaps() {
     return async (dispatch) => {
         try {
             let waps = await wapService.getWaps()
-            
+            console.log('waps wap action:', waps)
             dispatch({ type: 'SET_WAPS', waps })
         } catch (err) {
             console.log('could not load waps!:', err)

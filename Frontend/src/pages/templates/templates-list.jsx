@@ -12,7 +12,7 @@ export const TemplatesList = () => {
         dispatch(loadWaps())
     }, [])
 
-
+    if (!waps) return <section></section>
     return (
         <section className="templates-list">
             {waps.map(wap => <TemplatesPreview key={wap._id} example={wap} />)}
