@@ -3,12 +3,14 @@ import thunk from 'redux-thunk'
 import { draftReducer } from './draft/draft.reducer'
 
 import { systemReducer } from './system/system.reducer'
+import { userReducer } from './user/user.reducer'
 import { wapReducer } from './wap/wap.reducer'
 
 const rootReducer = combineReducers({
     systemModule: systemReducer,
     wapModule: wapReducer,
-    draftModule: draftReducer
+    draftModule: draftReducer,
+    userModule : userReducer
 })
 
 const composeEnhancers =
