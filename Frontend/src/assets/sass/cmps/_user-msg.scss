@@ -1,0 +1,68 @@
+.user-msg {
+    background-color: rgb(108, 226, 108);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    animation-delay: 0.5s;
+    justify-content: center;
+    padding: 20px;
+    bottom: 0;
+    right: -30%;
+    z-index: 1000000000000000000;
+    border-radius: 10px;
+    animation-play-state: running;
+    animation-name: user-msg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+    gap: 20px;
+    font-family: Monsterrat;
+    font-weight: 700;
+
+    button {
+        background-color: rgb(116, 114, 114);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: none;
+        padding: 5px 10px;
+        padding-bottom: 7px;
+    }
+
+    button:hover {
+        background-color: black;
+    }
+}
+
+.user-msg-close{
+    display: none;
+}
+
+
+@keyframes user-msg {
+    0% {
+        right: -30%;
+    }
+
+    10% {
+        right: .8%;
+    }
+
+    90% {
+        right: .8%;
+    }
+
+    95% {
+        right: -20%;
+    }
+
+    100% {
+        right: -30%;
+    }
+}
+
+// @keyframes user-msg {
+//     from{right:-30%}
+//     to{right:.8%}
+// }

@@ -6,8 +6,8 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
     
 
     .right-header-btns {
@@ -93,6 +93,7 @@
     }
 
     nav {
+        margin: auto;
         display: flex;
         justify-content: space-between;
 
@@ -109,6 +110,58 @@
             }
         }
 
+    }
+
+    .modal-section{
+            position: fixed;
+           
+            z-index: 100000000000;
+           
+
+        .site-name-modal{
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #0a3a7e;
+            padding: 80px 90px;
+            font-family: Madefor;
+            h1{
+                color: whitesmoke;
+            }
+            form{
+                display: flex;
+                gap: 10px;
+
+                button{
+                    background-color: #272727;
+                    border: none;
+                }
+                button:hover{
+                    background-color: #61605c;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+            position: fixed;
+            z-index: 100000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    }
+    
+
+    .login-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .logout-icon{
+            filter: invert(1);
+            width: 20px;
+        }
     }
 
     button {

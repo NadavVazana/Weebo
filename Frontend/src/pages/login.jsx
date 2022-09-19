@@ -39,24 +39,20 @@ export const Login = () => {
     await userService.logout()
     dispatch(logoutUser(null))
   }
-  const { loggedInUser } = useSelector(state => state.userModule)
   const dispatch = useDispatch()
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    // const user = await userService.login({
-    //   username: data.get('username'),
-    //   password: data.get('password'),
-    // })
-    const user = dispatch(loginUser({
-        username: data.get('username'),
-        password: data.get('password'),
-      }))
+    const user = await  dispatch(loginUser({
+      username: data.get('username'),
+      password: data.get('password'),
+    }))
     if (!user) {
+      console.log('user not found');
       setMsg('Invalid login details')
     }
     else
-    navigate('/')
+      navigate('/')
   };
 
   return (
@@ -131,6 +127,6 @@ export const Login = () => {
         </Container>
       </ThemeProvider>
     </section>
-      
+
   );
 }

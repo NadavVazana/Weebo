@@ -41,8 +41,8 @@ export const Signup = () => {
             username: data.get('username'),
             password: data.get('password'),
         })
-        dispatch(loginUser(user))
-        navigate('/login')
+        dispatch(loginUser({username:user.username,password:data.get('password')}))
+        navigate('/')
 
 
     };
