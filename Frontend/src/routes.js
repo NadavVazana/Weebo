@@ -4,6 +4,7 @@ import { About } from './pages/about.jsx'
 import { Login } from './pages/login.jsx'
 import { Templates } from './pages/templates/templates.jsx'
 import { Dashboard } from './pages/dashboard.jsx'
+import { Signup } from './pages/sign-up.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
         path:'login',
         element:<Login />,
         label:'Login'
+    },
+    {
+        path:'signup',
+        element:<Signup />,
+        label:'Sign up'
     },
     {
         path:'about',

@@ -17,12 +17,13 @@
 
     .main-logo {
         position: relative;
-        font-family:bahnschrift;
+        font-family:Madefor;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-size: 2.5rem;
-        font-weight: 500px;
-        color: rgb(18, 18, 18);
+
+        font-weight: 600;
+        color: rgb(36, 36, 36);
 
 
         .underline {
@@ -68,25 +69,25 @@
 
     }
 
-    .right-header-btns>:nth-child(1) {
+    .save-btn {
         border-radius: 20px;
         background-color: #61605c;
         border: none;
         color: rgb(255, 255, 255);
     }
 
-    .right-header-btns>:nth-child(2) {
+    .together-btn {
         border-radius: 20px;
         background-color: #61605c;
         border: none;
         color: rgb(255, 255, 255);
     }
 
-    .right-header-btns>:nth-child(1):hover {
+    .save-btn:hover  {
         background-color: black;
     }
 
-    .right-header-btns>:nth-child(2):hover {
+    .together-btn:hover{
         background-color: black;
     }
 
