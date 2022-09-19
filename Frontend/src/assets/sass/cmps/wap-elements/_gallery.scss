@@ -4,3 +4,61 @@
         width:300px;
     }
 }
+
+.wap-gallery-2 {
+    font-family: Monsterrat;
+    background-color: #fad255;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 50px;
+    padding-block: 50px;
+
+    .title {
+        box-shadow:0 5px white;
+        width: fit-content;
+        margin: 0 auto;
+        margin-block-end: 80px;
+    }
+
+    .wap-gallery-sweetpies {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        gap: 5px;
+
+        img {
+            display: block;
+
+        }
+    }
+    .wap-gallery-sweetpies > * {
+        width: 100%;
+    }
+    
+
+    section {
+        width: 100%;
+        height: fit-content;
+        img {
+            width: 100%;
+        }
+    }
+
+    
+
+    @include for-mobile-layout{
+        
+    }
+   
+    @include for-narrow-layout{
+        padding-inline: 40px;
+        
+    }
+    @include for-mid-layout{
+        padding-inline: 200px;
+        .wap-gallery-sweetpies {
+            grid-template-columns: repeat(4, minmax(50px, 1fr));
+        }
+    }
+}
