@@ -12,4 +12,32 @@
         padding: 30px;
         letter-spacing: 2px;
     }
+
+    .invalid-login{
+        font-family: Madefor;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+    }
+
+    
+}
+
+.logged-in-user-view{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .welcome-back-title{
+        text-align: center;
+        font-family: Madefor;
+        font-size: 4rem;
+        
+    }
+
 }

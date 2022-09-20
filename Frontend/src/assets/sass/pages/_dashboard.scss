@@ -1,0 +1,228 @@
+.no-sites{
+    text-align: center;
+    user-select: none;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Monsterrat;
+    button{
+        margin-top: 50px;
+        color: #c93434;
+        transition: all 0.5s;
+    }
+    button:hover{
+        background-color: #f57d75;
+        color: whitesmoke;
+        transition: all 0.5s;
+    }
+}
+.dashboard-page {
+    height: 100vh;
+   
+    .visit-btn {
+        padding: 10px 80px 10px 80px;
+        font-size: 1.3rem;
+        font-family: Madefor;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(231, 198, 136);
+        cursor: pointer;
+    }
+
+    .edit-btn {
+        cursor: pointer;
+        padding: 10px 80px 10px 80px;
+        font-size: 1.3rem;
+        font-family: Madefor;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(221, 214, 201);
+
+    }
+
+    .delete-btn{
+        cursor: pointer;
+        font-family: Madefor;
+        background-color: rgb(185, 63, 63);
+        color: rgb(238, 231, 231);
+        border: none;
+        padding: 10px 80px 10px 80px;
+        border-radius: 20px;
+
+    }
+    .delete-btn:hover{
+        color: whitesmoke;
+        background-color: rgb(197, 55, 55);
+    }
+
+    .delete-modal-container{
+        .delete-modal{
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 30%;
+            text-align: center;
+            background-color: #0a3a7e;
+            padding: 80px 90px;
+            font-family: Madefor;
+            h1{
+                color: whitesmoke;
+                font-size: 1.5rem;
+            }
+            form{
+                display: flex;
+                gap: 10px;
+
+                button{
+                    background-color: #a03b34;
+                    border: none;
+                }
+                button:hover{
+                    background-color: #c93434;
+                    color: whitesmoke;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+            position: fixed;
+            z-index: 100000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+    }
+
+    .action-btns{
+        display: flex;
+        position: absolute;
+        top: 20%;
+        left: 59%;
+        gap: 20px;
+
+    }
+
+    .details-grid {
+        display: grid;
+        position: absolute;
+        width: 70%;
+        top: 30%;
+        left: 62%;
+        transform: translate(-50%);
+
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        >* {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+            border-radius: 20px;
+            padding:30px;
+            margin-inline-end: 10px;
+            margin-bottom: 10px;
+            > *:first-child{
+                margin-top: 10px;
+
+            }
+            > *:nth-child(2){
+                user-select: none;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+            >*{
+                font-family: Madefor;
+            }
+            img{   
+                width: 80px;
+                margin-bottom: 10px;
+                user-select: none;
+            }
+        }
+
+        .site-name {
+            background-color: #9ad9e0;
+        }
+        .site-edits{
+            background-color:#5671c8 ;
+        }
+        .site-views{
+            background-color:#fbe16b;
+        }
+
+        .site-creation-date{
+            background-color: #f3ac96;
+        }
+    }
+
+
+    .edit-btn:hover {
+        background-color: rgb(182, 178, 170);
+        color: white;
+    }
+
+    .visit-btn:hover {
+        background-color: rgb(242, 199, 119);
+    }
+
+
+    .title {
+        font-family: Madefor;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+
+    .sites-nav {
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        border-right: 1px rgba(0, 0, 0, 0.19) solid;
+        padding: 15px;
+
+        .site-list {
+            list-style: none;
+            padding-inline-start: 0;
+
+            .list-item {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                li {
+                    padding-top: 20px;
+                    text-align: start;
+                    font-size: 1.2rem;
+                    font-family: Monsterrat;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+
+                li:hover {
+                    color: rgb(19, 19, 98);
+                }
+
+                img {
+                    width: 20px;
+                    padding-top: 20px;
+                }
+
+            }
+
+
+
+        }
+
+        .list-title {
+            font-family: Madefor;
+            font-size: 1.5rem;
+            font-weight: 500;
+
+        }
+    }
+}

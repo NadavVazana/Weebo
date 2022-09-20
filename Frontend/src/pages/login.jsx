@@ -12,6 +12,12 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { userService } from '../services/user.service';
+
+import { loginUser, logoutUser } from '../store/user/user.action'
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -27,13 +33,26 @@ function Copyright(props) {
 const theme = createTheme();
 
 export const Login = () => {
-  const handleSubmit = (event) => {
+  const navigate = useNavigate()
+  const [msg, setMsg] = React.useState(null)
+  const logout = async () => {
+    await userService.logout()
+    dispatch(logoutUser(null))
+  }
+  const dispatch = useDispatch()
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
+    const user = await  dispatch(loginUser({
+      username: data.get('username'),
       password: data.get('password'),
-    });
+    }))
+    if (!user) {
+      console.log('user not found');
+      setMsg('Invalid login details')
+    }
+    else
+      navigate('/')
   };
 
   return (
@@ -64,10 +83,10 @@ export const Login = () => {
                 margin="normal"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="username"
+                label="Username"
+                name="username"
+                autoComplete="given-name"
                 autoFocus
               />
               <TextField
@@ -80,10 +99,13 @@ export const Login = () => {
                 id="password"
                 autoComplete="current-password"
               />
-              <FormControlLabel
+              <Typography className='invalid-login' component="h1" variant="h5">
+                {msg}
+              </Typography>
+              {/* <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
-              />
+              /> */}
               <Button
                 type="submit"
                 fullWidth
@@ -105,5 +127,6 @@ export const Login = () => {
         </Container>
       </ThemeProvider>
     </section>
+
   );
 }
