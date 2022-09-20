@@ -1694,7 +1694,7 @@ export const wapExample2 = {
                 ]
             },
             {
-                "id": "wc02",
+                "id": "wi01",
                 "type": "image",
                 "info": {
                     "image": "icons/hamburger-header-2.png"
@@ -1728,7 +1728,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "wh05",
+                        "id": "wh0121",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -1783,7 +1783,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "wh05",
+                        "id": "wh06",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -1839,7 +1839,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi02",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-2.png"
@@ -1848,7 +1848,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi03",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-3.png"
@@ -1857,7 +1857,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi04",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-4.png"
@@ -1866,7 +1866,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi05",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-5.png"
@@ -1875,7 +1875,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi06",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-6.png"
@@ -1884,7 +1884,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi07",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-7.png"
@@ -1893,7 +1893,7 @@ export const wapExample2 = {
                         "cmps": []
                     },
                     {
-                        "id": "whi01",
+                        "id": "whi08",
                         "type": "image",
                         "info": {
                             "image": "gallery-2/gallery-item-8.png"
@@ -1941,7 +1941,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct02",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1953,7 +1953,7 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc01",
+                        "id": "wc05",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
@@ -1969,7 +1969,7 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc01",
+                        "id": "wc02",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
@@ -1996,7 +1996,7 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc01",
+                        "id": "wcc01",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
@@ -2011,7 +2011,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct02",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2023,7 +2023,7 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc01",
+                        "id": "wc02",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
@@ -2038,7 +2038,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct02",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2050,7 +2050,7 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc01",
+                        "id": "wc067",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
@@ -2065,7 +2065,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct02",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2108,7 +2108,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wf02",
+                                "id": "wf01211",
                                 "type": "text",
                                 "name": "wap-text",
                                 "info": {
@@ -2155,7 +2155,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wf02",
+                                "id": "wf04",
                                 "type": "input",
                                 "input_type": "text",
                                 "info": {
