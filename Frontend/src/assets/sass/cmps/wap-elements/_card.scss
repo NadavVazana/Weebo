@@ -15,7 +15,6 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-
         .info-container {
             
 
@@ -111,6 +110,86 @@
             font-size: 1.1rem;
         }
     }
+    @include for-narrow-layout{
+        .card-1-container{
+            flex-direction: column;
+            width: 93%;
+            margin: auto;
+            
+        }
+        .card-2-container{
+            flex-direction: column-reverse;
+            width: 93%;
+            margin: auto;
+
+        }
+    }
+
+    @include for-mid-layout{
+        .card-1-container{
+            flex-direction: unset;
+
+            > *{
+                width: 50%;
+            }
+            .image{
+                width: 50%;
+            }
+            .title{
+                font-size: 1.3rem;
+            }
+        }
+        .card-2-container{
+            > *{
+                width: 50%;
+            }
+            .title{
+                font-size: 1.3rem;
+            }
+            flex-direction: unset;
+            .image{
+                width: 50%;
+            }
+
+        }
+        .paragraph{
+            font-size: 1rem;
+        }
+    }
+
+    @include for-normal-layout{
+        .card-1-container{
+            .title{
+                font-size: 1.8rem;
+            }
+        }
+        .card-2-container{  
+            .title{
+                font-size: 1.8rem;
+            }}
+
+            .paragraph{
+                font-size: 1rem;
+            }
+    }
+
+    @include for-wide-layout{
+        .card-1-container{
+            .title{
+                font-size: 2.1rem;
+            }
+        }
+        .card-2-container{  
+            .title{
+                font-size: 2.1rem;
+            }}
+
+            .paragraph{
+                font-size: 1.1rem;
+            }
+
+    }
+    
 }
 
 .wap-card-2 {

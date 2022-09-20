@@ -1,7 +1,7 @@
 @mixin contenteditable($width: 0px, $color: transparent) {
    outline: $width solid $color;
    focus: outline-none;
-   white-space: nowrap;
+//    white-space: nowrap;
 }
 
 @mixin focus {

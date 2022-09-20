@@ -39,14 +39,11 @@ a {
     transform: scaleX(1);
   }
 
-  // section > [contenteditable]:focus{
-  //   padding: 10px;
-  //   transition: padding 0.3s;
-  // }
-
-  .blur{
-    filter: blur(4px);
+  section > [contenteditable]:focus{
+    padding: 10px;
+    transition: padding 0.3s;
   }
+
 
   html {
 
