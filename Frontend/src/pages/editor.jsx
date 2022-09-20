@@ -69,14 +69,20 @@ export const Editor = () => {
     }
 
     if (!draft) return <section></section>
+
     return (
         <section className='editor'>
             <DragDropContext onDragEnd={handleOnDragEnd}>
                 <EditorNav setOptionList={setOptionList} addElement={addElement} />
                 <Droppable droppableId='editor'>
-                    {(provided) => {
+                    {(provided, snapshot) => {
+                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? 'blue' : 'white' }
                         return (
-                            <section className={`wap ${draft.name ? draft.name : ''}`} {...provided.droppableProps} ref={provided.innerRef}>
+                            <section
+                                className={`wap ${draft.name ? draft.name : ''}`}
+                                {...provided.droppableProps}
+                                ref={provided.innerRef}
+                                style={styleTest}>
                                 {!draft.cmps?.length ? (
                                     <section>
                                         <h2>Lets start!</h2>

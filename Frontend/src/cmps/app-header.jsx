@@ -7,14 +7,16 @@ import { useState } from 'react'
 import { utilService } from '../services/util.service'
 import { eventBusService, showSuccessMsg } from '../services/event-bus.service'
 import { UserMsg } from './user-msg'
+import { DesktopNav } from './desktop-nav'
+import { MobileNav } from './mobile-nav'
+
 
 export const AppHeader = () => {
     const [isNameModal, setNameModal] = useState(false)
+    const [isMenuOpen, setMenuOpen] = useState(false)
     const { loggedInUser } = useSelector(state => state.userModule)
     const [siteName, setSiteName] = useState('')
-    const navigate = useNavigate()
     const dispatch = useDispatch()
-    const location = useLocation()
     let draftId
     let draft = useSelector(state => state.draftModule.draft)
     if (!draft) draftId = 'empty'
@@ -61,13 +63,9 @@ export const AppHeader = () => {
             showSuccessMsg(`Site has been saved!`)
 
         }
-
     }
 
-
-
     return (
-
         <section className='app-header'>
             {isNameModal && <section className='modal-section'>
                 <div className='site-name-modal'>
@@ -76,24 +74,33 @@ export const AppHeader = () => {
                         <input maxLength={14} value={siteName} required onChange={handleInput} type="text" placeholder='Enter the name here...' />
                         <button>Submit!</button>
                     </form>
-                </div> <div onClick={() => setNameModal(false)} className='black-screen'></div></section>}
+                </div>
+                <div onClick={() => setNameModal(false)} className='black-screen'></div>
+            </section>}
             <Link to={'/'}>
                 <h1 className='main-logo'>WEEBO<span className='dot'>.</span>
                     <span className='underline'></span>
                 </h1>
-
             </Link>
-            <nav className='app-header-nav'>
-                <NavLink to="/templates">Templates</NavLink>
-                <NavLink to={`/editor/${draftId}`}>Editor</NavLink>
-                {loggedInUser && <NavLink to="/dashboard">Dashboard</NavLink>}
-            </nav>
             <UserMsg />
-            <div className='right-header-btns'>
-                {(location.pathname.split('/')[1] === 'editor' && loggedInUser) && <button onClick={onSave} className='save-btn'>Save</button>}
-                {(location.pathname.split('/')[1] === 'editor' && loggedInUser) && <button className='together-btn'>Work Together</button>}
-                {!loggedInUser ? <button className='login-btn' onClick={() => { navigate('/login') }}>LOGIN</button>
-                    : <button onClick={() => { dispatch(logoutUser()) }} className='login-btn'>LOGOUT <img className='logout-icon' src={require('../assets/img/icons/log-out-icon.svg').default} alt="logout-icon" /></button>}
+            <DesktopNav
+                loggedInUser={loggedInUser}
+                dispatch={dispatch}
+                logoutUser={logoutUser}
+                draftId={draftId}
+                onSave={onSave}
+                setMenuOpen={setMenuOpen} />
+            <MobileNav
+                loggedInUser={loggedInUser}
+                dispatch={dispatch}
+                logoutUser={logoutUser}
+                draftId={draftId}
+                onSave={onSave}
+                isMenuOpen={isMenuOpen}
+                setMenuOpen={setMenuOpen} />
+
+            <div className={`menu-btn ${isMenuOpen ? 'open' : 'close'}`} onClick={() => { setMenuOpen(!isMenuOpen) }}>
+                <div className={`menu-btn-burger`}></div>
             </div>
         </section>
     )
