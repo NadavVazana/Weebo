@@ -2191,5 +2191,6 @@ export const wapExample2 = {
 
 
 export const examples = [
+    
     wapExample2
 ]

@@ -12,12 +12,6 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
-<<<<<<< HEAD
-    "font-awesome": "^4.7.0",
-=======
-    "chart.js": "^3.9.1",
-    "deposit": "^1.1.0",
->>>>>>> 36e46eb6b60683bbe5e8a3d1ad9dfdf12f31715e
     "lodash": "^4.17.21",
     "node": "^18.9.0",
     "orders": "^1.0.0",
