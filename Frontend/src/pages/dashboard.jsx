@@ -10,18 +10,14 @@ export const Dashboard = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
-
-    if (!loggedInUser) navigate('/')
-    
     const [deleteModal, setDeleteModal] = useState(false)
     const [site, setSite] = useState(loggedInUser?.waps[0])
 
 
-
-
-
-
-
+    if (!loggedInUser) {
+        navigate('/')
+        return <></>}
+    
 
     const onEdit = () => {
         site.editCount++
