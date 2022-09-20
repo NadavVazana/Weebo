@@ -1,11 +1,10 @@
 // import { hero1, map1, form1, gallery1, mission1, card1, footer1 } from './wap'
 export const exampleList = [
-    {
-        "_id": "5e28393890dd8888a06d4e44",
+    {   "_id": "5e28393890dd8888a06d4771",
         "type": "container",
         "name": "Travel",
         "subcategory": "Explore",
-        "imgUrl": `https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png`,
+        "imgUrl": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png",
         "createdBy": {
             "_id": "5e26e0b718a8888d4c995527",
             "fullname": "Noris Special",
@@ -41,7 +40,7 @@ export const exampleList = [
                     "name": "wap-container",
                     "cmps": [
                         {
-                            "id": "wc02",
+                            "id": "wh04",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -52,7 +51,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh04",
+                            "id": "wh05",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -62,7 +61,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh05",
+                            "id": "wh06",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -72,7 +71,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh08",
+                            "id": "wh07",
                             "type": "button",
                             "name": "wap-button",
                             "info": {
@@ -85,7 +84,7 @@ export const exampleList = [
 
                     ]
                 }, {
-                    "id": "wc02",
+                    "id": "wh08",
                     "type": "image",
                     "info": {
                         "image": "icons/hamburger.png"
@@ -173,12 +172,12 @@ export const exampleList = [
             },
             "cmps": [
                 {
-                    "id": "wc02",
+                    "id": "wca02",
                     "type": "container",
                     "name": "card-1-container",
                     "cmps": [
                         {
-                            "id": "wc02",
+                            "id": "wcai03",
                             "type": "image",
                             "name": "wap-image",
                             "info": {
@@ -189,7 +188,7 @@ export const exampleList = [
                             ]
                         },
                         {
-                            "id": "wc03",
+                            "id": "wca04",
                             "type": "container",
                             "name": "info-container",
 
@@ -231,17 +230,17 @@ export const exampleList = [
                     ]
                 },
                 {
-                    "id": "wc03",
+                    "id": "wca05",
                     "type": "container",
                     "name": "card-2-container",
                     "cmps": [
                         {
-                            "id": "wc03",
+                            "id": "wca06",
                             "type": "container",
                             "name": "info-container",
                             "cmps": [
                                 {
-                                    "id": "wc03",
+                                    "id": "wca07",
                                     "type": "text",
                                     "name": "wap-text",
                                     "info": {
@@ -252,7 +251,7 @@ export const exampleList = [
                                     ]
                                 },
                                 {
-                                    "id": "wc04",
+                                    "id": "wca08",
                                     "type": "text",
                                     "name": "wap-text",
                                     "info": {
@@ -263,7 +262,7 @@ export const exampleList = [
                                     ]
                                 },
                                 {
-                                    "id": "wc05",
+                                    "id": "wca09",
                                     "type": "button",
                                     "name": "wap-button",
                                     "info": {
@@ -275,7 +274,7 @@ export const exampleList = [
                             ]
                         },
                         {
-                            "id": "wc02",
+                            "id": "wca010",
                             "type": "image",
                             "name": "wap-image",
                             "info": {
@@ -1070,7 +1069,7 @@ export const Cards = {
         "name": "wap-card-1",
         "cmps": [
             {
-                "id": "wc02",
+                "id": "wca02",
                 "type": "container",
                 "name": "card-1-container",
                 "cmps": [
@@ -1626,11 +1625,11 @@ export const All = {
 
 
 export const wapExample2 = {
-    "_id": "5e28393890dd8888a06d4777",
+    "_id": "5e28393890dd8888a06d4772",
     "type": "container",
     "name": "cooking",
     "subcategory": "Wellness",
-    "imgUrl": `https://images.squarespace-cdn.com/content/5ce592c8732098000152407a/a5aef4b2-4b9c-4279-b780-57302c077519/image-asset.jpeg?content-type=image%2Fjpeg&format=750w`,
+    "imgUrl": "",
     "createdBy": {
         "_id": "5e26e0b718a7777d4c995527",
         "fullname": "Special Noris",
