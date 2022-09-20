@@ -27,6 +27,7 @@
                 color: rgb(219, 216, 216);
             }
         }
+    
 
     }
 
@@ -37,20 +38,25 @@
     .logo{
 
         font-family: Monsterrat;
-        cursor: text;
+        cursor: pointer;
     }
 
     .nav-item{
         padding: 10px;
         color: rgb(219, 216, 216);
-        cursor: text;
+        cursor: pointer;
     }
+
+
 
     .nav-item:hover{
         color: rgb(197, 190, 190)
     } 
     @include for-mobile-layout{
         .nav-item{
+            display: none;
+        }
+        button{
             display: none;
         }
         .image{
@@ -78,7 +84,9 @@
         .logo{
             font-size: 1.7rem;
         }
-        
+        button{
+            display: inline;
+        }
         .nav-item{
             display: inline;
             font-size: .8rem;

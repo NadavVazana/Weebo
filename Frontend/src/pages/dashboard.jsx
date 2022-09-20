@@ -41,7 +41,7 @@ export const Dashboard = () => {
     }
 
     const onPublish=()=>{
-        if(site.isPublished) navigate(`/publish/${site._id}`)
+        if(site.isPublished) window.open(`/publish/${site._id}`,'_blank')
         else {
             let user = loggedInUser
             let siteIndex = loggedInUser.waps.findIndex(wap => wap._id === site._id)
