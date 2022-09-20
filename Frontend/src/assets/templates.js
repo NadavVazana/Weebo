@@ -1629,7 +1629,7 @@ export const wapExample2 = {
     "type": "container",
     "name": "cooking",
     "subcategory": "Wellness",
-    "imgUrl": "",
+    "imgUrl": "../assets/img/templates/example-2.png",
     "createdBy": {
         "_id": "5e26e0b718a7777d4c995527",
         "fullname": "Special Noris",
@@ -1759,7 +1759,7 @@ export const wapExample2 = {
                 "id": "whi01",
                 "type": "image",
                 "info": {
-                    "image": "hero2/cupcakes.png"
+                    "image": "hero2/cupcakes.jpg"
                 },
                 "name": "hero-2-image",
                 "cmps": []
