@@ -31,7 +31,7 @@ export const AppHeader = () => {
         draft.editCount = 0
         draft.viewCount = 0
         var date = new Date()
-        draft.createdAt = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
+        draft.createdAt = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
         draft._id = utilService.makeId(15)
         const user = loggedInUser
         user.waps.push(draft)
