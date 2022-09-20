@@ -11,6 +11,8 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
+import { wapExample2 } from '../assets/templates'
+
 
 export const Editor = () => {
     const navigate = useNavigate()
@@ -76,7 +78,7 @@ export const Editor = () => {
                 <Droppable droppableId='editor'>
                     {(provided) => {
                         return (
-                            <section className='wap' {...provided.droppableProps} ref={provided.innerRef}>
+                            <section className={`wap ${draft.name ? draft.name : ''}`} {...provided.droppableProps} ref={provided.innerRef}>
                                 {!draft.cmps?.length ? (
                                     <section>
                                         <h2>Lets start!</h2>

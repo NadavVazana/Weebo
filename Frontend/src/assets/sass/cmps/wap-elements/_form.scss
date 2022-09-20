@@ -82,3 +82,112 @@
 
 
 }
+
+.wap-form-2 {
+    background: url('../../../img/form-2/form2-bg.png');
+    background-position: fixed;
+    background-size: cover;
+    font-family: Monsterrat;
+
+    .form-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        padding-block: 50px;
+
+        .title {
+            font-size: 1.2rem;
+            margin: auto;
+            width: fit-content;
+            box-shadow: 0 5px #FADF55;
+            margin-bottom: 3rem;
+        }
+
+        .paragraph {
+            font-family: Monsterrat-thin;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+            margin: auto;
+        }
+
+        & > * {
+            margin-block: 20px;
+        }
+        
+        input {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            height: 30px;
+            border: none;
+            width: 100%;
+            background-color: #fbe3f5;
+            padding-inline: 20px;
+
+            &:hover {
+                background-color: #f2f2f2;
+            }
+
+            &:focus {
+                outline: none;
+                background-color: #fff;
+            }
+        }
+
+        .wap-input-textarea{
+            height: 70px;
+        }
+
+        button {
+            width: 100%;
+            background: none;
+            background-color: #FADF55;
+            border: none;
+            padding-block: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #D5ADC9;
+                transition: 0.4s;
+            }
+            
+            a {
+                padding: auto;
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+    .form-input-container {
+        display: flex;
+        gap: 14px;
+
+        & > * {
+            width: 50%;
+        }
+    }
+
+    @include for-mobile-layout{}
+
+    @include for-narrow-layout {}
+
+    @include for-mid-layout {
+        .form-container {
+            width: 70%;
+        }
+    }
+
+    @include for-normal-layout {
+        .form-container {
+            width: 50%;
+        }
+    }
+
+    @include for-wide-layout {
+        .form-container {
+            width: 35%;
+        }
+    }
+}
