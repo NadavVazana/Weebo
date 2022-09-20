@@ -39,6 +39,20 @@ export const Dashboard = () => {
         }
 
     }
+
+    const onPublish=()=>{
+        if(site.isPublished) window.open(`/publish/${site._id}`,'_blank')
+        else {
+            let user = loggedInUser
+            let siteIndex = loggedInUser.waps.findIndex(wap => wap._id === site._id)
+            let newSite = loggedInUser.waps[siteIndex]
+            newSite.isPublished = true
+            user.waps.splice(siteIndex,1,newSite)
+            dispatch(updateUser(user))
+            setSite(newSite)
+            showSuccessMsg('Website has been published!')
+        }
+    }
     if(!loggedInUser) return
     if (!site) return <section className="no-sites"><h1 >No sites to show...</h1> <button onClick={() => { navigate('/templates') }}>Let's build some!</button></section>
     return (
@@ -60,7 +74,7 @@ export const Dashboard = () => {
 
             </div>
             <div className="action-btns">
-                <button className="visit-btn">Visit</button>
+                <button  onClick={onPublish} className="visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
                 <button onClick={() => { onEdit() }} className="edit-btn">Edit</button>
                 <button onClick={() => { setDeleteModal(true) }} className="delete-btn">Delete website</button>
             </div>

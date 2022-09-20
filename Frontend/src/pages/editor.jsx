@@ -86,7 +86,7 @@ export const Editor = () => {
                                         <Draggable key={cmp.id + index} draggableId={cmp.id + index} index={index}>
                                             {(provided) => (
                                                 <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}>
-                                                    <DynamicCmp cmp={cmp} onEditElement={onEditElement} />
+                                                    <DynamicCmp cmp={cmp} isPublished={false} onEditElement={onEditElement} />
                                                     {provided.placeholder}
                                                 </div>
                                             )}
