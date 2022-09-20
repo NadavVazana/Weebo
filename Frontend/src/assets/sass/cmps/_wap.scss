@@ -10,3 +10,7 @@
 .focus {
   outline: 3px dotted yellowgreen;
 }
+
+[contenteditable]{
+  @include contenteditable
+}

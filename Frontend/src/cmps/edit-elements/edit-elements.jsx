@@ -28,5 +28,4 @@ export const EditElements = () => {
         //     return <EditContainer/>
         default: return <h1>Click on element to edit</h1>
     }
-
 }

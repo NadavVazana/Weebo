@@ -14,12 +14,12 @@ import { utilService } from '../services/util.service'
 
 export const Editor = () => {
     const navigate = useNavigate()
-    const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
     let { exampleId } = useParams()
-    let { draft } = useSelector(state => state.draftModule)
-    let currElement = useSelector(state => state.draftModule.currElement)
+    let { draft, currElement } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const [optionList, setOptionList] = useState({})
+    const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
+
 
     const addElement = (cmp) => {
         draft.cmp.push(cmps[cmp])
@@ -32,8 +32,7 @@ export const Editor = () => {
             dispatch(loadWap(exampleId)).then(wap => {
                 dispatch(setDraft(wap))
             })
-        }
-        else {
+        } else {
             dispatch(setDraft(draft))
         }
     }, [])
@@ -47,7 +46,6 @@ export const Editor = () => {
         }
         dispatch(setElement(clickedElement))
     }
-
 
     const handleOnDragEnd = (result) => {
         const newItems = Array.from(draft.cmps)

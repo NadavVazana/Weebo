@@ -4,6 +4,7 @@ import { About } from './pages/about.jsx'
 import { Login } from './pages/login.jsx'
 import { Templates } from './pages/templates/templates.jsx'
 import { Dashboard } from './pages/dashboard.jsx'
+// import { Publish } from './pages/publish.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -41,7 +42,12 @@ const routes = [
         path:'dashboard',
         element:<Dashboard />,
         label: 'Dashboard'
-    }
+    },
+    // {
+    //     path:'publish',
+    //     element:<Publish />,
+    //     label: 'Publish'
+    // }
 ]
 
 export default routes

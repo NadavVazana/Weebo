@@ -1,26 +1,79 @@
-import { useDispatch } from "react-redux"
-import { useSelector } from "react-redux"
-import { setDraft } from "../../store/draft/draft.action"
-import { setElement } from "../../store/draft/draft.action"
+import { Pallete } from './pallete'
+import { useSelector, useDispatch } from 'react-redux'
+import { setElement, updateDraft, setDraft, setDuplicate, duplicateElement } from '../../store/draft/draft.action'
+
 export const EditContainer = () =>{
-    const {draft,currElement} = useSelector(state=> state.draftModule)
+
+    const {currElement, draft, duplicate} = useSelector(state=> state.draftModule)
     const dispatch = useDispatch()
+    const textControls = ['Delete', 'Copy', 'Undo']
+
+
+    const onSelectBackground = (ev) => {
+        const backgroundColor = ev.target.id
+        let copyCurrElement = { ...currElement }
+        copyCurrElement = {
+            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundColor }
+        }
+        dispatch(setElement(copyCurrElement))
+        dispatch(updateDraft(draft, copyCurrElement))
+    }
     
+    const toggleTextControl = (ev) => {
+        const { id } = ev.target
 
-    const removeCmp=()=>{
-        const deleteIndex = draft.cmps.findIndex(cmp=> cmp.id === currElement.id)
-        if(deleteIndex === -1) return
-        draft.cmps.splice(deleteIndex,1)
-        dispatch(setDraft(draft))
-        dispatch(setElement({type:''}))
+        const copyDuplicate = { ...draft }
+        dispatch(setDuplicate(copyDuplicate))
 
+        switch (id) {
+            case 'Delete':
+                removeElement()
+                break
+            case 'Copy':
+                copyElement()
+                break
+            case 'Undo':
+                dispatch(setDraft(duplicate))
+                break
+            default:
+                break
+        }
+    }
+
+    const removeElement = () => {
+        let copyCurrElement = { ...currElement }
+        dispatch(setElement(copyCurrElement))
+        dispatch(updateDraft(draft, copyCurrElement, true))
+    }
+
+    const copyElement = () => {
+        let copyCurrElement = { ...currElement }
+        dispatch(setElement(copyCurrElement))
+        dispatch(duplicateElement(draft, copyCurrElement))
     }
 
     return (
 
-        <section className="edit-container">
+        <section className="edit-elements">
             <h1>{currElement.name}</h1>
-            <button onClick={removeCmp}> <img className="trash-icon" src={require('../../assets/img/icons/trash-icon.svg').default} alt="publish-icon" /></button>
+            <div className="pallete-container">
+                <span>Backgroud Color</span>
+                <Pallete onSelect={onSelectBackground} />
+            </div>
+            <div className='element-control'>
+                {textControls.map(textControl =>
+                    <div
+                        className='element-control-container'
+                        id={`${textControl}`}
+                        onClick={toggleTextControl}
+                        key={`${textControl}div`}>
+                        <img key={textControl}
+                            id={`${textControl}`}
+                            src={require(`../../assets/img/icons/${textControl}-icon.svg`)}
+                            alt={`${textControl}`} />
+                        {textControl}
+                    </div>)}
+            </div>
         </section>
     )
 }

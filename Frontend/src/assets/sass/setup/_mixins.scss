@@ -1,36 +1,45 @@
+@mixin contenteditable($width: 0px, $color: transparent) {
+   outline: $width solid $color;
+   focus: outline-none;
+   white-space: nowrap;
+}
+
+@mixin focus {
+    outline: 3px dotted yellowgreen;
+}
 
 
 @mixin for-mobile-layout {
     @media (min-width:350px) {
         @content;
     }
-    
+
 }
 
 @mixin for-narrow-layout {
     @media (min-width:785px) {
         @content;
     }
-    
+
 }
+
 @mixin for-mid-layout {
     @media (min-width:950px) {
         @content;
     }
-    
+
 }
 
 @mixin for-normal-layout {
     @media (min-width:1200px) {
         @content;
     }
-    
+
 }
+
 @mixin for-wide-layout {
     @media (min-width:1500px) {
         @content;
     }
-    
+
 }
-
-

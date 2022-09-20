@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 
 
 export const EditorNav = ({ addElement, setOptionList }) => {
+
     const [isMenu, setMenu] = useState(false)
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [isEditMenu, setEditMenu] = useState(false)
@@ -27,9 +28,9 @@ export const EditorNav = ({ addElement, setOptionList }) => {
     }
 
 
-    useEffect(() => {
-        toggleEditMenu()
-    }, [currElement])
+    // useEffect(() => {
+    //     toggleEditMenu()
+    // }, [currElement])
 
     const toggleEditMenu = () => {
         if (currElement.id !== currentElement.id) {
@@ -44,11 +45,11 @@ export const EditorNav = ({ addElement, setOptionList }) => {
 
     const toggleThemesMenu = () => {
         setThemesMenu(true)
-        setEditMenu(false)
+        // setEditMenu(false)
         setOptionsMenu({ cmpType: null, isOpen: false })
     }
 
-    console.log('currElement:', !_.isEmpty(currElement))
+    // console.log('currElement:', !_.isEmpty(currElement))
     return (
         <section className="editor-nav">
             <div className="side-bar">

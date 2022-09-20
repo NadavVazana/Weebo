@@ -1,9 +1,28 @@
-.button{
-    a{
-        
+.wap-hero-1 {
+    .hero-item-3{
+        button {
+            background-color: grey;
+            color: #fff;
+            border-radius: 0.4rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 300;
             color: rgb(221, 217, 217);
             font-weight: 500;
-            padding: 0;
-          
+            padding: 20px 30px;
+        }
+
+        a{
+            color: #fff;
+        }
+
+        [contenteditable] {
+            @include contenteditable;
+        }
     }
+
+    .button:hover{
+        @include focus;
+    }
+
 }

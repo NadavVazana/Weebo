@@ -8,7 +8,10 @@ export function Container({ cmp, onEditElement }) {
 
     return (
         <section onClick={() => onEditElement(cmp)} >
-            <div className={`container ${name} ${cmp.id === currElement?.id ? 'focus' : ''}`}>
+            <div 
+            className={`container ${name} ${cmp.id === currElement?.id ? 'focus' : ''}`}
+            style={{ ...cmp?.styles }}
+            >
                 {cmps.map((cmp) => <DynamicCmp key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
             </div>
         </section>

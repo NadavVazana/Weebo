@@ -22,7 +22,7 @@ export const AppHeader = () => {
                 <NavLink to="/dashboard">Dashboard</NavLink>
             </nav>
             <div className='right-header-btns'>
-                <button>Publish</button>
+            <button><Link to={'/publish'}>Publish</Link></button>
                 <button>Work Together</button>
                 <button onClick={() => { navigate('/login') }}>LOGIN</button>
             </div>

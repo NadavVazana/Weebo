@@ -1,12 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft } from '../../store/draft/draft.action'
 
+
 export const Text = ({ cmp, onEditElement }) => {
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
-
     const handleChange = (ev) => {
+        ev.preventDefault()
         const { innerText } = ev.target
         let copyCurrElement = { ...cmp }
         copyCurrElement = {
@@ -17,6 +18,7 @@ export const Text = ({ cmp, onEditElement }) => {
     }
 
     function handleEditElement(ev,cmp) {
+        ev.preventDefault()
         ev.stopPropagation()
         onEditElement(cmp)
     }

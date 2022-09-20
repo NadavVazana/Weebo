@@ -10,9 +10,11 @@
     align-items: center;
     font-family: Monsterrat;
     color: white;
+    
     > * {
         padding: 10px;
     }
+
     .hero-item-1 {
         font-size: 1.2rem;
         font-weight: 300;
@@ -30,17 +32,17 @@
        
             color: #fff;
             background: none;
-            
-            border-radius: 0.4rem;
             border: none;
-            cursor: pointer;
-            background-color: #4b4a48;
-            font-weight: 300;
+            background-color: transparent;
+            
+            // border-radius: 0.4rem;
+            // cursor: pointer;
+            // font-weight: 300;
         }
         
-        .hero-item-3:hover {
-            opacity: 0.6;
-        }
+        // .hero-item-3:hover {
+        //     opacity: 0.6;
+        // }
 
         @include for-mobile-layout{
             .hero-item-2{

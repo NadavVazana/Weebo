@@ -8,7 +8,6 @@ export function getDraft() {
     }
 }
 
-
 export function setDraft(draft) {
     return (dispatch) => {
         wapService.setDraft(draft)
@@ -28,11 +27,11 @@ export function setElement(element) {
 }
 
 //UPDATE DRAFT BY ELEMENT
-export function updateDraft(draft, element) {
+export function updateDraft(draft, element, isRemove) {
     return (dispatch) => {
         try {
             const copyDraft = { ...draft }
-            draft = wapService.updateDraft(copyDraft, element)
+            draft = isRemove ? wapService.removeElement(copyDraft, element) : wapService.updateDraft(copyDraft, element)
             dispatch({ type: 'SET_DRAFT', draft })
         } catch (err) {
             console.log('could not update draft!:', err)
@@ -40,4 +39,30 @@ export function updateDraft(draft, element) {
     }
 
 }
+
+//SET_DUPLICATE
+export function setDuplicate(duplicate) {
+    return (dispatch) => {
+        try {
+            dispatch({ type: 'SET_DUPLICATE', duplicate })
+        } catch (err) {
+            console.log('could not duplicate draft!:', err)
+        }
+    }
+}
+
+//Duplicate ELEMENT
+export function duplicateElement(draft, element) {
+    return (dispatch) => {
+        try {
+            const copyDraft = { ...draft }
+            draft = wapService.duplicateElement(copyDraft, element)
+            dispatch({ type: 'SET_DRAFT', draft })
+        } catch (err) {
+            console.log('could not update draft!:', err)
+        }
+    }
+}
+
+
 

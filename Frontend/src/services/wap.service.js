@@ -1,5 +1,6 @@
 import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
+import {utilService} from './util.service'
 
 export const wapService = {
     getWaps,
@@ -9,7 +10,9 @@ export const wapService = {
     editWap,
     getDraft,
     setDraft,
-    updateDraft
+    updateDraft,
+    removeElement,
+    duplicateElement
 }
 
 const WAP = 'wap/'
@@ -71,6 +74,55 @@ async function editWap(editedWap) {
     }
 }
 
+function removeElement(draft, element) {
+    let copyDraft = { ...draft }
+
+    copyDraft.cmps = _removeById(draft.cmps, element.id)
+    return copyDraft
+
+}
+
+function _removeById(arr, targetId) {
+    return arr.reduce((acc, cmp) => {
+        if (cmp.id === targetId) {
+            return acc
+        } else {
+            return [...acc,
+            {
+                ...cmp,
+                ...(cmp.cmps && { cmps: [..._removeById(cmp.cmps, targetId)] })
+            }
+            ]
+        }
+    }, [])
+}
+
+function duplicateElement(draft, element) {
+    let copyDraft = { ...draft }
+
+    copyDraft.cmps = _duplicateById(draft.cmps, element.id)
+    return copyDraft
+
+}
+
+function _duplicateById(arr, targetId) {
+    return arr.reduce((acc, cmp) => {
+
+        if (cmp.id === targetId) {
+            let copyCmp = { ...cmp }
+            copyCmp.id = copyCmp.id + utilService.makeId()
+            console.log('copyCmp', copyCmp);
+            return [...acc, cmp, copyCmp]
+        } else {
+            return [...acc,
+            {
+                ...cmp,
+                ...(cmp.cmps && { cmps: [..._duplicateById(cmp.cmps, targetId)] })
+            }
+            ]
+        }
+    }, [])
+}
 
 function updateDraft(draft, element) {
     let copyDraft = { ...draft }

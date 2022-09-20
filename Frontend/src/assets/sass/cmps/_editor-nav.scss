@@ -63,18 +63,14 @@
     
     }
 
-
-
-
-
-
-
     .side-bar-actions {
         overflow-y: scroll;
         height: 92.5vh;
         background-color: rgb(56, 55, 55);
         width: 0;
         transition: 0.3s;
+        padding: 0;
+        margin: 0;
     
         .edit-container{
     

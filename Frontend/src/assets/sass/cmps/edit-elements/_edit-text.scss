@@ -1,0 +1,49 @@
+.align-image {
+    display: flex;
+    padding: 0;
+    min-width: 100px;
+    cursor: pointer;
+    filter: invert(1);
+
+    img {
+        width: 1rem;
+        padding: 5px;
+    }
+
+    img:hover {
+        filter: invert(0.4);
+    }
+
+}
+
+.element-control {
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    justify-content: space-around;
+    margin: 0;
+    
+    .element-control-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        img{
+            color: #fff;
+            width: 1.5rem;
+            padding: 5px;
+            margin-bottom: 5px;
+            filter: invert(1);
+        }
+    }
+
+    .element-control-container:hover{
+        filter: invert(0.4);
+    }
+
+}
+
+
+
