@@ -35,18 +35,19 @@ async function query(filterBy = {}) {
 
 async function getById(userId) {
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await dbService.getCollection('user')
         const user = await collection.findOne({ '_id': ObjectId(userId) })
         delete user.password
         return user
     } catch (err) {
-        logger.error(`while finding user ${userId}`, err)
+        // logger.error(`while finding user ${userId}`, err)
         throw err
     }
 }
 async function getByUsername(username) {
+    
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await dbService.getCollection('user')
         const user = await collection.findOne({ username })
         return user
     } catch (err) {
@@ -72,8 +73,9 @@ async function update(user) {
             _id: ObjectId(user._id),
             username: user.username,
             fullname: user.fullname,
+            waps: user.waps
         }
-        const collection = await dbService.getCollection('users')
+        const collection = await dbService.getCollection('user')
         await collection.updateOne({ '_id': userToSave._id }, { $set: userToSave })
         return userToSave;
     } catch (err) {
@@ -89,8 +91,9 @@ async function add(user) {
             username: user.username,
             password: user.password,
             fullname: user.fullname,
+            waps : []
         }
-        const collection = await dbService.getCollection('users')
+        const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
         return userToAdd
     } catch (err) {
