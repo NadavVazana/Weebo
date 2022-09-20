@@ -11,6 +11,7 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
+import { wapExample2 } from '../assets/templates'
 
 
 export const Editor = () => {
