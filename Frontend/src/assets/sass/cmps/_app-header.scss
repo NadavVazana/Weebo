@@ -6,8 +6,8 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
     
 
     .right-header-btns {
@@ -17,9 +17,14 @@
 
     .main-logo {
         position: relative;
-        font-family: eurofurence;
-        letter-spacing: 5px;
+        font-family:Madefor;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         font-size: 2.5rem;
+        padding-bottom: 5px;
+
+        font-weight: 600;
+        color: rgb(36, 36, 36);
 
 
         .underline {
@@ -46,7 +51,7 @@
             animation-play-state:running;
             animation-name: bounce;
             animation-duration: 0.6s;
-            animation-delay: 0.4s;
+            animation-delay: 0.5s;
             animation-fill-mode: forwards
         }
 
@@ -65,30 +70,30 @@
 
     }
 
-    .right-header-btns>:nth-child(1) {
+    .save-btn {
         border-radius: 20px;
         background-color: #61605c;
         border: none;
         color: rgb(255, 255, 255);
     }
 
-    .right-header-btns>:nth-child(2) {
+    .together-btn {
         border-radius: 20px;
         background-color: #61605c;
         border: none;
         color: rgb(255, 255, 255);
     }
 
-    .right-header-btns>:nth-child(1):hover {
+    .save-btn:hover  {
         background-color: black;
     }
 
-    .right-header-btns>:nth-child(2):hover {
+    .together-btn:hover{
         background-color: black;
     }
 
     nav {
-        margin-inline-start: 150px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
 
@@ -97,7 +102,7 @@
             padding: 10px;
 
             &:hover {
-                color: 	#0047AB;
+                color: 	#032d66;
             }
 
             &.active {
@@ -105,6 +110,58 @@
             }
         }
 
+    }
+
+    .modal-section{
+            position: fixed;
+           
+            z-index: 100000000000;
+           
+
+        .site-name-modal{
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #0a3a7e;
+            padding: 80px 90px;
+            font-family: Madefor;
+            h1{
+                color: whitesmoke;
+            }
+            form{
+                display: flex;
+                gap: 10px;
+
+                button{
+                    background-color: #272727;
+                    border: none;
+                }
+                button:hover{
+                    background-color: #61605c;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+            position: fixed;
+            z-index: 100000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    }
+    
+
+    .login-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .logout-icon{
+            filter: invert(1);
+            width: 20px;
+        }
     }
 
     button {

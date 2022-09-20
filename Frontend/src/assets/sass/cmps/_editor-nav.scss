@@ -104,4 +104,12 @@
         }
     
     }
+
+    @include for-mobile-layout{
+        .side-bar{
+            
+        }
+    }
+    @include for-narrow-layout{
+    }
 }

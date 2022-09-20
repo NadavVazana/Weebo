@@ -5,8 +5,7 @@ import { AddOptions } from "./add-options"
 import { useSelector } from 'react-redux'
 
 
-export const EditorNav = ({ addElement, setOptionList }) => {
-
+export const EditorNav = ({ addElement, setOptionList}) => {
     const [isMenu, setMenu] = useState(false)
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [isEditMenu, setEditMenu] = useState(false)
@@ -28,14 +27,10 @@ export const EditorNav = ({ addElement, setOptionList }) => {
     }
 
 
-    // useEffect(() => {
-    //     toggleEditMenu()
-    // }, [currElement])
-
     const toggleEditMenu = () => {
         if (currElement.id !== currentElement.id) {
             setEditMenu(true)
-            setCurrentElement(currElement)
+            
             return
         }
         setEditMenu(prevState => !prevState)

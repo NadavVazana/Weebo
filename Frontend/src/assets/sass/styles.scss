@@ -18,6 +18,7 @@
 @import "pages/templates";
 @import "pages/dashboard";
 @import "pages/login";
+@import "pages/signup";
 
 
 /* Components */
@@ -38,3 +39,4 @@
 @import "cmps/wap-elements/hero";
 @import "cmps/edit-elements/edit-elements";
 @import "cmps/edit-elements/edit-text";
+@import "cmps/user-msg";

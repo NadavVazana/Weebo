@@ -1,0 +1,15 @@
+.sign-up{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    .login-logo{
+        font-family: Madefor;
+        user-select: none;
+        font-weight: 600;
+        font-size: 2rem;
+        padding: 30px;
+        letter-spacing: 2px;
+    }
+}

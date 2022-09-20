@@ -1,4 +1,4 @@
-
+'../../as'
 
 export const Image = ({ cmp, onEditElement }) => (
     <section className='image'>
