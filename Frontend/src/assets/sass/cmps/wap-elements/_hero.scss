@@ -141,6 +141,7 @@
     justify-content: flex-end;
     align-items: stretch;
     margin-block: 50px;
+    
 //     background: linear-gradient(to bottom right, 
 //     #aae6f0    22.2%, 
 //     #fad255 0 100%
@@ -155,11 +156,7 @@
         gap: 50px;
         height: 100%;
         padding: 10px;
-        width: 50%;
     }
-
-
-
 
     .title {
         font-size: 1.2rem;
@@ -205,20 +202,25 @@
     @include for-narrow-layout{
     }
     @include for-mid-layout{
-        padding: 138px 80px;
-        
+        padding: 138px 120px;
         flex-direction: row;
+
+        & > * {
+            margin: auto;
+        }
+
         section {
-        //    img{
-        //     height: 90%;
-        //    }
+            display: flex;
+            width: 50%;
+            img {
+                margin-inline-start: auto;
+            }
          
         }
     
 
         .hero-item-1 {
             margin-top: 50px;
-            margin: 0;
         }
       
     }
