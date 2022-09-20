@@ -31,10 +31,11 @@ export const AppHeader = () => {
         draft.editCount = 0
         draft.viewCount = 0
         var date = new Date()
-        draft.createdAt = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+        draft.createdAt = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
         draft._id = utilService.makeId(15)
         const user = loggedInUser
         user.waps.push(draft)
+
         dispatch(updateUser(user))
         showSuccessMsg(`New site has been saved!`)
     }
@@ -45,19 +46,22 @@ export const AppHeader = () => {
         setSiteName(target.value)
     }
 
-    const onSave = () =>{
+    const onSave = () => {
         const draft = dispatch(getDraft())
-        if(!draft.siteName)
-        setNameModal(true)
-        else{
+        console.log('draft:', draft)
+        console.log('loggedInUser:', loggedInUser)
+        if (!draft.siteName)
+            setNameModal(true)
+        else {
             const user = loggedInUser
-            const wapIndex = user.waps.findIndex(wap=> wap._id === draft._id)
+            const wapIndex = user.waps.findIndex(wap => wap._id === draft._id)
             user.waps[wapIndex] = draft
+            console.log('user from app header:', user)
             dispatch(updateUser(user))
             showSuccessMsg(`Site has been saved!`)
 
         }
-        
+
     }
 
 
@@ -72,7 +76,7 @@ export const AppHeader = () => {
                         <input maxLength={14} value={siteName} required onChange={handleInput} type="text" placeholder='Enter the name here...' />
                         <button>Submit!</button>
                     </form>
-                </div> <div onClick={()=>setNameModal(false)} className='black-screen'></div></section>}
+                </div> <div onClick={() => setNameModal(false)} className='black-screen'></div></section>}
             <Link to={'/'}>
                 <h1 className='main-logo'>WEEBO<span className='dot'>.</span>
                     <span className='underline'></span>

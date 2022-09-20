@@ -10,14 +10,16 @@ export const Dashboard = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
+    console.log('loggedInUser:', loggedInUser)
     const [deleteModal, setDeleteModal] = useState(false)
     const [site, setSite] = useState(loggedInUser?.waps[0])
 
 
     if (!loggedInUser) {
         navigate('/')
-        return <></>}
-    
+        return <></>
+    }
+
 
     const onEdit = () => {
         site.editCount++
@@ -40,20 +42,20 @@ export const Dashboard = () => {
 
     }
 
-    const onPublish=()=>{
-        if(site.isPublished) window.open(`/publish/${site._id}`,'_blank')
+    const onPublish = () => {
+        if (site.isPublished) window.open(`/publish/${site._id}`, '_blank')
         else {
             let user = loggedInUser
             let siteIndex = loggedInUser.waps.findIndex(wap => wap._id === site._id)
             let newSite = loggedInUser.waps[siteIndex]
             newSite.isPublished = true
-            user.waps.splice(siteIndex,1,newSite)
+            user.waps.splice(siteIndex, 1, newSite)
             dispatch(updateUser(user))
             setSite(newSite)
             showSuccessMsg('Website has been published!')
         }
     }
-    if(!loggedInUser) return
+    if (!loggedInUser) return
     if (!site) return <section className="no-sites"><h1 >No sites to show...</h1> <button onClick={() => { navigate('/templates') }}>Let's build some!</button></section>
     return (
         <section className="dashboard-page">
@@ -74,7 +76,7 @@ export const Dashboard = () => {
 
             </div>
             <div className="action-btns">
-                <button  onClick={onPublish} className="visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
+                <button onClick={onPublish} className="visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
                 <button onClick={() => { onEdit() }} className="edit-btn">Edit</button>
                 <button onClick={() => { setDeleteModal(true) }} className="delete-btn">Delete website</button>
             </div>
