@@ -10,6 +10,7 @@ export const Dashboard = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
+    console.log('loggedInUser:', loggedInUser)
     const [deleteModal, setDeleteModal] = useState(false)
     const [site, setSite] = useState(loggedInUser?.waps[0])
     const [siteMenu,setSiteMenu] = useState(false)
@@ -46,7 +47,6 @@ export const Dashboard = () => {
             showSuccessMsg('Website has been deleted!')
         }
     }
-
 
     const onPublish = () => {
         if (site.isPublished) window.open(`/publish/${site._id}`, '_blank')

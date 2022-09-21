@@ -1,5 +1,6 @@
 .app-header {
     height: $header-height;
+    position: relative;
     font-family: Madefor;
     user-select: none;
     display: flex;
@@ -8,21 +9,131 @@
     margin: auto;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
-    
 
+    .mobile-nav {
+        position: absolute;
+        top: $header-height;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #032d66;
+        width: 100%;
+        min-height: calc(100vh - $header-height);
+        z-index: 9999;
+        
+        .app-header-nav {
+            a {
+                color: #fff;
+                padding: 0;
+            }
+            a {
+                padding: 30px 50px;
+                &:hover {
+                    background-color: #0047AB;
+                }
+            }
+        }
+
+        .right-header-btns {
+            gap: 0;
+            justify-content: flex-start;
+            text-align: left;
+
+            button {
+                text-align: left;
+                padding: 30px 50px;
+
+                &:hover {
+                    background-color: #0047AB;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        & > *{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .save-btn, .together-btn {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .menu-btn-burger.close {
+
+        }
+        
+    }
+
+    .desktop-nav {
+        display: none;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .app-header-nav {
+            margin-inline: auto;
+        }
+    }
+
+    .menu-btn {
+        .menu-btn-burger {
+            width: 30px;
+            height: 6px;
+            background: #fff;
+            border-radius: 5px;
+            background-color: #032d66;
+            transition: all .3s ease-in-out;
+    
+    
+            &::before, &::after {
+                content: '';
+            position: absolute;
+                width: 30px;
+                height: 6px;
+                background: #fff;
+                border-radius: 5px;
+                background-color: #032d66;
+                transition: all .5s ease-in-out;
+            }
+    
+            &::before{
+                transform: translateY(-10px);
+            }
+            &::after {
+                transform: translateY(10px);
+            }
+        }
+
+        &.open .menu-btn-burger {
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+        }
+        &.open .menu-btn-burger::before {
+            transform: rotate(45deg) translate(35px,-35px);
+        }
+        &.open .menu-btn-burger::after {
+            transform: rotate(-45deg) translate(35px,35px);
+        }
+    }
+
+    
     .right-header-btns {
         display: flex;
         gap: 20px;
     }
 
+
     .main-logo {
         position: relative;
-        font-family:Madefor;
+        font-family:Eurofurence;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 2.5rem;
         padding-bottom: 5px;
-
         font-weight: 600;
         color: rgb(36, 36, 36);
 
@@ -31,7 +142,7 @@
             position: absolute;
             bottom: 5px;
             left: 0;
-            height: 2px;
+            height: 3px;
             width: 0;
             background-color: #272727;
             transition: width 0.8s cubic-bezier(.7,-0.13,.36,1.22);
@@ -93,18 +204,14 @@
     }
 
     nav {
-        margin: auto;
         display: flex;
         justify-content: space-between;
 
-
         a {
             padding: 10px;
-
             &:hover {
                 color: 	#032d66;
             }
-
             &.active {
                 box-shadow: inset 0 -2px black;
             }
@@ -114,7 +221,6 @@
 
     .modal-section{
             position: fixed;
-           
             z-index: 100000000000;
            
 
@@ -152,8 +258,6 @@
         }
 
     }
-    
-
     .login-btn{
         display: flex;
         align-items: center;
@@ -163,7 +267,6 @@
             width: 20px;
         }
     }
-
     button {
         background-color: black;
         color: white;
@@ -172,6 +275,19 @@
         cursor: pointer;
     }
 
+    @include homepage-header-layout {
+        .desktop-nav {
+            display: flex;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+    }
 
 }
 

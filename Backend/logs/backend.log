@@ -1540,3 +1540,5 @@
 20.9.2022, 1:11:20 - DEBUG - auth.service - signup with username: nadav, fullname: nadav 
 20.9.2022, 14:27:07 - DEBUG - auth.service - signup with username: baba, fullname: baba 
 20.9.2022, 14:29:15 - DEBUG - auth.service - signup with username: mama, fullname: mama 
+20.9.2022, 14:35:13 - INFO - Server is running on port: 3030 
+20.9.2022, 14:39:13 - DEBUG - auth.service - signup with username: borik, fullname: borik 

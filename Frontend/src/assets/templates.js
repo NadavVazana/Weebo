@@ -1,6 +1,7 @@
 // import { hero1, map1, form1, gallery1, mission1, card1, footer1 } from './wap'
 export const exampleList = [
-    {   "_id": "5e28393890dd8888a06d4771",
+    {
+        "_id": "5e28393890dd8888a06d4771",
         "type": "container",
         "name": "Travel",
         "subcategory": "Explore",
@@ -291,7 +292,7 @@ export const exampleList = [
             "drag": "true",
             "cmps": [
                 {
-                    "id": "wf02",
+                    "id": "wf021",
                     "type": "text",
                     "name": "wap-text",
                     "info": {
@@ -438,7 +439,7 @@ export const Headers = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc0876672",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -480,7 +481,7 @@ export const Headers = {
                 ]
             }, {
 
-                "id": "wc02",
+                "id": "wc021q1q2",
                 "type": "image",
                 "info": {
                     "image": "icons/hamburger.png"
@@ -549,7 +550,7 @@ export const Forms = {
         "drag": "true",
         "cmps": [
             {
-                "id": "wf02",
+                "id": "wf023",
                 "type": "text",
                 "name": "wap-text",
                 "info": {
@@ -710,7 +711,7 @@ export const Cards = {
                 "name": "card-1-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc020987",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -806,7 +807,7 @@ export const Cards = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc028783768",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -872,7 +873,7 @@ export const All = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc027878",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -914,7 +915,7 @@ export const All = {
                 ]
             }, {
 
-                "id": "wc02",
+                "id": "wc0223231",
                 "type": "image",
                 "info": {
                     "image": "icons/hamburger.png"
@@ -960,12 +961,12 @@ export const All = {
         "name": "wap-card-1",
         "cmps": [
             {
-                "id": "wc02",
+                "id": "wc02456",
                 "type": "container",
                 "name": "card-1-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc0212",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1061,7 +1062,7 @@ export const All = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc024",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1165,7 +1166,7 @@ export const All = {
         "drag": "true",
         "cmps": [
             {
-                "id": "wf02",
+                "id": "wf024",
                 "type": "text",
                 "name": "wap-text",
                 "info": {
@@ -1297,7 +1298,7 @@ export const wapExample2 = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc022",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -1546,7 +1547,7 @@ export const wapExample2 = {
         "name": "wap-card-2",
         "cmps": [
             {
-                "id": "wct01",
+                "id": "wct012",
                 "type": "text",
                 "name": "wap-card-2-title",
                 "info": {
@@ -1566,7 +1567,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct013",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1576,7 +1577,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct021",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1593,7 +1594,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct014",
                                 "type": "image",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1604,12 +1605,12 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc021",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct015",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1619,7 +1620,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct016",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1636,7 +1637,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct017",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1646,7 +1647,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct022",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1663,7 +1664,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct018",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1673,7 +1674,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct023",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1690,7 +1691,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct019",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1700,7 +1701,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct024",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1733,7 +1734,7 @@ export const wapExample2 = {
                         "name": "form-container",
                         "cmps": [
                             {
-                                "id": "wf02",
+                                "id": "wf025",
                                 "type": "text",
                                 "name": "wap-text",
                                 "info": {
@@ -1768,7 +1769,7 @@ export const wapExample2 = {
                                         "cmps": []
                                     },
                                     {
-                                        "id": "wf02",
+                                        "id": "wf026",
                                         "type": "input",
                                         "input_type": "email",
                                         "info": {
@@ -1780,7 +1781,7 @@ export const wapExample2 = {
                                 ]
                             },
                             {
-                                "id": "wf02",
+                                "id": "wf027",
                                 "type": "input",
                                 "input_type": "text",
                                 "info": {
@@ -1825,6 +1826,6 @@ export const wapExample2 = {
 
 
 export const examples = [
-    
+
     wapExample2
 ]
