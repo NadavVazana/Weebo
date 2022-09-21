@@ -12,13 +12,11 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
     const [isAddMenu, setAddMenu] = useState(false)
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [activeOption, setActiveOption] = useState(null)
-    const cmpTypes = ['All', 'Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Forms']
 
     // toggle options menu
     const toggleOptionsMenu = (event, cmp) => {
-        console.log(cmp);
+
         if (!isOptionsMenu.cmpType) setOptionsMenu(prevState => ({ isOpen: !prevState.isOpen, cmpType: cmp }))
-        else if (isOptionsMenu.cmpType === cmp) setOptionsMenu({ isOpen: false, cmpType: null })
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
 
         if (cmp === activeOption) setActiveOption(null)
@@ -72,7 +70,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
                 </div>
 
             </div>
-            <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu || isOptionsMenu.isOpen) ? 'open' : ''} `}>
+            <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu ) ? 'open' : ''} `}>
                 {(isEditMenu || isEdit) && <EditElements isEditMenu={isEditMenu} />}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
