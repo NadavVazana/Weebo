@@ -1,0 +1,31 @@
+.wap-map-1{
+    padding: 100px;
+    height: 400px;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .map{
+        width: 50%;
+        height: 100%;
+    }
+    .wap-text-container{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        gap: 20px;
+    }
+    .title{
+        font-size: 3rem;
+        font-family: Madefor;
+        text-align: center;
+        color: rgb(92, 88, 88);
+    }
+    .paragraph{
+        color:rgb(92, 88, 88);
+        font-family: Madefor;
+        font-size: 1.6rem;
+    }
+}

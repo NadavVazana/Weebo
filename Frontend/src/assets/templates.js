@@ -673,6 +673,10 @@ export const Maps = {
         "name": "wap-map-1",
         "drag": "true",
         "cmps": [
+            {"id": "wm07",
+        "type": "container",
+        "name": "wap-text-container",
+        "cmps": [
             {
                 "id": "wm02",
                 "type": "text",
@@ -685,6 +689,18 @@ export const Maps = {
 
                 ]
             },
+            {
+                "id": "wm03",
+                "type": "text",
+                "name": "wap-text",
+                "info": {
+                    "class": "paragraph",
+                    "value": "Find the nearest store near you!"
+                },
+                "cmps": [
+
+                ]
+            }]},
             {
                 "id": "wm03",
                 "type": "map",
@@ -819,6 +835,7 @@ export const Cards = {
         ]
     }
 }
+
 
 export const Missions = {
     "wap-mission-1": {

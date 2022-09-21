@@ -11,7 +11,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
     const [isAddMenu, setAddMenu] = useState(false)
     const [isOptionsMenu, setOptionsMenu] = useState({ isOpen: false, cmpType: null })
     const [activeOption, setActiveOption] = useState(null)
-    const cmpTypes = ['All', 'Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
+    const cmpTypes = ['All', 'Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms','Videos']
 
     // toggle options menu
     const toggleOptionsMenu = (event, cmp) => {
