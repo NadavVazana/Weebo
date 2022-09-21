@@ -1,9 +1,10 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text, cmp }) => <div style={{ fontSize: '40px' }}>{text}</div>;
 
-export const Map=()=> {
+export const Map = ({ cmp }) => {
+    console.log('cmp:', cmp.info.coors)
     const defaultProps = {
         center: {
             lat: 10.99835602,
@@ -11,7 +12,7 @@ export const Map=()=> {
         },
         zoom: 11
     };
-
+    let mapStyling = { styles: [{ stylers: [{ 'saturation': 0 }, { 'gamma': 0.7 }, { 'lightness': 10 }, { 'visibility': 'on' }] }] }
     return (
         // Important! Always set the container height explicitly
         <div className="map">
@@ -19,11 +20,14 @@ export const Map=()=> {
                 bootstrapURLKeys={{ key: "AIzaSyBkD9-ghT1ENc022RuqNwiJ6Ps974Fn8s0" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
+                center={cmp.info.coors ? { ...cmp.info.coors } : ''}
+                zoom={14}
+                options={mapStyling}
             >
                 <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
-                    text="My Marker"
+                    lat={cmp.info.coors.lat}
+                    lng={cmp.info.coors.lng}
+                    text="📌"
                 />
             </GoogleMapReact>
         </div>

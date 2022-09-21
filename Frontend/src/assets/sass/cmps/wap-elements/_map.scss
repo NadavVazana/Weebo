@@ -65,3 +65,53 @@
 
     }
 }
+
+.wap-map-3 {
+    font-family: Monsterrat-thin;
+    display: flex;
+    flex-direction:column-reverse;
+    font-size: 16px;
+    & > * {
+        width: 100%;
+    }
+
+    .map {
+        height: 500px;
+        width: 100%;
+    }
+
+    .text-info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-family: Monsterrat;
+        color: #f5ae71;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+
+    .hours {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        flex-direction:row;
+        & > * {
+            width: 50%;
+        }
+    }
+}
