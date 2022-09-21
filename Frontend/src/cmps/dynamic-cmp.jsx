@@ -9,24 +9,25 @@ import { Gallery } from "./wap-cmps/gallery"
 import { Input } from "./wap-cmps/input"
 
 
-export const DynamicCmp = ({ cmp, onEditElement }) => {
+export const DynamicCmp = ({ cmp, onEditElement,isPublished }) => {
+
     switch (cmp.type) {
         case 'container':
-            return <Container cmp={cmp} onEditElement={onEditElement} />
+            return <Container isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'text':
-            return <Text cmp={cmp} onEditElement={onEditElement} />
+            return <Text isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'button':
-            return <Button cmp={cmp} onEditElement={onEditElement} />
+            return <Button isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'image':
-            return <Image cmp={cmp} onEditElement={onEditElement} />
+            return <Image isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'video':
-            return <Video cmp={cmp} onEditElement={onEditElement} />
+            return <Video isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'input':
-            return <Input cmp={cmp} onEditElement={onEditElement} />
+            return <Input isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'map':
-            return <Map cmp={cmp} onEditElement={onEditElement} />
+            return <Map isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'gallery':
-            return <Gallery cmp={cmp} onEditElement={onEditElement} />
+            return <Gallery isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         default: return
     }
 

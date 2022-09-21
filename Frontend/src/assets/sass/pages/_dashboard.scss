@@ -1,26 +1,79 @@
-.no-sites{
+.no-sites {
     text-align: center;
     user-select: none;
     font-size: 2.5rem;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-family: Monsterrat;
-    button{
+
+    button {
         margin-top: 50px;
         color: #c93434;
         transition: all 0.5s;
     }
-    button:hover{
+
+    button:hover {
         background-color: #f57d75;
         color: whitesmoke;
         transition: all 0.5s;
     }
 }
+
 .dashboard-page {
+    display: flex;
     height: 100vh;
-   
+    position: relative;
+    width: 100vw;
+
+
+
+    .publish-title-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .charts{
+        display: flex;
+        width: 60%;
+    }
+
+    .chart{
+        width: 50%
+    }
+
+
+    .published-title {
+        font-family: Monsterrat;
+        color: rgb(92, 175, 92);
+        user-select: none;
+    }
+
+
+    .published-icon {
+        width: 30px;
+    }
+
+    .not-published-icon {
+        width: 30px;
+    }
+
+    .not-published-title {
+        font-family: Monsterrat;
+        color: rgb(223, 41, 41);
+        user-select: none;
+    }
+
+    .main-dashboard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
     .visit-btn {
         padding: 10px 80px 10px 80px;
         font-size: 1.3rem;
@@ -42,7 +95,7 @@
 
     }
 
-    .delete-btn{
+    .delete-btn {
         cursor: pointer;
         font-family: Madefor;
         background-color: rgb(185, 63, 63);
@@ -52,13 +105,14 @@
         border-radius: 20px;
 
     }
-    .delete-btn:hover{
+
+    .delete-btn:hover {
         color: whitesmoke;
         background-color: rgb(197, 55, 55);
     }
 
-    .delete-modal-container{
-        .delete-modal{
+    .delete-modal-container {
+        .delete-modal {
             border-radius: 20px;
             display: flex;
             flex-direction: column;
@@ -68,53 +122,59 @@
             background-color: #0a3a7e;
             padding: 80px 90px;
             font-family: Madefor;
-            h1{
+
+            h1 {
                 color: whitesmoke;
                 font-size: 1.5rem;
+
+                span{
+                    color: #c75634;
+                }
             }
-            form{
+
+            form {
                 display: flex;
                 gap: 10px;
 
-                button{
+                button {
                     background-color: #a03b34;
                     border: none;
                 }
-                button:hover{
+
+                button:hover {
                     background-color: #c93434;
                     color: whitesmoke;
                 }
-                input{
+
+                input {
                     width: 100%;
+                    padding: 10px;
                 }
             }
+
             position: fixed;
             z-index: 100000;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        
+
     }
 
-    .action-btns{
+    .action-btns {
         display: flex;
-        position: absolute;
-        top: 20%;
-        left: 59%;
         gap: 20px;
+        user-select: none;
+
 
     }
 
     .details-grid {
         display: grid;
-        position: absolute;
-        width: 70%;
-        top: 30%;
-        left: 62%;
-        transform: translate(-50%);
 
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        width: 90%;
+
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
         >* {
             display: flex;
@@ -123,22 +183,29 @@
             gap: 20px;
             justify-content: space-between;
             border-radius: 20px;
-            padding:30px;
+            padding: 30px;
             margin-inline-end: 10px;
             margin-bottom: 10px;
-            > *:first-child{
+            color: rgb(39, 36, 36);
+
+            >*:first-child {
                 margin-top: 10px;
+                
 
             }
-            > *:nth-child(2){
+
+            >*:nth-child(2) {
                 user-select: none;
                 font-weight: 500;
                 font-size: 1rem;
             }
-            >*{
+
+            >* {
                 font-family: Madefor;
+                padding: 10px;
             }
-            img{   
+
+            img {
                 width: 80px;
                 margin-bottom: 10px;
                 user-select: none;
@@ -148,14 +215,16 @@
         .site-name {
             background-color: #9ad9e0;
         }
-        .site-edits{
-            background-color:#5671c8 ;
-        }
-        .site-views{
-            background-color:#fbe16b;
+
+        .site-edits {
+            background-color: #5671c8;
         }
 
-        .site-creation-date{
+        .site-views {
+            background-color: #fbe16b;
+        }
+
+        .site-creation-date {
             background-color: #f3ac96;
         }
     }
@@ -178,8 +247,54 @@
         font-size: 3rem;
     }
 
+    .site-menu-open {
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        border-right: 1px rgba(0, 0, 0, 0.19) solid;
+        background-color: whitesmoke;
+        padding: 15px;
+
+        .site-list {
+            list-style: none;
+            padding-inline-start: 0;
+
+            .list-item {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                li {
+                    padding-top: 30px;
+                    text-align: start;
+                    font-family: Monsterrat;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+
+                li:hover {
+                    color: rgb(19, 19, 98);
+                }
+
+                img {
+                    width: 20px;
+                    padding-top: 20px;
+                }
+
+            }
+
+
+
+        }
+
+    
+
+
+    }
+
     .sites-nav {
-        width: 20%;
+        width: 30%;
         height: 100%;
         text-align: center;
         border-right: 1px rgba(0, 0, 0, 0.19) solid;
@@ -195,9 +310,8 @@
                 align-items: center;
 
                 li {
-                    padding-top: 20px;
+                    padding-top: 30px;
                     text-align: start;
-                    font-size: 1.2rem;
                     font-family: Monsterrat;
                     cursor: pointer;
                     font-weight: 500;
@@ -219,10 +333,216 @@
         }
 
         .list-title {
-            font-family: Madefor;
-            font-size: 1.5rem;
+            font-family: Monsterrat;
+            font-size: 1.8rem;
+            color: rgb(51, 48, 48);
             font-weight: 500;
 
         }
+    }
+
+    @include for-tiny-layout{
+        .action-btns {
+            margin-top: 90px;
+
+            >* {
+                padding: 20px;
+
+            }
+        }
+
+        .sites-nav {
+            position: fixed;
+            left: -65%;
+            top: 0;
+            transition: left 0.4s;
+            z-index: 1000;
+            background-color: whitesmoke;
+
+            li {
+                font-size: 0.8rem;
+
+            }
+        }
+
+        .site-menu-open {
+            left: 0%;
+            transition: left 0.4s;
+            z-index: 1000;
+            top: 0;
+
+            li {
+                font-size: .8rem;
+            }
+        }
+
+        .black-screen {
+            z-index: 10;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 2%;
+            left: 3%;
+            width: 25px;
+            height: 30px;
+            filter: invert(1);
+            filter: brightness(.3);
+            z-index: 1;
+        }
+
+        .edit-btn{
+            font-size: .6rem;
+        }
+        .visit-btn{
+            font-size: .6rem;
+        }
+        .delete-btn{
+            font-size: .6rem;
+        }
+
+    }
+    @include for-mobile-layout {
+     
+        .action-btns {
+            margin-top: 90px;
+
+            >* {
+                padding: 20px;
+
+            }
+        }
+
+        .sites-nav {
+            position: fixed;
+            left: -65%;
+            top: 0;
+            transition: left 0.4s;
+            z-index: 1000;
+            background-color: whitesmoke;
+
+            li {
+                font-size: 0.8rem;
+
+            }
+        }
+
+        .site-menu-open {
+            left: 0%;
+            transition: left 0.4s;
+            z-index: 1000;
+            top: 0;
+
+            li {
+                font-size: .8rem;
+            }
+        }
+
+        .black-screen {
+            z-index: 10;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 2%;
+            left: 3%;
+            width: 25px;
+            height: 30px;
+            filter: invert(1);
+            filter: brightness(.3);
+            z-index: 1;
+        }
+        .edit-btn{
+            font-size: .8rem;
+        }
+        .visit-btn{
+            font-size: .8rem;
+        }
+        .delete-btn{
+            font-size: .8rem;
+        }
+
+        .published-title{
+            font-size: 1.2rem;
+        }
+        .not-published-title{
+            font-size: 1.2rem;
+        }
+
+
+
+    }
+    @include for-mobile-layout{
+        .charts{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .chart{
+            width: 100%;
+        }
+    }
+
+    @include for-narrow-layout {
+        
+    }
+
+    @include for-mid-layout {
+        .action-btns {
+            >* {
+                padding-inline: 50px;
+            }
+        }
+        .charts{
+            flex-direction: unset;
+        }
+        .chart{
+            width: 50%;
+        }
+
+        .published-title{
+            font-size: 2rem;
+        }
+        .not-published-title{
+            font-size: 2rem;
+        }
+        
+    }
+
+    @include for-normal-layout {
+        .sites-nav {
+            display: block;
+            position: static;
+            left: 0;
+            width: 20%;
+            z-index: 1;
+
+
+            li {
+                font-size: 1.1rem;
+            }
+        }
+
+        .site-menu-open {
+            .black-screen {
+                display: none;
+
+
+            }
+        }
+
+        .hamburger {
+
+            display: none;
+            z-index: 10000;
+        }
+
+    }
+
+    @include for-wide-layout {
+      
     }
 }

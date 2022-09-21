@@ -16,6 +16,8 @@ a {
     z-index: 99;
     backdrop-filter: blur(4px);
 }
+
+
  
   
   a:hover {
@@ -39,17 +41,14 @@ a {
     transform: scaleX(1);
   }
 
-  // section > [contenteditable]:focus{
-  //   padding: 10px;
-  //   transition: padding 0.3s;
-  // }
-
-  .blur{
-    filter: blur(4px);
+  section > [contenteditable]:focus{
+    padding: 10px;
+    transition: padding 0.3s;
   }
 
-  html {
 
+  html {
+ overflow-x: hidden;
 ::-webkit-scrollbar {
   width: 10px;
 }

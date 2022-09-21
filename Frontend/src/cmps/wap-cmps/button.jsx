@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft } from '../../store/draft/draft.action'
+import React from 'react'
 
-export const Button = ({ cmp, onEditElement }) => {
+export const Button = ({ cmp, onEditElement ,isPublished}) => {
 
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
@@ -25,7 +26,9 @@ export const Button = ({ cmp, onEditElement }) => {
     }
 
     return (
-        <section className={`${cmp.info.class}` } >
+        <React.Fragment>
+            
+        {!isPublished ? <section className={`${cmp.info.class}` } >
             <button className={`button`} 
                 contentEditable
                 suppressContentEditableWarning
@@ -33,6 +36,14 @@ export const Button = ({ cmp, onEditElement }) => {
                 onClick={(ev) => handleEditElement(ev,cmp)} onChange={handleChange}>
                     {cmp.info.value}
             </button>
-        </section>
+        </section> 
+        : <section className={`${cmp.info.class}`}>
+            <button className={`button-published`} 
+                style={{ ...cmp?.styles }}
+                >
+                    {cmp.info.value}
+            </button>
+            </section>}
+        </React.Fragment>
     )
 }

@@ -72,11 +72,13 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-//     background: linear-gradient(to bottom right, 
-//     #aae6f0    70%, 
-//     #fad255 0 100%
-//   );
+
+    background: linear-gradient(to top right, 
+     #fad255   50%, 
+     #aae6f0 0 100%
+  );
     padding-inline: auto;
+    padding-block: 50px;
 
     &:first-child {
         width: 100%;
@@ -117,7 +119,6 @@
     @include for-mid-layout{
         flex-direction: row;
         align-items: flex-start;
-        margin-block-start: 90px;
         section {
             width: 50%;
             max-width: 550px;
@@ -128,8 +129,8 @@
         // }
 
         .hero-item-1 {
-            padding: 40px 0;
-            gap: 50px;
+            // padding: 40px 0;
+            // gap: 50px;
         }
     }
 }
@@ -140,11 +141,22 @@
     font-family: Monsterrat-thin;
     justify-content: flex-end;
     align-items: stretch;
-    margin-block: 50px;
-//     background: linear-gradient(to bottom right, 
-//     #aae6f0    22.2%, 
-//     #fad255 0 100%
-//   );
+    
+
+    background: linear-gradient(to top right, 
+    #fbcaec  50%, 
+    #fad255 0 100%
+ );
+
+
+    // background: 
+    // repeating-linear-gradient(
+    //   145deg,
+    //   #fad225,
+    //   #fad225 80px,
+    //   #fbcaec 80px,
+    //   #fbcaec 160px /* determines size */
+    // );
 
     .hero-item-1 {
         display: flex;
@@ -155,10 +167,6 @@
         gap: 50px;
         height: 100%;
         padding: 10px;
-    }
-    img {
-        width: 100%;
-        height: 100%;
     }
 
     .title {
@@ -173,15 +181,20 @@
 
     .sweetpies-btn {
         font-family: Monsterrat;
-        background: none;
-        border: none;
         background-color: #fbcaec;
-        padding: 10px 20px;
+        width: fit-content;
+
+        button {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+        }
 
         
         a {
             color: #4d4d4d;
             font-weight: bold;
+            
         }
 
         &:hover {
@@ -192,20 +205,36 @@
     }
 
     @include for-mobile-layout{
-        
+        section {
+           text-align: center;
+          
+         }
     }
     @include for-narrow-layout{
-        
     }
     @include for-mid-layout{
-        padding: 138px 80px;
+        padding: 138px 120px;
         flex-direction: row;
-        section {
-            width: 50%;
+
+        & > * {
+            margin: auto;
         }
+
+        section {
+            display: flex;
+            width: 50%;
+            img {
+                margin-inline-start: auto;
+            }
+         
+        }
+    
 
         .hero-item-1 {
             margin-top: 50px;
         }
+      
     }
+
+  
 }

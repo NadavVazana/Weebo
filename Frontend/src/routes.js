@@ -4,7 +4,7 @@ import { About } from './pages/about.jsx'
 import { Login } from './pages/login.jsx'
 import { Templates } from './pages/templates/templates.jsx'
 import { Dashboard } from './pages/dashboard.jsx'
-// import { Publish } from './pages/publish.jsx'
+import { Publish } from './pages/publish.jsx'
 import { Signup } from './pages/sign-up.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
@@ -13,6 +13,11 @@ const routes = [
         path: '/',
         element: <Home />,
         label: 'Home 🏠',
+    },
+    {
+        path: '/publish/:siteId',
+        element: <Publish />,
+        label: 'Publish',
     },
     {
         path: 'editor',

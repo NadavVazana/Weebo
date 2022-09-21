@@ -1,11 +1,11 @@
 // import { hero1, map1, form1, gallery1, mission1, card1, footer1 } from './wap'
 export const exampleList = [
     {
-        "_id": "5e28393890dd8888a06d4e44",
+        "_id": "5e28393890dd8888a06d4771",
         "type": "container",
         "name": "Travel",
         "subcategory": "Explore",
-        "imgUrl": `https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png`,
+        "imgUrl": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png",
         "createdBy": {
             "_id": "5e26e0b718a8888d4c995527",
             "fullname": "Noris Special",
@@ -41,7 +41,7 @@ export const exampleList = [
                     "name": "wap-container",
                     "cmps": [
                         {
-                            "id": "wc02",
+                            "id": "wh04",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -52,7 +52,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh04",
+                            "id": "wh05",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -62,7 +62,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh05",
+                            "id": "wh06",
                             "type": "text",
                             "name": "wap-text",
                             "info": {
@@ -72,7 +72,7 @@ export const exampleList = [
                             "cmps": []
                         },
                         {
-                            "id": "wh08",
+                            "id": "wh07",
                             "type": "button",
                             "name": "wap-button",
                             "info": {
@@ -85,7 +85,7 @@ export const exampleList = [
 
                     ]
                 }, {
-                    "id": "wc02",
+                    "id": "wh08",
                     "type": "image",
                     "info": {
                         "image": "icons/hamburger.png"
@@ -173,12 +173,12 @@ export const exampleList = [
             },
             "cmps": [
                 {
-                    "id": "wc02",
+                    "id": "wca02",
                     "type": "container",
                     "name": "card-1-container",
                     "cmps": [
                         {
-                            "id": "wc02",
+                            "id": "wcai03",
                             "type": "image",
                             "name": "wap-image",
                             "info": {
@@ -189,7 +189,7 @@ export const exampleList = [
                             ]
                         },
                         {
-                            "id": "wc03",
+                            "id": "wca04",
                             "type": "container",
                             "name": "info-container",
 
@@ -231,17 +231,17 @@ export const exampleList = [
                     ]
                 },
                 {
-                    "id": "wc03",
+                    "id": "wca05",
                     "type": "container",
                     "name": "card-2-container",
                     "cmps": [
                         {
-                            "id": "wc03",
+                            "id": "wca06",
                             "type": "container",
                             "name": "info-container",
                             "cmps": [
                                 {
-                                    "id": "wc03",
+                                    "id": "wca07",
                                     "type": "text",
                                     "name": "wap-text",
                                     "info": {
@@ -252,7 +252,7 @@ export const exampleList = [
                                     ]
                                 },
                                 {
-                                    "id": "wc04",
+                                    "id": "wca08",
                                     "type": "text",
                                     "name": "wap-text",
                                     "info": {
@@ -263,7 +263,7 @@ export const exampleList = [
                                     ]
                                 },
                                 {
-                                    "id": "wc05",
+                                    "id": "wca09",
                                     "type": "button",
                                     "name": "wap-button",
                                     "info": {
@@ -275,7 +275,7 @@ export const exampleList = [
                             ]
                         },
                         {
-                            "id": "wc02",
+                            "id": "wca010",
                             "type": "image",
                             "name": "wap-image",
                             "info": {
@@ -292,7 +292,7 @@ export const exampleList = [
             "drag": "true",
             "cmps": [
                 {
-                    "id": "wf02",
+                    "id": "wf021",
                     "type": "text",
                     "name": "wap-text",
                     "info": {
@@ -373,371 +373,8 @@ export const exampleList = [
 
             ]
         }],
-        // "isPublic": true,
-        "isEdit": true
+        "isPublished": false,
     },
-    {
-        "_id": "5e28393890dd8888a06d4e43",
-        "type": "container",
-        "name": "Travel",
-        "subcategory": "Explore",
-        "imgUrl": `https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663324375/Untitled_q0kmrd.png`,
-        "createdBy": {
-            "_id": "5e26e0b718a8888d4c995527",
-            "fullname": "Noris Special",
-            "imgUrl": "img.jpg",
-        },
-        "usersData": {
-            "contacts": [{ "email": "noris@user.com", "msg": "Please send me stuff", "at": 123 }],
-            "signups": [{ "email": "noris@user.com", "at": 123 }]
-        },
-        "cmps": [
-            {
-                "id": "wh01",
-                "type": "container",
-                "name": "wap-header-1",
-                "drag": "true",
-                "cmps": [
-                    {
-                        "id": "wh02",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "isFocus": false,
-                            "class": "logo",
-                            "value": "Sinker."
-                        },
-                        "cmps": []
-                    },
-                    {
-                        "id": "wh03",
-                        "type": "container",
-                        "name": "wap-container",
-                        "cmps": [
-                            {
-                                "id": "wc02",
-                                "type": "text",
-                                "name": "wap-text",
-                                "info": {
-                                    "class": "nav-item",
-                                    "value": "About"
-                                },
-                                "cmps": []
-                            },
-                            {
-                                "id": "wh04",
-                                "type": "text",
-                                "name": "wap-text",
-                                "info": {
-                                    "class": "nav-item",
-                                    "value": "News"
-                                },
-                                "cmps": []
-                            },
-                            {
-                                "id": "wh05",
-                                "type": "text",
-                                "name": "wap-text",
-                                "info": {
-                                    "class": "nav-item",
-                                    "value": "Read Me"
-                                },
-                                "cmps": []
-                            },
-                            {
-                                "id": "wh08",
-                                "type": "button",
-                                "name": "wap-button",
-                                "info": {
-                                    "class": "nav-item",
-                                    "value": "Take Action"
-                                },
-                                "cmps": []
-                            }
-                        ]
-                    }
-                ]
-            }, {
-                "id": "whe01",
-                "type": "container",
-                "name": "wap-hero-1",
-                "drag": "true",
-                "cmps": [
-                    {
-                        "id": "whe02",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "isFocus": false,
-                            "class": "hero-item-1",
-                            "value": "Sustainability"
-                        },
-                        "cmps": []
-                    },
-                    {
-                        "id": "whe03",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "class": "hero-item-2",
-                            "value": "Starts With You"
-                        },
-                        "cmps": []
-                    },
-
-                    {
-                        "id": "whe05",
-                        "type": "button",
-                        "name": "wap-button",
-                        "info": {
-                            "class": "hero-item-3",
-                            "value": "Learn more",
-                            "styles": {
-                                "fontSize": '14px'
-                            }
-                        },
-                        "cmps": []
-                    }
-                ]
-            }, {
-                "id": "wm01",
-                "type": "container",
-                "name": "wap-mission-1",
-                "cmps": [
-                    {
-                        "id": "wm02",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "isFocus": false,
-                            "class": "title",
-                            "value": "We conserve land through outreach and restoration."
-                        },
-                        "cmps": []
-                    },
-                    {
-                        "id": "wm03",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "class": "paragraph",
-                            "value": "Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help."
-                        },
-                        "cmps": []
-                    },
-                ]
-            }, {
-                "id": "wc01",
-                "type": "container",
-                "name": "wap-card-1",
-                "info": {
-                    "isFocus": false,
-                },
-                "cmps": [
-                    {
-                        "id": "wc02",
-                        "type": "container",
-                        "name": "card-1-container",
-                        "cmps": [
-                            {
-                                "id": "wc02",
-                                "type": "image",
-                                "name": "wap-image",
-                                "info": {
-                                    "image": "card1/card1.jpg"
-                                },
-                                "cmps": [
-                                ]
-                            },
-                            {
-                                "id": "wc03",
-                                "type": "container",
-                                "name": "info-container",
-
-                                "cmps": [
-                                    {
-                                        "id": "wc03",
-                                        "type": "text",
-                                        "name": "wap-text",
-                                        "info": {
-                                            "class": "title",
-                                            "value": "Our Organization"
-                                        },
-                                        "cmps": [
-
-                                        ]
-                                    },
-                                    {
-                                        "id": "wc04",
-                                        "type": "text",
-                                        "name": "wap-text",
-                                        "info": {
-                                            "class": "paragraph",
-                                            "value": "Find out about our mission, methods, and the results of our decades of advocacy."
-                                        },
-                                        "cmps": [
-                                        ]
-                                    },
-                                    {
-                                        "id": "wc05",
-                                        "type": "button",
-                                        "name": "wap-button",
-                                        "info": {
-                                            "class": "button",
-                                            "value": "Learn more"
-                                        },
-                                        "cmps": []
-                                    }]
-                            },
-                        ]
-                    },
-                    {
-                        "id": "wc03",
-                        "type": "container",
-                        "name": "card-2-container",
-                        "cmps": [
-                            {
-                                "id": "wc03",
-                                "type": "container",
-                                "name": "info-container",
-                                "cmps": [
-                                    {
-                                        "id": "wc03",
-                                        "type": "text",
-                                        "name": "wap-text",
-                                        "info": {
-                                            "class": "title",
-                                            "value": "Our Organization"
-                                        },
-                                        "cmps": [
-                                        ]
-                                    },
-                                    {
-                                        "id": "wc04",
-                                        "type": "text",
-                                        "name": "wap-text",
-                                        "info": {
-                                            "class": "paragraph",
-                                            "value": "Find out about our mission, methods, and the results of our decades of advocacy."
-                                        },
-                                        "cmps": [
-                                        ]
-                                    },
-                                    {
-                                        "id": "wc05",
-                                        "type": "button",
-                                        "name": "wap-button",
-                                        "info": {
-                                            "class": "button",
-                                            "value": "Learn more"
-                                        },
-                                        "cmps": []
-                                    },
-                                ]
-                            },
-                            {
-                                "id": "wc02",
-                                "type": "image",
-                                "name": "wap-image",
-                                "info": {
-                                    "image": "card1/card1.jpg"
-                                },
-                                "cmps": []
-                            }]
-                    }
-                ]
-            }, {
-                "id": "wf01",
-                "type": "container",
-                "name": "wap-form-1",
-                "drag": "true",
-                "cmps": [
-                    {
-                        "id": "wf02",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "isFocus": false,
-                            "class": "title",
-                            "value": "Subscribe"
-                        },
-                        "cmps": [
-
-                        ]
-                    },
-                    {
-                        "id": "wf03",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "class": "paragraph",
-                            "value": "Sign up with your email address to receive news and updates."
-                        },
-                        "cmps": [
-
-                        ]
-                    },
-                    {
-                        "id": "wf07",
-                        "type": "container",
-                        "name": "wap-form",
-                        "cmps": [{
-                            "id": "wf01",
-                            "type": "input",
-                            "input_type": "email",
-                            "info": {
-                                "placeholder": "Email Address"
-                            },
-                            "name": "wap-input",
-                            "cmps": []
-                        },
-                        {
-                            "id": "wf06",
-                            "type": "button",
-                            "info": {
-                                "class": "button",
-                                "value": "Sign Up"
-                            },
-                            "name": "wap-button",
-                            "cmps": []
-                        }]
-                    }
-                ]
-            }
-            , {
-                "id": "wft01",
-                "type": "container",
-                "name": "wap-footer-1",
-                "drag": "true",
-                "cmps": [
-                    {
-                        "id": "wft02",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "isFocus": false,
-                            "class": "logo",
-                            "value": "Weebo."
-                        },
-                        "cmps": []
-                    },
-                    {
-                        "id": "wft03",
-                        "type": "text",
-                        "name": "wap-text",
-                        "info": {
-                            "class": "rights",
-                            "value": "all rights reserved Ⓒ 2022"
-                        },
-                        "cmps": []
-                    }
-
-                ]
-            }],
-        // "isPublic": true,
-        "isEdit": true
-    }
-    ,
     {
         "_id": "empty",
         "type": "container",
@@ -754,8 +391,7 @@ export const exampleList = [
             "signups": [{ "email": "spacial@user.com", "at": 123 }]
         },
         "cmps": [],
-        // "isPublic": true,
-        "isEdit": true
+        "isPublished": false
     },
 
 
@@ -803,7 +439,7 @@ export const Headers = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc0876672",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -845,7 +481,7 @@ export const Headers = {
                 ]
             }, {
 
-                "id": "wc02",
+                "id": "wc021q1q2",
                 "type": "image",
                 "info": {
                     "image": "icons/hamburger.png"
@@ -914,7 +550,7 @@ export const Forms = {
         "drag": "true",
         "cmps": [
             {
-                "id": "wf02",
+                "id": "wf023",
                 "type": "text",
                 "name": "wap-text",
                 "info": {
@@ -1070,12 +706,12 @@ export const Cards = {
         "name": "wap-card-1",
         "cmps": [
             {
-                "id": "wc02",
+                "id": "wca02",
                 "type": "container",
                 "name": "card-1-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc020987",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1171,7 +807,7 @@ export const Cards = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc028783768",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1237,7 +873,7 @@ export const All = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc027878",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -1279,7 +915,7 @@ export const All = {
                 ]
             }, {
 
-                "id": "wc02",
+                "id": "wc0223231",
                 "type": "image",
                 "info": {
                     "image": "icons/hamburger.png"
@@ -1325,12 +961,12 @@ export const All = {
         "name": "wap-card-1",
         "cmps": [
             {
-                "id": "wc02",
+                "id": "wc02456",
                 "type": "container",
                 "name": "card-1-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc0212",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1426,7 +1062,7 @@ export const All = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc024",
                         "type": "image",
                         "name": "wap-image",
                         "info": {
@@ -1530,7 +1166,7 @@ export const All = {
         "drag": "true",
         "cmps": [
             {
-                "id": "wf02",
+                "id": "wf024",
                 "type": "text",
                 "name": "wap-text",
                 "info": {
@@ -1626,11 +1262,11 @@ export const All = {
 
 
 export const wapExample2 = {
-    "_id": "5e28393890dd8888a06d4777",
+    "_id": "5e28393890dd8888a06d4772",
     "type": "container",
     "name": "cooking",
     "subcategory": "Wellness",
-    "imgUrl": `https://images.squarespace-cdn.com/content/5ce592c8732098000152407a/a5aef4b2-4b9c-4279-b780-57302c077519/image-asset.jpeg?content-type=image%2Fjpeg&format=750w`,
+    "imgUrl": "../assets/img/templates/example-2.png",
     "createdBy": {
         "_id": "5e26e0b718a7777d4c995527",
         "fullname": "Special Noris",
@@ -1662,7 +1298,7 @@ export const wapExample2 = {
                 "name": "wap-container",
                 "cmps": [
                     {
-                        "id": "wc02",
+                        "id": "wc022",
                         "type": "text",
                         "name": "wap-text",
                         "info": {
@@ -1760,7 +1396,7 @@ export const wapExample2 = {
                 "id": "whi01",
                 "type": "image",
                 "info": {
-                    "image": "hero2/cupcakes.png"
+                    "image": "hero2/cupcakes.jpg"
                 },
                 "name": "hero-2-image",
                 "cmps": []
@@ -1911,7 +1547,7 @@ export const wapExample2 = {
         "name": "wap-card-2",
         "cmps": [
             {
-                "id": "wct01",
+                "id": "wct012",
                 "type": "text",
                 "name": "wap-card-2-title",
                 "info": {
@@ -1931,7 +1567,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct013",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1941,7 +1577,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct021",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1958,7 +1594,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct014",
                                 "type": "image",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1969,12 +1605,12 @@ export const wapExample2 = {
                         ]
                     },
                     {
-                        "id": "wc02",
+                        "id": "wc021",
                         "type": "container",
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct015",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -1984,7 +1620,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct01",
+                                "id": "wct016",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2001,7 +1637,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct017",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2011,7 +1647,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct022",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2028,7 +1664,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct018",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2038,7 +1674,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct023",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2055,7 +1691,7 @@ export const wapExample2 = {
                         "name": "wap-card-2-item",
                         "cmps": [
                             {
-                                "id": "wct01",
+                                "id": "wct019",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2065,7 +1701,7 @@ export const wapExample2 = {
                                 "cmps": []
                             },
                             {
-                                "id": "wct02",
+                                "id": "wct024",
                                 "type": "text",
                                 "name": "wap-card-2-item",
                                 "info": {
@@ -2098,7 +1734,7 @@ export const wapExample2 = {
                         "name": "form-container",
                         "cmps": [
                             {
-                                "id": "wf02",
+                                "id": "wf025",
                                 "type": "text",
                                 "name": "wap-text",
                                 "info": {
@@ -2133,7 +1769,7 @@ export const wapExample2 = {
                                         "cmps": []
                                     },
                                     {
-                                        "id": "wf02",
+                                        "id": "wf026",
                                         "type": "input",
                                         "input_type": "email",
                                         "info": {
@@ -2145,7 +1781,7 @@ export const wapExample2 = {
                                 ]
                             },
                             {
-                                "id": "wf02",
+                                "id": "wf027",
                                 "type": "input",
                                 "input_type": "text",
                                 "info": {
@@ -2184,13 +1820,12 @@ export const wapExample2 = {
     },
 
     ],
-    // "isPublic": true,
-    "isEdit": true
+    "isPublished": true
 }
 
 
 
 export const examples = [
-    
+
     wapExample2
 ]

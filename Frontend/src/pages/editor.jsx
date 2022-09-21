@@ -75,14 +75,20 @@ export const Editor = () => {
     }
 
     if (!draft) return <section></section>
+
     return (
         <section className='editor'>
             <DragDropContext onDragEnd={handleOnDragEnd}>
                 <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle}/>
                 <Droppable droppableId='editor'>
-                    {(provided) => {
+                    {(provided, snapshot) => {
+                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? 'blue' : 'white' }
                         return (
-                            <section className={`wap ${draft.name ? draft.name : ''}`} {...provided.droppableProps} ref={provided.innerRef}>
+                            <section
+                                className={`wap ${draft.name ? draft.name : ''}`}
+                                {...provided.droppableProps}
+                                ref={provided.innerRef}
+                                style={styleTest}>
                                 {!draft.cmps?.length ? (
                                     <section>
                                         <h2>Lets start!</h2>
@@ -92,7 +98,7 @@ export const Editor = () => {
                                         <Draggable key={cmp.id + index} draggableId={cmp.id + index} index={index}>
                                             {(provided) => (
                                                 <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}>
-                                                    <DynamicCmp cmp={cmp} onEditElement={onEditElement} />
+                                                    <DynamicCmp cmp={cmp} isPublished={false} onEditElement={onEditElement} />
                                                     {provided.placeholder}
                                                 </div>
                                             )}
