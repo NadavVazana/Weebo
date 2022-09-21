@@ -151,7 +151,7 @@ export const Dashboard = () => {
                 </div>
                 <section className="charts">
                 <PublishChart sites={loggedInUser.waps} />
-                <ViewsChart  />
+                {/* <ViewsChart  /> */}
                 </section>
 
             </section>
