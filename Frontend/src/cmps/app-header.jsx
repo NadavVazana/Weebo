@@ -24,6 +24,7 @@ export const AppHeader = () => {
 
 
 
+    // Saves wap to user
     const saveWapToUser = (ev) => {
         ev.preventDefault()
         setNameModal(false)
@@ -41,7 +42,6 @@ export const AppHeader = () => {
         dispatch(updateUser(user))
         dispatch(setDraft(draft))
         showSuccessMsg(`New site has been saved!`)
-        
     }
 
 
@@ -50,6 +50,7 @@ export const AppHeader = () => {
         setSiteName(target.value)
     }
 
+    // Save the edited site 
     const onSave = () => {
         const draft = dispatch(getDraft())
         if (!draft.siteName)
@@ -60,7 +61,6 @@ export const AppHeader = () => {
             user.waps[wapIndex] = draft
             dispatch(updateUser(user))
             showSuccessMsg(`Site has been saved!`)
-
         }
     }
 

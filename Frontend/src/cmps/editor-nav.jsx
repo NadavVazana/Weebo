@@ -13,14 +13,17 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
     const [activeOption, setActiveOption] = useState(null)
     const cmpTypes = ['All', 'Headers', 'Galleries', 'Heroes', 'Maps', 'Footers', 'Cards', 'Missions', 'Forms']
 
+    // toggle options menu
     const toggleOptionsMenu = (event, cmp) => {
         if (!isOptionsMenu.cmpType) setOptionsMenu(prevState => ({ isOpen: !prevState.isOpen, cmpType: cmp }))
         else if (isOptionsMenu.cmpType === cmp) setOptionsMenu({ isOpen: false, cmpType: null })
         else setOptionsMenu({ isOpen: true, cmpType: cmp })
+
         if (cmp === activeOption) setActiveOption(null)
         else setActiveOption(cmp)
     }
 
+    // toggle edit menu
     const toggleEditMenu = () => {
         setEditMenu(!isEditMenu)
         setThemesMenu(false)
@@ -29,6 +32,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         isEditToggle(false)
     }
 
+    // toggle themes
     const toggleThemesMenu = () => {
         setEditMenu(false)
         setThemesMenu(!isThemesMenu)
@@ -37,6 +41,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         isEditToggle(false)
     }
 
+    // toggle add menu
     const toggleAddMenu = () => {
         setEditMenu(false)
         setThemesMenu(false)
@@ -67,7 +72,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
             </div>
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu || isOptionsMenu.isOpen) ? 'open' : ''} `}>
                 {(isEditMenu || isEdit) && <EditElements isEditMenu={isEditMenu} />}
-                {isThemesMenu && !isEdit &&<ThemesList />}
+                {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
                     <React.Fragment>{cmpTypes.map(cmp => {
                         let cls = cmp === activeOption ? 'active' : ''

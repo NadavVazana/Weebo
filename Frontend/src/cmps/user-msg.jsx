@@ -1,46 +1,35 @@
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import { eventBusService } from '../services/event-bus.service.js'
 
 
-export const UserMsg = ()=> {
+export const UserMsg = () => {
 
- const [msg,setMsg]= useState(null)
- const [msgClass,setMsgClass] = useState(null)
- 
- useEffect(()=>{  
-  var removeEvent;
+  const [msg, setMsg] = useState(null)
+  const [msgClass, setMsgClass] = useState(null)
 
+  useEffect(() => {
+    var removeEvent;
 
     removeEvent = eventBusService.on('show-user-msg', (msg) => {
-        setMsg(msg)
-        setMsgClass('user-msg')
-        setTimeout(() => {
-          setMsgClass('user-msg-close')
-        }, 4200);
-
-        
-
-
+      setMsg(msg)
+      setMsgClass('user-msg')
+      setTimeout(() => {
+        setMsgClass('user-msg-close')
+      }, 4200);
     })
 
 
-  return ()=>{
-    removeEvent()}
-  },[]) 
+    return () => {
+      removeEvent()
+    }
+  }, [])
 
-  
-  
-  
+  if (!msg) return <span></span>
+  return (
+    <section className={msgClass}>
 
+      {msg.txt}
+    </section>
+  )
 
-
-
-    if (!msg) return <span></span>
-    return (
-      <section className={msgClass}>
-        
-        {msg.txt}
-      </section>
-    )
-  
 }

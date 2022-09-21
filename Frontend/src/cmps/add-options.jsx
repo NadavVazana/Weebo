@@ -4,7 +4,7 @@ import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms, All 
 
 export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
     const [items, setItems] = useState('')
-    
+
     useEffect(() => {
         switch (isOptionsMenu.cmpType) {
             case 'Headers':
@@ -49,7 +49,15 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
                     {Object.values(items).map((cmp, index) => {
                         return <Draggable key={cmp.id} index={index} draggableId={cmp.name}>
                             {(provided) => {
-                                return <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps} onClick={() => addElement(isOptionsMenu.cmpType)}><img className={`mini-cmp ${cmp.name}-mini`} src={require(`../assets/img/templates/example 1 elements/${cmp.name}.png`)} alt={`${cmp.name}`} /></div>
+                                return (
+                                    <div ref={provided.innerRef}
+                                        {...provided.dragHandleProps}
+                                        {...provided.draggableProps}
+                                        onClick={() => addElement(isOptionsMenu.cmpType)}>
+                                        <img className={`mini-cmp ${cmp.name}-mini`}
+                                            src={require(`../assets/img/templates/example 1 elements/${cmp.name}.png`)}
+                                            alt={`${cmp.name}`} />
+                                    </div>)
                             }}
                         </Draggable>
                     })}
