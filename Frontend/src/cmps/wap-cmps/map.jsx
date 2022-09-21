@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text, cmp }) => <div style={{ fontSize: '40px' }}>{text}</div>;
 
 export const Map = ({ cmp }) => {
-    console.log('cmp:', cmp.info.coors)
     const defaultProps = {
         center: {
             lat: 10.99835602,
@@ -20,13 +19,13 @@ export const Map = ({ cmp }) => {
                 bootstrapURLKeys={{ key: "AIzaSyBkD9-ghT1ENc022RuqNwiJ6Ps974Fn8s0" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
-                center={cmp.info.coors ? { ...cmp.info.coors } : ''}
+                center={cmp?.info?.coors ? { ...cmp?.info?.coors } : ''}
                 zoom={14}
                 options={mapStyling}
             >
                 <AnyReactComponent
-                    lat={cmp.info.coors.lat}
-                    lng={cmp.info.coors.lng}
+                    lat={cmp.info?.coors.lat}
+                    lng={cmp.info?.coors.lng}
                     text="📌"
                 />
             </GoogleMapReact>

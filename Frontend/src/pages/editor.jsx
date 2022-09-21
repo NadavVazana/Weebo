@@ -11,7 +11,7 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
-import { wapExample3 } from '../assets/templates'
+
 
 
 export const Editor = () => {
@@ -87,7 +87,7 @@ export const Editor = () => {
                         let styleTest = { backgroundColor: snapshot.isDraggingOver ? '#deded2' : 'white' }
                         return (
                             <section
-                                className={`wap ${wapExample3.name ? wapExample3.name : ''}`}
+                                className={`wap ${draft.name ? draft.name : ''}`}
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
                                 style={styleTest}>
@@ -96,7 +96,7 @@ export const Editor = () => {
                                         <h2>Lets start!</h2>
                                     </section>
                                 ) : (
-                                    wapExample3.cmps.map((cmp, index) => (
+                                    draft.cmps.map((cmp, index) => (
                                         <Draggable key={cmp.id + index} draggableId={cmp.id + index} index={index}>
                                             {(provided) => (
                                                 <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}>
