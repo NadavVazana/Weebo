@@ -1,6 +1,6 @@
 import React from "react"
+export const Image = ({ cmp,isPublished, onEditElement }) => {
 
-export const Image = ({ cmp, onEditElement }) => {
 
     let image = ``
 
@@ -14,7 +14,6 @@ export const Image = ({ cmp, onEditElement }) => {
     if (!cmp?.info?.image) return
 
 
-    export const Image = ({ cmp, onEditElement, isPublished }) => {
         return (
             <React.Fragment>
                 {!isPublished ? <section className='image'>
