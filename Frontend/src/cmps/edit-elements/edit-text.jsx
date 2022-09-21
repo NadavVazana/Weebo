@@ -1,6 +1,6 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, duplicateElement, setDraft,setDuplicate } from '../../store/draft/draft.action'
+import { setElement, updateDraft, duplicateElement, setDraft, setDuplicate } from '../../store/draft/draft.action'
 import { useState } from 'react'
 
 
@@ -15,9 +15,6 @@ export const EditText = () => {
     const fonts = ['Bahnschrift', 'Bebas', 'Eurofurence', 'Greatvibes', 'Lato', 'Madefor', 'Montserrat', 'Mercedes', 'Opensans', 'Orbitron']
     const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
     const textControls = ['Delete', 'Copy', 'Undo']
-
-    // const alignOpts = ['left', 'center', 'right']
-
 
     const handleFont = (ev) => {
         const { value } = ev.target
@@ -156,15 +153,8 @@ export const EditText = () => {
 
     return (
         <section className="edit-elements">
-            {/* <div>
-                <span>Align</span>
-                <div className='align-image'>
-                    {alignOpts.map(alignOpt =>
-                        <img key={alignOpt}
-                            src={require(`../../assets/img/icons/text-align-${alignOpt}-icon.svg`)}
-                            alt={`${alignOpt}`} onClick={() => { }} />)}
-                </div>
-            </div> */}
+            
+            {/* Text Decoration */}
             <div>
                 <span>Decoration</span>
                 <div className='align-image'>
@@ -174,6 +164,8 @@ export const EditText = () => {
                             alt={`${decorOpt}`} onClick={toggleDecoration} />)}
                 </div>
             </div>
+
+            {/* Font Size */}
             <div>
                 <span>Font Size</span>
                 <input className="slider" type="range"
@@ -186,6 +178,8 @@ export const EditText = () => {
                     onChange={handleFontSize}
                 />
             </div>
+
+            {/* Border Radius */}
             <div>
                 <span>Border Radius</span>
                 <input
@@ -199,12 +193,16 @@ export const EditText = () => {
                     value={Number(currElement?.styles?.borderRadius?.slice(0, 2) || 0)}
                     onChange={handleBorderRadius} />
             </div>
+
+            {/* Font Select */}
             <div className="custom-select" >
                 <label htmlFor='styledSelect'>Font</label>
                 <select id="styledSelect" name='options' onChange={handleFont}>
                     {fonts.map(font => <option key={font} value={font}>{font}</option>)}
                 </select>
             </div>
+
+            {/* Text Shadow */}
             <div>
                 <span>Text Shadow</span>
                 <input className="slider"
@@ -218,18 +216,20 @@ export const EditText = () => {
                     onChange={handleTextShadow}
                 />
             </div>
+
+            {/* Font Color */}
             <div className="pallete-container">
                 <span>Font Color</span>
                 <Pallete onSelect={onSelectFontColor} />
             </div>
+
+            {/* Background color */}
             <div className="pallete-container">
                 <span>Backgroud Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
-            {/* <div className="link-container">
-                <span>Add a link to to your homepage</span>
-                <input type="url" name="" id="" placeholder="URL" />
-            </div> */}
+
+            {/* Control elements */}
             <div className='element-control'>
                 {textControls.map(textControl =>
                     <div

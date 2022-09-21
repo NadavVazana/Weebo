@@ -111,7 +111,6 @@ function _duplicateById(arr, targetId) {
         if (cmp.id === targetId) {
             let copyCmp = { ...cmp }
             copyCmp.id = copyCmp.id + utilService.makeId()
-            console.log('copyCmp', copyCmp);
             return [...acc, cmp, copyCmp]
         } else {
             return [...acc,

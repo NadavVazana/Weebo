@@ -8,6 +8,7 @@ export const EditButton = () => {
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
+
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -43,14 +44,20 @@ export const EditButton = () => {
 
     return (
         <section className="edit-elements">
+            
+            {/* Font color pallete */}
             <div className="pallete-container">
                 <span>Font Color</span>
                 <Pallete onSelect={onSelectFontColor} />
             </div>
+
+            {/* Background Color */}
             <div className="pallete-container">
                 <span>Backgroud Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
+
+            {/* Border radius */}
             <div>
                 <span>Border Radius</span>
                 <input 
