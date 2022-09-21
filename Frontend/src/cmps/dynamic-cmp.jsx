@@ -5,7 +5,6 @@ import { Image } from "./wap-cmps/image"
 import { Video } from "./wap-cmps/video"
 import { Map } from "./wap-cmps/map"
 import { Gallery } from "./wap-cmps/gallery"
-// import { useEffect, useRef, useState } from "react"
 import { Input } from "./wap-cmps/input"
 
 

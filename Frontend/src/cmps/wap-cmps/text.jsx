@@ -17,7 +17,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         dispatch(updateDraft(draft, copyCurrElement))
         dispatch(setElement(copyCurrElement))
     }
-
+    
     function handleEditElement(ev, cmp) {
         ev.preventDefault()
         ev.stopPropagation()
@@ -26,6 +26,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
 
     return (
         <React.Fragment>
+            {/* EDIT MODE */}
             {!isPublished ? <section className="text">
                 <h1
                     contentEditable
@@ -35,6 +36,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
                     onClick={(ev) => handleEditElement(ev, cmp)} onInput={handleChange}
                 >{cmp.info.value}</h1>
             </section>
+            // PUBLISH MODE
                 :<section>
                         <h1
                     style={{ ...cmp?.styles }}

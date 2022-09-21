@@ -8,6 +8,7 @@ export function Container({ cmp, onEditElement,isPublished }) {
     const [hover,setHover] = useState(false)
     return (
         <React.Fragment>
+            {/* EDIT MODE */}
           {!isPublished ? <section onMouseLeave={()=>setHover(false)} onMouseEnter={()=>setHover(true)} onClick={() => onEditElement(cmp)} >
             <div 
             className={`container ${name} ${cmp.id === currElement?.id ? 'focus' : ''} ${hover && 'cmp-hovered'}`}
@@ -16,6 +17,7 @@ export function Container({ cmp, onEditElement,isPublished }) {
                 {cmps.map((cmp) => <DynamicCmp isPublished={isPublished} key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
             </div>
         </section>
+        // PUBLISH MODE
         : <section>
             <div 
             className={`container ${name}`}

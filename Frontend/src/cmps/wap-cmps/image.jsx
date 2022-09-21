@@ -1,6 +1,6 @@
 import React from "react"
+export const Image = ({ cmp,isPublished, onEditElement }) => {
 
-export const Image = ({ cmp, onEditElement }) => {
 
     let image = ``
 
@@ -16,6 +16,7 @@ export const Image = ({ cmp, onEditElement }) => {
     // Image elements
         return (
             <React.Fragment>
+                {/* EDIT MODE */}
                 {!isPublished ? <section className='image'>
                     <img className={cmp.name}
                         src={image}
@@ -23,6 +24,7 @@ export const Image = ({ cmp, onEditElement }) => {
                         onClick={(ev) => handleEditElement(ev, cmp)}
                     />
                 </section> :
+                // PUBLISH MODE
                     <setction className="image">
                         <img className={cmp.name}
                             src={image}

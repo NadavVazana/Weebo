@@ -27,7 +27,7 @@ export const Button = ({ cmp, onEditElement ,isPublished}) => {
 
     return (
         <React.Fragment>
-            
+                {/* EDIT MODE */}
         {!isPublished ? <section className={`${cmp.info.class}` } >
             <button className={`button`} 
                 contentEditable
@@ -37,6 +37,7 @@ export const Button = ({ cmp, onEditElement ,isPublished}) => {
                     {cmp.info.value}
             </button>
         </section> 
+        // PUBLISHED MODE
         : <section className={`${cmp.info.class}`}>
             <button className={`button-published`} 
                 style={{ ...cmp?.styles }}

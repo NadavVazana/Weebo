@@ -52,15 +52,12 @@ export const AppHeader = () => {
 
     const onSave = () => {
         const draft = dispatch(getDraft())
-        console.log('draft:', draft)
-        console.log('loggedInUser:', loggedInUser)
         if (!draft.siteName)
             setNameModal(true)
         else {
             const user = loggedInUser
             const wapIndex = user.waps.findIndex(wap => wap._id === draft._id)
             user.waps[wapIndex] = draft
-            console.log('user from app header:', user)
             dispatch(updateUser(user))
             showSuccessMsg(`Site has been saved!`)
 
