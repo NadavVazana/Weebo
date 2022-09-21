@@ -92,7 +92,12 @@ export const Editor = () => {
                                 style={styleTest}>
                                 {!draft.cmps?.length ? (
                                     <section>
-                                        <h2>Lets start!</h2>
+                                        <h1 className='guide-title'>Let's learn how to do it!</h1>
+                                        <div className='guide-video-container'>
+                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+                                        </div>
+                                       
+                                        {/* <h2>Lets start!</h2> */}
                                     </section>
                                 ) : (
                                     draft.cmps.map((cmp, index) => (

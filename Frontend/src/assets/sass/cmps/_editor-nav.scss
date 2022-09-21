@@ -73,6 +73,7 @@
     }
 
     .side-bar-actions {
+        z-index: 1;
         overflow-y: scroll;
         height: 92.5vh;
         background-color: #dddddd;

@@ -296,7 +296,6 @@ export const exampleList = [
                     "type": "text",
                     "name": "wap-text",
                     "info": {
-                        "isFocus": false,
                         "class": "title",
                         "value": "Subscribe"
                     },
@@ -566,7 +565,8 @@ export const Headers = {
                         "name": "wap-text",
                         "info": {
                             "class": "nav-item",
-                            "value": "Home"
+                            "value": "Home",
+                            "navigate":"home"
                         },
                         "cmps": []
                     },
@@ -576,7 +576,8 @@ export const Headers = {
                         "name": "wap-text",
                         "info": {
                             "class": "nav-item",
-                            "value": "Baking Workshops"
+                            "value": "Baking Workshops",
+                            "navigate":"card"
                         },
                         "cmps": []
                     },
@@ -586,7 +587,8 @@ export const Headers = {
                         "name": "wap-text",
                         "info": {
                             "class": "nav-item",
-                            "value": "Contact Me"
+                            "value": "Contact Me",
+                            "navigate":"form"
                         },
                         "cmps": []
                     },
@@ -2483,7 +2485,7 @@ export const wapExample2 = {
         ]
     },
     {
-        "id": "whe01",
+        "id": "whe0kjhkhjkhj1",
         "type": "container",
         "name": "wap-hero-2-2",
         "drag": "true",
