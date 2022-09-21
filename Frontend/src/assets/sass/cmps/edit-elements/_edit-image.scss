@@ -1,0 +1,11 @@
+.edit-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+
+    input{
+        width: 100%;
+    }
+}

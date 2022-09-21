@@ -1,11 +1,11 @@
 .editor-nav{
-    background-color: rgb(37, 36, 36);
+    background-color: #eeeeee;
     display: flex;
     font-family: Monsterrat;
 
     
     h1{
-        color: grey;
+        color: #595959;
         font-size: .8rem;
         text-align: center;
         margin-bottom: 10px;
@@ -14,13 +14,16 @@
         font-weight: 300;
 
         &.active {
-            background-color: rgb(56, 55, 55);
-            color: whitesmoke;
+            background-color: #dddddd;
+            color: #595959;
         }
 
         &:hover{
             color: whitesmoke;
+            background-color: #cccccc;
         }
+
+     
     }
 
 
@@ -45,20 +48,26 @@
             gap: 15px;
             border:none;
             background: none;
-            color: rgb(167, 165, 165);
+            color: #595959;
             font-weight: 500;
             padding: 20px  0;
+
+            &.active {
+                background-color: #dddddd;
+                color: #595959;
+            }
     
             &:hover{
-                color: whitesmoke;
-    
+                color: black;
+                background-color: #383838;
+                filter: invert(1)
+                
             }
             img{
                 width: 1.5rem;
                 cursor: pointer;
-                filter : invert(1)
-                
             }
+            
         }
     
     }
@@ -66,7 +75,8 @@
     .side-bar-actions {
         overflow-y: scroll;
         height: 92.5vh;
-        background-color: rgb(56, 55, 55);
+        background-color: #dddddd;
+        color: #595959;
         width: 0;
         transition: 0.3s;
         padding: 0;
@@ -80,7 +90,6 @@
             }
             .trash-icon{
                 width: 15%;
-                filter: invert(1);
                 cursor: pointer;
             }
         }
@@ -99,17 +108,14 @@
         }
     
         &.open {
-            padding: 0 15px 0;
             width: 280px;
         }
     
     }
 
     @include for-mobile-layout{
-        .side-bar{
-            
-        }
     }
+
     @include for-narrow-layout{
     }
 }

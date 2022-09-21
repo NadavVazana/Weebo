@@ -1,8 +1,13 @@
+
 .edit-elements {
     display: flex;
     flex-direction: column;
     padding: 0;
     gap: 10px;
+
+    span{
+        color: #595959;
+    }
 
 
     div {
@@ -76,6 +81,7 @@
         align-items: flex-start;
 
     }
+
 
 
 }
