@@ -4,11 +4,11 @@ import { EditButton } from '../edit-elements/edit-button'
 import { EditImage} from '../edit-elements/edit-image'
 import { EditContainer } from './edit-container'
 
+
 export const EditElements = () => {
 
     const { currElement } = useSelector(state => state.draftModule)
 
-    //EditElementsText
     switch (currElement.type) {
         case 'container':
             return <EditContainer />
@@ -24,8 +24,6 @@ export const EditElements = () => {
         //     return <EditInput/>
         // case 'map':
         //     return <EditMap/>
-        // case 'card':
-        //     return <EditContainer/>
         default: return <h1>Click on element to edit</h1>
     }
 }

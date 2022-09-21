@@ -1,10 +1,10 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, setDraft, setDuplicate, duplicateElement } from '../../store/draft/draft.action'
+import { setElement, updateDraft, setDraft, setDuplicate, duplicateElement, setElementImage } from '../../store/draft/draft.action'
 
-export const EditContainer = () =>{
+export const EditContainer = () => {
 
-    const {currElement, draft, duplicate} = useSelector(state=> state.draftModule)
+    const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const textControls = ['Delete', 'Copy', 'Undo']
 
@@ -18,7 +18,7 @@ export const EditContainer = () =>{
         dispatch(setElement(copyCurrElement))
         dispatch(updateDraft(draft, copyCurrElement))
     }
-    
+
     const toggleTextControl = (ev) => {
         const { id } = ev.target
 
@@ -52,14 +52,29 @@ export const EditContainer = () =>{
         dispatch(duplicateElement(draft, copyCurrElement))
     }
 
+    const handleImage = (ev) => {
+        dispatch(setElementImage(ev))
+    }
+
+
     return (
 
         <section className="edit-elements">
-            <h1>{currElement.name}</h1>
+            
+            {/* Pallete Background color */}
             <div className="pallete-container">
                 <span>Backgroud Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
+
+            {/* Upload Image */}
+            <form id="form1" runat="server" className='edit-image'>
+                <span>Upload Image</span>
+                <input onChange={handleImage} type="file" />
+                <img id="blah" src="#" alt="your image" />
+            </form>
+
+            {/* Element Controller - Delete, Duplicate, Undo */}
             <div className='element-control'>
                 {textControls.map(textControl =>
                     <div

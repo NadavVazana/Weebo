@@ -4,7 +4,7 @@ const initialState = {
     cmp: null,
     currElement: {},
     draft: wapService.getDraft(),
-    duplicate: {}
+    duplicate: {},
 }
 
 export function draftReducer(state = initialState, action = {}) {
@@ -16,6 +16,8 @@ export function draftReducer(state = initialState, action = {}) {
 
         case 'SET_ELEMENT':
             return { ...state, currElement: { ...action.element } }
+
+
         default: return state
     }
 }

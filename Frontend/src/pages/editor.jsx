@@ -20,6 +20,7 @@ export const Editor = () => {
     let { draft, currElement } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const [optionList, setOptionList] = useState({})
+    const [isEdit, setIsEdit] = useState(false)
     const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
 
 
@@ -47,6 +48,11 @@ export const Editor = () => {
             return
         }
         dispatch(setElement(clickedElement))
+        setIsEdit(true)
+    }
+
+    const isEditToggle = (isEdit) => {
+        setIsEdit(isEdit)
     }
 
     const handleOnDragEnd = (result) => {
@@ -73,10 +79,10 @@ export const Editor = () => {
     return (
         <section className='editor'>
             <DragDropContext onDragEnd={handleOnDragEnd}>
-                <EditorNav setOptionList={setOptionList} addElement={addElement} />
+                <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle}/>
                 <Droppable droppableId='editor'>
                     {(provided, snapshot) => {
-                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? 'blue' : 'white' }
+                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? '#deded2' : 'white' }
                         return (
                             <section
                                 className={`wap ${draft.name ? draft.name : ''}`}
