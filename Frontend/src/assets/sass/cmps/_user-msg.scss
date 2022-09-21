@@ -33,6 +33,15 @@
     button:hover {
         background-color: black;
     }
+    @include for-tiny-layout{
+        bottom: 2%;
+        padding: 10px;
+    }
+    
+    @include for-mobile-layout{
+        bottom: 2%;
+        padding: 10px;
+    }
 }
 
 .user-msg-close{
@@ -61,6 +70,8 @@
         right: -30%;
     }
 }
+
+
 
 // @keyframes user-msg {
 //     from{right:-30%}

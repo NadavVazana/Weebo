@@ -332,10 +332,9 @@
         }
     }
 
-
-    @include for-mobile-layout {
+    @include for-tiny-layout{
         .action-btns {
-            margin-top: 20px;
+            margin-top: 90px;
 
             >* {
                 padding: 20px;
@@ -375,7 +374,7 @@
         .hamburger {
             cursor: pointer;
             position: absolute;
-            top: 4%;
+            top: 2%;
             left: 3%;
             width: 25px;
             height: 30px;
@@ -383,6 +382,85 @@
             filter: brightness(.3);
             z-index: 1;
         }
+
+        .edit-btn{
+            font-size: .6rem;
+        }
+        .visit-btn{
+            font-size: .6rem;
+        }
+        .delete-btn{
+            font-size: .6rem;
+        }
+
+    }
+    @include for-mobile-layout {
+        .action-btns {
+            margin-top: 90px;
+
+            >* {
+                padding: 20px;
+
+            }
+        }
+
+        .sites-nav {
+            position: fixed;
+            left: -65%;
+            top: 0;
+            transition: left 0.4s;
+            z-index: 1000;
+            background-color: whitesmoke;
+
+            li {
+                font-size: 0.8rem;
+
+            }
+        }
+
+        .site-menu-open {
+            left: 0%;
+            transition: left 0.4s;
+            z-index: 1000;
+            top: 0;
+
+            li {
+                font-size: .8rem;
+            }
+        }
+
+        .black-screen {
+            z-index: 10;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 2%;
+            left: 3%;
+            width: 25px;
+            height: 30px;
+            filter: invert(1);
+            filter: brightness(.3);
+            z-index: 1;
+        }
+        .edit-btn{
+            font-size: .8rem;
+        }
+        .visit-btn{
+            font-size: .8rem;
+        }
+        .delete-btn{
+            font-size: .8rem;
+        }
+
+        .published-title{
+            font-size: 1.2rem;
+        }
+        .not-published-title{
+            font-size: 1.2rem;
+        }
+
 
 
     }

@@ -27,6 +27,7 @@
                 color: #fff;
                 padding: 0;
             }
+
             a {
                 padding: 30px 50px;
                 &:hover {
@@ -80,6 +81,7 @@
 
     .menu-btn {
         .menu-btn-burger {
+            cursor: pointer;
             width: 30px;
             height: 6px;
             background: #fff;
