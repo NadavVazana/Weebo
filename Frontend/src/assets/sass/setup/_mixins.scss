@@ -9,6 +9,12 @@
 }
 
 
+@mixin for-tiny-layout {
+    @media (max-width:350px) {
+        @content;
+    }
+
+}
 @mixin for-mobile-layout {
     @media (min-width:350px) {
         @content;

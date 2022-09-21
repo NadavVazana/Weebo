@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import { logoutUser, updateUser } from '../store/user/user.action'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { getDraft } from '../store/draft/draft.action'
+import { getDraft, setDraft } from '../store/draft/draft.action'
 import { useState } from 'react'
 import { utilService } from '../services/util.service'
 import { eventBusService, showSuccessMsg } from '../services/event-bus.service'
@@ -39,7 +39,9 @@ export const AppHeader = () => {
         user.waps.push(draft)
 
         dispatch(updateUser(user))
+        dispatch(setDraft(draft))
         showSuccessMsg(`New site has been saved!`)
+        
     }
 
 
@@ -72,7 +74,7 @@ export const AppHeader = () => {
                 <div className='site-name-modal'>
                     <h1>Enter the name of your site:</h1>
                     <form onSubmit={saveWapToUser}>
-                        <input maxLength={14} value={siteName} required onChange={handleInput} type="text" placeholder='Enter the name here...' />
+                        <input autoFocus maxLength={10} value={siteName} required onChange={handleInput} type="text" placeholder='Enter the name here...' />
                         <button>Submit!</button>
                     </form>
                 </div>

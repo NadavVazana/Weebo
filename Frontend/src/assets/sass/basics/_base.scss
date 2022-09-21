@@ -16,6 +16,8 @@ a {
     z-index: 99;
     backdrop-filter: blur(4px);
 }
+
+
  
   
   a:hover {
@@ -46,7 +48,7 @@ a {
 
 
   html {
-
+ overflow-x: hidden;
 ::-webkit-scrollbar {
   width: 10px;
 }
