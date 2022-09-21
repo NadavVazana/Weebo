@@ -35,6 +35,15 @@
         gap: 20px;
     }
 
+    .charts{
+        display: flex;
+        width: 60%;
+    }
+
+    .chart{
+        width: 50%
+    }
+
 
     .published-title {
         font-family: Monsterrat;
@@ -395,6 +404,7 @@
 
     }
     @include for-mobile-layout {
+     
         .action-btns {
             margin-top: 90px;
 
@@ -464,8 +474,21 @@
 
 
     }
+    @include for-mobile-layout{
+        .charts{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
 
-    @include for-narrow-layout {}
+        .chart{
+            width: 100%;
+        }
+    }
+
+    @include for-narrow-layout {
+        
+    }
 
     @include for-mid-layout {
         .action-btns {
@@ -473,6 +496,13 @@
                 padding-inline: 50px;
             }
         }
+        .charts{
+            flex-direction: unset;
+        }
+        .chart{
+            width: 50%;
+        }
+        
     }
 
     @include for-normal-layout {
@@ -505,5 +535,7 @@
 
     }
 
-    @include for-wide-layout {}
+    @include for-wide-layout {
+      
+    }
 }
