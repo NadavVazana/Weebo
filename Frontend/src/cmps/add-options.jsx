@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
 import { Draggable, Droppable } from "react-beautiful-dnd"
-import { Headers, Footers, Cards, Missions, Maps, Galleries, Heroes, Forms, All } from "../assets/templates"
+import { Headers, Footers, Cards, Maps, Galleries, Heroes, Forms, All } from "../assets/templates"
 
-export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
+export const AddOptions = ({ isOptionsMenu, addElement, setOptionList,name }) => {
     const [items, setItems] = useState('')
-
     useEffect(() => {
         switch (isOptionsMenu.cmpType) {
             case 'Headers':
@@ -16,9 +15,7 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
             case 'Cards':
                 setItems(Cards)
                 break
-            case 'Missions':
-                setItems(Missions)
-                break
+
             case 'Maps':
                 setItems(Maps)
                 break
@@ -41,13 +38,12 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
 
     setOptionList(items)
 
-
     return (
         <Droppable isDropDisabled droppableId={isOptionsMenu.cmpType}>
             {(provided) => {
                 return <section ref={provided.innerRef} {...provided.droppableProps} >
                     {Object.values(items).map((cmp, index) => {
-                        return <Draggable key={cmp.id} index={index} draggableId={cmp.name}>
+                        return <Draggable key={cmp.name} index={index} draggableId={cmp.name}>
                             {(provided) => {
                                 return (
                                     <div ref={provided.innerRef}
@@ -55,7 +51,7 @@ export const AddOptions = ({ isOptionsMenu, addElement, setOptionList }) => {
                                         {...provided.draggableProps}
                                         onClick={() => addElement(isOptionsMenu.cmpType)}>
                                         <img className={`mini-cmp ${cmp.name}-mini`}
-                                            src={require(`../assets/img/templates/example 1 elements/${cmp.name}.png`)}
+                                            src={require(`../assets/img/templates/example elements/${cmp.name}.png`)}
                                             alt={`${cmp.name}`} />
                                     </div>)
                             }}
