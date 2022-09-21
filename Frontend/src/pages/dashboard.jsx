@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { PublishChart } from "../cmps/publish-chard"
+import { PublishChart } from "../cmps/publish-chart"
 import { ViewsChart } from "../cmps/views-chart"
 import { showSuccessMsg } from "../services/event-bus.service"
 import { setDraft } from "../store/draft/draft.action"
@@ -12,18 +12,17 @@ export const Dashboard = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
-    console.log('loggedInUser:', loggedInUser)
     const [deleteModal, setDeleteModal] = useState(false)
     const [site, setSite] = useState(loggedInUser?.waps[0])
     const [siteMenu,setSiteMenu] = useState(false)
 
-
+    
     if (!loggedInUser) {
         navigate('/')
         return <></>
     }
 
-
+    // NAVIGATES TO THE SITE'S EDIT PAGE
     const onEdit = () => {
         site.editCount++
         dispatch(setDraft(site))
@@ -31,7 +30,7 @@ export const Dashboard = () => {
     }
 
 
-
+    // DELETE THE SITE FROM THE USER'S WAP LIST
     const onDelete = (ev) => {
         ev.preventDefault()
         const name = ev.target[0].value
@@ -41,7 +40,6 @@ export const Dashboard = () => {
             const wapIndex = user.waps.findIndex(wap => wap._id === site._id)
             user.waps.splice(wapIndex, 1)
             dispatch(updateUser(user))
-            console.log(wapIndex);
             if(wapIndex !== 0)
             setSite(loggedInUser.waps[wapIndex-1])
             else
@@ -50,6 +48,8 @@ export const Dashboard = () => {
         }
     }
 
+    // PUBLISH THE SITE IF NOT PUBLISH 
+    // AND NAVIGATES TO THE PUBLISHED VERSION IS PUBLISHED
     const onPublish = () => {
         if (site.isPublished) window.open(`/publish/${site._id}`, '_blank')
         else {

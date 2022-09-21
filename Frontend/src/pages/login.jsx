@@ -48,7 +48,6 @@ export const Login = () => {
       password: data.get('password'),
     }))
     if (!user) {
-      console.log('user not found');
       setMsg('Invalid login details')
     }
     else
