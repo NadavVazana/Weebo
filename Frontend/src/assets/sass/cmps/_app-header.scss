@@ -12,27 +12,32 @@
 
     .mobile-nav {
         position: absolute;
-        top: $header-height;
+        opacity: 0;
+        top: -100vh;
         left: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: #032d66;
+        background-color: #0047AB;
         width: 100%;
         min-height: calc(100vh - $header-height);
-        z-index: 9999;
+        transition: top 0.4s, opacity 0.4s;
         
         .app-header-nav {
             a {
                 color: #fff;
                 padding: 0;
-            }
-            a {
                 padding: 30px 50px;
                 &:hover {
-                    background-color: #0047AB;
+                    background-color: #032d66;
+                }
+
+                &.active {
+                    background-color: #032d66;
+                    border: none;
                 }
             }
+            
         }
 
         .right-header-btns {
@@ -45,7 +50,7 @@
                 padding: 30px 50px;
 
                 &:hover {
-                    background-color: #0047AB;
+                    background-color: #032d66;
                     border-radius: 0;
                 }
             }
@@ -62,11 +67,15 @@
             padding: 0;
         }
 
-        .menu-btn-burger.close {
-
+        &.mobile-open {
+            display: flex;
+            top: $header-height;
+            z-index:10000000;
+            opacity: 1;
         }
         
     }
+
 
     .desktop-nav {
         display: none;
@@ -90,7 +99,7 @@
     
             &::before, &::after {
                 content: '';
-            position: absolute;
+                position: absolute;
                 width: 30px;
                 height: 6px;
                 background: #fff;
@@ -120,7 +129,6 @@
         }
     }
 
-    
     .right-header-btns {
         display: flex;
         gap: 20px;
@@ -284,7 +292,9 @@
             display: none;
         }
 
-        .mobile-nav {
+        .mobile-nav, .mobile-nav.mobile-open {
+            top: -100vh;
+            opacity: 0;
             display: none;
         }
     }

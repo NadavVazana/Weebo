@@ -65,8 +65,9 @@ export const AppHeader = () => {
         }
     }
 
+
     return (
-        <section className='app-header'>
+        <section className={`app-header`}>
             {isNameModal && <section className='modal-section'>
                 <div className='site-name-modal'>
                     <h1>Enter the name of your site:</h1>
@@ -77,7 +78,7 @@ export const AppHeader = () => {
                 </div>
                 <div onClick={() => setNameModal(false)} className='black-screen'></div>
             </section>}
-            <Link to={'/'}>
+            <Link to={'/'} onClick={() => { setMenuOpen(false) }}>
                 <h1 className='main-logo'>WEEBO<span className='dot'>.</span>
                     <span className='underline'></span>
                 </h1>
