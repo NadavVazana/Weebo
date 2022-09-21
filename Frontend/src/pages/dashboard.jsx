@@ -40,7 +40,6 @@ export const Dashboard = () => {
             const wapIndex = user.waps.findIndex(wap => wap._id === site._id)
             user.waps.splice(wapIndex, 1)
             dispatch(updateUser(user))
-            console.log(wapIndex);
             if(wapIndex !== 0)
             setSite(loggedInUser.waps[wapIndex-1])
             else
