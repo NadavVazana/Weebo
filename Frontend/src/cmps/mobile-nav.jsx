@@ -9,9 +9,9 @@ export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave,
     }
 
     let isUserInEditor = location.pathname.split('/')[1] === 'editor' && loggedInUser
-    if (!isMenuOpen) return <></>
+    // if (!isMenuOpen) return <></>
     return (
-        <nav className='mobile-nav'>
+        <nav className={`mobile-nav ${isMenuOpen ? 'mobile-open' : ''}`}>
             <nav className={`app-header-nav`} >
                 <NavLink to="/templates" onClick={closeMenu}>Templates</NavLink>
                 <NavLink to={`/editor/${draftId}`} onClick={closeMenu}>Editor</NavLink>
@@ -22,7 +22,7 @@ export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave,
                 {isUserInEditor && <button className='together-btn' onClick={closeMenu}>Work Together</button>}
                 {!loggedInUser ?
                     <button className='login-btn' onClick={() => { navigate('/login'); closeMenu() }}>LOGIN</button>
-                    : <button onClick={() => { dispatch(logoutUser()) }}
+                    : <button onClick={() => { dispatch(logoutUser()); setMenuOpen(false) }}
                         className='login-btn'>LOGOUT
                         <img className='logout-icon' src={require('../assets/img/icons/log-out-icon.svg').default} alt="logout-icon" />
                     </button>}
