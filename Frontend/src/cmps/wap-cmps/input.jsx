@@ -3,7 +3,7 @@ export const Input = ({ cmp, onEditElement,isPublished }) => {
 
     return (
         <React.Fragment>
-        
+        {/* EDIT MODE */}
         {!isPublished ? <section>
             <input
                 type={cmp.input_type}
@@ -11,6 +11,7 @@ export const Input = ({ cmp, onEditElement,isPublished }) => {
                 onClick={() => onEditElement(cmp)}
                 className={cmp.name} />
         </section>
+        // PUBLISH MODE
         :<section>
               <input
                 type={cmp.input_type}

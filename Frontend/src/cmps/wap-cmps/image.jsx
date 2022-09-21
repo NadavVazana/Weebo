@@ -16,6 +16,7 @@ export const Image = ({ cmp,isPublished, onEditElement }) => {
 
         return (
             <React.Fragment>
+                {/* EDIT MODE */}
                 {!isPublished ? <section className='image'>
                     <img className={cmp.name}
                         src={image}
@@ -23,6 +24,7 @@ export const Image = ({ cmp,isPublished, onEditElement }) => {
                         onClick={(ev) => handleEditElement(ev, cmp)}
                     />
                 </section> :
+                // PUBLISH MODE
                     <setction className="image">
                         <img className={cmp.name}
                             src={image}
