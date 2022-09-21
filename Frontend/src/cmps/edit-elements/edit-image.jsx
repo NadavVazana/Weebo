@@ -4,14 +4,15 @@ import { setElement, updateDraft, duplicateElement, setDraft, setDuplicate, setE
 export const EditImage = () => {
 
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
-    
     const dispatch = useDispatch()
     const textControls = ['Delete', 'Copy', 'Undo']
 
+    // upload Image
     const handleImage = (ev) =>{
         dispatch(setElementImage(ev))
     }
 
+    // Toggle text
     const toggleTextControl = (ev) => {
         const { id } = ev.target
 
@@ -33,12 +34,14 @@ export const EditImage = () => {
         }
     }
 
+    // Removing elements
     const removeElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
         dispatch(updateDraft(draft, copyCurrElement, true))
     }
 
+    // Duplicate elements
     const copyElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))

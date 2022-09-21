@@ -19,6 +19,7 @@ const WAP = 'wap/'
 const WAP_KEY = 'waps_DB'
 const DRAFT_KEY = 'draft_DB'
 
+
 async function getWaps(exampleId) {
     try {
         const waps = await httpService.get(WAP, exampleId)
@@ -36,15 +37,7 @@ async function getById(wapId) {
         console.log('oops! could not fetch wap:', err)
     }
 }
-function setDraft(wap) {
-    localStorage.setItem(DRAFT_KEY, JSON.stringify(wap))
-}
 
-function getDraft() {
-    const draft = JSON.parse(localStorage.getItem(DRAFT_KEY))
-    return draft
-
-}
 
 
 async function addWap(wap) {
@@ -74,6 +67,19 @@ async function editWap(editedWap) {
     }
 }
 
+// Draft Service----------------------------------------------------------------------------------------
+
+function setDraft(wap) {
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(wap))
+}
+
+function getDraft() {
+    const draft = JSON.parse(localStorage.getItem(DRAFT_KEY))
+    return draft
+
+}
+
+// Removing function
 function removeElement(draft, element) {
     let copyDraft = { ...draft }
 
@@ -82,6 +88,7 @@ function removeElement(draft, element) {
 
 }
 
+// Removing function
 function _removeById(arr, targetId) {
     return arr.reduce((acc, cmp) => {
         if (cmp.id === targetId) {
@@ -97,6 +104,7 @@ function _removeById(arr, targetId) {
     }, [])
 }
 
+// Duplicating element
 function duplicateElement(draft, element) {
     let copyDraft = { ...draft }
 
@@ -105,6 +113,7 @@ function duplicateElement(draft, element) {
 
 }
 
+// Duplicating element function
 function _duplicateById(arr, targetId) {
     return arr.reduce((acc, cmp) => {
 
@@ -123,6 +132,7 @@ function _duplicateById(arr, targetId) {
     }, [])
 }
 
+// Update draft
 function updateDraft(draft, element) {
     let copyDraft = { ...draft }
 

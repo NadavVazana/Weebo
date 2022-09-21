@@ -13,8 +13,7 @@ export const Image = ({ cmp, onEditElement }) => {
     image = (cmp?.info?.image?.slice(0, 4) === 'http') ? cmp.info.image : require(`../../assets/img/${cmp.info.image}`)
     if (!cmp?.info?.image) return
 
-
-    export const Image = ({ cmp, onEditElement, isPublished }) => {
+    // Image elements
         return (
             <React.Fragment>
                 {!isPublished ? <section className='image'>

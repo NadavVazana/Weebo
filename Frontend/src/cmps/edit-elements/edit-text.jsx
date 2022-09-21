@@ -16,6 +16,8 @@ export const EditText = () => {
     const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
     const textControls = ['Delete', 'Copy', 'Undo']
 
+
+    // Change Font
     const handleFont = (ev) => {
         const { value } = ev.target
         let copyCurrElement = { ...currElement }
@@ -28,7 +30,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
-
+// Change Font Size
     const handleFontSize = (ev) => {
         const { value } = ev.target
         let copyCurrElement = { ...currElement }
@@ -41,6 +43,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Change Text shadow 
     const handleTextShadow = (ev) => {
         const { value } = ev.target
         let copyCurrElement = { ...currElement }
@@ -52,6 +55,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Change Background color
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -63,6 +67,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Change Font color
     const onSelectFontColor = (ev) => {
         const color = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -74,6 +79,8 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+
+    // Change Border Radius
     const handleBorderRadius = (ev) => {
         ev.preventDefault()
 
@@ -88,6 +95,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Toggle Text Decoration
     const toggleDecoration = (ev) => {
         const { alt } = ev.target
         let name = alt
@@ -118,6 +126,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Toggle Text actions
     const toggleTextControl = (ev) => {
         const { id } = ev.target
 
@@ -139,12 +148,14 @@ export const EditText = () => {
         }
     }
 
+    // Remove element
     const removeElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
         dispatch(updateDraft(draft, copyCurrElement, true))
     }
 
+    // Duplicate element
     const copyElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))

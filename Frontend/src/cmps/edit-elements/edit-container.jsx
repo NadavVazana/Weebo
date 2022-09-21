@@ -9,6 +9,7 @@ export const EditContainer = () => {
     const textControls = ['Delete', 'Copy', 'Undo']
 
 
+    // Selecting background
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -19,6 +20,7 @@ export const EditContainer = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Toggle text actions - delete, duplicate, undo
     const toggleTextControl = (ev) => {
         const { id } = ev.target
 
@@ -40,18 +42,21 @@ export const EditContainer = () => {
         }
     }
 
+    // Delete element
     const removeElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
         dispatch(updateDraft(draft, copyCurrElement, true))
     }
 
+    // duplicate element
     const copyElement = () => {
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
         dispatch(duplicateElement(draft, copyCurrElement))
     }
 
+    // upload image
     const handleImage = (ev) => {
         dispatch(setElementImage(ev))
     }

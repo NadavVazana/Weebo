@@ -8,7 +8,7 @@ export const EditButton = () => {
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
-
+// Selecting Background
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -19,6 +19,7 @@ export const EditButton = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Changing Font color
     const onSelectFontColor = (ev) => {
         const color = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -30,6 +31,7 @@ export const EditButton = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Border radius changes the element radius
     const handleBorderRadius = (ev) => {
         const { value } = ev.target
         let copyCurrElement = {...currElement}
