@@ -174,7 +174,7 @@
 
         width: 90%;
 
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
         >* {
             display: flex;
@@ -501,6 +501,13 @@
         }
         .chart{
             width: 50%;
+        }
+
+        .published-title{
+            font-size: 2rem;
+        }
+        .not-published-title{
+            font-size: 2rem;
         }
         
     }
