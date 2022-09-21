@@ -76,7 +76,7 @@ export const Editor = () => {
                 <EditorNav setOptionList={setOptionList} addElement={addElement} />
                 <Droppable droppableId='editor'>
                     {(provided, snapshot) => {
-                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? 'blue' : 'white' }
+                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? '#deded2' : 'white' }
                         return (
                             <section
                                 className={`wap ${draft.name ? draft.name : ''}`}
