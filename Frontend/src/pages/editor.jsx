@@ -2,7 +2,7 @@ import { DynamicCmp } from '../cmps/dynamic-cmp'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { header1 as Header, hero1 as Hero, footer1 as Footer, map1 as Map, gallery1 as Gallery, card1 as Card, mission1 as Mission, form1 as Form } from "../assets/wap"
 import { EditorNav } from '../cmps/editor-nav'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -11,7 +11,6 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
-import { wapExample2 } from '../assets/templates'
 
 
 export const Editor = () => {
@@ -55,6 +54,7 @@ export const Editor = () => {
         setIsEdit(isEdit)
     }
 
+    // handle dropping and adding mini-cmps to the wap
     const handleOnDragEnd = (result) => {
         const newItems = Array.from(draft.cmps)
         if (result.source.droppableId !== 'editor') {
@@ -67,6 +67,7 @@ export const Editor = () => {
             newItems.splice(result.destination.index, 0, reorderedItem)
         }
         draft.cmps = [...newItems]
+
         if (draft._id === 'empty') {
             navigate('/editor/draft')
             draft._id = 'draft'
@@ -79,7 +80,7 @@ export const Editor = () => {
     return (
         <section className='editor'>
             <DragDropContext onDragEnd={handleOnDragEnd}>
-                <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle}/>
+                <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle} />
                 <Droppable droppableId='editor'>
                     {(provided, snapshot) => {
                         let styleTest = { backgroundColor: snapshot.isDraggingOver ? '#deded2' : 'white' }
