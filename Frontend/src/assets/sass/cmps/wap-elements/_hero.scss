@@ -71,17 +71,18 @@
 
 .wap-hero-2-1 {
     display: flex;
-    font-family: Monsterrat-thin;
+    font-family: Monsterrat;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     background-size: cover;
+    font-size: 20px;
 
     background: linear-gradient(to top right, 
      #fad255   50%, 
      #aae6f0 0 100%
-  );
-    padding-inline: auto;
+    );
+    // padding-inline: auto;
     padding-block: 50px;
 
     &:first-child {
@@ -96,7 +97,7 @@
         align-items: center;
         background-color: #fff;
         gap: 40px;
-        padding: 20px 40px;
+        // padding: 20px 40px;
     }
 
     .hero-2-image {
@@ -127,10 +128,6 @@
             width: 50%;
             max-width: 550px;
         }
-
-        // .hero-2-image {
-        //     margin-top: 150px;
-        // }
 
         .hero-item-1 {
             // padding: 40px 0;
@@ -236,7 +233,7 @@
 
     }
     @include for-mid-layout{
-        padding: 138px 0px;
+        padding: 70px 0px;
         justify-content: center;
         flex-direction: row;
         & > * {
