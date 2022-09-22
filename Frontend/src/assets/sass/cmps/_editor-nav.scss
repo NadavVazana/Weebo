@@ -1,10 +1,10 @@
-.editor-nav{
+.editor-nav {
     background-color: #eeeeee;
     display: flex;
     font-family: Monsterrat;
- 
-    
-    h1,button{
+
+
+    h1 {
         color: #595959;
         font-size: .8rem;
         text-align: center;
@@ -18,58 +18,59 @@
             color: #595959;
         }
 
-        &:hover{
+        &:hover {
             color: whitesmoke;
             background-color: #cccccc;
         }
 
-     
+
     }
 
 
 
-    .side-bar{
+    .side-bar {
         display: flex;
         flex-direction: column;
         user-select: none;
-    
+
         justify-content: space-between;
         min-width: 75px;
-        div{
+
+        div {
             display: flex;
             flex-direction: column;
         }
 
 
-        button{
+        button {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
-            border:none;
+            border: none;
             background: none;
             color: #595959;
             font-weight: 500;
-            padding: 20px  0;
+            padding: 20px 0;
 
             &.active {
                 background-color: #dddddd;
                 color: #595959;
             }
-    
-            &:hover{
+
+            &:hover {
                 color: black;
                 background-color: #383838;
                 filter: invert(1)
-                
             }
-            img{
+
+            img {
                 width: 1.5rem;
                 cursor: pointer;
             }
-            
+
         }
-    
+
     }
 
     .side-bar-actions {
@@ -82,46 +83,58 @@
         transition: 0.3s;
         padding: 0;
         margin: 0;
-    
-        .edit-container{
-    
-            button{
+
+        .side-bar-close {
+            display: flex;
+            justify-content: flex-end;
+            
+            button {
+                padding: 10px;
+                background-color:  transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 1.1rem;
+            }
+        }
+
+        .edit-container {
+
+            button {
                 background: none;
                 border: none;
             }
-            .trash-icon{
+
+            .trash-icon {
                 width: 15%;
                 cursor: pointer;
             }
         }
 
-        .wap-header-2-mini{
+        .wap-header-2-mini {
             transform: scaleY(2);
         }
 
-        .mini-cmp{
+        .mini-cmp {
             width: 100%;
             border-radius: 13px;
             transition: all 0.3s;
             margin-top: 15px;
             user-select: none;
-            
-            &:hover{
+
+            &:hover {
                 transform: scale(103%);
                 transition: all 0.3s;
-                
+
             }
         }
-    
+
         &.open {
             width: 280px;
         }
-    
+
     }
 
-    @include for-mobile-layout{
-    }
+    @include for-mobile-layout {}
 
-    @include for-narrow-layout{
-    }
+    @include for-narrow-layout {}
 }
