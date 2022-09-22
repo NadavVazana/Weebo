@@ -61,11 +61,11 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         <section className="editor-nav">
             <div className="side-bar">
                 <div>
-                    <button className={`add-btn ${isAddMenu && 'active'}`} onClick={toggleAddMenu}>
+                    <button className={`add-btn ${isAddMenu && 'active'}`} onClick={openAddMenu}>
                         <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
                         <span>Add</span>
                     </button>
-                    <button className={`edit-btn ${isEditMenu && 'active'}`} onClick={toggleEditMenu}>
+                    <button className={`edit-btn ${isEditMenu && 'active'}`} onClick={openEditMenu}>
                         <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
                         <span>Edit</span>
                     </button>
