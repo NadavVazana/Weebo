@@ -56,7 +56,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         setOptionsMenu(false)
         isEditToggle(false)
     }
-
+    console.log(isEditMenu,isAddMenu,isThemesMenu);
     return (
         <section className="editor-nav">
             <div className="side-bar">

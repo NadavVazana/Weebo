@@ -19,7 +19,7 @@ export const Map = ({ cmp }) => {
                 bootstrapURLKeys={{ key: "AIzaSyBkD9-ghT1ENc022RuqNwiJ6Ps974Fn8s0" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
-                center={cmp?.info?.coors ? { ...cmp?.info?.coors } : ''}
+                center={cmp?.info?.coors ? { ...cmp?.info?.coors } : []}
                 zoom={14}
                 options={mapStyling}
             >
