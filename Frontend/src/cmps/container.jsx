@@ -6,6 +6,7 @@ export function Container({ cmp, onEditElement,isPublished }) {
     const { cmps, name } = cmp
     const currElement = useSelector(state => state.draftModule.currElement)
     const [hover,setHover] = useState(false)
+
     return (
         <React.Fragment>
             {/* EDIT MODE */}
@@ -18,12 +19,13 @@ export function Container({ cmp, onEditElement,isPublished }) {
             </div>
         </section>
         // PUBLISH MODE
-        : <section>
+        : <section >
             <div 
+            
             className={`container ${name}`}
             style={{ ...cmp?.styles }}
             >
-                {cmps.map((cmp) => <DynamicCmp isPublished={isPublished} key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
+                {cmps.map((cmp) => <DynamicCmp  isPublished={isPublished} key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
             </div>
             </section>}
         </React.Fragment>

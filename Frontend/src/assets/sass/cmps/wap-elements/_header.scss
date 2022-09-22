@@ -172,3 +172,74 @@
         }
     }
 }
+
+.wap-header-3 {
+    background-color: #3b3938;
+    font-family: Monsterrat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:rgb(255, 255, 255);
+    min-height: 80px;
+    padding-inline: 15px;
+
+    .burger {
+        width: 35px;
+            height: 35px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .header-logo {
+            width: 45px;
+            height: 45px;
+        }
+
+        h1{ 
+            font-size: 1.5rem;
+        }
+    }
+
+    .burger, .image {
+        display: inline-block;
+    }
+    .header-nav {
+        display: none;
+
+        button {
+            background:none ;
+            border: none;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: #e7a56d;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    @include for-mobile-layout{
+        .header-nav {
+            display: none;
+        }
+    }
+   
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        .header-nav {
+            display: flex;
+        }
+        .burger, .image:not(:first-child) {
+            display: none;
+        }
+    }
+    
+}

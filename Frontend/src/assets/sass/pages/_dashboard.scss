@@ -41,7 +41,7 @@
     }
 
     .chart{
-        width: 50%
+        width: 30%
     }
 
 
@@ -211,7 +211,10 @@
                 user-select: none;
             }
         }
-
+        .subscribers{
+            height: 400px;
+            background-color: #a6d486;
+        }
         .site-name {
             background-color: #9ad9e0;
         }
@@ -500,7 +503,7 @@
             flex-direction: unset;
         }
         .chart{
-            width: 50%;
+            width: 30%;
         }
 
         .published-title{

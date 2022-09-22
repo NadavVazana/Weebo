@@ -1,7 +1,185 @@
 .homepage{
-    width: 100%;
-    margin: 50px;
-    font-family: Monsterrat;
-    font-weight: 600;
+
+    background-image: url();
+    .wave{
+        position: absolute;
+        right: -28px;
+        fill: rgb(97, 97, 197);
+        z-index: -1000;
+        top: 5.9%;
+        transform: rotate(1.4deg);
+        
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40%;
+        left: 8%;
+        font-family: Madefor;
+        text-align: center;
+        gap: 20px;
+
+        .title{
+            font-size: 3.5rem;
+            color: rgb(72, 74, 189);
+            user-select: none;
+        }
+
+        .sub-title{
+            font-size: 1.5rem;
+            color: rgb(104, 96, 104);
+            user-select: none;
+        }
+        
+    }
+
+    .desk{
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        user-select: none;
+    }
+
+    @include for-tiny-layout{
+     
+    }
+    @include for-mobile-layout{
+        .wave{
+            width:500px;
+            right: -40px;
+            top: 5.8%;
+            transform: rotate(3.8deg);
+        }
+        .desk{
+            width: 300px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .title-container{
+            align-items: center;
+            button{
+                user-select: none;
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(243, 186, 81);
+                padding: 20px;
+                font-size: 1.2rem;
+                color: rgb(34, 31, 31);
+                width: 50%;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color:rgb(238, 195, 115) ;
+            }
+            top: 60%;
+            .title{
+                color: rgb(27, 26, 26);
+            }
+            .sub-title{
+                color: rgb(27, 26, 26);
+            }
+        }
+    }
+    @include for-narrow-layout{
+        .wave{
+            width:550px;
+            right: -40px;
+            top: 5.8%;
+            transform: rotate(3.4deg);
+        }
+        .desk{
+            width: 350px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .title-container{
+            top: 60%;
+            .title{
+                color: rgb(27, 26, 26);
+            }
+            .sub-title{
+                color: rgb(27, 26, 26);
+            }
+        }
+
+    }
+    @include for-mid-layout{
+        .wave{
+            width:650px;
+            right: -40px;
+            top: 5.8%;
+            transform: rotate(2.9deg);
+        }
+        .desk{
+            width: 400px;
+            left: 70%;
+            transform: translate(-50%);
+        }
+
+        .title-container{
+            top: 70%;
+            .title{
+                color: rgb(27, 26, 26);
+            }
+            .sub-title{
+                color: rgb(27, 26, 26);
+            }
+        }
+
+    }
+    @include for-normal-layout{
+        .wave{
+            width:750px;
+            right: -40px;
+            top: 5.8%;
+            transform: rotate(2.5deg);
+        }
+        .desk{
+            width: 550px;
+            left: 70%;
+            transform: translate(-50%);
+        }
+
+        .title-container{
+            top: 75%;
+            .title{
+                color: rgb(27, 26, 26);
+            }
+            .sub-title{
+                color: rgb(27, 26, 26);
+            }
+        }
+
+    }
+    @include for-wide-layout{
+        .wave{
+            width:1000px;
+            right: -40px;
+            top: 6.3%;
+            transform: rotate(1.9deg);
+            
+        }
+        .desk{
+            width: 590px;
+            left: 78%;
+            transform: translate(-50%);
+        }
+
+        .title-container{
+            top: 35%;
+            left: 10%;
+            
+            .title{
+                color: rgb(27, 26, 26);
+            }
+            .sub-title{
+                color: rgb(27, 26, 26);
+            }
+        }
+    }
     
 }

@@ -305,3 +305,122 @@
     @include for-wide-layout {}
 }
 
+.wap-card-3 {
+    font-family: Monsterrat-thin;
+    padding-block: 100px;
+    .card-container {
+        position: relative;
+        margin: auto;
+        .card-title {
+            position: absolute;
+            font-size: 5rem;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Monsterrat;
+            color: #f5ae71;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .card-flex-cont {
+            display: flex;
+            flex-direction: column;
+            & > * {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-flex-item2 {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                font-size: 0.6rem;
+                padding: 20px;
+                padding-right: 50px;
+            }
+        }
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        .card-container {
+            min-width: 1200px;
+            width: 65%;
+            .card-flex-cont {
+                display: flex;
+                flex-direction: row;
+                & > * {
+                    flex-direction: row;
+                    flex-basis: 50%;
+                    min-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+.wap-card-3-1 {
+    background: url('../../../img/card3-1/43c038_daee9005e3a741ccbc28e0dbe9bd1cde_mv2.png');
+    color: #fff;
+    font-family: Monsterrat-thin;
+    font-size: 10px;
+    padding-block: 9em;
+    padding-inline: 2em;
+    
+
+    .title {
+        font-family: Monsterrat;
+        margin: auto;
+        font-size: 6em;
+        text-transform: uppercase;
+        width: fit-content;
+        margin-bottom: 7rem;
+    }
+
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 0.8em;
+
+        & > *:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+        }
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        font-size: 20px;
+        & > section {
+            width: 700px;
+            margin: 0 auto;
+        }
+    }
+    @include for-mid-layout{
+        font-size: 20px;
+        & > section {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    
+}

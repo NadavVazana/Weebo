@@ -8,8 +8,8 @@ import { Gallery } from "./wap-cmps/gallery"
 import { Input } from "./wap-cmps/input"
 
 
-export const DynamicCmp = ({ cmp, onEditElement,isPublished }) => {
-
+export const DynamicCmp = ({ cmp, onEditElement, isPublished }) => {
+    
     switch (cmp.type) {
         case 'container':
             return <Container isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />

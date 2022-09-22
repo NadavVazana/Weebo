@@ -13,6 +13,7 @@ export const Input = ({ cmp, onEditElement,isPublished }) => {
         </section>
         // PUBLISH MODE
         :<section>
+
               <input
                 type={cmp.input_type}
                 placeholder={cmp.info.placeholder}

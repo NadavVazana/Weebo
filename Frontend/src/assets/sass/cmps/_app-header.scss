@@ -9,6 +9,7 @@
     margin: auto;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 
     .mobile-nav {
         position: absolute;
@@ -18,7 +19,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: #ffb5a7;
+        background-color: #4e539c;
         width: 100%;
         min-height: calc(100vh - $header-height);
         transition: top 0.4s, opacity 0.4s;
@@ -144,7 +145,7 @@
 
     .main-logo {
         position: relative;
-        font-family:Eurofurence;
+        font-family: Madefor;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 2.5rem;
@@ -190,7 +191,7 @@
             }
             100% {
                 transform: translateY(0%);
-                color: #ffb5a7;
+                color: rgb(69, 69, 184);
             }
          }
 

@@ -44,7 +44,6 @@
     @media (min-width:1200px) {
         @content;
     }
-
 }
 
 @mixin for-wide-layout {

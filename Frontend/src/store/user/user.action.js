@@ -1,3 +1,4 @@
+import { showSuccessMsg } from "../../services/event-bus.service"
 import { userService } from "../../services/user.service"
 
 export function loginUser(userToLogin){
@@ -11,6 +12,8 @@ export function loginUser(userToLogin){
 
 export function logoutUser(){
     return async (dispatch) =>{
+    showSuccessMsg('Logged out')
+
         await userService.logout()
         dispatch({type:'LOGOUT_USER'})
     }

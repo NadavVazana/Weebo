@@ -24,7 +24,6 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         ev.stopPropagation()
         onEditElement(cmp)
     }
-
     return (
         <React.Fragment>
             {/* EDIT MODE */}

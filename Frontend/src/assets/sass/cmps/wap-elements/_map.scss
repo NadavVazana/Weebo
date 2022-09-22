@@ -1,0 +1,126 @@
+.wap-map-1{
+    height: 500px;
+    background-color: rgb(240, 234, 234);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    .map{
+        width: 60%;
+        height: 100%;
+    }
+    .wap-text-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        gap: 20px;
+    }
+    .title{
+        font-size: 1.8rem;
+        font-family: Madefor;
+        text-align: center;
+        color: rgb(92, 88, 88);
+    }
+    .paragraph{
+        color:rgb(92, 88, 88);
+        font-family: Madefor;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    @include for-tiny-layout{
+        
+    }
+    @include for-mobile-layout{
+ 
+        .map{
+            width: 100%;
+        }
+
+
+    }
+    @include for-narrow-layout{
+        .title{
+            font-size: 3rem;
+        }
+        .paragraph{
+            font-size: 2rem;
+        } 
+        padding: 100px;
+
+        
+    }
+    @include for-mid-layout{
+      
+    }
+    @include for-normal-layout{
+     
+
+    }
+    @include for-wide-layout{
+      
+
+    }
+}
+
+.wap-map-3 {
+    font-family: Monsterrat-thin;
+    display: flex;
+    flex-direction:column-reverse;
+    font-size: 16px;
+    & > * {
+        width: 100%;
+    }
+
+    .map {
+        height: 500px;
+        width: 100%;
+    }
+
+    .text-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .title {
+        font-family: Monsterrat;
+        color: #f5ae71;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+
+    .hours {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        flex-direction:row;
+        & > * {
+            width: 50%;
+        }
+
+        .text-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            width: 100%;
+        }
+    }
+}

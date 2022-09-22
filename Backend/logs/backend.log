@@ -1681,9 +1681,5 @@
 21.9.2022, 11:43:02 - INFO - Server is running on port: 3030 
 21.9.2022, 11:45:33 - INFO - Server is running on port: 3030 
 21.9.2022, 11:45:57 - DEBUG - Getting Waps 
-21.9.2022, 12:43:49 - INFO - Server is running on port: 3030 
-21.9.2022, 12:46:40 - INFO - Server is running on port: 3030 
-21.9.2022, 19:23:21 - INFO - Server is running on port: 3030 
-21.9.2022, 23:53:47 - INFO - Server is running on port: 3030 
-21.9.2022, 23:54:04 - INFO - Server is running on port: 3030 
-22.9.2022, 7:01:20 - INFO - Server is running on port: 3030 
+21.9.2022, 15:56:57 - INFO - Server is running on port: 3030 
+21.9.2022, 22:04:43 - DEBUG - auth.service - signup with username: micahel, fullname: Michael 

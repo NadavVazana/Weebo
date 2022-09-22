@@ -61,3 +61,58 @@
         }
     }
 }
+
+.wap-gallery-3 {
+    font-size: 20px;
+    
+
+
+    .title{
+        color: #f5ae71;
+        font-family: Monsterrat;
+        text-transform: uppercase;
+        width: fit-content;
+        font-size: 3em;
+        margin: 0 auto;
+        margin-block: 1em;
+    }
+
+
+    .gallery-grid {
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        margin-block-end: 4em;
+        grid-template-columns: repeat(1, 1fr);
+        // grid-auto-rows: 312px;
+        gap: 10px;
+
+        & img{
+            width: 100%;
+        }
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        .gallery-grid {
+            grid-template-columns: repeat(2, 312px);
+            width: fit-content;
+        }
+    }
+    @include for-mid-layout{
+        & > section:last-child {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-grid {
+            grid-template-columns: repeat(3, 312px);
+        }
+
+        .title {
+            font-size: 6em;
+        }
+    }
+}
