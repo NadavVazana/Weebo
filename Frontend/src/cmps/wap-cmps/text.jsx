@@ -23,7 +23,6 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         ev.stopPropagation()
         onEditElement(cmp)
     }
-    console.log(cmp.info.navigate);
     return (
         <React.Fragment>
             {/* EDIT MODE */}

@@ -39,6 +39,7 @@
         position: absolute;
         right: 10%;
         top: 30%;
+        user-select: none;
     }
 
     @include for-tiny-layout{
@@ -60,6 +61,7 @@
         .title-container{
             align-items: center;
             button{
+                user-select: none;
                 border: none;
                 border-radius: 20px;
                 background-color: rgb(243, 186, 81);
