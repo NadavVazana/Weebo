@@ -21,9 +21,9 @@ export const Button = ({ cmp, onEditElement ,isPublished}) => {
 
     function handleEditElement(ev, cmp) {
         ev.stopPropagation()
-        // setClicked(true)
         onEditElement(cmp)
     }
+
 
     return (
         <React.Fragment>
@@ -39,7 +39,7 @@ export const Button = ({ cmp, onEditElement ,isPublished}) => {
         </section> 
         // PUBLISHED MODE
         : <section className={`${cmp.info.class}`}>
-            <button className={`button-published`} 
+            <button  className={`button-published`} 
                 style={{ ...cmp?.styles }}
                 >
                     {cmp.info.value}
