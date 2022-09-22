@@ -5,13 +5,13 @@
         position: absolute;
         right: -28px;
         fill: rgb(97, 97, 197);
-        z-index: -1000;
-        top: 5.9%;
+        top: 5%;
         transform: rotate(1.4deg);
         
     }
 
     .title-container{
+        z-index: 3;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -47,15 +47,17 @@
     }
     @include for-mobile-layout{
         .wave{
-            width:500px;
+            width:540px;
             right: -40px;
             top: 5.8%;
             transform: rotate(3.8deg);
+            z-index: 1;
         }
         .desk{
             width: 300px;
             left: 50%;
             transform: translate(-50%);
+            z-index: 2;
         }
 
         .title-container{
@@ -85,9 +87,9 @@
     }
     @include for-narrow-layout{
         .wave{
-            width:550px;
+            width:1020px;
             right: -40px;
-            top: 5.8%;
+            top: 4%;
             transform: rotate(3.4deg);
         }
         .desk{
@@ -159,7 +161,7 @@
         .wave{
             width:1000px;
             right: -40px;
-            top: 6.3%;
+            top: 5%;
             transform: rotate(1.9deg);
             
         }

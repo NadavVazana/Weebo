@@ -29,8 +29,11 @@
 
 
     .side-bar {
+        max-height: calc(100vh - $header-height);
         display: flex;
         flex-direction: column;
+        border-right:#5959596c solid 1px;
+
         user-select: none;
 
         justify-content: space-between;
@@ -74,8 +77,9 @@
     }
 
     .side-bar-actions {
+        max-height: calc(100vh - $header-height);
         z-index: 1;
-        overflow-y: scroll;
+        overflow-y: auto;
         height: 92.5vh;
         background-color: #dddddd;
         color: #595959;
