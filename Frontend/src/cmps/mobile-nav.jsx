@@ -8,7 +8,7 @@ export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave,
         setMenuOpen(false)
     }
 
-    let isUserInEditor = location.pathname.split('/')[1] === 'editor' && loggedInUser
+    let isUserInEditor = location.pathname.split('/')[1] === 'editor'
     return (
         <nav className={`mobile-nav ${isMenuOpen ? 'mobile-open' : ''}`}>
             <nav className={`app-header-nav`} >

@@ -78,7 +78,7 @@ export const AppHeader = () => {
                 <div onClick={() => setNameModal(false)} className='black-screen'></div>
             </section>}
             <Link to={'/'} onClick={() => { setMenuOpen(false) }}>
-                <h1 className='main-logo'>WEEBO<span className='dot'>.</span>
+                <h1 className='main-logo'><span className='w'>W</span>eebo<span className='dot'>.</span>
                     <span className='underline'></span>
                 </h1>
             </Link>

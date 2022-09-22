@@ -78,7 +78,7 @@ export const Editor = () => {
     function getStyles(snapshot) {
         return {
             backgroundColor: draft.styles?.backgroundColor ? draft.styles?.backgroundColor :
-                snapshot.isDraggingOver ? '#deded2' : 'white'
+    snapshot.isDraggingOver ? '#6161c5' : 'white'
         }
 
     }

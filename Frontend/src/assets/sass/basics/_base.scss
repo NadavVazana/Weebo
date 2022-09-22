@@ -49,8 +49,11 @@ a {
     font-style: normal;
   }
 
-
+hr{
+  width: 100%;
+}
   html {
+ overflow: auto;
  overflow-x: hidden;
 ::-webkit-scrollbar {
   width: 10px;
