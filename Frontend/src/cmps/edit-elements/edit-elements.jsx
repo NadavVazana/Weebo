@@ -4,7 +4,6 @@ import { EditButton } from '../edit-elements/edit-button'
 import { EditImage} from '../edit-elements/edit-image'
 import { EditContainer } from './edit-container'
 
-
 export const EditElements = () => {
 
     const { currElement } = useSelector(state => state.draftModule)

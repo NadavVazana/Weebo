@@ -18,6 +18,20 @@ export function setDraft(draft) {
     }
 }
 
+//Change Theme
+export function updateDraftTheme(draft, theme){
+    return (dispatch)=>{
+        try {
+            const copyDraft = {...draft}
+            draft = wapService.updateDraftTheme(copyDraft, theme)
+            dispatch({ type: 'SET_DRAFT', draft })
+        } catch (err){
+            console.log('could not update draft theme!:', err)
+        }
+
+    }
+}
+
 // Update Draft
 export function updateDraft(draft, element, isRemove) {
     return (dispatch) => {

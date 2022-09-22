@@ -7,9 +7,10 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
+
     const handleChange = (ev) => {
-        ev.preventDefault()
         const { innerText } = ev.target
+
         let copyCurrElement = { ...cmp }
         copyCurrElement = {
             ...copyCurrElement, info: { ...copyCurrElement?.info, value: innerText }
@@ -17,7 +18,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         dispatch(updateDraft(draft, copyCurrElement))
         dispatch(setElement(copyCurrElement))
     }
-    
+
     function handleEditElement(ev, cmp) {
         ev.preventDefault()
         ev.stopPropagation()
@@ -32,16 +33,16 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
                     suppressContentEditableWarning
                     style={{ ...cmp?.styles }}
                     className={cmp.info.class}
-                    onClick={(ev) => handleEditElement(ev, cmp)} onInput={handleChange}
+                    onClick={(ev) => handleEditElement(ev, cmp)} onChange={handleChange}
                 >{cmp.info.value}</h1>
             </section>
-            // PUBLISH MODE
-                :<section>
-                        <h1
-                    style={{ ...cmp?.styles }}
-                    className={cmp.info.class}
-                >{cmp.info.value}</h1> 
-                    </section>}
+                // PUBLISH MODE
+                : <section>
+                    <h1
+                        style={{ ...cmp?.styles }}
+                        className={cmp.info.class}
+                    >{cmp.info.value}</h1>
+                </section>}
         </React.Fragment>
     )
 }

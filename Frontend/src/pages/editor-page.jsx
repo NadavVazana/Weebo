@@ -23,7 +23,6 @@ export const Editor = () => {
     const [isEdit, setIsEdit] = useState(false)
     const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
 
-
     const addElement = (cmp) => {
         draft.cmp.push(cmps[cmp])
     }
@@ -42,11 +41,11 @@ export const Editor = () => {
 
 
     const onEditElement = (clickedElement, ev) => {
-        ev?.stopPropagation()
-        if (clickedElement.id === currElement.id) {
-            dispatch(setElement(null))
-            return
-        }
+        // ev?.stopPropagation()
+        // if (clickedElement.id === currElement.id) {
+        //     dispatch(setElement(null))
+        //     return
+        // }
         dispatch(setElement(clickedElement))
         setIsEdit(true)
     }
@@ -76,6 +75,14 @@ export const Editor = () => {
         dispatch(setDraft(draft))
     }
 
+    function getStyles(snapshot) {
+        return {
+            backgroundColor: draft.styles?.backgroundColor ? draft.styles?.backgroundColor :
+                snapshot.isDraggingOver ? '#deded2' : 'white'
+        }
+
+    }
+
     if (!draft) return <section></section>
 
     return (
@@ -84,13 +91,13 @@ export const Editor = () => {
                 <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle} />
                 <Droppable droppableId='editor'>
                     {(provided, snapshot) => {
-                        let styleTest = { backgroundColor: snapshot.isDraggingOver ? '#deded2' : 'white' }
+
                         return (
                             <section
                                 className={`wap ${draft.name ? draft.name : ''}`}
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
-                                style={styleTest}>
+                                style={getStyles(snapshot)}>
                                 {!draft.cmps?.length ? (
                                     <section>
                                         <h1 className='guide-title'>Let's learn how to do it!</h1>

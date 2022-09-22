@@ -2,6 +2,7 @@ import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft, duplicateElement, setDraft, setDuplicate } from '../../store/draft/draft.action'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 export const EditText = () => {
@@ -16,6 +17,16 @@ export const EditText = () => {
     const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
     const textControls = ['Delete', 'Copy', 'Undo']
 
+    useEffect(() => {
+        return resetToggle
+    }, [])
+
+
+    const resetToggle = () => {
+        setIsUnderline(false)
+        setIsBold(false)
+        setIsItalic(false)
+    }
 
     // Change Font
     const handleFont = (ev) => {
@@ -30,7 +41,7 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
-// Change Font Size
+    // Change Font Size
     const handleFontSize = (ev) => {
         const { value } = ev.target
         let copyCurrElement = { ...currElement }
@@ -97,6 +108,7 @@ export const EditText = () => {
 
     // Toggle Text Decoration
     const toggleDecoration = (ev) => {
+
         const { alt } = ev.target
         let name = alt
         let value = ''
@@ -164,11 +176,11 @@ export const EditText = () => {
 
     return (
         <section className="edit-elements">
-            
+
             {/* Text Decoration */}
             <div>
                 <span>Decoration</span>
-                <div className='align-image'>
+                <div className='text-decoration'>
                     {decorOpts.map(decorOpt =>
                         <img key={decorOpt}
                             src={require(`../../assets/img/icons/${decorOpt}.svg`)}
@@ -208,7 +220,7 @@ export const EditText = () => {
             {/* Font Select */}
             <div className="custom-select" >
                 <label htmlFor='styledSelect'>Font</label>
-                <select id="styledSelect" name='options' onChange={handleFont}>
+                <select className='select-font' id="styledSelect" name='options' onChange={handleFont}>
                     {fonts.map(font => <option key={font} value={font}>{font}</option>)}
                 </select>
             </div>

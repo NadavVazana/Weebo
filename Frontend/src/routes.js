@@ -1,5 +1,5 @@
 import { Home } from './pages/home.jsx'
-import { Editor } from './pages/editor.jsx'
+import { Editor } from './pages/editor-page.jsx'
 import { About } from './pages/about.jsx'
 import { Login } from './pages/login.jsx'
 import { Templates } from './pages/templates/templates.jsx'

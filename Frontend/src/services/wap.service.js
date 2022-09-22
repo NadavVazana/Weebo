@@ -1,6 +1,6 @@
 import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
-import {utilService} from './util.service'
+import { utilService } from './util.service'
 
 export const wapService = {
     getWaps,
@@ -12,7 +12,8 @@ export const wapService = {
     setDraft,
     updateDraft,
     removeElement,
-    duplicateElement
+    duplicateElement,
+    updateDraftTheme
 }
 
 const WAP = 'wap/'
@@ -37,8 +38,6 @@ async function getById(wapId) {
         console.log('oops! could not fetch wap:', err)
     }
 }
-
-
 
 async function addWap(wap) {
     try {
@@ -151,6 +150,34 @@ function updateDraft(draft, element) {
     return copyDraft
 }
 
+function getCmpWithBackground(cmp, theme, index) {
+    return {
+        ...cmp, styles: { ...cmp?.styles, backgroundColor: theme.backgroundColor[index] }
+    }
+}
 
+
+// Change Theme
+function updateDraftTheme(draft, theme) {
+    const copyDraft = getCmpWithBackground({ ...draft }, theme, 0)
+
+    if (copyDraft.cmps) {
+        copyDraft.cmps = copyDraft.cmps.map(cmp => {
+            let copyCmp = { ...cmp }
+            const backgroundNum = (cmp.name.includes('header') ||
+                cmp.name.includes('footer')) && 1 ||
+                cmp.name.includes('card') && 2
+
+            if (backgroundNum) {
+                copyCmp = getCmpWithBackground(copyCmp, theme, backgroundNum)
+            }
+
+            return { ...copyCmp }
+        })
+
+    }
+
+    return copyDraft
+}
 
 
