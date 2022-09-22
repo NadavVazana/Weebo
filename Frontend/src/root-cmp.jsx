@@ -7,8 +7,11 @@ import './assets/sass/styles.scss'
 function App() {
     const location = useLocation()
     const path = location.pathname.split('/')
+    // const style = path[1] === 'editor' ? {overflowY:'hidden'} : ''
+    // console.log(style);
+
     return (
-        <section className="app">
+        <section  className="app">
             {path[1] !== 'publish' &&<AppHeader/>}
             <main>
                 <Routes>

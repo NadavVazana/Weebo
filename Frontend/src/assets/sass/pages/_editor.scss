@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: fit-content(20%) 8fr;
     height: calc(100vh - $header-height);
-    overflow: hidden;
     .guide-title{
         font-family: Madefor;
         position: absolute;
