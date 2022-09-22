@@ -24,28 +24,36 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
     }
 
     // toggle edit menu
-    const toggleEditMenu = () => {
-        setEditMenu(!isEditMenu)
+    const openEditMenu = () => {
+        setEditMenu(true)
         setThemesMenu(false)
         setAddMenu(false)
-        setOptionsMenu(!isOptionsMenu.isOpen)
+        setOptionsMenu(false)
         isEditToggle(false)
     }
 
     // toggle themes
-    const toggleThemesMenu = () => {
+    const openThemesMenu = () => {
         setEditMenu(false)
-        setThemesMenu(!isThemesMenu)
+        setThemesMenu(true)
         setAddMenu(false)
-        setOptionsMenu(!isOptionsMenu.isOpen)
+        setOptionsMenu(false)
         isEditToggle(false)
     }
 
     // toggle add menu
-    const toggleAddMenu = () => {
+    const openAddMenu = () => {
         setEditMenu(false)
         setThemesMenu(false)
-        setAddMenu(!isAddMenu)
+        setAddMenu(true)
+        isEditToggle(false)
+    }
+
+    const closeSideBar = () =>{
+        setEditMenu(false)
+        setThemesMenu(false)
+        setAddMenu(false)
+        setOptionsMenu(false)
         isEditToggle(false)
     }
 
@@ -53,17 +61,17 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         <section className="editor-nav">
             <div className="side-bar">
                 <div>
-                    <button className={`edit-btn ${isEditMenu && 'active'}`} onClick={toggleEditMenu}>
+                    <button className={`edit-btn ${isEditMenu && 'active'}`} onClick={openEditMenu}>
                         <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
                         <span>Edit</span>
                     </button>
 
-                    <button className={`themes-btn ${isThemesMenu && 'active'}`} onClick={toggleThemesMenu}>
+                    <button className={`themes-btn ${isThemesMenu && 'active'}`} onClick={openThemesMenu}>
                         <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
                         <span>Themes</span>
                     </button>
 
-                    <button className={`add-btn ${isAddMenu && 'active'}`} onClick={toggleAddMenu}>
+                    <button className={`add-btn ${isAddMenu && 'active'}`} onClick={openAddMenu}>
                         <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
                         <span>Add</span>
                     </button>
@@ -71,7 +79,8 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
 
             </div>
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu || isOptionsMenu.isOpen) ? 'open' : ''} `}>
-                {(isEditMenu || isEdit) && <EditElements isEditMenu={isEditMenu} />}
+                <button onClick={closeSideBar}>Close Edit Menu</button>
+                {(isEditMenu || isEdit) && <EditElements/>}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
                     <React.Fragment>{cmpTypes.map(cmp => {

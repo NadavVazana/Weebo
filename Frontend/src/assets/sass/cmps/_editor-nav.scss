@@ -2,9 +2,9 @@
     background-color: #eeeeee;
     display: flex;
     font-family: Monsterrat;
-
+ 
     
-    h1{
+    h1,button{
         color: #595959;
         font-size: .8rem;
         text-align: center;
@@ -73,7 +73,6 @@
     }
 
     .side-bar-actions {
-        overflow-y: scroll;
         height: 92.5vh;
         background-color: #dddddd;
         color: #595959;
@@ -82,17 +81,17 @@
         padding: 0;
         margin: 0;
     
-        .edit-container{
+        // .edit-container{
     
-            button{
-                background: none;
-                border: none;
-            }
-            .trash-icon{
-                width: 15%;
-                cursor: pointer;
-            }
-        }
+        //     button{
+        //         background: none;
+        //         border: none;
+        //     }
+        //     .trash-icon{
+        //         width: 15%;
+        //         cursor: pointer;
+        //     }
+        // }
         .mini-cmp{
             width: 100%;
             border-radius: 13px;

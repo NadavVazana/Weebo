@@ -1,8 +1,9 @@
+import { useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft, duplicateElement, setDraft, setDuplicate, setElementImage } from '../../store/draft/draft.action'
 
 export const EditImage = () => {
-
+    const ref = useRef()
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const textControls = ['Delete', 'Copy', 'Undo']
@@ -48,15 +49,18 @@ export const EditImage = () => {
         dispatch(duplicateElement(draft, copyCurrElement))
     }
 
+    function handleUploadImage() {
+        ref.current.click()
+    }
+
     return (
         <section className="edit-elements">
 
             {/* Upload Image to Image Element */}
             <div className='edit-image'>
                 <form id="form1" runat="server" className='edit-image'>
-                    <span>Upload Image</span>
-                    <input onChange={handleImage} type="file" />
-                    <img id="blah" src="#" alt="your image" />
+                <span onClick={handleUploadImage}>Upload Image</span>
+                    <input ref={ref} onChange={handleImage} type="file" />
                 </form>
             </div>
 

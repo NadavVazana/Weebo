@@ -1,9 +1,10 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft, setDraft, setDuplicate, duplicateElement, setElementImage } from '../../store/draft/draft.action'
+import { useRef } from 'react'
 
 export const EditContainer = () => {
-
+    const ref = useRef()
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const textControls = ['Delete', 'Copy', 'Undo']
@@ -61,11 +62,14 @@ export const EditContainer = () => {
         dispatch(setElementImage(ev))
     }
 
+    function handleUploadImage() {
+        ref.current.click()
+    }
 
     return (
 
         <section className="edit-elements">
-            
+
             {/* Pallete Background color */}
             <div className="pallete-container">
                 <span>Backgroud Color</span>
@@ -74,9 +78,8 @@ export const EditContainer = () => {
 
             {/* Upload Image */}
             <form id="form1" runat="server" className='edit-image'>
-                <span>Upload Image</span>
-                <input onChange={handleImage} type="file" />
-                <img id="blah" src="#" alt="your image" />
+                <span onClick={handleUploadImage}>Upload Image</span>
+                <input id="files" ref={ref} onChange={handleImage} type="file" />
             </form>
 
             {/* Element Controller - Delete, Duplicate, Undo */}

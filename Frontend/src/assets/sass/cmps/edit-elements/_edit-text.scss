@@ -1,5 +1,6 @@
-.align-image {
+.text-decoration {
     display: flex;
+    align-items: center;
     padding: 0;
     min-width: 100px;
     cursor: pointer;
@@ -7,43 +8,57 @@
 
     img {
         width: 1rem;
-        padding: 5px;
     }
 
     img:hover {
         filter: invert(0.4);
     }
 
+    :last-child {
+        width: 0.8rem;
+    }
+
+}
+
+.select-font {
+    border: none;
+    border-radius: 3px;
+    padding: 2px;
 }
 
 .element-control {
+    position: absolute;
+    width: calc(100% - 28px);
+    bottom: 8px;
     display: flex;
     padding: 0;
     cursor: pointer;
     color: #fff;
     justify-content: space-around;
     margin: 0;
-    
+
     .element-control-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        
-        img{
+
+        img {
             color: #fff;
             width: 1.5rem;
             padding: 5px;
             margin-bottom: 5px;
-            filter: invert(0.8);
+            filter: invert(0.4);
+
+            :hover {
+                filter: invert(1);
+            }
         }
+
     }
 
-    .element-control-container:hover{
+    .element-control-container:hover {
         filter: invert(0.4);
     }
 
 }
-
-
-

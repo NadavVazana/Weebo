@@ -1,11 +1,23 @@
 .edit-image{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
 
     input{
-        width: 100%;
+        display: none;
     }
+    span{
+        cursor: pointer;
+        padding: 12px 22px;
+        border-radius: 5px;
+        background-color: #ffd146;
+        color: #fff;
+        &:hover{
+            font-size: 18px;
+        }
+    }
+
 }
