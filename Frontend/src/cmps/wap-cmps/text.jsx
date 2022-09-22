@@ -23,7 +23,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         ev.stopPropagation()
         onEditElement(cmp)
     }
-
+    console.log(cmp.info.navigate);
     return (
         <React.Fragment>
             {/* EDIT MODE */}
@@ -41,7 +41,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
                         <h1
                     style={{ ...cmp?.styles }}
                     className={cmp.info.class}
-                >{cmp.info.value}</h1>
+                >{cmp.info.value}</h1> 
                     </section>}
         </React.Fragment>
     )

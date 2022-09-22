@@ -18,6 +18,7 @@ import { loginUser, logoutUser } from '../store/user/user.action'
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { showSuccessMsg } from '../services/event-bus.service';
 
 function Copyright(props) {
   return (
@@ -38,6 +39,7 @@ export const Login = () => {
   const logout = async () => {
     await userService.logout()
     dispatch(logoutUser(null))
+    
   }
   const dispatch = useDispatch()
   const handleSubmit = async (event) => {
@@ -51,7 +53,8 @@ export const Login = () => {
       setMsg('Invalid login details')
     }
     else
-      navigate('/')
+    {showSuccessMsg('Logged in as: '+ user.username )
+      navigate('/')}
   };
 
   return (

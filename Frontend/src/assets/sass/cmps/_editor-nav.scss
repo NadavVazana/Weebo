@@ -73,6 +73,7 @@
     }
 
     .side-bar-actions {
+        z-index: 1;
         overflow-y: scroll;
         height: 92.5vh;
         background-color: #dddddd;
@@ -93,6 +94,11 @@
                 cursor: pointer;
             }
         }
+
+        .wap-header-2-mini{
+            transform: scaleY(2);
+        }
+
         .mini-cmp{
             width: 100%;
             border-radius: 13px;

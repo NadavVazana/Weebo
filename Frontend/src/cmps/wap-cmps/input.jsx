@@ -1,6 +1,9 @@
 import React from "react"
 export const Input = ({ cmp, onEditElement,isPublished }) => {
-
+    const handleInput = (ev)=>{
+        console.log(ev.target.value);
+        console.log(cmp);
+    }
     return (
         <React.Fragment>
         {/* EDIT MODE */}
@@ -13,10 +16,11 @@ export const Input = ({ cmp, onEditElement,isPublished }) => {
         </section>
         // PUBLISH MODE
         :<section>
+
               <input
                 type={cmp.input_type}
                 placeholder={cmp.info.placeholder}
-                
+                onChange={handleInput}
                 className={cmp.name} />
 
         </section>}

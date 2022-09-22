@@ -25,12 +25,12 @@ export const Image = ({ cmp,isPublished, onEditElement }) => {
                     />
                 </section> :
                 // PUBLISH MODE
-                    <setction className="image">
+                    <section className="image">
                         <img className={cmp.name}
                             src={image}
                             alt={cmp.name}
                             onClick={(ev) => handleEditElement(ev, cmp)} />
-                    </setction>}
+                    </section>}
             </React.Fragment>
         )
     }

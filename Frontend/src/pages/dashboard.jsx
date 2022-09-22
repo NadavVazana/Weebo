@@ -2,8 +2,7 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { PublishChart } from "../cmps/publish-chart"
-import { ViewsChart } from "../cmps/views-chart"
+// import { PublishChart } from "../cmps/publish-chart"
 import { showSuccessMsg } from "../services/event-bus.service"
 import { setDraft } from "../store/draft/draft.action"
 import { updateUser } from "../store/user/user.action"
@@ -146,12 +145,19 @@ export const Dashboard = () => {
                     </div>
 
 
+                    {/* USER SUBSCRIBERS LIST */}
+                    <div className="subscribers">
+                        <h1>Subscribers:</h1>
+                        <ul></ul>
+                    </div>
+
+
                     
 
                 </div>
                 <section className="charts">
-                <PublishChart sites={loggedInUser.waps} />
-                <ViewsChart  />
+                {/* <PublishChart sites={loggedInUser.waps} /> */}
+                {/* <ViewsChart  /> */}
                 </section>
 
             </section>
