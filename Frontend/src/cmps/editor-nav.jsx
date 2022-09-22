@@ -49,14 +49,14 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
         isEditToggle(false)
     }
 
-    const closeSideBar = () =>{
+    const closeSideBar = () => {
         setEditMenu(false)
         setThemesMenu(false)
         setAddMenu(false)
         setOptionsMenu(false)
         isEditToggle(false)
     }
-    console.log(isEditMenu,isAddMenu,isThemesMenu);
+
     return (
         <section className="editor-nav">
             <div className="side-bar">
@@ -78,17 +78,19 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
                 </div>
 
             </div>
-            <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu ) ? 'open' : ''} `}>
-                <button onClick={closeSideBar}>Close Edit Menu</button>
-                {(isEditMenu || isEdit) && <EditElements/>}
+            <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu) ? 'open' : ''} `}>
+                <div className={`side-bar-close`}>
+                    <button onClick={closeSideBar}>x</button>
+                </div>
+                {(isEditMenu || isEdit) && <EditElements />}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
                     <React.Fragment>
-                    <AddAccordion setOptionList={setOptionList} key={'accordion'} setOptionsMenu={setOptionsMenu} toggleOptionsMenu={toggleOptionsMenu} addElement={addElement} isOptionsMenu={isOptionsMenu}  />
+                        <AddAccordion setOptionList={setOptionList} key={'accordion'} setOptionsMenu={setOptionsMenu} toggleOptionsMenu={toggleOptionsMenu} addElement={addElement} isOptionsMenu={isOptionsMenu} />
 
                     </React.Fragment>}
             </div>
 
-        </section>
+        </section >
     )
 }
