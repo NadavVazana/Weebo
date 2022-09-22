@@ -9,7 +9,7 @@ export const Home = () => {
             <div className="title-container">
             <h1 className="title">Turn your ideas into websites!</h1>
             <h1 className="sub-title">Simple & elegant platform for creating websites! </h1>
-              <button onClick={()=>navigate('/templates')}>Start building your own website!</button>
+              <button onClick={()=>navigate('/templates')}>Start building your own!</button>
             </div>
             <img className="desk" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663778603/home-1-748x528_t83afb.png" alt="" />
             <svg className="wave" version="1.1" x="0px" y="0px" viewBox="0 0 1446 970" width="1446" height="970" preserveAspectRatio="none">
