@@ -24,6 +24,7 @@ async function getSiteById(siteId){
 
 
 async function updateSite(site){
+    console.log(site);
       await httpService.put(SITE,site)
 }
 

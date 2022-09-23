@@ -11,8 +11,11 @@ async function setupSocketAPI(http) {
     })
 
     gIo.on('connection', socket => {
-        socket.on('set-up-socket-site', siteId => {
+        socket.on('set-up-socket-site',async siteId => {
+            console.log(siteId);
             socket.siteId = siteId
+            const sockets = await _getAllSockets()
+            console.log(sockets);
             // console.log(socket);
 
 
@@ -25,6 +28,8 @@ async function setupSocketAPI(http) {
         socket.on('increase-view-to-site',async site=>{
                 siteService.update(site[0])
                 const target = await getUserSocket(site[0]._id)
+                console.log(target);
+                if(!target) return
                 target.emit('increase-views-on-dashboard',site[0])
                 
         })
@@ -38,8 +43,8 @@ async function setupSocketAPI(http) {
     async function getUserSocket(siteId) {
         const sockets = await _getAllSockets()
         const socket = sockets.find(s =>{
-            // console.log(siteId);
-           return s.siteId === siteId})
+           return s.siteId === siteId.toString()})
+
         return socket
     }
 

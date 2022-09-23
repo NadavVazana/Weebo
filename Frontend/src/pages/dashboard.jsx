@@ -20,7 +20,6 @@ export const Dashboard = () => {
     const [siteMenu,setSiteMenu] = useState(false)
     const [details,setDetails] = useState({})
     
-    
 
     useEffect(()=>{
 
@@ -48,8 +47,6 @@ export const Dashboard = () => {
     }
 
     const updateViews=(site)=>{
-        console.log('hi');
-        console.log(site);
         setSite(site)
     }
 

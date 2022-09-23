@@ -28,7 +28,7 @@ export const UserMsg = () => {
   return (
     <section className={msgClass}>
 
-      {msg.txt}
+      {msg.txt}<img src={require('../assets/img/icons/user-msg-icon.gif')} alt="" />
     </section>
   )
 
