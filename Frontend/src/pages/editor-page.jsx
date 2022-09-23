@@ -105,7 +105,6 @@ export const Editor = () => {
                                         <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
                                         </div>
                                        
-                                        {/* <h2>Lets start!</h2> */}
                                     </section>
                                 ) : (
                                     draft.cmps.map((cmp, index) => (

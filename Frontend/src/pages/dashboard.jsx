@@ -25,13 +25,14 @@ export const Dashboard = () => {
     useEffect(()=>{
 
         loadSites()
-        
         socketService.on('update-contact-list', updateDetails )
-        
+        socketService.on('increase-views-on-dashboard',updateViews)
 
+        
+        
     },[])
     useEffect(()=>{
-
+        
         if(!site) return
         socketService.emit('set-up-socket-site',site._id)        
 
@@ -44,6 +45,12 @@ export const Dashboard = () => {
 
 
 
+    }
+
+    const updateViews=(site)=>{
+        console.log('hi');
+        console.log(site);
+        setSite(site)
     }
 
 
@@ -89,7 +96,6 @@ export const Dashboard = () => {
 
     const onSiteClick=(wap)=>{
         setSite(wap)
-        console.log(site);
         setSiteMenu(false)
     }
 

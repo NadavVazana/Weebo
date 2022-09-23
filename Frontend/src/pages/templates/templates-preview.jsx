@@ -13,7 +13,7 @@ export const TemplatesPreview = ({ example }) => {
             <div className='overlay'>
                 <div className='overlay-screen'></div>
                 <div className='overlay-btns'>
-                    <Link className='preview-btn'>Preview</Link>
+                    <Link target={'_blank'} to={`/preview/${example._id}`} className='preview-btn'>Preview</Link>
                     <Link className='select-btn' to={`/editor/${example._id}`}>Select</Link>
                 </div>
             </div>

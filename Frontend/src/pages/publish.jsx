@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import { DynamicCmp } from "../cmps/dynamic-cmp"
 import { siteService } from "../services/site-service"
+import { socketService } from "../services/socket.service"
 
 export const Publish=()=>{
     const {siteId} = useParams()
@@ -12,6 +13,8 @@ export const Publish=()=>{
     },[])
    const loadSite=async ()=>{
     const site = await siteService.getSitesByUserId({siteId})
+    site[0].viewCount++
+    socketService.emit('increase-view-to-site',site)
     setSite(site[0])
 
    }
