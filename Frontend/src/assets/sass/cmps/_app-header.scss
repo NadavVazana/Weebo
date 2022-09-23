@@ -12,7 +12,7 @@
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     background-color: whitesmoke;
-    z-index: 1000;
+    z-index: 100000000000000000000000;
 
     .mobile-nav {
         position: absolute;
@@ -26,6 +26,7 @@
         width: 100%;
         min-height: calc(100vh - $header-height);
         transition: top 0.4s, opacity 0.4s;
+        
 
         .app-header-nav {
             a {

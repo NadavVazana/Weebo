@@ -79,9 +79,7 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
 
             </div>
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu) ? 'open' : ''} `}>
-                <div className={`side-bar-close`}>
-                    <button onClick={closeSideBar}>x</button>
-                </div>
+
                 {(isEditMenu || isEdit) && <EditElements />}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
@@ -90,7 +88,12 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
 
                     </React.Fragment>}
             </div>
+            {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) && <div className={`side-bar-close`}>
 
+                <button onClick={closeSideBar} >
+                    <img src={require('../assets/img/icons/less-than.svg').default} alt="" />
+                </button>
+            </div>}
         </section >
     )
 }
