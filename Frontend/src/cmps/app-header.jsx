@@ -9,6 +9,7 @@ import { eventBusService, showSuccessMsg } from '../services/event-bus.service'
 import { UserMsg } from './user-msg'
 import { DesktopNav } from './desktop-nav'
 import { MobileNav } from './mobile-nav'
+import { siteService } from '../services/site-service'
 
 
 export const AppHeader = () => {
@@ -25,7 +26,7 @@ export const AppHeader = () => {
 
 
     // Saves wap to user
-    const saveWapToUser = (ev) => {
+    const saveWapToUser =async  (ev) => {
         ev.preventDefault()
         setNameModal(false)
         const name = ev.target[0].value
@@ -33,11 +34,15 @@ export const AppHeader = () => {
         draft.siteName = name
         draft.editCount = 0
         draft.viewCount = 0
+        draft.usersData=[]
+        draft.owner =loggedInUser._id
         var date = new Date()
         draft.createdAt = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
-        draft._id = utilService.makeId(15)
         const user = loggedInUser
-        user.waps.push(draft)
+        // user.waps.push(draft)
+        const site = await siteService.addSite(draft)
+
+        
 
         dispatch(updateUser(user))
         dispatch(setDraft(draft))
@@ -51,14 +56,16 @@ export const AppHeader = () => {
     }
 
     // Save the edited site 
-    const onSave = () => {
+    const onSave =async () => {
         const draft = dispatch(getDraft())
         if (!draft.siteName)
             setNameModal(true)
         else {
             const user = loggedInUser
-            const wapIndex = user.waps.findIndex(wap => wap._id === draft._id)
-            user.waps[wapIndex] = draft
+            // const wapIndex = user.waps.findIndex(wap => wap._id === draft._id)
+            // user.waps[wapIndex] = draft
+            const site = await siteService.updateSite(draft)
+            console.log(site);
             dispatch(updateUser(user))
             showSuccessMsg(`Site has been saved!`)
         }

@@ -6,6 +6,7 @@ import { Video } from "./wap-cmps/video"
 import { Map } from "./wap-cmps/map"
 import { Gallery } from "./wap-cmps/gallery"
 import { Input } from "./wap-cmps/input"
+import {Form} from './wap-cmps/form'
 
 
 export const DynamicCmp = ({ cmp, onEditElement, isPublished }) => {
@@ -27,6 +28,8 @@ export const DynamicCmp = ({ cmp, onEditElement, isPublished }) => {
             return <Map isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
         case 'gallery':
             return <Gallery isPublished={isPublished} cmp={cmp} onEditElement={onEditElement} />
+        case 'form':
+            return <Form isPublished={isPublished} cmp={cmp} onEditElement={onEditElement}   />    
         default: return
     }
 

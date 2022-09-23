@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 // import { PublishChart } from "../cmps/publish-chart"
-import { showSuccessMsg } from "../services/event-bus.service"
+import { eventBusService, showSuccessMsg } from "../services/event-bus.service"
+import { siteService } from "../services/site-service"
+import { socketService } from "../services/socket.service"
+import { userService } from "../services/user.service"
 import { setDraft } from "../store/draft/draft.action"
 import { updateUser } from "../store/user/user.action"
 
@@ -12,58 +15,97 @@ export const Dashboard = () => {
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
     const [deleteModal, setDeleteModal] = useState(false)
-    const [site, setSite] = useState(loggedInUser?.waps[0])
+    const [sites,setSites] = useState()
+    const [site,setSite] = useState(null)
     const [siteMenu,setSiteMenu] = useState(false)
-
+    const [details,setDetails] = useState({})
     
+    
+
+    useEffect(()=>{
+
+        loadSites()
+        
+        socketService.on('update-contact-list', updateDetails )
+        
+
+    },[])
+    useEffect(()=>{
+
+        if(!site) return
+        socketService.emit('set-up-socket-site',site._id)        
+
+
+    },[site])
+
+    const updateDetails = async ({details,siteId})=>{
+        const site =await siteService.getSitesByUserId({siteId})
+        setSite(site[0])
+
+
+
+    }
+
+
+  
+    const  loadSites= async ()=>{
+        const sites = await siteService.getSitesByUserId({owner: loggedInUser._id})
+        setSites(sites)
+        if(!site){
+            setSite(sites[0])
+        }
+    }
+    
+
     if (!loggedInUser) {
         navigate('/')
         return <></>
     }
 
+  
     // NAVIGATES TO THE SITE'S EDIT PAGE
-    const onEdit = () => {
+    const onEdit = async () => {
         site.editCount++
-        dispatch(setDraft(site))
+        await siteService.updateSite(site)
         navigate(`/editor/${site._id}`)
     }
 
 
+
+
+
     // DELETE THE SITE FROM THE USER'S WAP LIST
-    const onDelete = (ev) => {
+    const onDelete = async (ev) => {
         ev.preventDefault()
         const name = ev.target[0].value
         if (name === site.siteName) {
             setDeleteModal(false)
-            const user = loggedInUser
-            const wapIndex = user.waps.findIndex(wap => wap._id === site._id)
-            user.waps.splice(wapIndex, 1)
-            dispatch(updateUser(user))
-            if(wapIndex !== 0)
-            setSite(loggedInUser.waps[wapIndex-1])
-            else
-            setSite(loggedInUser.waps[wapIndex])
+            await siteService.deleteSite(site._id)
+            loadSites()
+
             showSuccessMsg('Website has been deleted!')
         }
     }
 
+    const onSiteClick=(wap)=>{
+        setSite(wap)
+        console.log(site);
+        setSiteMenu(false)
+    }
+
     // PUBLISH THE SITE IF NOT PUBLISH 
     // AND NAVIGATES TO THE PUBLISHED VERSION IS PUBLISHED
-    const onPublish = () => {
+    const onPublish = async () => {
         if (site.isPublished) window.open(`/publish/${site._id}`, '_blank')
         else {
-            let user = loggedInUser
-            let siteIndex = loggedInUser.waps.findIndex(wap => wap._id === site._id)
-            let newSite = loggedInUser.waps[siteIndex]
+            const newSite = sites.find(currSite=> site._id === currSite._id)
             newSite.isPublished = true
-            user.waps.splice(siteIndex, 1, newSite)
-            dispatch(updateUser(user))
-            setSite(newSite)
+            await siteService.updateSite(newSite)
+            loadSites()
+
             showSuccessMsg('Website has been published!')
         }
     }
-
-
     if (!loggedInUser) return
     if (!site) return <section className="no-sites"><h1 >No sites to show...</h1> <button onClick={() => { navigate('/templates') }}>Let's build some!</button></section>
     return (
@@ -82,13 +124,14 @@ export const Dashboard = () => {
             
 
 
+
             {/* LIST OF THE SITES */}
            
             <div className={siteMenu ? 'site-menu-open' : 'sites-nav'}>
                 <h1 className="list-title">My Sites</h1>
                 <ul className="site-list">
-                    {loggedInUser.waps.map(wap => {
-                        return <div key={wap._id} className="list-item"> <img src={require('../assets/img/icons/website-icon.svg').default} alt="website-icon" /> <li onClick={() => setSite(wap)} key={wap._id} className={wap._id}>{wap.siteName}</li></div>
+                    {sites.map(wap => {
+                        return <div key={wap._id} className="list-item"> <img src={require('../assets/img/icons/website-icon.svg').default} alt="website-icon" /> <li onClick={() => onSiteClick(wap)} key={wap._id} className={wap._id}>{wap.siteName}</li></div>
                     })}
                 </ul>
             </div>
@@ -148,7 +191,13 @@ export const Dashboard = () => {
                     {/* USER SUBSCRIBERS LIST */}
                     <div className="subscribers">
                         <h1>Subscribers:</h1>
-                        <ul></ul>
+                    {site.usersData.map(contact=>{
+                       return  <div className='contact-details'>
+                       { Object.keys(contact).map(key=>{
+                            return <p key={contact[key]}> <span className="details-key"> {key}</span> : {contact[key]}</p>
+                        })}
+                        </div>
+                    })}
                     </div>
 
 

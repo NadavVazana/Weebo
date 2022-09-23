@@ -30,6 +30,8 @@ async function getById(wapId) {
 
 
 
+
+
 module.exports = {
     query,
     getById,
