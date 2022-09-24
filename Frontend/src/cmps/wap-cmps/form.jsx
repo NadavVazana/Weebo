@@ -22,6 +22,7 @@ export const Form = ({ cmp, isPublished,isPreview }) => {
 
     const handleSubmit = async (ev) => {
         ev.preventDefault()
+        console.log(details);
         if(isPreview) return
         const site = await siteService.getSitesByUserId({siteId:params.siteId})
         site[0].usersData.push(details)
