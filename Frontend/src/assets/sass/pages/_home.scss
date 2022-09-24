@@ -1,187 +1,590 @@
-.homepage{
+.homepage {
 
     background-image: url();
-    .wave{
-        position: absolute;
-        right: -28px;
-        fill: rgb(97, 97, 197);
-        top: 5%;
-        transform: rotate(1.4deg);
-        
+
+    .section-3 {
+        .guide-video-container {
+            width: 100%;
+            margin: 0;
+
+        }
     }
 
-    .title-container{
-        z-index: 3;
+    .home-top-container {
+        gap: 40px;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 40%;
-        left: 8%;
+        align-items: center;
+
+        button {
+            font-family: Madefor;
+            user-select: none;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(243, 186, 81);
+            padding: 20px;
+            font-size: 1.1rem;
+            color: rgb(34, 31, 31);
+            width: 80%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(238, 195, 115);
+        }
+    }
+
+    .section-1 {
+        padding-top:150px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 200px;
+        position: relative;
+        width: 100%;
+        gap: 50px;
+
+        .top-wave {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+        }
+
+        .home-photo {
+            width: 100%;
+        }
+
         font-family: Madefor;
         text-align: center;
-        gap: 20px;
 
-        .title{
-            font-size: 3.5rem;
-            color: rgb(72, 74, 189);
-            user-select: none;
+        .title {
+            font-size: 2.1rem;
+            font-weight: 700;
+
         }
 
-        .sub-title{
-            font-size: 1.5rem;
-            color: rgb(104, 96, 104);
-            user-select: none;
+        .sub-title {
+            font-size: 1.1rem;
+            padding: 20px;
         }
-        
     }
 
-    .desk{
-        position: absolute;
-        right: 10%;
-        top: 30%;
-        user-select: none;
-    }
 
-    @include for-tiny-layout{
-     
-    }
-    @include for-mobile-layout{
-        .wave{
-            width:540px;
-            right: -40px;
-            top: 5.8%;
-            transform: rotate(3.8deg);
-            z-index: 1;
-        }
-        .desk{
-            width: 300px;
-            left: 50%;
-            transform: translate(-50%);
-            z-index: 2;
+    .section-2 {
+        box-sizing: border-box;
+        background-color: $main-color ;
+        margin: 0 auto;
+        position: relative;
+        bottom: 200px;
+        width: 100%;
+
+
+
+        .editor {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding-top: 200px;
+            padding-bottom: 80px;
+
         }
 
-        .title-container{
+        .white-wave {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    .section-3 {
+        position: relative;
+        bottom: 220px;
+
+        .guide-video-container {
+            display: block;
+            // margin: auto;
+            // width: 75%;
+
+        }
+
+        .up-wave {
+            width: 100%;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+
+        .guide {
+            padding-top: 80px;
+            margin: auto;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+
+    .cards-container {
+        .text-container {
+            font-family: Madefor;
+
+            h1 {
+                color: $main-color;
+                user-select: none;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            p {
+                font-weight: 600;
+                user-select: none;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >* {
             align-items: center;
-            button{
+            display: flex;
+            flex-direction: column;
+        }
+
+        >*:nth-child(odd) {
+            flex-direction: column;
+        }
+
+
+
+        .card-1 {
+            padding-bottom: 70px;
+            font-family: Madefor;
+
+            .number-1 {
+                display: none;
+
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+        .card-2 {
+            .number-2 {
+                display: none;
+            }
+
+            font-family: Madefor;
+
+            .number-2::before {
+                content: '';
+                z-index: 0;
+                height: 1px;
+                background: linear-gradient(90deg, rgba(97, 97, 197, 1) 0%, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 29%);
+                width: 200px;
+                position: absolute;
+                right: 40px;
+                top: 50%;
+                transform: translate(0, -50%);
+                display: block;
+
+
+            }
+        }
+
+    }
+
+
+
+
+    .section-5 {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        position: relative;
+        // width: 50%;
+
+    }
+
+    .section-6 {
+        position: relative;
+
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            top: 30%;
+            width: 100%;
+            text-align: center;
+            gap: 20px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: 2rem;
+                font-family: Madefor;
+                color: rgb(19, 18, 18);
+            }
+
+            button {
+                font-family: Madefor;
                 user-select: none;
                 border: none;
                 border-radius: 20px;
                 background-color: rgb(243, 186, 81);
                 padding: 20px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: rgb(34, 31, 31);
                 width: 50%;
                 cursor: pointer;
             }
-            button:hover{
-                background-color:rgb(238, 195, 115) ;
+
+            button:hover {
+                background-color: rgb(238, 195, 115);
             }
-            top: 60%;
-            .title{
-                color: rgb(27, 26, 26);
+        }
+
+        height: 400px;
+        background-color: $main-color;
+
+        .wave-footer {
+            height: 50%;
+            position: absolute;
+            bottom: 400px;
+            width: 100%;
+
+        }
+
+        .rights {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #2a2a57;
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            bottom: 0;
+            padding-inline: 15px;
+
+            .creators {
+                font-size: 0.5rem;
+                font-family: Madefor;
+                color: rgb(219, 210, 210);
             }
-            .sub-title{
-                color: rgb(27, 26, 26);
+
+            .ltd {
+                position: absolute;
+                right: 7.8%;
+                font-size: 0.6rem;
+                font-family: Madefor;
+                color: rgb(219, 210, 210);
+            }
+
+            .logo {
+                .w {
+                    color: #8181ee;
+                    font-family: Berk;
+                    font-weight: lighter;
+                }
+
+                position: relative;
+                font-family: Madefor;
+                // text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+
+                padding-bottom: 5px;
+                font-weight: 600;
+                color: rgb(221, 206, 206);
             }
         }
     }
-    @include for-narrow-layout{
-        .wave{
-            width:1020px;
-            right: -40px;
-            top: 4%;
-            transform: rotate(3.4deg);
+
+
+
+    @include for-tiny-layout {}
+
+    @include for-mobile-layout {}
+
+    @include for-narrow-layout {
+        .section-1{
+            .home-photo{
+                width: 60%;
+            }
+
+            
         }
-        .desk{
-            width: 350px;
+        .section-6{
+            .rights{
+                .logo{
+                    font-size: 1.3rem;
+                }
+                .creators{
+                    font-size: .9rem;
+                }
+                .ltd{
+                    font-size: .8rem;
+                }
+            }
+           
+        }
+    }
+
+
+    @include for-mid-layout {
+        .section-1{
+            .title{
+                font-size: 2.9rem;
+            }
+            .sub-title{
+                font-size: 1.5rem;
+            }
+        }
+
+        .section-2{
+            .white-wave{
+                left:0 ;
+            }
+            padding-inline: 50px;
+       
+        }
+        
+    }
+
+    @include for-normal-layout {
+        .cards-container {
+
+            .text-container {
+                font-family: Madefor;
+
+                h1 {
+                    color: $main-color;
+                    user-select: none;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    user-select: none;
+                }
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+
+            >* {
+                align-items: center;
+                display: flex;
+                flex-direction: unset;
+                gap: 300px;
+            }
+
+            >*:nth-child(odd) {
+                flex-direction: row-reverse;
+            }
+
+            .line {
+                background: linear-gradient(180deg, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 47%, rgba(97, 97, 197, 0) 100%);
+                width: 3px;
+                position: absolute;
+                height: 100%;
+            }
+
+            .card-1 {
+
+                font-family: Madefor;
+
+                .number-1 {
+                    z-index: 1;
+                    display: block;
+
+                }
+
+                .number-1::before {
+                    z-index: 0;
+                    content: '';
+
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 0%, rgba(97, 97, 197, 0.8435749299719888) 77%, rgba(97, 97, 197, 0) 100%);
+                    width: 100px;
+                    position: absolute;
+                    right: -100px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    display: block;
+
+
+                }
+
+
+
+
+
+
+
+
+            }
+
+            .card-2 {
+                .number-2 {
+                    display: block;
+                    z-index: 1;
+                }
+
+                font-family: Madefor;
+
+                .number-2::before {
+                    content: '';
+                    z-index: 0;
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 0%, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 29%);
+                    width: 200px;
+                    position: absolute;
+                    right: 40px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    display: block;
+
+
+                }
+            }
+
+        }
+        .section-6{
+            .rights {
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                background-color: #2a2a57;
+                width: 100%;
+                height: 20%;
+                position: absolute;
+                bottom: 0;
+                padding-inline: 15px;
+    
+                .creators {
+                    font-size: .95rem;
+                    font-family: Madefor;
+                    color: rgb(219, 210, 210);
+                }
+    
+                .ltd {
+                    position: absolute;
+                    right: 2%;
+                    font-size: .95rem;
+                    font-family: Madefor;
+                    color: rgb(219, 210, 210);
+                }
+    
+                .logo {
+                    .w {
+                        color: #8181ee;
+                        font-family: Berk;
+                        font-weight: lighter;
+                    }
+    
+                    position: relative;
+                    font-family: Madefor;
+                    // text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 1.4rem;
+    
+                    padding-bottom: 5px;
+                    font-weight: 600;
+                    color: rgb(221, 206, 206);
+                }
+            }
+        }
+        .number {
+            color: rgb(34, 33, 33);
+            user-select: none;
+            background-color: white;
+            border: 1px rgb(73, 56, 119) solid;
+            font-weight: 700;
+            border-radius: 50%;
+            padding: 10px;
+            padding-inline: 15px;
+            position: absolute;
             left: 50%;
             transform: translate(-50%);
         }
-
-        .title-container{
-            top: 60%;
-            .title{
-                color: rgb(27, 26, 26);
-            }
-            .sub-title{
-                color: rgb(27, 26, 26);
-            }
-        }
-
-    }
-    @include for-mid-layout{
-        .wave{
-            width:650px;
-            right: -40px;
-            top: 5.8%;
-            transform: rotate(2.9deg);
-        }
-        .desk{
-            width: 400px;
-            left: 70%;
-            transform: translate(-50%);
-        }
-
-        .title-container{
-            top: 70%;
-            .title{
-                color: rgb(27, 26, 26);
-            }
-            .sub-title{
-                color: rgb(27, 26, 26);
-            }
-        }
-
-    }
-    @include for-normal-layout{
-        .wave{
-            width:750px;
-            right: -40px;
-            top: 5.8%;
-            transform: rotate(2.5deg);
-        }
-        .desk{
-            width: 550px;
-            left: 70%;
-            transform: translate(-50%);
-        }
-
-        .title-container{
-            top: 75%;
-            .title{
-                color: rgb(27, 26, 26);
-            }
-            .sub-title{
-                color: rgb(27, 26, 26);
-            }
-        }
-
-    }
-    @include for-wide-layout{
-        .wave{
-            width:1000px;
-            right: -40px;
-            top: 5%;
-            transform: rotate(1.9deg);
-            
-        }
-        .desk{
-            width: 590px;
-            left: 78%;
-            transform: translate(-50%);
-        }
-
-        .title-container{
-            top: 35%;
-            left: 10%;
-            
-            .title{
-                color: rgb(27, 26, 26);
-            }
-            .sub-title{
-                color: rgb(27, 26, 26);
-            }
-        }
-    }
     
-}
+        .section-1{
+            justify-content: center;
+            padding-top:150px ;
+            flex-direction: unset;
+            align-items: center;
+            gap: 80px;
+            .home-photo{
+                width: 35%;
+            }
+       
+            .title{
+                font-size: 2rem;
+            }
+            .sub-title{
+                font-size: 1.7rem;
+            }
+            button{
+                font-size: 1.5rem;
+            }
+        }
+    
+        .section-6{
+            .rights{
+                .ltd{
+                    right: 4%;
+                }
+            }
+        }
+        .section-2{
+            width: 100%;
+            padding-inline: 350px;
+
+            .editor{
+                width: 100%;
+            }
+        }
+    }
+  
+    @include for-wide-layout {
+     
+
+        .section-3{
+            .guide-video-container{
+                width: 65%;
+                margin: auto;
+            }
+        }
+
+        .section-6{
+            .footer-text{
+                button{
+                    width: 20%;
+                }
+            }
+            .rights{
+                .ltd{
+                    right: 2.5%;
+                }
+            }
+           
+        }
+   
+
+
+    }
+        
+    }
+

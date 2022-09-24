@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
+import { ViewsChart } from "../cmps/view-chart"
 // import { PublishChart } from "../cmps/publish-chart"
 import { eventBusService, showSuccessMsg } from "../services/event-bus.service"
 import { siteService } from "../services/site-service"
@@ -192,16 +193,15 @@ export const Dashboard = () => {
 
 
                     {/* USER SUBSCRIBERS LIST */}
-                    <div className="subscribers">
-                        <h1>Subscribers:</h1>
+                    <table className="subscribers">
                     {site.usersData.map(contact=>{
-                       return  <div className='contact-details'>
+                       return  <tbody className='contact-details'>
                        { Object.keys(contact).map(key=>{
-                            return <p key={contact[key]}> <span className="details-key"> {key}</span> : {contact[key]}</p>
+                            return <th key={contact[key]}> <span className="details-key"> {key}</span> : {contact[key]}</th>
                         })}
-                        </div>
+                        </tbody>
                     })}
-                    </div>
+                    </table>
 
 
                     
@@ -209,7 +209,7 @@ export const Dashboard = () => {
                 </div>
                 <section className="charts">
                 {/* <PublishChart sites={loggedInUser.waps} /> */}
-                {/* <ViewsChart  /> */}
+                <ViewsChart  />
                 </section>
 
             </section>
