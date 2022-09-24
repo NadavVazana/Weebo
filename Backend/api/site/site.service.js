@@ -12,11 +12,12 @@ module.exports={
 
 
 async function query(filterBy){
-
+    
     const collection = await dbService.getCollection('site')
     if(filterBy.owner){
     const sites =  await collection.find({owner: filterBy.owner}).toArray()
     return sites}
+    filterBy.siteId = ObjectId(filterBy.siteId)
     const site =  await collection.find({_id: filterBy.siteId}).toArray()
     return site
     
@@ -26,6 +27,7 @@ async function query(filterBy){
 
 async function add(site){
     try{
+       delete site._id
     const collection = await dbService.getCollection('site')
     collection.insertOne(site)
     return site
@@ -43,7 +45,7 @@ async function add(site){
 async function remove(siteId) {
     try {
         const collection = await dbService.getCollection('site')
-        await collection.deleteOne({ "_id": siteId })
+        await collection.deleteOne({ "_id": ObjectId(siteId) })
     } catch (err) {
         // logger.error(`cannot remove user ${userId}`, err)
         throw err
@@ -57,9 +59,10 @@ async function getById(siteId){
 }
 
 async function update(site){
-    try{    
+    try{    site._id = ObjectId(site._id)
         const collection = await dbService.getCollection('site')
-      return  await collection.updateOne({ '_id': site._id }, { $set: site })
+      const newSite =   await collection.updateOne({ '_id': ObjectId(site._id) }, { $set: site })
+      console.log(newSite);
     }
     catch(err){
 

@@ -44,7 +44,7 @@ export const AppHeader = () => {
 
         
 
-        dispatch(updateUser(user))
+        // dispatch(updateUser(user))
         dispatch(setDraft(draft))
         showSuccessMsg(`New site has been saved!`)
     }
