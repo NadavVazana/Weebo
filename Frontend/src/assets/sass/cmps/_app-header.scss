@@ -1,6 +1,6 @@
 .app-header {
     height: $header-height;
-    position: relative;
+    position: sticky;
     font-family: Madefor;
     user-select: none;
     display: flex;
