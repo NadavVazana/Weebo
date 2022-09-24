@@ -1977,3 +1977,6 @@
 23.9.2022, 19:15:45 - INFO - Server is running on port: 3030 
 23.9.2022, 19:15:51 - INFO - Server is running on port: 3030 
 23.9.2022, 19:15:58 - INFO - Server is running on port: 3030 
+23.9.2022, 19:51:32 - INFO - Server is running on port: 3030 
+23.9.2022, 19:52:34 - DEBUG - auth.service - signup with username: borik, fullname: Boris 
+23.9.2022, 19:53:48 - INFO - Server is running on port: 3030 
