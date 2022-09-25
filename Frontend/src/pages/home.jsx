@@ -29,18 +29,13 @@ export const Home = () => {
 
             </div>
 
-            <div className="section-3">
-              
-              <img className="up-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016212/svg_2_ua2b41.png" alt="" />
-            <div className='guide-video-container'>
-                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
-                                        </div>
-            </div>
 
-          
-
+            
             <div className="section-4">
+
               <div className="cards-container">
+            <img className="up-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016212/svg_2_ua2b41.png" alt="" />
+
               <div className="line"></div>
                 <div className="card-1">
                   <div className="text-container">
@@ -62,6 +57,18 @@ export const Home = () => {
               </div>
               </div>
             </div>
+
+            <div className="section-3">
+              <h1>Simple and Fast!</h1>
+              <img className="guide-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664086499/svg_8_l50pss.png" alt="" />
+              <img className="guide-purple-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664086637/svg_9_cnxlqp.png" alt="" />
+            <div className='guide-video-container'>
+                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+                                        </div>
+            </div>
+
+          
+
           <div className="section-5">
             <HomeSwiper/>
 

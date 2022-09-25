@@ -11,7 +11,7 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
-
+import { wapExample4 } from '../assets/templates'
 
 
 export const Editor = () => {
@@ -78,7 +78,7 @@ export const Editor = () => {
     function getStyles(snapshot) {
         return {
             backgroundColor: draft.styles?.backgroundColor ? draft.styles?.backgroundColor :
-    snapshot.isDraggingOver ? '#6161c5' : 'white'
+                snapshot.isDraggingOver ? '#6161c5' : 'white'
         }
 
     }
@@ -102,9 +102,9 @@ export const Editor = () => {
                                     <section>
                                         <h1 className='guide-title'>Let's learn how to do it!</h1>
                                         <div className='guide-video-container'>
-                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+                                            <video className='guide' style={{ border: 'none' }} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
                                         </div>
-                                       
+
                                     </section>
                                 ) : (
                                     draft.cmps.map((cmp, index) => (

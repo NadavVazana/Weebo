@@ -3,6 +3,7 @@
     background-image: url();
 
     .section-3 {
+        background-color: $main-color;
         .guide-video-container {
             width: 100%;
             margin: 0;
@@ -100,10 +101,37 @@
             height: 200px;
         }
     }
+    .section-4{
+        position: relative;
+        bottom: 200px;
+        padding-bottom: 350px;
+    }
 
     .section-3 {
+        h1{
+            font-family: Monsterrat;
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(250, 244, 244);
+        }
+
+        .guide-purple-wave{
+            width: 100%;
+            user-select: none;
+            position: absolute;
+            top: 1000px;
+        }
         position: relative;
-        bottom: 220px;
+
+        .guide-wave{
+            user-select: none;
+            top: -30px;
+            width: 100%;
+            position: absolute;
+        }
+        padding-top: 300px;
+        height: 700px;
+        // bottom: 220px;
 
         .guide-video-container {
             display: block;
@@ -112,15 +140,10 @@
 
         }
 
-        .up-wave {
-            user-select: none;
-            width: 100%;
-            height: 200px;
-            transform: rotate(180deg);
-        }
+       
 
         .guide {
-            padding-top: 80px;
+            padding-top: 100px;
             margin: auto;
             display: inline-block;
             width: 100%;
@@ -129,6 +152,13 @@
 
 
     .cards-container {
+        .up-wave {
+            user-select: none;
+            width: 100%;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        padding-bottom: 220px;
         max-height: 680px;
         .text-container {
             font-family: Madefor;
@@ -321,6 +351,12 @@
     @include for-mobile-layout {}
 
     @include for-narrow-layout {
+
+        .section-3{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
         .section-1{
             .home-photo{
                 width: 60%;
@@ -347,6 +383,13 @@
 
 
     @include for-mid-layout {
+
+        .section-3{
+            .guide-video-container{
+              
+            }
+        }
+       
         .section-1{
             .title{
                 font-size: 2.9rem;
@@ -378,6 +421,8 @@
             transform: translate(-50%);
         }
         .cards-container {
+            padding-bottom: 80px;
+       
             .text-container {
                 font-family: Madefor;
 
@@ -413,28 +458,32 @@
                 background: linear-gradient(180deg, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 47%, rgba(97, 97, 197, 0) 100%);
                 width: 3px;
                 position: absolute;
-                height: 74%;
+                top: 300px;
+                height: 800px;
             }
 
             .card-1 {
 
                 font-family: Madefor;
+                img{
+                    z-index: 1;
+                }
 
                 .number-1 {
-                    z-index: 1;
+                    z-index: 11111;
                     display: block;
 
                 }
 
                 .number-1::before {
-                    z-index: 0;
+                    z-index: -11111;
                     content: '';
 
                     height: 1px;
-                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 0%, rgba(97, 97, 197, 0.8435749299719888) 77%, rgba(97, 97, 197, 0) 100%);
-                    width: 100px;
+                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 100%, rgba(97, 97, 197, 0.8435749299719888) 77%, rgba(97, 97, 197, 0) 0%);
+                    width: 110px;
                     position: absolute;
-                    right: -100px;
+                    right: 36px;
                     top: 50%;
                     transform: translate(0, -50%);
                     display: block;
@@ -463,10 +512,10 @@
                     content: '';
                     z-index: 0;
                     height: 1px;
-                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 0%, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 29%);
-                    width: 200px;
+                    background: linear-gradient(90deg, rgba(97, 97, 197, 1) 100%, rgba(97, 97, 197, 0) 0%, rgba(97, 97, 197, 0.8435749299719888) 29%);
+                    width: 180px;
                     position: absolute;
-                    right: 40px;
+                    right: -180px;
                     top: 50%;
                     transform: translate(0, -50%);
                     display: block;
@@ -565,17 +614,27 @@
                 user-select: none;
             }
         }
+
+        .section-3{
+            padding-bottom: 100px;
+        }
     }
   
     @include for-wide-layout {
-     
 
         .section-3{
+            .guide-purple-wave{
+                top: 1050px;
+            }
+            padding-bottom: 200px;
             .guide-video-container{
                 width: 65%;
                 margin: auto;
             }
         }
+     
+
+   
 
         .section-6{
             .footer-text{
@@ -596,6 +655,8 @@
             }
            
         }
+        
+      
    
 
 

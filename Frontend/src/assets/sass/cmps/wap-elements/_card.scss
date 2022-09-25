@@ -468,3 +468,34 @@
    
 
 }
+
+.wap-card-4 {
+    background-color: #000;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    
+    .card-container-1 {
+        
+    }
+
+    .card-title {
+        color: #1f1f1f;
+        font-family: Poppins-bold;
+        font-size: 8em;
+        margin-inline: 50px;
+        h1 {
+            margin: 0;
+            height: fit-content;
+        }
+    }
+    .text-container {
+        display: flex;
+        .title {
+            font-family: SignPainter;
+            color: #d8ac84;
+            font-size: 2em;
+            position: relative;
+        }
+    }
+}
