@@ -45,7 +45,7 @@ loop={true}
         className="mySwiper"
       >
         <SwiperSlide style={{height:'450px'}}  onClick={()=>{navigate('/editor/34058349534609386034689')}}>
-          <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664024878/3_jacbc9.png" />
+          <img className="hair-gallery-photo" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664024878/3_jacbc9.png" />
         </SwiperSlide>
         <SwiperSlide  style={{height:'450px'}} onClick={()=>{navigate('/editor/5e28393890dd8888a06d4771')}}>
           <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664024877/1_babaqg.png" />
