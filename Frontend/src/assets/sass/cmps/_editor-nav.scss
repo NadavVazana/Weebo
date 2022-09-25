@@ -62,7 +62,7 @@
 
             &:hover {
                 color: black;
-                background-color: #383838;
+                background-color: #939324 ;
                 filter: invert(1)
             }
 
@@ -92,8 +92,10 @@
 
         .side-bar-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items:center;
+            padding-top: 10px;
+            padding-bottom: 10px;
             
             button {
                 padding: 10px 0px 10px 10px;
