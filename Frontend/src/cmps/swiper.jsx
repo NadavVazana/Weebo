@@ -21,6 +21,9 @@ export function HomeSwiper() {
     
     <>
       <Swiper
+
+loopFillGroupWithBlank={true} 
+loop={true}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation,EffectCoverflow]}
       autoplay={{
