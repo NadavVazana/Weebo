@@ -1,39 +1,44 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, setDraft, setDuplicate, duplicateElement, setElementImage } from '../../store/draft/draft.action'
+import { setElement, updateDraft, setDraft, setDuplicate, setElementImage } from '../../store/draft/draft.action'
 import { useRef } from 'react'
 
 export const EditContainer = () => {
     const ref = useRef()
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
-    const textControls = ['Delete', 'Copy', 'Undo']
+    const actions = ['Delete', 'Copy', 'Undo']
+    let imageUrl = ''
 
 
     // Selecting background
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
+        const background = backgroundColor
         copyCurrElement = {
-            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundColor }
+            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundColor, background }
         }
         dispatch(setElement(copyCurrElement))
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
-    // Toggle text actions - delete, duplicate, undo
-    const toggleTextControl = (ev) => {
+    // Toggle actions
+    const toggleActions = (ev) => {
         const { id } = ev.target
 
         const copyDuplicate = { ...draft }
         dispatch(setDuplicate(copyDuplicate))
 
+        let copyCurrElement = { ...currElement }
+        dispatch(setElement(copyCurrElement))
+
         switch (id) {
             case 'Delete':
-                removeElement()
+                dispatch(updateDraft(draft, copyCurrElement, id))
                 break
             case 'Copy':
-                copyElement()
+                dispatch(updateDraft(draft, copyCurrElement, id))
                 break
             case 'Undo':
                 dispatch(setDraft(duplicate))
@@ -41,20 +46,6 @@ export const EditContainer = () => {
             default:
                 break
         }
-    }
-
-    // Delete element
-    const removeElement = () => {
-        let copyCurrElement = { ...currElement }
-        dispatch(setElement(copyCurrElement))
-        dispatch(updateDraft(draft, copyCurrElement, true))
-    }
-
-    // duplicate element
-    const copyElement = () => {
-        let copyCurrElement = { ...currElement }
-        dispatch(setElement(copyCurrElement))
-        dispatch(duplicateElement(draft, copyCurrElement))
     }
 
     // upload image
@@ -66,35 +57,41 @@ export const EditContainer = () => {
         ref.current.click()
     }
 
+    imageUrl = currElement?.styles?.backgroundImage?.match(/\((.*?)\)/)[1].replace(/('|")/g, '')
+    
     return (
-
         <section className="edit-elements">
 
             {/* Pallete Background color */}
-            <div className="pallete-container">
+            <div className="pallete-container underline">
                 <span>Backgroud Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 
-            {/* Upload Image */}
-            <form id="form1" runat="server" className='edit-image'>
-                <span onClick={handleUploadImage}>Upload Image</span>
-                <input id="files" ref={ref} onChange={handleImage} type="file" />
-            </form>
+            {/* Upload Image to Image Element */}
+            <div className='edit-image underline'>
+                <form id="form1" runat="server" className='edit-image'>
+                    <span onClick={handleUploadImage}>Upload Image</span>
+                    <input id="files" ref={ref} onChange={handleImage} type="file" />
+                    {imageUrl && <div className='preview-image'>
+                        <img src={imageUrl} alt={currElement.name} />
+                    </div>}
+                </form>
+            </div>
 
-            {/* Element Controller - Delete, Duplicate, Undo */}
+            {/* element actions-delete, duplicate, undo */}
             <div className='element-control'>
-                {textControls.map(textControl =>
+                {actions.map(action =>
                     <div
                         className='element-control-container'
-                        id={`${textControl}`}
-                        onClick={toggleTextControl}
-                        key={`${textControl}div`}>
-                        <img key={textControl}
-                            id={`${textControl}`}
-                            src={require(`../../assets/img/icons/${textControl}-icon.svg`)}
-                            alt={`${textControl}`} />
-                        {textControl}
+                        id={`${action}`}
+                        onClick={toggleActions}
+                        key={`${action}div`}>
+                        <img key={action}
+                            id={`${action}`}
+                            src={require(`../../assets/img/icons/${action}-icon.svg`)}
+                            alt={`${action}`} />
+                        {action}
                     </div>)}
             </div>
         </section>

@@ -19,31 +19,16 @@ export function setDraft(draft) {
 }
 
 //Change Theme
-export function updateDraftTheme(draft, theme){
-    return (dispatch)=>{
-        try {
-            const copyDraft = {...draft}
-            draft = wapService.updateDraftTheme(copyDraft, theme)
-            dispatch({ type: 'SET_DRAFT', draft })
-        } catch (err){
-            console.log('could not update draft theme!:', err)
-        }
-
-    }
-}
-
-// Update Draft
-export function updateDraft(draft, element, isRemove) {
+export function updateDraftTheme(draft, theme) {
     return (dispatch) => {
         try {
             const copyDraft = { ...draft }
-            draft = isRemove ? wapService.removeElement(copyDraft, element) : wapService.updateDraft(copyDraft, element)
+            draft = wapService.updateDraftTheme(copyDraft, theme)
             dispatch({ type: 'SET_DRAFT', draft })
         } catch (err) {
-            console.log('could not update draft!:', err)
+            console.log('could not update draft theme!:', err)
         }
     }
-
 }
 
 // set Element
@@ -68,17 +53,19 @@ export function setDuplicate(duplicate) {
     }
 }
 
-//Duplicate Element 
-export function duplicateElement(draft, element) {
+
+// Update Draft
+export function updateDraft(draft, element, action) {
     return (dispatch) => {
         try {
             const copyDraft = { ...draft }
-            draft = wapService.duplicateElement(copyDraft, element)
+            draft = wapService.updateDraft(copyDraft, element, action)
             dispatch({ type: 'SET_DRAFT', draft })
         } catch (err) {
             console.log('could not update draft!:', err)
         }
     }
+
 }
 
 // Set Element Image
@@ -89,16 +76,7 @@ export function setElementImage(ev) {
             const { draft, currElement } = state.draftModule
             let copyCurrElement = { ...currElement }
             const image = await cloudService.uploadImg(ev)
-            if (currElement.type === 'container') {
-                let backgroundImage = `url(${image})`
-                copyCurrElement = {
-                    ...copyCurrElement, styles: {...copyCurrElement?.styles, backgroundImage }
-                }
-            } else {
-                copyCurrElement = {
-                    ...copyCurrElement, info: { ...copyCurrElement?.info, image }
-                }
-            }
+            copyCurrElement = wapService.uploadImage(currElement, image)
             dispatch(setElement(copyCurrElement))
             dispatch(updateDraft(draft, copyCurrElement))
         } catch (err) {
