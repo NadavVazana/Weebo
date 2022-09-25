@@ -1685,3 +1685,6 @@
 21.9.2022, 22:04:43 - DEBUG - auth.service - signup with username: micahel, fullname: Michael 
 22.9.2022, 11:13:54 - INFO - Server is running on port: 3030 
 22.9.2022, 12:28:29 - INFO - Server is running on port: 3030 
+22.9.2022, 12:32:06 - INFO - Server is running on port: 3030 
+22.9.2022, 12:38:00 - DEBUG - auth.service - signup with username: tanya, fullname: tanya 
+22.9.2022, 12:38:14 - DEBUG - auth.service - signup with username: tanya, fullname: tanya 
