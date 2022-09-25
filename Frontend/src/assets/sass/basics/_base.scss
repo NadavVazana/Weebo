@@ -50,9 +50,12 @@ section>[contenteditable]:focus {
   font-style: normal;
 }
 
-
+hr{
+  width: 100%;
+}
 html {
-  overflow: hidden;
+  overflow: auto;
+ overflow: hidden;
 
   ::-webkit-scrollbar {
     width: 10px;

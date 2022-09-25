@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text, cmp }) => <div style={{ fontSize: '40px' }}>{text}</div>;
 
 export const Map = ({ cmp }) => {
-    // console.log(cmp);
     const defaultProps = {
         center: {
             lat: 10.99835602,

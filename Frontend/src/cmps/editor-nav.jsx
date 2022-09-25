@@ -95,7 +95,12 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
 
                     </React.Fragment>}
             </div>
+            {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) && <div className={`side-bar-close`}>
 
+                <button onClick={closeSideBar} >
+                    <img src={require('../assets/img/icons/less-than.svg').default} alt="" />
+                </button>
+            </div>}
         </section >
     )
 }

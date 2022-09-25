@@ -7,10 +7,10 @@ import './assets/sass/styles.scss'
 function App() {
     const location = useLocation()
     const path = location.pathname.split('/')
-
+    console.log(path[1]);
     return (
         <section  className="app">
-            {path[1] !== 'publish' &&<AppHeader/>}
+            {(path[1] !== 'publish' && path[1] !== 'preview')&& <AppHeader/>}
             <main>
                 <Routes>
                     

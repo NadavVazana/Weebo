@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import { DynamicCmp } from "./dynamic-cmp"
 import { useState }   from "react"
 import React from 'react';
-export function Container({ cmp, onEditElement,isPublished }) {
+export function Container({ cmp, onEditElement,isPublished,isPreview }) {
     const { cmps, name } = cmp
     const currElement = useSelector(state => state.draftModule.currElement)
     const [hover,setHover] = useState(false)
@@ -32,7 +32,7 @@ export function Container({ cmp, onEditElement,isPublished }) {
             className={`container ${name}`}
             style={{ ...cmp?.styles }}
             >
-                {cmps.map((cmp) => <DynamicCmp  isPublished={isPublished} key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
+                {cmps.map((cmp) => <DynamicCmp isPreview={isPreview}  isPublished={isPublished} key={cmp.id} cmp={cmp} onEditElement={onEditElement} />)}
             </div>
             </section>}
         </React.Fragment>

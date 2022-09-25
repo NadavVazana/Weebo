@@ -1,15 +1,15 @@
 .user-msg {
-    background-color: rgb(108, 226, 108);
+    background-color: rgb(116, 218, 116);
     position: fixed;
     display: flex;
     align-items: center;
     animation-delay: 0.5s;
     justify-content: center;
-    padding: 20px;
+    padding: 80px;
     bottom: 0;
     right: -30%;
     z-index: 1000000000000000000;
-    border-radius: 10px;
+    // border-radius: 10px;
     animation-play-state: running;
     animation-name: user-msg;
     animation-duration: 4s;
@@ -18,16 +18,12 @@
     gap: 20px;
     font-family: Monsterrat;
     font-weight: 700;
+    padding-inline-start: 20px;
 
-    button {
-        background-color: rgb(116, 114, 114);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border: none;
-        padding: 5px 10px;
-        padding-bottom: 7px;
+
+
+    img{
+        width: 40px;
     }
 
     button:hover {

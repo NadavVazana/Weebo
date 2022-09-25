@@ -19,10 +19,12 @@
 @import "pages/dashboard";
 @import "pages/login";
 @import "pages/signup";
+@import "pages/preview";
 
 
 /* Components */
 @import "cmps/app-header";
+@import "cmps/swiper";
 @import "cmps/app-footer";
 @import "cmps/container";
 @import "cmps/button";

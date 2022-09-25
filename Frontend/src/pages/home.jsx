@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { HomeSwiper } from "../cmps/swiper"
 
 
 
@@ -6,15 +7,80 @@ export const Home = () => {
     const navigate = useNavigate()
     return (
         <section className="homepage">
+          <div className="section-1">
+            <div className="home-top-container">
             <div className="title-container">
             <h1 className="title">Turn your ideas into websites!</h1>
             <h1 className="sub-title">Simple & elegant platform for creating websites! </h1>
               <button onClick={()=>navigate('/templates')}>Start building your own!</button>
             </div>
-            <img className="desk" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1663778603/home-1-748x528_t83afb.png" alt="" />
-            <svg className="wave" version="1.1" x="0px" y="0px" viewBox="0 0 1446 970" width="1446" height="970" preserveAspectRatio="none">
-                <path d="M-0.000,33.000 C-0.000,33.000 80.000,54.000 113.000,83.000 C146.000,112.000 147.000,152.000 183.000,174.000 C219.000,196.000 288.000,172.000 334.000,193.000 C380.000,214.000 379.000,282.000 427.000,317.000 C475.000,352.000 548.000,336.000 588.000,371.000 C628.000,406.000 614.000,483.000 647.000,513.000 C680.000,543.000 786.000,537.000 841.000,587.000 C896.000,637.000 885.000,739.000 932.000,776.000 C979.000,813.000 1026.000,796.000 1069.000,817.000 C1112.000,838.000 1135.000,865.000 1189.000,893.000 C1243.000,921.000 1433.000,970.000 1433.000,970.000 L1446.000,0.000 L-0.000,33.000 Z"></path>
-              </svg>
+            </div>
+            <img className="home-photo" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664011385/Untitled-21_q9bd13.png" alt="" />
+            <img className="top-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664034769/svg_6_khubpd.png" alt="" />
+            </div>
+
+
+
+
+            <div className='section-2'>
+              <img className="white-wave" src='https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664014827/svg_xsgncp.png' alt="" />
+            {/* <svg width="100%" height='100%'  id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,500 C 0,500 0,250 0,250 C 116.32142857142858,262.6071428571429 232.64285714285717,275.2142857142857 352,272 C 471.35714285714283,268.7857142857143 593.75,249.75 724,244 C 854.25,238.25 992.3571428571429,245.7857142857143 1113,249 C 1233.642857142857,252.2142857142857 1336.8214285714284,251.10714285714283 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#f5f5f5" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path></svg> */}
+            <img className="editor" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664012707/editor-home-page_shc43i.png" alt="" />
+
+            </div>
+
+            <div className="section-3">
+              
+              <img className="up-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016212/svg_2_ua2b41.png" alt="" />
+            <div className='guide-video-container'>
+                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+                                        </div>
+            </div>
+
+          
+
+            <div className="section-4">
+              <div className="cards-container">
+              <div className="line"></div>
+                <div className="card-1">
+                  <div className="text-container">
+                  <h1>Themes</h1>
+                  <p>change your website style with one click!</p>
+                  </div>
+                  <div className="number-1 number">1</div>
+                  <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016703/themes_lv1wk4.png" alt="" />
+                 
+
+                </div>
+                <div className="card-2">
+                <div className="text-container">
+                  <h1>Templates</h1>
+                  <p>choose a template to start building your website from! </p>
+                  </div>
+                  <div className="number-2 number">2</div>
+                  <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664017019/Untitled_kvvicf.png" alt="" />
+              </div>
+              </div>
+            </div>
+          <div className="section-5">
+            <HomeSwiper/>
+
+
+            </div>
+
+            <div className="section-6">
+            <img className="wave-footer" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664027317/svg_5_wyxwnk.png" alt="" />
+            <div className="footer-text">
+            <h1>Liked what you saw? </h1>
+            <button onClick={()=>navigate('/templates')}>Let's give it a shot!</button>
+            </div>
+            <div className="rights">
+              <h1 className="logo"><span className="w"> W</span>eebo. |</h1>
+              <p className="creators">Made by : Boris Rejkov - Nadav Vazana - Tanya Grudinkin</p>
+              <p className="ltd">© 2022 Weebo LTD.</p>
+            </div>
+            </div>
+
         </section>
     )
 }

@@ -58,7 +58,7 @@ async function getByUsername(username) {
 
 async function remove(userId) {
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await dbService.getCollection('user')
         await collection.deleteOne({ '_id': ObjectId(userId) })
     } catch (err) {
         logger.error(`cannot remove user ${userId}`, err)
@@ -91,7 +91,7 @@ async function add(user) {
             username: user.username,
             password: user.password,
             fullname: user.fullname,
-            waps : []
+            waps : [],
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)

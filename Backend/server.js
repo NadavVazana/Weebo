@@ -5,7 +5,6 @@ const path = require('path')
 
 const app = express()
 const http = require('http').createServer(app)
-
 // Express App Config
 app.use(cookieParser())
 app.use(express.json())
@@ -27,6 +26,7 @@ if (process.env.NODE_ENV === 'production') {
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
 const wapRoutes = require('./api/wap/wap.routes')
+const siteRoutes = require('./api/site/site.routes')
 const {setupSocketAPI} = require('./services/socket.service')
 
 
@@ -34,6 +34,7 @@ const {setupSocketAPI} = require('./services/socket.service')
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/wap', wapRoutes)
+app.use('/api/site', siteRoutes)
 setupSocketAPI(http)
 
 // Make every server-side-route to match the index.html

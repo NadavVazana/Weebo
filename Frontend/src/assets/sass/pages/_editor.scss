@@ -1,7 +1,10 @@
 .editor{
     display: grid;
     grid-template-columns: fit-content(20%) 8fr;
-    height: calc(100vh - $header-height);
+    height: calc(100vh - $header-height );
+
+
+
     .guide-title{
         font-family: Madefor;
         position: absolute;

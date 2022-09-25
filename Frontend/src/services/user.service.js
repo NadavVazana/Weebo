@@ -5,7 +5,8 @@ export const userService={
     signup,
     logout,
     updateUser,
-    getLoggedInUser
+    getLoggedInUser,
+    getUserById
 }
 
 
@@ -41,9 +42,14 @@ async function logout(){
     return await httpService.post(LOGOUT)
 }
 
-async function updateUser(userToUpdate){
+async function getUserById(userId){
+    return await httpService.get(`user/${userId}`)
+}
+
+async function updateUser(userToUpdate,sessionChange = true){
     try{
    const user =  await httpService.put(`user/${userToUpdate._id}`,userToUpdate)
+   if(sessionChange)
    sessionStorage.setItem(USER_KEY,JSON.stringify(user))
    return user
     }

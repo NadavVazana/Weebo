@@ -169,6 +169,21 @@
 
     }
 
+    .contact-details{
+        margin-top: 40px;
+        width: 100%;
+        border: rgba(0, 0, 0, 0.205) solid 1px;
+        background-color: #96ce6e;;
+        p{
+           
+            .details-key{
+                text-transform: capitalize;
+            }
+        }
+
+        
+    }
+
     .details-grid {
         display: grid;
 
@@ -212,6 +227,19 @@
             }
         }
         .subscribers{
+            overflow: scroll;
+            overflow-x: hidden;
+            position: relative;
+            h1{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%);
+
+            }
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: repeat(auto-fill,1fr);
             height: 400px;
             background-color: #a6d486;
         }

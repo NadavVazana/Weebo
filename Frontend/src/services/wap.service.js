@@ -58,7 +58,8 @@ async function removeWap(wapId) {
 
 async function editWap(editedWap) {
     try {
-        let updatedWap = await storageService.put(WAP_KEY, editedWap)
+        let updatedWap = await httpService.put(WAP, editedWap)
+        console.log(updatedWap);
         return updatedWap
     } catch (err) {
         console.log('oops! could not fetch wap:', err)

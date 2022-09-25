@@ -6,6 +6,7 @@ import { Templates } from './pages/templates/templates.jsx'
 import { Dashboard } from './pages/dashboard.jsx'
 import { Publish } from './pages/publish.jsx'
 import { Signup } from './pages/sign-up.jsx'
+import { Preview } from './pages/preview.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -18,6 +19,12 @@ const routes = [
         path: '/publish/:siteId',
         element: <Publish />,
         label: 'Publish',
+    },
+    {
+        path: 'preview/:templateId',
+        element: <Preview />,
+        label: 'Preview',
+
     },
     {
         path: 'editor',
