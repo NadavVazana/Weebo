@@ -1,9 +1,14 @@
 
 .swiper {
+    user-select: none;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     height: 400px;
+
+    .hair-gallery-photo{
+        height: 450px;
+    }
   }
   
   .swiper-slide {
