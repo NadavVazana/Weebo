@@ -107,7 +107,7 @@ export const Editor = () => {
 
                                     </section>
                                 ) : (
-                                    wapExample4.cmps.map((cmp, index) => (
+                                    draft.cmps.map((cmp, index) => (
                                         <Draggable key={cmp.id + index} draggableId={cmp.id + index} index={index}>
                                             {(provided) => (
                                                 <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}>
