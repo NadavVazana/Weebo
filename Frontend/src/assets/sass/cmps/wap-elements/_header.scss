@@ -243,3 +243,33 @@
     }
     
 }
+
+.wap-header-4 {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-family: Poppins-bold;
+    align-items: center;
+    background-color: #000000;
+    padding-inline: 60px;
+    font-size: 16px;
+    height: 110px;
+
+    .logo {
+        height: 30px;
+    }
+
+    .header-nav {
+        display: flex;
+        color: #fff;
+        font-size: 0.5em;
+        & > * {
+            margin-inline-end:4em ;
+        }
+
+        & > *:hover {
+            color: #d8ac84;
+            transition: 0.7s;
+        }
+    }
+}

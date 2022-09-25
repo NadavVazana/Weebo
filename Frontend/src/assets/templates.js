@@ -608,7 +608,7 @@ export const Headers = {
             }
         ]
     },
-    "wap-header-3":{
+    "wap-header-3": {
         "id": "figjr4th948ng934g4",
         "type": "container",
         "name": "wap-header-3",
@@ -858,7 +858,7 @@ export const Heroes = {
             },
         ]
     },
-    "wap-hero-3":   {
+    "wap-hero-3": {
         "id": "128eje884v232b",
         "type": "container",
         "name": "wap-hero-3",
@@ -1055,76 +1055,76 @@ export const Forms = {
 
         ]
     },
-    "wap-form-3":{
-            "id": "r54tg4bg5b3Zs2fd",
-            "type": "container",
-            "name": "wap-form-3",
-            "drag": "true",
-            "cmps": [
-                {
-                    "id": "444g4OFKkf0fx03",
-                    "type": "text",
-                    "name": "title",
-                    "info": {
-                        "value": "Contact",
-                        "class": "title"
-                    }
-                },
-                {
-                    "id": "1QA2ws3ED4rf",
-                    "type": "container",
-                    "name": "form",
-                    "drag": "true",
-                    "cmps": [
-                        {
-                            "id": "1qaz2Wf33edc4RFV",
-                            "type": "input",
-                            "input_type": "text",
-                            "name": "fullname",
-                            "info": {
-                                "placeholder": "Full Name"
-                            }
-                        },
-                        {
-                            "id": "1qaz243636edc4RFV",
-                            "type": "input",
-                            "input_type": "email",
-                            "name": "email",
-                            "info": {
-                                "placeholder": "Email"
-                            }
-                        },
-                        {
-                            "id": "1qaz2WSX3b54b44RFV",
-                            "type": "input",
-                            "input_type": "text",
-                            "name": "subject",
-                            "info": {
-                                "placeholder": "Subject"
-                            }
-                        },
-                        {
-                            "id": "1qaz2WSX3b54b44R5TGB",
-                            "type": "input",
-                            "input_type": "text",
-                            "name": "message",
-                            "info": {
-                                "placeholder": "Message"
-                            }
-                        },
-                        {
-                            "id": "1q3rv2WSX3b54b442",
-                            "type": "button",
-                            "name": "submit_btn",
-                            "info": {
-                                "value": "Submit",
-                                "class": "button"
-                            }
-                        },
-                    ]
+    "wap-form-3": {
+        "id": "r54tg4bg5b3Zs2fd",
+        "type": "container",
+        "name": "wap-form-3",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "444g4OFKkf0fx03",
+                "type": "text",
+                "name": "title",
+                "info": {
+                    "value": "Contact",
+                    "class": "title"
                 }
-            ]
-        }
+            },
+            {
+                "id": "1QA2ws3ED4rf",
+                "type": "container",
+                "name": "form",
+                "drag": "true",
+                "cmps": [
+                    {
+                        "id": "1qaz2Wf33edc4RFV",
+                        "type": "input",
+                        "input_type": "text",
+                        "name": "fullname",
+                        "info": {
+                            "placeholder": "Full Name"
+                        }
+                    },
+                    {
+                        "id": "1qaz243636edc4RFV",
+                        "type": "input",
+                        "input_type": "email",
+                        "name": "email",
+                        "info": {
+                            "placeholder": "Email"
+                        }
+                    },
+                    {
+                        "id": "1qaz2WSX3b54b44RFV",
+                        "type": "input",
+                        "input_type": "text",
+                        "name": "subject",
+                        "info": {
+                            "placeholder": "Subject"
+                        }
+                    },
+                    {
+                        "id": "1qaz2WSX3b54b44R5TGB",
+                        "type": "input",
+                        "input_type": "text",
+                        "name": "message",
+                        "info": {
+                            "placeholder": "Message"
+                        }
+                    },
+                    {
+                        "id": "1q3rv2WSX3b54b442",
+                        "type": "button",
+                        "name": "submit_btn",
+                        "info": {
+                            "value": "Submit",
+                            "class": "button"
+                        }
+                    },
+                ]
+            }
+        ]
+    }
 }
 
 export const Footers = {
@@ -1380,74 +1380,74 @@ export const Maps = {
             }
         ]
     },
-    "wap-map-3":{
-            "id": "1f94vm498gJF99j9jd",
-            "type": "container",
-            "name": "wap-map-3",
-            "drag": "true",
-            "cmps": [
-                {
-                    "id": "1f94vm44dbF99j9jd",
-                    "type": "map",
-                    "name": "wap-map",
-                    "info": {
-                        "coors": {
-                            "lat": 31.6111,
-                            "lng": 34.7685
+    "wap-map-3": {
+        "id": "1f94vm498gJF99j9jd",
+        "type": "container",
+        "name": "wap-map-3",
+        "drag": "true",
+        "cmps": [
+            {
+                "id": "1f94vm44dbF99j9jd",
+                "type": "map",
+                "name": "wap-map",
+                "info": {
+                    "coors": {
+                        "lat": 31.6111,
+                        "lng": 34.7685
+                    }
+                },
+                "cmps": []
+            },
+            {
+                "id": "1f9e4vm4bfF8gJF99j9jd",
+                "type": "container",
+                "name": "text-info",
+                "drag": "true",
+                "cmps": [
+                    {
+                        "id": "1f9e4vm4bfF8h4435herF99j9jd",
+                        "type": "text",
+                        "name": "text-info",
+                        "drag": "true",
+                        "info": {
+                            "value": "Opening hours",
+                            "class": "title"
                         }
                     },
-                    "cmps": []
-                },
-                {
-                    "id": "1f9e4vm4bfF8gJF99j9jd",
-                    "type": "container",
-                    "name": "text-info",
-                    "drag": "true",
-                    "cmps": [
-                        {
-                            "id": "1f9e4vm4bfF8h4435herF99j9jd",
-                            "type": "text",
-                            "name": "text-info",
-                            "drag": "true",
-                            "info": {
-                                "value": "Opening hours",
-                                "class": "title"
-                            }
-                        },
-                        {
-                            "id": "1f9e4rhbfF8gJF99j9jd",
-                            "type": "text",
-                            "name": "text-info",
-                            "drag": "true",
-                            "info": {
-                                "value": "Mon - Fri: 7am - 10pm",
-                                "class": "hours"
-                            }
-                        },
-                        {
-                            "id": "1f9e4vm4btne9jd",
-                            "type": "text",
-                            "name": "text-info",
-                            "drag": "true",
-                            "info": {
-                                "value": "Saturday: 8am - 10pm",
-                                "class": "hours"
-                            }
-                        },
-                        {
-                            "id": "1f9eeeb99j9jd",
-                            "type": "text",
-                            "name": "text-info",
-                            "drag": "true",
-                            "info": {
-                                "value": "​Sunday: 8am - 11pm",
-                                "class": "hours"
-                            }
-                        },
-                    ]
-                }
-            ]
-        }
+                    {
+                        "id": "1f9e4rhbfF8gJF99j9jd",
+                        "type": "text",
+                        "name": "text-info",
+                        "drag": "true",
+                        "info": {
+                            "value": "Mon - Fri: 7am - 10pm",
+                            "class": "hours"
+                        }
+                    },
+                    {
+                        "id": "1f9e4vm4btne9jd",
+                        "type": "text",
+                        "name": "text-info",
+                        "drag": "true",
+                        "info": {
+                            "value": "Saturday: 8am - 10pm",
+                            "class": "hours"
+                        }
+                    },
+                    {
+                        "id": "1f9eeeb99j9jd",
+                        "type": "text",
+                        "name": "text-info",
+                        "drag": "true",
+                        "info": {
+                            "value": "​Sunday: 8am - 11pm",
+                            "class": "hours"
+                        }
+                    },
+                ]
+            }
+        ]
+    }
 
 }
 
@@ -1747,7 +1747,7 @@ export const Cards = {
 
         ]
     },
-    "wap-card-1-1":{
+    "wap-card-1-1": {
         "id": "wm01fdsfdfvvsd",
         "type": "container",
         "name": "wap-card-1-1",
@@ -1775,7 +1775,7 @@ export const Cards = {
             },
         ]
     },
-    "wap-card-3":{
+    "wap-card-3": {
         "id": "2irjfirg95j95gj95gh",
         "type": "container",
         "name": "wap-card-3",
@@ -2034,7 +2034,7 @@ export const Cards = {
             }
         ]
     }
-  
+
 }
 
 
@@ -4167,9 +4167,240 @@ export const wapExample3 = {
 
 }
 
+export const wapExample4 = {
+    "_id": "45gh4th4j4j646j6j46j46",
+    "type": "container",
+    "name": "PAtattoo",
+    "subcategory": "Tattoo Shop",
+    "imgUrl": `https://images.squarespace-cdn.com/content/5ce592c8732098000152407a/a5aef4b2-4b9c-4279-b780-57302c077519/image-asset.jpeg?content-type=image%2Fjpeg&format=750w`,
+    "createdBy": {
+        "_id": "5e26e0b718a7777d4c995527",
+        "fullname": "Special Noris",
+        "imgUrl": "img.jpg",
+    },
+    "usersData": {
+        "contacts": [{ "email": "spacial@user.com", "msg": "Please send me stuff", "at": 123 }],
+        "signups": [{ "email": "spacial@user.com", "at": 123 }]
+    },
+    "cmps": [
+        // Header
+        {
+            "id": "533245346346fdfgdfhg",
+            "type": "container",
+            "name": "wap-header-4",
+            "drag": "true",
+            "cmps": [
+                {
+                    "id": "3f3bb6yhxza12133",
+                    "type": "image",
+                    "name": "logo",
+                    "info": {
+                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/62960096ee2cee660d3eba55_tattoo_9_c9nkzz.png"
+                    }
+                },
+                {
+                    "id": "44g4btbzpoeF4FPdlf",
+                    "type": "container",
+                    "name": "header-nav",
+                    "drag": "true",
+                    "cmps": [
+
+                        {
+                            "id": "nadavazana1",
+                            "type": "text",
+                            "name": "header-item",
+                            "info": {
+                                "value": "abous us",
+                                "class": "header-item"
+                            }
+                        },
+                        {
+                            "id": "nadavazana2",
+                            "type": "text",
+                            "name": "header-item",
+                            "info": {
+                                "value": "portfolio",
+                                "class": "header-item"
+                            }
+                        },
+                        {
+                            "id": "nadavazana3",
+                            "type": "text",
+                            "name": "header-item",
+                            "info": {
+                                "value": "team",
+                                "class": "header-item"
+                            }
+                        },
+                        {
+                            "id": "nadavazana",
+                            "type": "text",
+                            "name": "header-item",
+                            "info": {
+                                "value": "contact",
+                                "class": "header-item"
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+        // Hero
+        {
+            "id": "4t4gfZwdf4r1",
+            "type": "container",
+            "name": "wap-hero-4",
+            "drag": "true",
+            "cmps": [
+                {
+                    "id": "4t4gfZwdf4rfefef1",
+                    "type": "container",
+                    "name": "hero-container4",
+                    "drag": "true",
+                    "cmps": [
+                        {
+                            "id": "3f3fgfdvvdvdvvdv",
+                            "type": "text",
+                            "name": "hero-title",
+                            "info": {
+                                "value": "old school tattoo shøp",
+                                "class": "hero-title"
+                            }
+                        },
+                        {
+                            "id": "43f4g4gdvcstfgyhty",
+                            "type": "button",
+                            "name": "hero-button",
+                            "info": {
+                                "value": "See More"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        // Card
+        {
+            "id": "32kokfedkfekfkf",
+            "type": "container",
+            "name": "wap-card-4",
+            "drag": "true",
+            "cmps": [
+                {
+                    "id": "32kokfedkre343ffkf",
+                    "type": "container",
+                    "name": "card-container1",
+                    "drag": "true",
+                    "cmps": [
+                        {
+                            "id": "43tg4vbb4srsfsf",
+                            "type": "text",
+                            "name": "card-title",
+                            "info": {
+                                "value": "about",
+                                "class": "card-title"
+                            }
+                        },
+                        {
+                            "id": "3f33gffgfghfh",
+                            "type": "container",
+                            "name": "cont1",
+                            "cmps": [
+                                {
+                                    "id": "21kokfeeggee43ffkf",
+                                    "type": "container",
+                                    "name": "text-container1",
+                                    "drag": "true",
+                                    "cmps": [
+                                        {
+                                            "id": "333tg4gfbfb",
+                                            "type": "text",
+                                            "name": "title",
+                                            "info": {
+                                                "value": "about us",
+                                                "class": "title"
+                                            }
+                                        },
+                                        {
+                                            "id": "333tg4gfbfb",
+                                            "type": "text",
+                                            "name": "title",
+                                            "info": {
+                                                "value": "ultimate experiences with story, emotion and purpose",
+                                                "class": "paragraph"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "21kokfe42ffkf",
+                                    "type": "container",
+                                    "name": "text-container2",
+                                    "drag": "true",
+                                    "cmps": [
+                                        {
+                                            "id": "333tg4gfef43bfb",
+                                            "type": "text",
+                                            "name": "title",
+                                            "info": {
+                                                "value": "Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipiscing. Aliquam class bibendum",
+                                                "class": "title"
+                                            }
+                                        },
+                                        {
+                                            "id": "333tg4g4g4gfbfb",
+                                            "type": "text",
+                                            "name": "title",
+                                            "info": {
+                                                "value": "Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipisc iquam class bibendum non mattis fusceut perspiciatis undeuisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipiscing. Aliquam class bibendum mattis fusceut persecenas. Eros mus.",
+                                                "class": "paragraph"
+                                            }
+                                        }
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "id": "3f33gffgfgh533h",
+                            "type": "container",
+                            "name": "cont2",
+                            "cmps": []
+                        },
+                        {
+                            "id": "3f33dgdffgfghf533h",
+                            "type": "container",
+                            "name": "cont3",
+                            "cmps": []
+                        }
+                    ]
+                }, {
+                    "id": "32kokfe3v3vghdkfekfkf",
+                    "type": "container",
+                    "name": "card-container2",
+                    "drag": "true",
+                    "cmps": [
+
+                    ]
+                }, {
+                    "id": "32kokffghfghfgedkfekfkf",
+                    "type": "container",
+                    "name": "card-container3",
+                    "drag": "true",
+                    "cmps": [
+
+                    ]
+                },
+            ]
+        },
+    ],
+    "isPublished": false
+}
+
+
+
 
 export const examples = [
 
-    wapExample3
+    wapExample4
 ]
 

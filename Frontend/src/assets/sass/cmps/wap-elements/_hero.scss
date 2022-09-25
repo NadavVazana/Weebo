@@ -368,3 +368,42 @@
         }
     }
 }
+
+.wap-hero-4 {
+    background-image: url('../../../img/hero-4/hero-bg.jpg') ;
+    background-position: 50% 90%;
+    // background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins-bold;
+    color: #fff;
+
+    .hero-container4 {
+        margin-block: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 600px;
+        gap: 60px;
+        
+        .hero-title {
+            font-size: 72px;
+        }
+
+        button {
+            background: none;
+            color: white;
+            padding: 20px 40px;
+            border: 2px solid #d8ac84;
+
+            &:hover {
+                background-color: #d8ac84;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+        }
+    }
+}
