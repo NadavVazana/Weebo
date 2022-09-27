@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { ViewsChart } from "../cmps/view-chart"
 import { SubscribersTable } from "../cmps/subscribers-table"
 // import { PublishChart } from "../cmps/publish-chart"
 import { eventBusService, showSuccessMsg } from "../services/event-bus.service"
@@ -12,6 +11,8 @@ import { userService } from "../services/user.service"
 import { setDraft } from "../store/draft/draft.action"
 import { updateUser } from "../store/user/user.action"
 import { utilService } from "../services/util.service"
+import { ViewsChart } from "../cmps/view-chart"
+import { SubscribersChart } from "../cmps/subscribers-chart"
 
 export const Dashboard = () => {
     const dispatch = useDispatch()
@@ -72,7 +73,6 @@ export const Dashboard = () => {
 
     // NAVIGATES TO THE SITE'S EDIT PAGE
     const onEdit = async () => {
-        site.editCount++
         await siteService.updateSite(site)
         console.log(site._id);
         navigate(`/editor/${site._id}`)
@@ -171,9 +171,9 @@ export const Dashboard = () => {
                         <div className="divider"></div>
 
                         <div className="publish-title-container">
-                            {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
-                                : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
-                            <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1>
+                            {/* {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" /> */}
+                                {/* // : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />} */}
+                            {/* <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1> */}
                         </div>
                     </div>
 
@@ -232,15 +232,16 @@ export const Dashboard = () => {
                             <SubscribersTable subscribers={site.usersData} />
                             : <h2>No Subscribers Yet!</h2>}
                     </section>
-                    <section className="something">
-                        Somthing
+                    <section className="views-subs-ratio">
+                        Views | Subscribers Ratio
+                        {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount)*100).toFixed(2)}%`}
                     </section>
 
                     <section className="chart-views" style={{ padding: '20px' }}>
                         <ViewsChart />
                     </section>
                     <section className="chart-subscribers" style={{ padding: '20px' }}>
-                        <ViewsChart />
+                    <SubscribersChart />
                     </section>
 
 
