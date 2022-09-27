@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 export const TemplatesPreview = ({ example }) => {
+
     return (
         <section className="template-preview">
             <div className="templates-preview-img">

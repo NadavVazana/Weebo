@@ -1,5 +1,5 @@
 import React from "react"
-export const Image = ({ cmp,isPublished, onEditElement }) => {
+export const Image = ({ cmp, isPublished, onEditElement }) => {
 
 
     let image = ``
@@ -14,23 +14,23 @@ export const Image = ({ cmp,isPublished, onEditElement }) => {
     if (!cmp?.info?.image) return
 
     // Image elements
-        return (
-            <React.Fragment>
-                {/* EDIT MODE */}
-                {!isPublished ? <section className='image'>
+    return (
+        <React.Fragment>
+            {/* EDIT MODE */}
+            {!isPublished ? <section className={`image ${cmp.name}`}>
+                <img className={cmp.name}
+                    src={image}
+                    alt={cmp.name}
+                    onClick={(ev) => handleEditElement(ev, cmp)}
+                />
+            </section> :
+                // PUBLISH MODE
+                <section className={`image ${cmp.name}`}>
                     <img className={cmp.name}
                         src={image}
                         alt={cmp.name}
-                        onClick={(ev) => handleEditElement(ev, cmp)}
-                    />
-                </section> :
-                // PUBLISH MODE
-                    <section className="image">
-                        <img className={cmp.name}
-                            src={image}
-                            alt={cmp.name}
-                            onClick={(ev) => handleEditElement(ev, cmp)} />
-                    </section>}
-            </React.Fragment>
-        )
-    }
+                        onClick={(ev) => handleEditElement(ev, cmp)} />
+                </section>}
+        </React.Fragment>
+    )
+}

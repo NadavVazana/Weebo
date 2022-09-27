@@ -474,28 +474,316 @@
     color: #fff;
     font-family: Poppins;
     font-size: 20px;
+    padding-block: 50px;
+
     
-    .card-container-1 {
-        
-    }
 
     .card-title {
         color: #1f1f1f;
         font-family: Poppins-bold;
-        font-size: 8em;
-        margin-inline: 50px;
+        font-size: 4em;
+        width: fit-content;
+        margin: 0 auto;
+        
         h1 {
             margin: 0;
             height: fit-content;
         }
     }
-    .text-container {
-        display: flex;
-        .title {
-            font-family: SignPainter;
-            color: #d8ac84;
+    
+    .cont1 {
+        gap: 100px;
+        padding-inline: 10px ;
+        .text-container1 {
+            flex-direction: column;
+            
+            .title {
+                font-family: SignPainter;
+                color: #d8ac84;
+                font-size: 2em;
+                position: relative;
+            }
+            .paragraph {
+                font-family: Poppins-bold;
+                font-size: 1em;
+                line-height: 1.5em;
+            }
+        }
+
+        .text-container2 {
+            
+            .text-bold {
+                font-family: Poppins-bold;
+                margin-bottom: 40px;
+                font-size: 1em;
+            }
+
+            .text-reg {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .cont2 { 
+        gap: 100px;
+        margin-bottom: 50px;
+        .text-container2 {
+            margin-top: auto;
+            margin-bottom: auto; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .quote {
+            line-height: 2em;
+            font-size: 1em;
+            &::before, &::after {
+                content: '"';
+            }
+        }
+
+        .name {
+            font-family: Poppins-bold;
+            font-size: 1em;
+        }
+
+        .role {
+            color: #5c5c5c;
+            font-size: 1em;
+        }
+        .image {
+            width: 100%;
+        }
+    }
+
+    .cont3 {
+        font-size: 20px;
+        img {
+            
+            width: 100%;
+        }
+        .item {
+            text-align: center;
+            padding-inline: 30px;
+            
+
+            & > * {
+                margin-bottom: 10px;
+            }
+
+            .image-container {
+                position: relative;
+                img {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                }
+                .backdrop {
+                    position: absolute;
+                    width: 65px;
+                    height: 65px;
+                    top: 30%;
+                    left: 45%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    background-color: #222;
+                    z-index: 1;
+                    transition: all 0.5s;
+                }
+
+                .image, img {
+                    position: relative;
+                    z-index: 30;
+                }
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-family: Poppins-bold;
+                    font-size: 1em;
+                    margin-bottom: 20px;
+                }
+
+                .paragraph {
+                    font-size: 0.8em;
+                    line-height: 1.5em;
+                }
+            }
+
+            &:hover .backdrop {
+                top: 48%;
+                left: 48%;
+                transition: 0.5s;
+            }
+        }
+    }
+    
+
+    @include for-mobile-layout{
+        
+    }
+    @include for-mid-layout{
+
+        .card-title {
+            font-size: 8em;
+            margin-inline: 50px;
+        }
+        & > * {
+            .cont1, .cont2, .cont3 {
+                display: flex;
+                max-width: 1200px;
+                margin: 0 auto;
+                margin-bottom: 80px;
+            } 
+        }
+        .cont1 {
+            & > * {
+                display: flex;
+                flex-direction: column;
+                // font-size:0.5em;
+                width: 50%;
+            }
+
+            .text-container1 {
+                flex-direction: column;
+                
+                .title {
+                    font-family: SignPainter;
+                    color: #d8ac84;
+                    position: relative;
+                }
+                .paragraph {
+                    font-family: Poppins-bold;
+                    line-height: 1.5em;
+                }
+            }
+            .text-container2 {
+            
+                .text-bold {
+                    font-family: Poppins-bold;
+                    margin-bottom: 40px;
+                }
+    
+                .text-reg {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .cont2 {
+            & > * {
+                display: flex;
+                flex-direction: column;
+                font-size: 1em;
+                width: 50%;
+            }
+            gap: 100px;
+        .text-container2 {
+            margin-top: auto;
+            margin-bottom: auto; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 0.5em;
+            gap: 40px;
+        }
+
+        .quote {
+            line-height: 2em;
+            font-size: 3em;
+            &::before, &::after {
+                content: '"';
+            }
+        }
+
+        .name {
+            font-family: Poppins-bold;
             font-size: 2em;
-            position: relative;
+        }
+
+        .role {
+            color: #5c5c5c;
+            font-size: 2em;
+        }
+        }
+    }
+}
+
+.wap-card-5 {
+    background: url('../../../img/card-5/card-5-bg.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    padding-block: 50px;
+    padding-block-end: 50px;
+    color: #4a2359;
+    font-family: Poppins;
+
+
+    
+    .card-container {
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        img.ghost-gif {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .card-text {
+            padding-inline: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+            .title {
+                font-family: Reklame;
+                font-size: 4em;
+                margin-bottom: 30px;
+            }
+
+            .feature {
+                font-size: 23px;
+                margin-bottom: 20px;
+                &::before {
+                    content: '•';
+                    padding-inline-end: 10px;
+                }
+            }
+        }
+    }
+
+
+    @include for-mobile-layout{
+    }
+    @include for-narrow-layout{
+        
+        .card-container {
+            flex-direction: row;
+            width: 90%;
+
+            img.ghost-gif {width: 100%;}
+        }
+    }
+    @include for-mid-layout{
+        .card-container {
+            width: 70%;
+        }
+    }
+    @include for-normal-layout {
+        padding-block: 100px;
+        padding-block-end: 350px;
+        .card-container {
+            width: 55%;
         }
     }
 }
