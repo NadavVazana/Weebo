@@ -16,58 +16,58 @@ export const Dashboard = () => {
     const navigate = useNavigate()
     const { loggedInUser } = useSelector(state => state.userModule)
     const [deleteModal, setDeleteModal] = useState(false)
-    const [sites,setSites] = useState()
-    const [site,setSite] = useState(null)
-    const [siteMenu,setSiteMenu] = useState(false)
-    const [details,setDetails] = useState({})
-    
+    const [sites, setSites] = useState()
+    const [site, setSite] = useState(null)
+    const [siteMenu, setSiteMenu] = useState(false)
+    const [details, setDetails] = useState({})
 
-    useEffect(()=>{
+
+    useEffect(() => {
 
         loadSites()
-        socketService.on('update-contact-list', updateDetails )
-        socketService.on('increase-views-on-dashboard',updateViews)
-
-        
-        
-    },[])
-    useEffect(()=>{
-        
-        if(!site) return
-        socketService.emit('set-up-socket-site',site._id)        
+        socketService.on('update-contact-list', updateDetails)
+        socketService.on('increase-views-on-dashboard', updateViews)
 
 
-    },[site])
 
-    const updateDetails = async ({details,siteId})=>{
-        const site =await siteService.getSitesByUserId({siteId})
+    }, [])
+    useEffect(() => {
+
+        if (!site) return
+        socketService.emit('set-up-socket-site', site._id)
+
+
+    }, [site])
+
+    const updateDetails = async ({ details, siteId }) => {
+        const site = await siteService.getSitesByUserId({ siteId })
         setSite(site[0])
 
 
 
     }
 
-    const updateViews=(site)=>{
+    const updateViews = (site) => {
         setSite(site)
     }
 
 
-  
-    const  loadSites= async ()=>{
-        const sites = await siteService.getSitesByUserId({owner: loggedInUser._id})
+
+    const loadSites = async () => {
+        const sites = await siteService.getSitesByUserId({ owner: loggedInUser._id })
         setSites(sites)
-        if(!site){
+        if (!site) {
             setSite(sites[0])
         }
     }
-    
+
 
     if (!loggedInUser) {
         navigate('/')
         return <></>
     }
 
-  
+
     // NAVIGATES TO THE SITE'S EDIT PAGE
     const onEdit = async () => {
         site.editCount++
@@ -92,7 +92,7 @@ export const Dashboard = () => {
         }
     }
 
-    const onSiteClick=(wap)=>{
+    const onSiteClick = (wap) => {
         setSite(wap)
         setSiteMenu(false)
     }
@@ -102,7 +102,7 @@ export const Dashboard = () => {
     const onPublish = async () => {
         if (site.isPublished) window.open(`/publish/${site._id}`, '_blank')
         else {
-            const newSite = sites.find(currSite=> site._id === currSite._id)
+            const newSite = sites.find(currSite => site._id === currSite._id)
             newSite.isPublished = true
             await siteService.updateSite(newSite)
             loadSites()
@@ -125,12 +125,8 @@ export const Dashboard = () => {
             </div>}
 
 
-            
-
-
-
             {/* LIST OF THE SITES */}
-           
+
             <div className={siteMenu ? 'site-menu-open' : 'sites-nav'}>
                 <h1 className="list-title">My Sites</h1>
                 <ul className="site-list">
@@ -139,8 +135,8 @@ export const Dashboard = () => {
                     })}
                 </ul>
             </div>
-            {siteMenu && <div onClick={()=>{setSiteMenu(false)}} className="black-screen"></div>}
-            <img onClick={()=>{setSiteMenu(true)}} className="hamburger" src={require('../assets/img/icons/hamburger.png')} alt="hamburger-icon" />
+            {siteMenu && <div onClick={() => { setSiteMenu(false) }} className="black-screen"></div>}
+            <img onClick={() => { setSiteMenu(true) }} className="hamburger" src={require('../assets/img/icons/hamburger.png')} alt="hamburger-icon" />
 
 
             {/* MAIN VIEW OF THE DASHBOARD (LEFT SIDE) */}
@@ -151,11 +147,11 @@ export const Dashboard = () => {
                     <button onClick={() => { setDeleteModal(true) }} className="delete-btn">Delete website</button>
                 </div>
 
-                    {/* PUBLISH TITLE */}
-                <div className="publish-title-container"> 
-                    
-                    { site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
-                    :<img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
+                {/* PUBLISH TITLE */}
+                <div className="publish-title-container">
+
+                    {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
+                        : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
                     <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1>
                 </div>
 
@@ -194,22 +190,22 @@ export const Dashboard = () => {
 
                     {/* USER SUBSCRIBERS LIST */}
                     <table className="subscribers">
-                    {site.usersData.map(contact=>{
-                       return  <tbody className='contact-details'>
-                       { Object.keys(contact).map(key=>{
-                            return <th key={contact[key]}> <span className="details-key"> {key}</span> : {contact[key]}</th>
+                        {site.usersData.map(contact => {
+                            return <tbody className='contact-details'>
+                                {Object.keys(contact).map(key => {
+                                    return <th key={contact[key]}> <span className="details-key"> {key}</span> : {contact[key]}</th>
+                                })}
+                            </tbody>
                         })}
-                        </tbody>
-                    })}
                     </table>
 
 
-                    
+
 
                 </div>
                 <section className="charts">
-                {/* <PublishChart sites={loggedInUser.waps} /> */}
-                <ViewsChart  />
+                    {/* <PublishChart sites={loggedInUser.waps} /> */}
+                    <ViewsChart />
                 </section>
 
             </section>
