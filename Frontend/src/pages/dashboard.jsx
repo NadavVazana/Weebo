@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import { ViewsChart } from "../cmps/view-chart"
+import { SubscribersTable } from "../cmps/subscribers-table"
 // import { PublishChart } from "../cmps/publish-chart"
 import { eventBusService, showSuccessMsg } from "../services/event-bus.service"
 import { siteService } from "../services/site-service"
@@ -10,6 +11,7 @@ import { socketService } from "../services/socket.service"
 import { userService } from "../services/user.service"
 import { setDraft } from "../store/draft/draft.action"
 import { updateUser } from "../store/user/user.action"
+import { utilService } from "../services/util.service"
 
 export const Dashboard = () => {
     const dispatch = useDispatch()
@@ -141,54 +143,75 @@ export const Dashboard = () => {
 
             {/* MAIN VIEW OF THE DASHBOARD (LEFT SIDE) */}
             <section className="main-dashboard">
-                <div className="action-btns">
-                    <button onClick={onPublish} className="visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
-                    <button onClick={() => { onEdit() }} className="edit-btn">Edit</button>
-                    <button onClick={() => { setDeleteModal(true) }} className="delete-btn">Delete website</button>
+                <p className="header">Welcome back, {loggedInUser.username}</p>
+
+                <div className="dashboard-header">
+                    <div className="publish-title-container">
+                        {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
+                            : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
+                        <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1>
+                    </div>
+                    <div className="action-btns">
+                        <button onClick={onPublish} className="btn visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
+                        <button onClick={() => { onEdit() }} className="btn edit-btn">Edit</button>
+                        <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+                    </div>
                 </div>
-
-                {/* PUBLISH TITLE */}
-                <div className="publish-title-container">
-
-                    {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
-                        : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
-                    <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1>
-                </div>
-
-
 
                 {/* DETAILS SQUARES  */}
                 <div className="details-grid">
-                    <div className="site-name">
-                        <h1>{site.siteName}</h1>
-                        <h1>Website name</h1>
-                        <img src={require('../assets/img/icons/dash-website-icon.svg').default} alt="website-icon" />
+                    <div className="site-dtl site-name">
+                        <img className="dtl-img" src={require('../assets/img/icons/dash-website-icon.svg').default} alt="website-icon" />
+                        <h1 className="title">Website name</h1>
+                        <h1 className="website-name">{site.siteName}</h1>
+                        <div className="divider"></div>
+
+                        <div className="publish-title-container">
+                            {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" />
+                                : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />}
+                            <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1>
+                        </div>
                     </div>
 
-                    {/* EDIT COUNT */}
-                    <div className="site-edits">
+                    {/* EDIT COUNT
+                    <div className="site-dtl site-edits">
+                        <div className="site-dtl-title">
+                            <img src={require('../assets/img/icons/dash-edit-icon.svg').default} alt="edit-icon" />
+                            <h1>Edit count</h1>
+                        </div>
+
                         <h1>{site.editCount}</h1>
-                        <h1>Edit count</h1>
-                        <img src={require('../assets/img/icons/dash-edit-icon.svg').default} alt="edit-icon" />
+                    </div> */}
+
+                    {/* SITE CREATION DATE */}
+                    <div className="site-dtl site-creation-date">
+                        <img className="dtl-img" src={require('../assets/img/icons/dash-calendar-icon.svg').default} alt="calendar-icon" />
+                        <h1 className="title">Creation date</h1>
+                        <div className="divider"></div>
+                        <h1 className="detail-line"><span className="detail">{site.createdAt}</span></h1>
                     </div>
 
                     {/* VIEW COUNT */}
-                    <div className="site-views">
-                        <h1>{site.viewCount}</h1>
-                        <h1>Views count</h1>
-                        <img src={require('../assets/img/icons/dash-views-icon.svg').default} alt="views-icon" />
+                    <div className="site-dtl site-views">
+                        <img className="dtl-img" src={require('../assets/img/icons/dash-views-icon.svg').default} alt="views-icon" />
+                        <h1 className="title">Views</h1>
+                        <div className="divider"></div>
+                        <h1 className="detail-line">Viewed <span className="detail">{site.viewCount} </span>
+                            times
+                        </h1>
 
                     </div>
 
-                    {/* SITE CREATION DATE */}
-                    <div className="site-creation-date">
-                        <h1>{site.createdAt}</h1>
-                        <h1>Website creation date</h1>
-                        <img src={require('../assets/img/icons/dash-calendar-icon.svg').default} alt="calendar-icon" />
+                    {/* Subscriber count */}
+                    <div className="site-dtl site-subscriber-count">
+                        <img className="dtl-img" src={require('../assets/img/icons/dash-calendar-icon.svg').default} alt="calendar-icon" />
+                        <h1 className="title">Subscribers</h1>
+                        <div className="divider"></div>
+                        <h1 className="detail-line">You have <span className="detail">{site.usersData.length} </span> subscribers</h1>
                     </div>
 
 
-                    {/* USER SUBSCRIBERS LIST */}
+                    {/* USER SUBSCRIBERS LIST
                     <table className="subscribers">
                         {site.usersData.map(contact => {
                             return <tbody className='contact-details'>
@@ -197,16 +220,28 @@ export const Dashboard = () => {
                                 })}
                             </tbody>
                         })}
-                    </table>
+                    </table> */}
+                    <section className="table-subscribers" style={{ padding: '20px' }}>
+                        <h4>Subscription List</h4>
 
+                        {site.usersData.length > 0 ?
+                            <SubscribersTable subscribers={site.usersData} />
+                            : <h2>No Subscribers Yet!</h2>}
+                    </section>
+                    <section className="something">
+                        Somthing
+                    </section>
 
+                    <section className="chart-views" style={{ padding: '20px' }}>
+                        <ViewsChart />
+                    </section>
+                    <section className="chart-subscribers" style={{ padding: '20px' }}>
+                        <ViewsChart />
+                    </section>
 
 
                 </div>
-                <section className="charts">
-                    {/* <PublishChart sites={loggedInUser.waps} /> */}
-                    <ViewsChart />
-                </section>
+
 
             </section>
         </section>

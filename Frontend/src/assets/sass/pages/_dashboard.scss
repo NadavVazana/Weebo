@@ -27,21 +27,15 @@
     position: relative;
     width: 100vw;
 
+    th {
+        font-weight: bold;
+    }
+
     .publish-title-container {
         display: flex;
         align-items: center;
         gap: 20px;
     }
-
-    .charts{
-        display: flex;
-        width: 60%;
-    }
-
-    .chart{
-        width: 30%
-    }
-
 
     .published-title {
         font-family: Monsterrat;
@@ -65,48 +59,166 @@
     }
 
     .main-dashboard {
+        font-family: Monsterrat;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
+        gap: 20px;
+        padding-inline: 40px;
 
-    .visit-btn {
-        padding: 10px 80px 10px 80px;
-        font-size: 1.3rem;
-        font-family: Madefor;
-        border-radius: 20px;
-        border: none;
-        background-color: rgb(231, 198, 136);
-        cursor: pointer;
-    }
+        .header {
+            font-size: 2rem;
+        }
 
-    .edit-btn {
-        cursor: pointer;
-        padding: 10px 80px 10px 80px;
-        font-size: 1.3rem;
-        font-family: Madefor;
-        border-radius: 20px;
-        border: none;
-        background-color: rgb(221, 214, 201);
+        .dashboard-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
 
-    }
+            .btn {
+                padding: 10px 20px;
+                margin-inline-start: 20px;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                min-width: 160px;
+                min-height: 35px;
 
-    .delete-btn {
-        cursor: pointer;
-        font-family: Madefor;
-        background-color: rgb(185, 63, 63);
-        color: rgb(238, 231, 231);
-        border: none;
-        padding: 10px 80px 10px 80px;
-        border-radius: 20px;
+                &:hover {
+                    cursor: pointer;
+                    transform: translate(1%, -1%);
+                    transition: transform 0.3s;
+                }
+            }
 
-    }
+            .visit-btn {
+                background-color:#50C878;
+            }
+            .delete-btn {
+                background-color: rgb(185, 63, 63);
+            }
+            .edit-btn {
+                background-color: rgb(221, 214, 201);
+            }
 
-    .delete-btn:hover {
-        color: whitesmoke;
-        background-color: rgb(197, 55, 55);
+        }
+
+        .details-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-rows: 150px repeat(5, 1fr);
+            gap: 20px;
+
+            & > * {
+                box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+                border-radius: 20px;
+                background-color: #fff;
+            }
+
+            .site-dtl {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                font-size: 10px;
+                background-color: #fff;
+                min-height: 150px;
+
+                .title {
+                    font-size: 20px;
+                    margin: 10px 0 0 20px;
+                }
+
+                .detail-line {
+                    margin: 10px 0 10px 20px;
+                    .detail {
+                        color: #4caf50;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .website-name {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 35px;
+                    text-transform:capitalize;
+                }
+
+                .divider {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 1px;
+                    width: 100%;
+                    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(129, 126, 126, 0.568) 50%, rgba(255,255,255,1) 100%);
+                }
+
+                .dtl-img {
+                    position: absolute;
+                    top: -40%;
+                    right: 5%;
+                    transform: translateY(50%);
+                    // width: 15%;
+                    width: 70px;
+                    height: 70px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                    border-radius: 50%;
+                }
+
+                .publish-title-container {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 10px 0 10px 20px;
+                    position: relative;
+                    .published-title, .not-published-title {
+                        font-size: 15px;
+                    }
+                    .published-icon {
+                        position: relative;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                
+            }
+
+            .table-subscribers {
+                height: fit-content;
+                grid-column: 1/4;
+                grid-row: 2/4;
+
+                h4 {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .something {
+                height: 100%;
+                grid-column: 4/5;
+                grid-row: 2/4;
+            }
+
+            .chart-views {
+                height: fit-content;
+                grid-column: 1/3;
+                grid-row: 4/6;
+            }
+
+            .chart-subscribers {
+                height: fit-content;
+                grid-column: 3/5;
+                grid-row: 4/6;
+            }
+        }
     }
 
     .delete-modal-container {
@@ -159,119 +271,7 @@
 
     }
 
-    // .action-btns {
-    //     display: flex;
-    //     gap: 20px;
-    //     user-select: none;
-    // }
 
-    // .contact-details{
-    //     margin-top: 40px;
-    //     width: 100%;
-    //     border: rgba(0, 0, 0, 0.205) solid 1px;
-    //     background-color: #96ce6e;;
-    //     p{
-    //         .details-key{
-    //             text-transform: capitalize;
-    //         }
-    //     }
-
-        
-    // }
-
-    // .details-grid {
-    //     display: grid;
-
-    //     width: 90%;
-
-    //     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-
-    //     > * {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         gap: 20px;
-    //         justify-content: space-between;
-    //         border-radius: 20px;
-    //         padding: 30px;
-    //         margin-inline-end: 10px;
-    //         margin-bottom: 10px;
-    //         color: rgb(39, 36, 36);
-
-    //         >*:first-child {
-    //             margin-top: 10px;
-                
-
-    //         }
-
-    //         >*:nth-child(2) {
-    //             user-select: none;
-    //             font-weight: 500;
-    //             font-size: 1rem;
-    //         }
-
-    //         >* {
-    //             font-family: Madefor;
-    //             padding: 10px;
-    //         }
-
-    //         img {
-    //             width: 80px;
-    //             margin-bottom: 10px;
-    //             user-select: none;
-    //         }
-    //     }
-    //     .subscribers{
-    //         overflow: scroll;
-    //         overflow-x: hidden;
-    //         position: relative;
-    //         h1{
-    //             position: absolute;
-    //             top: 0;
-    //             left: 50%;
-    //             transform: translate(-50%);
-
-    //         }
-    //         display: flex;
-    //         flex-direction: column;
-    //         grid-template-columns: repeat(auto-fill,1fr);
-    //         height: 400px;
-    //         background-color: #a6d486;
-    //     }
-    //     .site-name {
-    //         background-color: #9ad9e0;
-    //     }
-
-    //     .site-edits {
-    //         background-color: #5671c8;
-    //     }
-
-    //     .site-views {
-    //         background-color: #fbe16b;
-    //     }
-
-    //     .site-creation-date {
-    //         background-color: #f3ac96;
-    //     }
-    // }
-
-
-    .edit-btn:hover {
-        background-color: rgb(182, 178, 170);
-        color: white;
-    }
-
-    .visit-btn:hover {
-        background-color: rgb(242, 199, 119);
-    }
-
-
-    .title {
-        font-family: Madefor;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 3rem;
-    }
 
     .site-menu-open {
         position: fixed;
@@ -313,18 +313,11 @@
                 }
 
             }
-
-
-
         }
-
-    
-
-
     }
 
     .sites-nav {
-        width: 20%;
+        max-width: 250px;
         height: 100%;
         text-align: center;
         border-right: 1px rgba(0, 0, 0, 0.19) solid;
@@ -339,6 +332,7 @@
                 gap: 10px;
                 align-items: center;
                 min-height: 35px;
+                margin-bottom: 15px;
 
                 li {
                     // padding-top: 30px;
@@ -374,15 +368,6 @@
     }
 
     @include for-tiny-layout{
-        .action-btns {
-            margin-top: 90px;
-
-            >* {
-                padding: 20px;
-
-            }
-        }
-
         .sites-nav {
             position: fixed;
             left: -65%;
@@ -436,16 +421,6 @@
 
     }
     @include for-mobile-layout {
-     
-        .action-btns {
-            margin-top: 90px;
-
-            >* {
-                padding: 20px;
-
-            }
-        }
-
         .sites-nav {
             position: fixed;
             left: -65%;
@@ -523,11 +498,6 @@
     }
 
     @include for-mid-layout {
-        .action-btns {
-            >* {
-                padding-inline: 50px;
-            }
-        }
         .charts{
             flex-direction: unset;
         }
@@ -575,6 +545,6 @@
     }
 
     @include for-wide-layout {
-      
+        
     }
 }
