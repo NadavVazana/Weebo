@@ -11,8 +11,8 @@
     font-family: Monsterrat;
     color: white;
 
-    
-    > * {
+
+    >* {
         padding: 10px;
     }
 
@@ -20,6 +20,8 @@
         font-size: 1.2rem;
         font-weight: 300;
         cursor: text;
+
+    
     }
 
     .hero-item-2 {
@@ -33,40 +35,43 @@
     }
 
     .hero-item-3 {
-       
-            color: #fff;
-            background: none;
-            border: none;
-            background-color: transparent;
-            
-            // border-radius: 0.4rem;
-            // cursor: pointer;
-            // font-weight: 300;
-        }
-        
-        // .hero-item-3:hover {
-        //     opacity: 0.6;
-        // }
 
-        @include for-mobile-layout{
-            .hero-item-2{
-                font-size: 2rem;
-            }
-            .hero-item-3{
-                padding: .8rem 1.2rem;
+        color: #fff;
+        background: none;
+        border: none;
+        background-color: transparent;
 
-            }
+        // border-radius: 0.4rem;
+        // cursor: pointer;
+        // font-weight: 300;
+    }
+
+    // .hero-item-3:hover {
+    //     opacity: 0.6;
+    // }
+
+    @include for-mobile-layout {
+        .hero-item-2 {
+            font-size: 2rem;
         }
-        @include for-narrow-layout{
-            .hero-item-3{
-                padding: 1.2rem 2.004rem;
-            }
+
+        .hero-item-3 {
+            padding: .8rem 1.2rem;
+
         }
-        @include for-mid-layout{
-            .hero-item-2{
-                font-size: 2.5rem;
-            }
+    }
+
+    @include for-narrow-layout {
+        .hero-item-3 {
+            padding: 1.2rem 2.004rem;
         }
+    }
+
+    @include for-mid-layout {
+        .hero-item-2 {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 .wap-hero-2-1 {
@@ -78,10 +83,17 @@
     background-size: cover;
     font-size: 20px;
 
-    background: linear-gradient(to top right, 
-     #fad255   50%, 
-     #aae6f0 0 100%
-    );
+    .title{
+        margin-top: 30px;
+    }
+
+    .paragraph{
+        margin-bottom: 30px;
+    }
+
+    background: linear-gradient(to top right,
+            #fad255 50%,
+            #aae6f0 0 100%);
     // padding-inline: auto;
     padding-block: 50px;
 
@@ -108,7 +120,7 @@
 
     .title {
         font-size: 1.2rem;
-        font-family:  Monsterrat;
+        font-family: Monsterrat;
     }
 
     .paragraph {
@@ -116,15 +128,14 @@
         line-height: 2rem;
     }
 
-    @include for-mobile-layout{
-        
-    }
-    @include for-narrow-layout{
-        
-    }
-    @include for-mid-layout{
+    @include for-mobile-layout {}
+
+    @include for-narrow-layout {}
+
+    @include for-mid-layout {
         flex-direction: row;
         align-items: flex-start;
+
         section {
             width: 50%;
             max-width: 550px;
@@ -143,33 +154,35 @@
     font-family: Monsterrat-thin;
     justify-content: flex-end;
     align-items: stretch;
-    
 
-    background: linear-gradient(to top right, 
-    #fbcaec  50%, 
-    #fad255 0 100%
-    );
 
-    
+    background: linear-gradient(to top right,
+            #fbcaec 50%,
+            #fad255 0 100%);
 
- .video{
-    width: 100%;
-    height: 600px;
-    margin: auto;
-    .video-container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    // padding: 56.25%;
-    .video-player{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+
+
+    .video {
+        width: 100%;
+        height: 600px;
+        margin: auto;
+
+        .video-container {
+            position: relative;
             width: 100%;
+            height: 100%;
+
+            // padding: 56.25%;
+            .video-player {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+        }
     }
-    }
-}
+
     .hero-item-1 {
         display: flex;
         flex-direction: column;
@@ -183,7 +196,7 @@
 
     .title {
         font-size: 1.2rem;
-        font-family:  Monsterrat;
+        font-family: Monsterrat;
     }
 
     .paragraph {
@@ -202,11 +215,11 @@
             padding: 10px 20px;
         }
 
-        
+
         a {
             color: #4d4d4d;
             font-weight: bold;
-            
+
         }
 
         &:hover {
@@ -216,28 +229,32 @@
         }
     }
 
-    @include for-mobile-layout{
+    @include for-mobile-layout {
         section {
-           text-align: center;
-          
-         }
+            text-align: center;
+
+        }
     }
-    @include for-narrow-layout{
+
+    @include for-narrow-layout {
 
         .hero-item-1 {
             padding: 50px;
             gap: 20px;
+
             .paragraph {
                 font-size: 0.8rem;
             }
         }
 
     }
-    @include for-mid-layout{
+
+    @include for-mid-layout {
         padding: 70px 0px;
         justify-content: center;
         flex-direction: row;
-        & > * {
+
+        &>* {
             margin: auto;
         }
 
@@ -249,53 +266,59 @@
         section {
             display: flex;
             width: 50%;
+
             img {
                 margin-inline-start: auto;
             }
         }
-    
+
 
         .hero-item-1 {
             gap: 20px;
             font-size: 1rem;
             margin-top: 50px;
-            max-height: 600px;
-            .title{
+            max-height: 100%;
+
+            .title {
                 font-size: 1rem;
                 padding-top: 20px;
             }
+
             .paragraph {
                 font-size: 0.8rem;
             }
-            button{
+
+            button {
                 font-size: .9rem;
-                
+
             }
         }
-      
+
     }
 
     @include for-normal-layout {
-            .video{
-                width: 35%;
-                margin-top: 50px;
+        .video {
+            width: 35%;
+            margin-top: 50px;
+        }
+
+        .hero-item-1 {
+            width: 100%;
+            font-size: 1rem;
+            gap: 50px;
+
+            .paragraph {
+                font-size: 1rem;
             }
-            .hero-item-1 {
-                width: 100%;
-                font-size:1rem;
-                gap: 50px;
-                .paragraph {
-                    font-size: 1rem;
-                }
-            }
-        
+        }
+
     }
 
-  
+
 }
 
 .wap-hero-3 {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../../img/hero3/4c82981e961041ae9b1a50b5895e47ae.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../img/hero3/4c82981e961041ae9b1a50b5895e47ae.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 6px;
@@ -307,8 +330,9 @@
         justify-content: center;
         align-items: center;
         padding-top: 200px;
-        
+
         color: #fff;
+
         &>* {
             text-transform: uppercase;
         }
@@ -317,7 +341,8 @@
             font-size: 4em;
             padding-inline: 20px;
 
-            &::after, &::before {
+            &::after,
+            &::before {
                 content: '-';
                 padding-inline: 20px;
             }
@@ -328,22 +353,24 @@
         }
     }
 
-    @include for-mobile-layout{
-    }
-   
-    @include for-narrow-layout{
+    @include for-mobile-layout {}
+
+    @include for-narrow-layout {
         background-attachment: fixed;
         font-size: 10px;
+
         .title1 {
             font-size: 4em;
             padding-inline: 20px;
 
-            &::after, &::before {
+            &::after,
+            &::before {
                 content: '-';
                 padding-inline: 20px;
             }
         }
-        .hero-text-container{
+
+        .hero-text-container {
             padding-bottom: 500px;
         }
 
@@ -351,14 +378,17 @@
             font-size: 6em;
         }
     }
-    @include for-mid-layout{
+
+    @include for-mid-layout {
         background-attachment: fixed;
         font-size: 16px;
+
         .title1 {
             font-size: 4em;
             padding-inline: 20px;
 
-            &::after, &::before {
+            &::after,
+            &::before {
                 content: '-';
                 padding-inline: 20px;
             }
@@ -371,9 +401,10 @@
 }
 
 .wap-hero-4 {
-    background-image: url('../../../img/hero-4/hero-bg.jpg') ;
-    background-position: 50% 90%;
-    // background-size: cover;
+    background-image: url('../../../img/hero-4/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: 50% 90%;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -389,7 +420,7 @@
         text-align: center;
         width: 600px;
         gap: 60px;
-        
+
         .hero-title {
             font-size: 72px;
         }

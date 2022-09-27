@@ -2,7 +2,7 @@ import React from "react"
 export const Image = ({ cmp,isPublished, onEditElement }) => {
 
 
-    let image = ``
+    const image = (cmp?.info?.image?.slice(0, 4) === 'http') ? cmp.info.image : require(`../../assets/img/${cmp.info.image}`)
 
     function handleEditElement(ev, cmp) {
         ev.preventDefault()
@@ -10,7 +10,7 @@ export const Image = ({ cmp,isPublished, onEditElement }) => {
         onEditElement(cmp)
     }
 
-    image = (cmp?.info?.image?.slice(0, 4) === 'http') ? cmp.info.image : require(`../../assets/img/${cmp.info.image}`)
+    
     if (!cmp?.info?.image) return
 
     // Image elements

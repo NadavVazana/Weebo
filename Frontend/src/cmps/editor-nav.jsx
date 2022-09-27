@@ -81,9 +81,9 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu) ? 'open' : ''} `}>
                 <div className={`side-bar-header`}>
                     <span>
-                        {(isAddMenu && !isEdit && `Add Something!`)||
-                        (isThemesMenu && !isEdit && `Choose your theme`)||
-                        (!isThemesMenu && !isAddMenu && (isEditMenu || isEdit) && `Edit your website`)} 
+                        {(!(isEditMenu || isEdit) && !isThemesMenu && isAddMenu && `Add Something!`)||
+                        (!isAddMenu && !(isEditMenu || isEdit) && isThemesMenu && `Choose your theme`)||
+                        (!isThemesMenu && !isAddMenu && (isEdit || isEditMenu) && `Edit your website`)} 
                     </span>
                     {/* <button onClick={closeSideBar}>x</button> */}
                 </div>

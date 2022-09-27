@@ -8,7 +8,9 @@ export const EditContainer = () => {
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const actions = ['Delete', 'Copy', 'Undo']
-    let imageUrl = ''
+    const imageUrl = currElement?.styles?.backgroundImage ?
+    currElement?.styles?.backgroundImage?.match(/\((.*?)\)/)[1].replace(/('|")/g, '') :
+    currElement?.styles?.image
 
 
     // Selecting background
@@ -57,8 +59,8 @@ export const EditContainer = () => {
         ref.current.click()
     }
 
-    imageUrl = currElement?.styles?.backgroundImage?.match(/\((.*?)\)/)[1].replace(/('|")/g, '')
-    
+
+
     return (
         <section className="edit-elements">
 

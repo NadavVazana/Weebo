@@ -1,31 +1,17 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
 import { setElement, updateDraft, setDraft, setDuplicate } from '../../store/draft/draft.action'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
 export const EditText = () => {
 
     const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
-    const [isUnderline, setIsUnderline] = useState(false)
-    const [isBold, setIsBold] = useState(false)
-    const [isItalic, setIsItalic] = useState(false)
-    const fonts = ['Bahnschrift', 'Bebas', 'Eurofurence', 'Greatvibes', 'Lato', 'Madefor', 'Montserrat', 'Mercedes', 'Opensans', 'Orbitron']
+    const fonts = ['IndieFlower', 'Bahnschrift', 'Poppins', 'Eurofurence', 'Greatvibes', 'Lato', 'LobsterTwo', 'Madefor', 'Montserrat', 'Satisfy-Regular', 'Shrikhand', 'Orbitron']
     const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
     const actions = ['Delete', 'Copy', 'Undo']
 
-    useEffect(() => {
-        return resetToggle
-    }, [])
-
-
-    const resetToggle = () => {
-        setIsUnderline(false)
-        setIsBold(false)
-        setIsItalic(false)
-    }
+  
 
     // Change Font
     const handleFont = (ev) => {
@@ -111,24 +97,23 @@ export const EditText = () => {
         const { alt } = ev.target
         let name = alt
         let value = ''
+        let copyCurrElement = { ...currElement }
 
         switch (alt) {
             case 'textDecoration':
-                setIsUnderline(!isUnderline)
-                value = isUnderline ? 'underline' : 'none'
+                value = copyCurrElement?.styles?.textDecoration === 'underline' ? 'none' : 'underline'
                 break
             case 'fontWeight':
-                setIsBold(!isBold)
-                value = isBold ? 700 : 300
+                value = copyCurrElement?.styles?.fontWeight === '700' ? '300' : '700'
+                
                 break
             case 'fontStyle':
-                setIsItalic(!isItalic)
-                value = isItalic ? 'italic' : 'normal'
+                value = copyCurrElement?.styles?.fontStyle === 'italic' ? 'normal' : 'italic'
                 break
             default: break
         }
 
-        let copyCurrElement = { ...currElement }
+
         copyCurrElement = {
             ...copyCurrElement, styles: { ...copyCurrElement?.styles, [name]: value }
         }
@@ -164,7 +149,7 @@ export const EditText = () => {
                     {decorOpts.map(decorOpt =>
                         <img key={decorOpt}
                             src={require(`../../assets/img/icons/${decorOpt}.svg`)}
-                            alt={`${decorOpt}`} onClick={toggleDecoration} />)}
+                            alt={`${decorOpt}`} onClick={(ev) => toggleDecoration(ev)} />)}
                 </div>
             </div>
 

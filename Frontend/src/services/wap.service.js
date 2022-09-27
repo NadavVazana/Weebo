@@ -11,7 +11,7 @@ export const wapService = {
     getDraft,
     setDraft,
     updateDraft,
-    updateDraftTheme, 
+    updateDraftTheme,
     uploadImage
 }
 
@@ -112,7 +112,12 @@ function _updateById(arr, element, action) {
 
 function getCmpWithBackground(cmp, theme, index) {
     return {
-        ...cmp, styles: { ...cmp?.styles, backgroundColor: theme.backgroundColor[index] }
+        ...cmp, styles: {
+            ...cmp?.styles,
+            background: theme.backgroundColor[index],
+            backgroundColor: theme.backgroundColor[index],
+            fontFamily: theme.fontFamily
+        }
     }
 }
 
@@ -124,8 +129,10 @@ function updateDraftTheme(draft, theme) {
     if (copyDraft.cmps) {
         copyDraft.cmps = copyDraft.cmps.map(cmp => {
             let copyCmp = { ...cmp }
-            const backgroundNum = (cmp.name.includes('header') ||
-                cmp.name.includes('footer')) && 1 ||
+            console.log('rrrrrrrrrrrrrrr',theme.backgroundColor[0])
+            const backgroundNum = ((!cmp.styles?.backgroundImage && cmp.name.includes('hero')) ||
+                cmp.name.includes('header')) && 3 ||
+                cmp.name.includes('gallery') && 1 ||
                 cmp.name.includes('card') && 2
 
             if (backgroundNum) {
@@ -140,13 +147,13 @@ function updateDraftTheme(draft, theme) {
     return copyDraft
 }
 
-function uploadImage(currElement, image){
+function uploadImage(currElement, image) {
     let copyCurrElement = { ...currElement }
-    
+
     if (currElement.type === 'container') {
         let backgroundImage = `url(${image})`
         copyCurrElement = {
-            ...copyCurrElement, styles: {...copyCurrElement?.styles, backgroundImage }
+            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundImage }
         }
     } else {
         copyCurrElement = {
