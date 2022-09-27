@@ -53,6 +53,12 @@ loop={true}
         <SwiperSlide  style={{height:'450px'}} onClick={()=>{navigate('/editor/5e28393890dd8888a06d4772')}}>
           <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664024877/2_abxptz.png" />
         </SwiperSlide>
+        <SwiperSlide  style={{height:'450px'}} onClick={()=>{navigate('/editor/63315d8388b5a7567ab940e3')}}>
+          <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664308637/4_ty4mki.png" />
+        </SwiperSlide>
+        <SwiperSlide  style={{height:'450px'}} onClick={()=>{navigate('/editor/63315d83885ca7567ab91488')}}>
+          <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664308637/5_q011lp.png" />
+        </SwiperSlide>
        
       </Swiper>
     </>
