@@ -66,9 +66,6 @@
 
 .wap-gallery-3 {
     font-size: 20px;
-    
-
-
     .title{
         color: #f5ae71;
         font-family: Monsterrat;
@@ -115,6 +112,140 @@
 
         .title {
             font-size: 6em;
+        }
+    }
+}
+
+.wap-gallery-4 {
+    background-color: #000;
+    color: #fff;
+    font-family: Poppins-bold;
+    padding-block-end: 150px;
+
+    img {
+        width: 100%;
+    }
+    
+    .gallery-text-cont {
+        padding-inline: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding-block: 100px;
+
+        .text-cont {
+            .title {
+                font-family: SignPainter;
+                color: #d8ac84;
+            }
+
+            .paragraph {
+                font-size: 2em;
+            }
+        }
+
+        .undefined {
+            margin-top: auto;
+        }
+
+        button {
+            background: none;
+            background-color: #d8ac84;
+            color: #fff;
+            border: 2px solid #d8ac84;
+            padding: 15px 35px;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+
+            &:hover {
+                background-color: #000;
+                transition: background-color 0.3s;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .section-title {
+        width: fit-content;
+        margin-left: auto;
+        color: #1f1f1f;
+        font-size: 75px;
+    }
+
+    .gallery {
+        img {
+            width: 100%;
+        }
+    }
+
+    
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        .section-title {
+            font-size: 150px;
+        }
+        .gallery-text-cont {
+            flex-direction: row;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: repeat(2,1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            .image3 {
+                grid-column: 2/4;
+                grid-row: 1/3;
+            }
+            
+        }
+    }
+}
+
+.wap-gallery-5 {
+    background-color: #fda878;
+    padding-block: 150px;
+
+    img {width: 100%;}
+
+    .gallery-title {
+        font-family: Reklame;
+        color: #4a2359;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 90px;
+        margin-bottom: 50px;
+    }
+
+    .gallery-container {
+        // width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    @include for-mobile-layout{
+    }
+    @include for-narrow-layout{
+    }
+    @include for-mid-layout{
+    }
+    @include for-normal-layout {
+        .gallery-container {
+            width: 100%;
         }
     }
 }

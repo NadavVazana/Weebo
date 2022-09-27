@@ -418,11 +418,11 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 600px;
+        width: 400px;
         gap: 60px;
 
         .hero-title {
-            font-size: 72px;
+            font-size: 50px;
         }
 
         button {
@@ -437,5 +437,127 @@
                 cursor: pointer;
             }
         }
+    }
+
+    @include for-mobile-layout{
+        
+    }
+    @include for-narrow-layout{
+        
+    }
+    @include for-mid-layout{
+        .hero-container4{ 
+            width: 600px;
+
+            .hero-title {
+                font-size: 72px;
+            }
+        }
+        
+    }
+}
+
+.wap-hero-5 {
+    background-image: url('../../../img/hero-5/hero-5-bg.png');
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    padding-block: 60px;
+    padding-block-end: 100px;
+    font-family: Poppins;
+    img {
+        width: 100%;
+    }
+    .hero-grid{ 
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: 90%;
+        margin: 0 auto;
+
+        & > section {
+            width: 95%;
+        }
+ 
+
+        .hero-title {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            
+            & > * {
+                margin-bottom: 30px;
+            }
+
+            .title {
+                font-family: Reklame;
+                font-size: 4em;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            .subtitle {
+                font-size: 1.5em;
+            }
+            .paragraph {
+                font-size: 1.2em;
+            }
+
+            .hero-dl-btns {
+                display: flex;
+            }
+        }
+    }
+
+    section.bottom-image {
+        width: 100%;
+        max-height:20px ;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    @include for-mobile-layout{
+    }
+    @include for-narrow-layout{
+        .hero-grid {
+            flex-direction: row;
+            width: 90%;
+
+            & > section:first-child {
+                width: 65%;
+                margin-inline-end: 50px;
+            }
+            & > section:last-child {
+                width: 35%;
+            }
+        }
+        
+    }
+    @include for-mid-layout{
+        .hero-grid {
+            width: 70%;
+        }
+    }
+    @include for-normal-layout {
+        padding-block: 100px;
+        padding-block-end: 250px;
+        .hero-grid {
+            width: 55%;
+
+            .hero-title {
+                text-align: left;
+                & > * {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        section.bottom-image {
+            max-height: 90;
+        }
+
     }
 }

@@ -124,3 +124,57 @@
         }
     }
 }
+
+.wap-map-4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    
+    .map {
+        height: 500px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        padding-inline: 20px;
+        & > * {
+            width: 50%;
+        }
+        
+        .title {
+            font-family: SignPainter;
+            color: #d8ac84;
+        }
+        .paragraph {
+            font-family: Poppins;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
+
+    @include for-mobile-layout{
+
+    }
+   
+    @include for-narrow-layout{
+        .text-container {
+            padding-inline: 50px;
+            flex-direction: column;
+        }
+    }
+    @include for-mid-layout{
+        flex-direction: row;
+        & > * {
+            width: 50%;
+        }
+
+        .text-container {
+            // padding-inline: 150px;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+    }
+}
