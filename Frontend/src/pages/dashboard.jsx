@@ -74,6 +74,7 @@ export const Dashboard = () => {
     const onEdit = async () => {
         site.editCount++
         await siteService.updateSite(site)
+        console.log(site._id);
         navigate(`/editor/${site._id}`)
     }
 
@@ -87,6 +88,7 @@ export const Dashboard = () => {
         const name = ev.target[0].value
         if (name === site.siteName) {
             setDeleteModal(false)
+            setSite(sites[0])
             await siteService.deleteSite(site._id)
             loadSites()
 
