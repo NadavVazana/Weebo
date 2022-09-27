@@ -88,7 +88,9 @@ export const Dashboard = () => {
         const name = ev.target[0].value
         if (name === site.siteName) {
             setDeleteModal(false)
-            setSite(sites[0])
+            const currSiteIndex = sites.findIndex(currSite=> currSite._id === site._id)
+            if(currSiteIndex === 0 ) setSite(sites[currSiteIndex + 1])
+            else setSite(sites[currSiteIndex - 1])
             await siteService.deleteSite(site._id)
             loadSites()
 
