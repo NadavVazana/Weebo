@@ -65,7 +65,6 @@ export const AppHeader = () => {
             // const wapIndex = user.waps.findIndex(wap => wap._id === draft._id)
             // user.waps[wapIndex] = draft
             const site = await siteService.updateSite(draft)
-            console.log(site);
             dispatch(updateUser(user))
             showSuccessMsg(`Site has been saved!`)
         }
