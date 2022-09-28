@@ -2060,3 +2060,4 @@
 28.9.2022, 0:24:17 - INFO - Server is running on port: 3030 
 28.9.2022, 0:24:33 - INFO - Server is running on port: 3030 
 28.9.2022, 0:55:24 - INFO - Server is running on port: 3030 
+28.9.2022, 12:13:41 - DEBUG - auth.service - signup with username: boris, fullname: boris 
