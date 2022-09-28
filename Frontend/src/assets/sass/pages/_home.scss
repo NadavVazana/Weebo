@@ -359,6 +359,7 @@
         }
         .section-1{
             .home-photo{
+                
                 width: 60%;
                 user-select: none;
             }
@@ -466,16 +467,19 @@
 
                 font-family: Madefor;
                 img{
+                    position: relative;
                     z-index: 1;
                 }
 
                 .number-1 {
+                    position: relative;
                     z-index: 11111;
                     display: block;
 
                 }
 
                 .number-1::before {
+                    position: relative;
                     z-index: -11111;
                     content: '';
 
@@ -502,6 +506,7 @@
 
             .card-2 {
                 .number-2 {
+                    position: relative;
                     display: block;
                     z-index: 1;
                 }

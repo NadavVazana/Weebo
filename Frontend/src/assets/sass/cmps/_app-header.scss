@@ -80,6 +80,7 @@
         }
 
         &.mobile-open {
+            position: relative;
             display: flex;
             top: $header-height;
             z-index: 10000000;
@@ -343,6 +344,7 @@
 
         .mobile-nav,
         .mobile-nav.mobile-open {
+            position: relative;
             z-index: 999999999999999;
             top: -100vh;
             opacity: 0;

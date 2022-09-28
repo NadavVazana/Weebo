@@ -371,6 +371,7 @@
         }
 
         .site-menu-open {
+            position: relative;
             left: 0%;
             transition: left 0.4s;
             z-index: 1000;
@@ -382,6 +383,7 @@
         }
 
         .black-screen {
+            position: relative;
             z-index: 10;
         }
 
@@ -424,6 +426,7 @@
         }
 
         .site-menu-open {
+            position: relative;
             left: 0%;
             transition: left 0.4s;
             z-index: 1000;
@@ -435,6 +438,7 @@
         }
 
         .black-screen {
+            position: relative;
             z-index: 10;
         }
 
@@ -725,7 +729,7 @@
     @include for-normal-layout {
         .sites-nav {
             display: block;
-            position: static;
+            position: relative;
             left: 0;
             width: 20%;
             z-index: 1;
@@ -745,7 +749,7 @@
         }
 
         .hamburger {
-
+            position: relative;
             display: none;
             z-index: 10000;
         }
