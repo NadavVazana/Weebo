@@ -44,11 +44,10 @@ export const Editor = () => {
     }, [])
 
     const onMouseMove = (ev)=>{
-        socketService.emit(SOCKET_MOUSE_MOVE,{x:ev.pageX,y:ev.pageY,_id: loggedInUser._id})
+        socketService.emit(SOCKET_MOUSE_MOVE,{x:ev.pageX,y:ev.pageY})
     }
 
     const updateDraft = (draft)=>{
-        console.log(draft);
         dispatch(setDraft(draft))
     }
 

@@ -80,7 +80,6 @@
         }
 
         &.mobile-open {
-            position: relative;
             display: flex;
             top: $header-height;
             z-index: 10000000;
