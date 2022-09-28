@@ -27,7 +27,7 @@ export const AppHeader = () => {
 
 
     // Saves wap to user
-    const saveWapToUser =async  (ev,publish = false) => {
+    const saveWapToUser =async  (ev) => {
         ev.preventDefault()
         setNameModal(false)
         const name = ev.target[0].value
