@@ -18,20 +18,18 @@ export const Form = ({ cmp, isPublished, isPreview }) => {
         if (isPreview) return
         const value = ev.target.value
         const field = ev.target.name
-
         setDetails(prevState => ({ ...prevState, [field]: value }))
     }
 
     const handleSubmit = async (ev) => {
         ev.preventDefault()
-        if(isPreview) return
-        const site = await siteService.getSitesByUserId({siteId:params.siteId})
+        if (isPreview) return
+        const site = await siteService.getSitesByUserId({ siteId: params.siteId })
         site[0].usersData.push(details)
         socketService.emit('add-contact-details', { details: details, siteId: site[0]._id })
         await siteService.updateSite(site[0])
 
     }
-
     return (
         <section>
             <form onSubmit={handleSubmit}>
@@ -39,7 +37,7 @@ export const Form = ({ cmp, isPublished, isPreview }) => {
                     return (
                         input.tag === 'input' ?
                             <input className={input.name} name={input.name} onChange={handleChange} type={input.type} placeholder={input.placeholder} />
-                            : <textarea name={input.name} onChange={handleChange} placeholder={input.placeholder}></textarea>)
+                            : <textarea  name={input.name} onChange={handleChange} placeholder={input.placeholder}></textarea>)
 
 
 

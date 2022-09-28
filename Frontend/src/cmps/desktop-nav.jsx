@@ -2,7 +2,7 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 
 
-export const DesktopNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave, setMenuOpen }) => {
+export const DesktopNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave, setMenuOpen ,onPublish}) => {
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -16,7 +16,7 @@ export const DesktopNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave
                 {loggedInUser && <NavLink to="/dashboard">Dashboard</NavLink>}
             </nav>
             <div className={`right-header-btns`}>
-                {isUserInEditor  && <button className='publish-btn'>Publish!</button>}
+                {isUserInEditor  && <button onClick={onPublish} className='publish-btn'>Publish!</button>}
                 {isUserInEditor&& <button onClick={onSave} className='save-btn'>Save</button>}
                 {isUserInEditor  && <button className='together-btn'>Work Together</button>}
                 {!loggedInUser ? <button className='login-btn' onClick={() => { navigate('/login') }}>LOGIN</button>

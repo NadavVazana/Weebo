@@ -13,6 +13,7 @@ import { siteService } from '../services/site-service'
 
 
 export const AppHeader = () => {
+    const navigate = useNavigate()
     const [isNameModal, setNameModal] = useState(false)
     const [isMenuOpen, setMenuOpen] = useState(false)
     const { loggedInUser } = useSelector(state => state.userModule)
@@ -26,7 +27,7 @@ export const AppHeader = () => {
 
 
     // Saves wap to user
-    const saveWapToUser =async  (ev) => {
+    const saveWapToUser =async  (ev,publish = false) => {
         ev.preventDefault()
         setNameModal(false)
         const name = ev.target[0].value
@@ -41,6 +42,8 @@ export const AppHeader = () => {
         const user = loggedInUser
         // user.waps.push(draft)
         const site = await siteService.addSite(draft)
+        navigate('/dashboard')
+
 
         
 
@@ -66,8 +69,17 @@ export const AppHeader = () => {
             // user.waps[wapIndex] = draft
             const site = await siteService.updateSite(draft)
             dispatch(updateUser(user))
+            
             showSuccessMsg(`Site has been saved!`)
         }
+    }
+
+    const onPublish =async  ()=>{
+        const draft = dispatch(getDraft())
+        draft.isPublished = true
+        dispatch(setDraft(draft))
+       setNameModal(true)
+       
     }
 
 
@@ -90,6 +102,7 @@ export const AppHeader = () => {
             </Link>
             <UserMsg />
             <DesktopNav
+                onPublish={onPublish}
                 loggedInUser={loggedInUser}
                 dispatch={dispatch}
                 logoutUser={logoutUser}
@@ -97,6 +110,7 @@ export const AppHeader = () => {
                 onSave={onSave}
                 setMenuOpen={setMenuOpen} />
             <MobileNav
+            onPublish={onPublish}
                 loggedInUser={loggedInUser}
                 dispatch={dispatch}
                 logoutUser={logoutUser}
