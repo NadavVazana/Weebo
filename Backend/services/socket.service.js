@@ -28,10 +28,13 @@ async function setupSocketAPI(http) {
         socket.on('increase-view-to-site',async site=>{
                 siteService.update(site[0])
                 const target = await getUserSocket(site[0]._id)
-                console.log(target);
                 if(!target) return
                 target.emit('increase-views-on-dashboard',site[0])
                 
+        })
+
+        socket.on('socket_mouse_move',pos=>{
+            socket.broadcast.emit('show_user_mouse',pos)
         })
 
 
