@@ -33,7 +33,8 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
                     suppressContentEditableWarning
                     style={{ ...cmp?.styles }}
                     className={cmp.info.class}
-                    onClick={(ev) => handleEditElement(ev, cmp)} onChange={handleChange}
+                    onChange={handleChange}
+                    onClick={(ev) => handleEditElement(ev, cmp)} 
                 >{cmp.info.value}</h1>
             </section>
                 // PUBLISH MODE

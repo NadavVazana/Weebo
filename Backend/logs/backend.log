@@ -2060,3 +2060,4 @@
 28.9.2022, 0:24:17 - INFO - Server is running on port: 3030 
 28.9.2022, 0:24:33 - INFO - Server is running on port: 3030 
 28.9.2022, 12:04:22 - DEBUG - auth.service - signup with username: tania, fullname: tania 
+28.9.2022, 15:05:32 - DEBUG - auth.service - signup with username: tania, fullname: tania 
