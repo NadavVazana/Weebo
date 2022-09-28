@@ -8,7 +8,7 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
     const dispatch = useDispatch()
 
     function placeCaretAtEnd(el) {
-        el.focus();
+        el.focus()
         if (typeof window.getSelection != "undefined"
                 && typeof document.createRange != "undefined") {
             var range = document.createRange();
@@ -16,13 +16,13 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
             range.collapse(false);
             var sel = window.getSelection();
             console.log('range',range);
-            sel.removeAllRanges();
-            sel.addRange(range);
+            sel.removeAllRanges()
+            sel.addRange(range)
         } else if (typeof document.body.createTextRange != "undefined") {
-            var textRange = document.body.createTextRange();
-            textRange.moveToElementText(el);
-            textRange.collapse(false);
-            textRange.select();
+            var textRange = document.body.createTextRange()
+            textRange.moveToElementText(el)
+            textRange.collapse(false)
+            textRange.select()
         }
     }
     const handleChange = (ev) => {
