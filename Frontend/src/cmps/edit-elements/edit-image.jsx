@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, setDraft, setDuplicate, setElementImage } from '../../store/draft/draft.action'
+import { setElement, updateDraft, setElementImage, getDraftFromHistory } from '../../store/draft/draft.action'
 
 export const EditImage = () => {
     const ref = useRef()
-    const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
+    const { currElement, draft,  } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const actions = ['Delete', 'Copy', 'Undo']
     let image = ''
@@ -20,24 +20,12 @@ export const EditImage = () => {
     const toggleActions = (ev) => {
         const { id } = ev.target
 
-        const copyDuplicate = { ...draft }
-        dispatch(setDuplicate(copyDuplicate))
-
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
-
-        switch (id) {
-            case 'Delete':
-                dispatch(updateDraft(draft, copyCurrElement, id))
-                break
-            case 'Copy':
-                dispatch(updateDraft(draft, copyCurrElement, id))
-                break
-            case 'Undo':
-                dispatch(setDraft(duplicate))
-                break
-            default:
-                break
+        if (id === 'Undo') {
+            dispatch(getDraftFromHistory())
+        } else {
+            dispatch(updateDraft(draft, copyCurrElement, id))
         }
     }
 

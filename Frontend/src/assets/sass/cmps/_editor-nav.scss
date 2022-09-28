@@ -108,6 +108,10 @@
             }
         }
 
+        .add-options{
+            padding: 10px;
+        }
+
         .edit-container {
 
             button {
@@ -153,7 +157,7 @@
         top: 50%;
         transform: translateY(-50%);
         right: -9px;
-        z-index: 100000000;
+        z-index: 0;
         display: flex;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 15px;

@@ -9,7 +9,6 @@ export function Container({ cmp, onEditElement, isPublished, isPreview }) {
 
     const handleContainer = (ev, cmp) => {
         ev.stopPropagation()
-        console.log(ev.target.style)
         onEditElement(cmp)
     }
 

@@ -1,11 +1,11 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, setDraft, setDuplicate, setElementImage } from '../../store/draft/draft.action'
+import { setElement, updateDraft, getDraftFromHistory, setElementImage } from '../../store/draft/draft.action'
 import { useRef } from 'react'
 
 export const EditContainer = () => {
     const ref = useRef()
-    const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
+    const { currElement, draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const actions = ['Delete', 'Copy', 'Undo']
     const imageUrl = currElement?.styles?.backgroundImage ?
@@ -29,24 +29,12 @@ export const EditContainer = () => {
     const toggleActions = (ev) => {
         const { id } = ev.target
 
-        const copyDuplicate = { ...draft }
-        dispatch(setDuplicate(copyDuplicate))
-
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
-
-        switch (id) {
-            case 'Delete':
-                dispatch(updateDraft(draft, copyCurrElement, id))
-                break
-            case 'Copy':
-                dispatch(updateDraft(draft, copyCurrElement, id))
-                break
-            case 'Undo':
-                dispatch(setDraft(duplicate))
-                break
-            default:
-                break
+        if (id === 'Undo') {
+            dispatch(getDraftFromHistory())
+        } else {
+            dispatch(updateDraft(draft, copyCurrElement, id))
         }
     }
 
@@ -58,8 +46,6 @@ export const EditContainer = () => {
     function handleUploadImage() {
         ref.current.click()
     }
-
-
 
     return (
         <section className="edit-elements">

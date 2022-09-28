@@ -12,7 +12,9 @@ export const wapService = {
     setDraft,
     updateDraft,
     updateDraftTheme,
-    uploadImage
+    uploadImage,
+    setDraftHistory,
+    changeDraftHistory
 }
 
 const WAP = 'wap/'
@@ -77,9 +79,21 @@ function getDraft() {
     return draft
 }
 
+function setDraftHistory(draft, draftHistory) {
+    const copyDraftHistory = [...draftHistory]
+    copyDraftHistory.push(draft)
+    return copyDraftHistory
+}
+
+function changeDraftHistory(draftHistory) {
+    let copyDraftHistory = [...draftHistory]
+    copyDraftHistory.pop()
+    return copyDraftHistory
+}
+
 // Update function
 function updateDraft(draft, element, action) {
-    let copyDraft = { ...draft }
+    const copyDraft = { ...draft }
 
     copyDraft.cmps = _updateById(draft.cmps, element, action)
     return copyDraft
@@ -110,13 +124,14 @@ function _updateById(arr, element, action) {
     }, [])
 }
 
-function getCmpWithBackground(cmp, theme, index) {
+function getCmpWithStyles(cmp, theme, index) {
     return {
         ...cmp, styles: {
             ...cmp?.styles,
             background: theme.backgroundColor[index],
             backgroundColor: theme.backgroundColor[index],
-            fontFamily: theme.fontFamily
+            fontFamily: theme.fontFamily,
+            fontSize: theme.fontSize
         }
     }
 }
@@ -124,19 +139,18 @@ function getCmpWithBackground(cmp, theme, index) {
 
 // Change Theme
 function updateDraftTheme(draft, theme) {
-    const copyDraft = getCmpWithBackground({ ...draft }, theme, 0)
+    const copyDraft = getCmpWithStyles({ ...draft }, theme, 0)
 
     if (copyDraft.cmps) {
         copyDraft.cmps = copyDraft.cmps.map(cmp => {
             let copyCmp = { ...cmp }
-            console.log('rrrrrrrrrrrrrrr',theme.backgroundColor[0])
-            const backgroundNum = ((!cmp.styles?.backgroundImage && cmp.name.includes('hero')) ||
-                cmp.name.includes('header')) && 3 ||
-                cmp.name.includes('gallery') && 1 ||
-                cmp.name.includes('card') && 2
+            const backgroundNum = (cmp.name.includes('footer') ||
+                cmp.name.includes('header') || cmp.name.includes('map')) && 3 ||
+                (cmp.name.includes('form') || cmp.name.includes('gallery')) && 1 ||
+                (!cmp.styles?.backgroundImage && cmp.name.includes('hero') || cmp.name.includes('card')) && 2
 
             if (backgroundNum) {
-                copyCmp = getCmpWithBackground(copyCmp, theme, backgroundNum)
+                copyCmp = getCmpWithStyles(copyCmp, theme, backgroundNum)
             }
 
             return { ...copyCmp }

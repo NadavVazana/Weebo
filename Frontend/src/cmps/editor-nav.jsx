@@ -90,10 +90,9 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
                 {(isEditMenu || isEdit) && <EditElements />}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
-                    <React.Fragment>
+                    <div className="add-options">
                         <AddAccordion setOptionList={setOptionList} key={'accordion'} setOptionsMenu={setOptionsMenu} toggleOptionsMenu={toggleOptionsMenu} addElement={addElement} isOptionsMenu={isOptionsMenu} />
-
-                    </React.Fragment>}
+                    </div>}
             </div>
             {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) && <div className={`side-bar-close`}>
 

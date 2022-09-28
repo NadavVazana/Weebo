@@ -14,7 +14,7 @@ function createSocketService(){
 
         setup(){
             socket = io(BASE_URL)
-            console.log('setup');
+            // console.log('setup');
             
         },
 

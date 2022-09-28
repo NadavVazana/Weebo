@@ -1,36 +1,49 @@
-.themes-list {
-    
+.edit-themes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .theme {
-        width: 100%;
-        border-radius: 20px;
+    span {
+        width: 30px;
         cursor: pointer;
-
-        .theme-inner-text{
-            margin: 15px;
-            background-color: white;
-            border-radius: 10px;
-            padding:10px;
-            text-align: center;
-
-            img{
-                width: 95%;
-                border-radius: 5px;
-            }
-
-            span{
-                padding-top: 10px;
-                // font-family: GreatVibes;
-                font-size: 2rem;
-                font-weight: 600;
-            }
-        }
-
-        .theme-inner-text:hover{
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        }
+        padding: 10px;
     }
 
 
+    .themes-list {
+
+
+        .theme {
+            width: 100%;
+            border-radius: 20px;
+            cursor: pointer;
+
+            .theme-inner-text {
+                margin: 15px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+
+                img {
+                    width: 95%;
+                    border-radius: 5px;
+                    
+                }
+
+                span {
+                    padding-top: 10px;
+                    // font-family: GreatVibes;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+
+            .theme-inner-text:hover {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            }
+        }
+
+    }
 
 }

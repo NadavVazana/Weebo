@@ -1,10 +1,10 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, setDraft, setDuplicate } from '../../store/draft/draft.action'
+import { setElement, updateDraft, getDraftFromHistory } from '../../store/draft/draft.action'
 
 export const EditText = () => {
 
-    const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
+    const { currElement, draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
     const fonts = ['IndieFlower', 'Bahnschrift', 'Poppins', 'Eurofurence', 'Greatvibes', 'Lato', 'LobsterTwo', 'Madefor', 'Montserrat', 'Satisfy-Regular', 'Shrikhand', 'Orbitron']
@@ -126,14 +126,10 @@ export const EditText = () => {
     const toggleActions = (ev) => {
         const { id } = ev.target
 
-        const copyDuplicate = { ...draft }
-        dispatch(setDuplicate(copyDuplicate))
-
         let copyCurrElement = { ...currElement }
         dispatch(setElement(copyCurrElement))
         if (id === 'Undo') {
-            dispatch(setDraft(duplicate))
-
+            dispatch(getDraftFromHistory())
         } else {
             dispatch(updateDraft(draft, copyCurrElement, id))
         }

@@ -4,17 +4,62 @@ import { cloudService } from '../../services/cloudinary-service'
 // Get Draft
 export function getDraft() {
     return (dispatch) => {
-        const draft = wapService.getDraft()
-        dispatch({ type: 'SET_DRAFT', draft })
-        return draft
+        try {
+            const draft = wapService.getDraft()
+            dispatch({ type: 'SET_DRAFT', draft })
+            return draft
+        } catch (err) {
+            console.log('could not get draft!:', err)
+        }
     }
 }
 
 // Set Draft
 export function setDraft(draft) {
     return (dispatch) => {
-        wapService.setDraft(draft)
-        dispatch({ type: 'SET_DRAFT', draft })
+        try {
+            wapService.setDraft(draft)
+            dispatch({ type: 'SET_DRAFT', draft })
+            dispatch(setDraftHistory(draft))
+        } catch (err) {
+            console.log('could not set draft!:', err)
+        }
+    }
+}
+
+// Set Draft History
+export function setDraftHistory(draft) {
+    return (dispatch, getState) => {
+        try {
+            const state = getState()
+            let { draftHistory } = state.draftModule
+            let copyDraftHistory = [ ...draftHistory ]
+            console.log('copyDraftHistorycopyDraftHistory',copyDraftHistory)
+            if (draftHistory.length > 3) {
+                copyDraftHistory = []
+            }
+            draftHistory = wapService.setDraftHistory(draft, copyDraftHistory)
+            dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })
+        } catch (err) {
+            console.log('could not set draft history!:', err)
+        }
+    }
+}
+
+export function getDraftFromHistory() {
+    return (dispatch, getState) => {
+        try {
+            const state = getState()
+            let { draft, draftHistory } = state.draftModule
+            draftHistory = wapService.changeDraftHistory(draftHistory)
+            dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })
+            if (draftHistory.length) {
+                draft = draftHistory[draftHistory.length - 1]
+                dispatch({ type: 'SET_DRAFT', draft })
+            }
+        } catch (err) {
+            console.log('could not set draft!:', err)
+        }
     }
 }
 
@@ -25,6 +70,7 @@ export function updateDraftTheme(draft, theme) {
             const copyDraft = { ...draft }
             draft = wapService.updateDraftTheme(copyDraft, theme)
             dispatch({ type: 'SET_DRAFT', draft })
+            dispatch(setDraftHistory(draft))
         } catch (err) {
             console.log('could not update draft theme!:', err)
         }
@@ -42,17 +88,6 @@ export function setElement(element) {
     }
 }
 
-// Set Duplicate Element
-export function setDuplicate(duplicate) {
-    return (dispatch) => {
-        try {
-            dispatch({ type: 'SET_DUPLICATE', duplicate })
-        } catch (err) {
-            console.log('could not duplicate draft!:', err)
-        }
-    }
-}
-
 
 // Update Draft
 export function updateDraft(draft, element, action) {
@@ -61,11 +96,11 @@ export function updateDraft(draft, element, action) {
             const copyDraft = { ...draft }
             draft = wapService.updateDraft(copyDraft, element, action)
             dispatch({ type: 'SET_DRAFT', draft })
+            dispatch(setDraftHistory(draft))
         } catch (err) {
             console.log('could not update draft!:', err)
         }
     }
-
 }
 
 // Set Element Image
