@@ -31,7 +31,7 @@ export const Editor = () => {
     }
 
     useEffect(() => {
-
+        socketService.on('update_draft',updateDraft)
         dispatch(setElement(null))
         if (!draft || draft._id === 'empty' || draft._id !== exampleId) {
             dispatch(setElement(null))
@@ -45,6 +45,11 @@ export const Editor = () => {
 
     const onMouseMove = (ev)=>{
         socketService.emit(SOCKET_MOUSE_MOVE,{x:ev.pageX,y:ev.pageY,_id: loggedInUser._id})
+    }
+
+    const updateDraft = (draft)=>{
+        console.log(draft);
+        dispatch(setDraft(draft))
     }
 
 
@@ -80,6 +85,8 @@ export const Editor = () => {
             navigate('/editor/draft')
             draft._id = 'draft'
         }
+        socketService.emit('change_draft',draft)
+
         dispatch(setDraft(draft))
     }
 

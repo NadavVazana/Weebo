@@ -1,5 +1,6 @@
 import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
+import { socketService } from "./socket.service"
 import { utilService } from './util.service'
 
 export const wapService = {
@@ -98,6 +99,7 @@ function updateDraft(draft, element, action) {
     const copyDraft = { ...draft }
 
     copyDraft.cmps = _updateById(draft.cmps, element, action)
+    socketService.emit('change_draft',copyDraft)
     return copyDraft
 
 }
@@ -154,12 +156,12 @@ function updateDraftTheme(draft, theme) {
             if (backgroundNum) {
                 copyCmp = getCmpWithStyles(copyCmp, theme, backgroundNum)
             }
-
+            
             return { ...copyCmp }
         })
 
     }
-
+    socketService.emit('change_draft',copyDraft)
     return copyDraft
 }
 
