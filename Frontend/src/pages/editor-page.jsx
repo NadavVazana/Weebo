@@ -22,7 +22,6 @@ export const Editor = () => {
     const [optionList, setOptionList] = useState({})
     const [isEdit, setIsEdit] = useState(false)
     const cmps = { 'Gallery': Gallery, 'Header': Header, 'Footer': Footer, 'Hero': Hero, 'Map': Map, 'Mission': Mission, 'Card': Card, 'Form': Form }
-
     const addElement = (cmp) => {
         draft.cmp.push(cmps[cmp])
     }

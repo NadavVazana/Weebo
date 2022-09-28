@@ -1085,7 +1085,7 @@ export const Heroes = {
                         "name": "hero-title",
                         "cmps": [
                             {
-                                "id": "2r2gfgogkzpodf",
+                                "id": "2r2gfgog4g4godf",
                                 "type": "text",
                                 "info": {
                                     "value": "Space Ghosts",
@@ -1093,7 +1093,7 @@ export const Heroes = {
                                 }
                             },
                             {
-                                "id": "2r2gfgogkzpodf",
+                                "id": "2r2gcvcvcvkzpodf",
                                 "type": "text",
                                 "info": {
                                     "value": "New game from Space-It Industries ltd.",
@@ -1114,7 +1114,7 @@ export const Heroes = {
                                 "name": "hero-dl-btns",
                                 "cmps": [
                                     {
-                                        "id": "4tg4ogkr5gohkt",
+                                        "id": "4tg4og1zkr5gohkt",
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
@@ -1122,7 +1122,7 @@ export const Heroes = {
                                         }
                                     },
                                     {
-                                        "id": "4tg4ogkr5gohkt",
+                                        "id": "4tg4ogkr5g553gohkt",
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
@@ -1445,7 +1445,7 @@ export const Forms = {
                         "tag": "textarea",
                         "placeholder": "Your message",
                         "type": "text",
-                        "name": "name"
+                        "name": "msg"
                     }
 
                 }
@@ -3827,7 +3827,7 @@ export const All = {
                         "tag": "textarea",
                         "placeholder": "Your message",
                         "type": "text",
-                        "name": "name"
+                        "name": "msg"
                     }
 
                 }
@@ -3938,7 +3938,7 @@ export const All = {
                         "name": "hero-title",
                         "cmps": [
                             {
-                                "id": "2r2gfgogkzpodf",
+                                "id": "2r2gfgogkzpodsdgsgdf",
                                 "type": "text",
                                 "info": {
                                     "value": "Space Ghosts",
@@ -3946,7 +3946,7 @@ export const All = {
                                 }
                             },
                             {
-                                "id": "2r2gfgogkzpodf",
+                                "id": "2r2gfas132gogkzpodf",
                                 "type": "text",
                                 "info": {
                                     "value": "New game from Space-It Industries ltd.",
@@ -3967,7 +3967,7 @@ export const All = {
                                 "name": "hero-dl-btns",
                                 "cmps": [
                                     {
-                                        "id": "4tg4ogkr5gohkt",
+                                        "id": "4tg4ogksdsdr5gohkt",
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
@@ -3975,7 +3975,7 @@ export const All = {
                                         }
                                     },
                                     {
-                                        "id": "4tg4ogkr5gohkt",
+                                        "id": "4tg4ogkfdfdzr5gohkt",
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
@@ -7074,7 +7074,7 @@ export const wapExample5 = {
                             "name": "hero-title",
                             "cmps": [
                                 {
-                                    "id": "2r2gfgogkzpodf",
+                                    "id": "2r2gsdsgdgfgogkzpodf",
                                     "type": "text",
                                     "info": {
                                         "value": "Space Ghosts",
@@ -7082,7 +7082,7 @@ export const wapExample5 = {
                                     }
                                 },
                                 {
-                                    "id": "2r2gfgogkzpodf",
+                                    "id": "2r2gfg4g4g4gzogkzpodf",
                                     "type": "text",
                                     "info": {
                                         "value": "New game from Space-It Industries ltd.",
@@ -7103,7 +7103,7 @@ export const wapExample5 = {
                                     "name": "hero-dl-btns",
                                     "cmps": [
                                         {
-                                            "id": "4tg4ogkr5gohkt",
+                                            "id": "k4tg4ogkr5gohkt",
                                             "type": "image",
                                             "name": "apple-dl",
                                             "info": {
@@ -7111,7 +7111,7 @@ export const wapExample5 = {
                                             }
                                         },
                                         {
-                                            "id": "4tg4ogkr5gohkt",
+                                            "id": "4tg4ogkr5gohktla",
                                             "type": "image",
                                             "name": "apple-dl",
                                             "info": {

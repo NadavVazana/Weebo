@@ -2043,19 +2043,19 @@
 23.9.2022, 23:06:45 - INFO - Server is running on port: 3030 
 23.9.2022, 23:07:00 - INFO - Server is running on port: 3030 
 26.9.2022, 11:28:02 - INFO - Server is running on port: 3030 
-27.9.2022, 14:22:34 - INFO - Server is running on port: 3030 
-27.9.2022, 14:24:03 - ERROR - cannot find waps | ReferenceError: logger is not defined 
-27.9.2022, 14:24:03 - ERROR - Failed to get waps | ReferenceError: logger is not defined 
-27.9.2022, 14:24:44 - ERROR - cannot find waps | ReferenceError: logger is not defined 
-27.9.2022, 14:24:44 - ERROR - Failed to get waps | ReferenceError: logger is not defined 
-27.9.2022, 14:25:24 - DEBUG - auth.service - signup with username: tanya, fullname: tania 
-27.9.2022, 14:25:25 - DEBUG - auth.service - signup with username: tanya, fullname: tania 
-27.9.2022, 14:25:28 - ERROR - cannot find waps | ReferenceError: logger is not defined 
-27.9.2022, 14:25:28 - ERROR - Failed to get waps | ReferenceError: logger is not defined 
-27.9.2022, 14:25:37 - ERROR - cannot insert user | MongoNetworkError: getaddrinfo ENOTFOUND ac-drsi6qx-shard-00-01.vpvprvd.mongodb.net 
-27.9.2022, 14:25:37 - ERROR - Failed to signup MongoNetworkError: getaddrinfo ENOTFOUND ac-drsi6qx-shard-00-01.vpvprvd.mongodb.net 
-27.9.2022, 14:25:43 - ERROR - cannot insert user | MongoNetworkError: connection 1 to 52.17.147.102:27017 closed 
-27.9.2022, 14:25:43 - ERROR - Failed to signup MongoNetworkError: connection 1 to 52.17.147.102:27017 closed 
-27.9.2022, 14:26:47 - ERROR - while finding user tania | MongoServerSelectionError: getaddrinfo ENOTFOUND ac-drsi6qx-shard-00-00.vpvprvd.mongodb.net 
-27.9.2022, 14:26:48 - ERROR - while finding user tania | MongoServerSelectionError: getaddrinfo ENOTFOUND ac-drsi6qx-shard-00-00.vpvprvd.mongodb.net 
-27.9.2022, 14:28:16 - DEBUG - auth.service - signup with username: puki, fullname: puki 
+28.9.2022, 0:16:10 - INFO - Server is running on port: 3030 
+28.9.2022, 0:17:07 - INFO - Server is running on port: 3030 
+28.9.2022, 0:17:19 - INFO - Server is running on port: 3030 
+28.9.2022, 0:17:24 - INFO - Server is running on port: 3030 
+28.9.2022, 0:17:30 - INFO - Server is running on port: 3030 
+28.9.2022, 0:17:37 - INFO - Server is running on port: 3030 
+28.9.2022, 0:18:20 - INFO - Server is running on port: 3030 
+28.9.2022, 0:18:35 - INFO - Server is running on port: 3030 
+28.9.2022, 0:18:46 - INFO - Server is running on port: 3030 
+28.9.2022, 0:18:55 - INFO - Server is running on port: 3030 
+28.9.2022, 0:20:32 - INFO - Server is running on port: 3030 
+28.9.2022, 0:21:01 - INFO - Server is running on port: 3030 
+28.9.2022, 0:21:19 - INFO - Server is running on port: 3030 
+28.9.2022, 0:22:39 - INFO - Server is running on port: 3030 
+28.9.2022, 0:24:17 - INFO - Server is running on port: 3030 
+28.9.2022, 0:24:33 - INFO - Server is running on port: 3030 

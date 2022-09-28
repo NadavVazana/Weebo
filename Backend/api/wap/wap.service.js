@@ -20,7 +20,13 @@ async function query(filterBy ={}) {
 async function getById(wapId) {
     try {
         const collection = await dbService.getCollection('wap')
-        const wap = collection.findOne({ _id: (wapId) })
+        const wap = await collection.findOne({ '_id': (wapId) })
+        if(!wap){
+            const collection = await dbService.getCollection('site')
+            const site = await collection.findOne({ '_id': ObjectId(wapId) })
+            return site
+
+        }
         return wap
     } catch (err) {
         logger.error(`while finding wap ${wapId}`, err)

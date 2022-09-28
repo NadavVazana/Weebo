@@ -30,7 +30,7 @@ export const options = {
   
     title: {
       display: true,
-      text: 'Views per Day',
+      text: 'Subscribers per Day',
     },
   },
 };
@@ -42,14 +42,14 @@ export const data = {
   datasets: [
     {
       fill: true,
-      label: 'Views',
-      data: [4,8,4,6,3,8,2],
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      label: 'Dataset 2',
+      data:[6,9,8,6,7,7,9],
+      borderColor: 'rgba(218, 50, 218, 0.74)',
+      backgroundColor: 'rgba(218, 50, 218, 0.74)',
     },
   ],
 };
 
-export function ViewsChart() {
+export function SubscribersChart() {
   return <Line options={options} data={data} />;
 }
