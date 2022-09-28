@@ -1,6 +1,6 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 
-export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave, isMenuOpen, setMenuOpen }) => {
+export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave, isMenuOpen, setMenuOpen,onPublish }) => {
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -10,8 +10,10 @@ export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave,
 
     let isUserInEditor = location.pathname.split('/')[1] === 'editor'
     return (
+        
         <nav className={`mobile-nav ${isMenuOpen ? 'mobile-open' : ''}`}>
             <nav className={`app-header-nav`} >
+                <NavLink onClick={onPublish}>Publish</NavLink>
                 <NavLink to="/templates" onClick={closeMenu}>Templates</NavLink>
                 <NavLink to={`/editor/${draftId}`} onClick={closeMenu}>Editor</NavLink>
                 {loggedInUser && <NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink>}
