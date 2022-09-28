@@ -29,6 +29,7 @@
     }
 
     .side-bar {
+        z-index: 0;
         max-height: calc(100vh - $header-height);
         display: flex;
         flex-direction: column;
