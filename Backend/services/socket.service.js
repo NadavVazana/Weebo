@@ -37,6 +37,10 @@ async function setupSocketAPI(http) {
             socket.broadcast.emit('show_user_mouse',pos)
         })
 
+        socket.on('change_draft',draft=>{
+            socket.broadcast.emit('update_draft',draft)
+        })
+
 
 
 
