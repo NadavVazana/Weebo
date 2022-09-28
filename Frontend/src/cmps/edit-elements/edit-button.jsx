@@ -1,14 +1,15 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft } from '../../store/draft/draft.action'
+import { setElement, updateDraft, getDraftFromHistory } from '../../store/draft/draft.action'
 
 export const EditButton = () => {
 
     const { currElement } = useSelector(state => state.draftModule)
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
+    const actions = ['Delete', 'Copy', 'Undo']
 
-// Selecting Background
+    // Selecting Background
     const onSelectBackground = (ev) => {
         const backgroundColor = ev.target.id
         let copyCurrElement = { ...currElement }
@@ -34,7 +35,7 @@ export const EditButton = () => {
     // Border radius changes the element radius
     const handleBorderRadius = (ev) => {
         const { value } = ev.target
-        let copyCurrElement = {...currElement}
+        let copyCurrElement = { ...currElement }
         const borderRadius = `${value}px`
         copyCurrElement = {
             ...copyCurrElement, styles: { ...copyCurrElement?.styles, borderRadius }
@@ -44,9 +45,22 @@ export const EditButton = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
+    // Toggle actions
+    const toggleActions = (ev) => {
+        const { id } = ev.target
+
+        let copyCurrElement = { ...currElement }
+        dispatch(setElement(copyCurrElement))
+        if (id === 'Undo') {
+            dispatch(getDraftFromHistory())
+        } else {
+            dispatch(updateDraft(draft, copyCurrElement, id))
+        }
+    }
+
     return (
         <section className="edit-elements">
-            
+
             {/* Font color pallete */}
             <div className="pallete-container">
                 <span>Font Color</span>
@@ -62,16 +76,32 @@ export const EditButton = () => {
             {/* Border radius */}
             <div>
                 <span>Border Radius</span>
-                <input 
-                className="slider" 
-                type="range" 
-                name="borderRadius" 
-                id="" 
-                min="10"
-                max="50"
-                step="2"
-                value={Number(currElement?.styles?.borderRadius?.slice(0, 2) || 25)}
-                onChange={handleBorderRadius}/>
+                <input
+                    className="slider"
+                    type="range"
+                    name="borderRadius"
+                    id=""
+                    min="10"
+                    max="50"
+                    step="2"
+                    value={Number(currElement?.styles?.borderRadius?.slice(0, 2) || 25)}
+                    onChange={handleBorderRadius} />
+            </div>
+
+            {/* element actions-delete, duplicate, undo */}
+            <div className='element-control'>
+                {actions.map(action =>
+                    <div
+                        className='element-control-container'
+                        id={`${action}`}
+                        onClick={toggleActions}
+                        key={`${action}div`}>
+                        <img key={action}
+                            id={`${action}`}
+                            src={require(`../../assets/img/icons/${action}-icon.svg`)}
+                            alt={`${action}`} />
+                        {action}
+                    </div>)}
             </div>
         </section>
     )

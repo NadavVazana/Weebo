@@ -1,32 +1,17 @@
 import { Pallete } from './pallete'
 import { useSelector, useDispatch } from 'react-redux'
-import { setElement, updateDraft, duplicateElement, setDraft, setDuplicate } from '../../store/draft/draft.action'
-import { useState } from 'react'
-import { useEffect } from 'react'
-
+import { setElement, updateDraft, getDraftFromHistory } from '../../store/draft/draft.action'
 
 export const EditText = () => {
 
-    const { currElement, draft, duplicate } = useSelector(state => state.draftModule)
+    const { currElement, draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
-    const [isUnderline, setIsUnderline] = useState(false)
-    const [isBold, setIsBold] = useState(false)
-    const [isItalic, setIsItalic] = useState(false)
-    const fonts = ['Bahnschrift', 'Bebas', 'Eurofurence', 'Greatvibes', 'Lato', 'Madefor', 'Montserrat', 'Mercedes', 'Opensans', 'Orbitron']
+    const fonts = ['IndieFlower', 'Bahnschrift', 'Poppins', 'Eurofurence', 'Greatvibes', 'Lato', 'LobsterTwo', 'Madefor', 'Montserrat', 'Satisfy-Regular', 'Shrikhand', 'Orbitron']
     const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
-    const textControls = ['Delete', 'Copy', 'Undo']
+    const actions = ['Delete', 'Copy', 'Undo']
 
-    useEffect(() => {
-        return resetToggle
-    }, [])
-
-
-    const resetToggle = () => {
-        setIsUnderline(false)
-        setIsBold(false)
-        setIsItalic(false)
-    }
+  
 
     // Change Font
     const handleFont = (ev) => {
@@ -112,24 +97,23 @@ export const EditText = () => {
         const { alt } = ev.target
         let name = alt
         let value = ''
+        let copyCurrElement = { ...currElement }
 
         switch (alt) {
             case 'textDecoration':
-                setIsUnderline(!isUnderline)
-                value = isUnderline ? 'underline' : 'none'
+                value = copyCurrElement?.styles?.textDecoration === 'underline' ? 'none' : 'underline'
                 break
             case 'fontWeight':
-                setIsBold(!isBold)
-                value = isBold ? 700 : 300
+                value = copyCurrElement?.styles?.fontWeight === '700' ? '300' : '700'
+                
                 break
             case 'fontStyle':
-                setIsItalic(!isItalic)
-                value = isItalic ? 'italic' : 'normal'
+                value = copyCurrElement?.styles?.fontStyle === 'italic' ? 'normal' : 'italic'
                 break
             default: break
         }
 
-        let copyCurrElement = { ...currElement }
+
         copyCurrElement = {
             ...copyCurrElement, styles: { ...copyCurrElement?.styles, [name]: value }
         }
@@ -138,58 +122,35 @@ export const EditText = () => {
         dispatch(updateDraft(draft, copyCurrElement))
     }
 
-    // Toggle Text actions
-    const toggleTextControl = (ev) => {
+    // Toggle actions
+    const toggleActions = (ev) => {
         const { id } = ev.target
 
-        const copyDuplicate = { ...draft }
-        dispatch(setDuplicate(copyDuplicate))
-
-        switch (id) {
-            case 'Delete':
-                removeElement()
-                break
-            case 'Copy':
-                copyElement()
-                break
-            case 'Undo':
-                dispatch(setDraft(duplicate))
-                break
-            default:
-                break
+        let copyCurrElement = { ...currElement }
+        dispatch(setElement(copyCurrElement))
+        if (id === 'Undo') {
+            dispatch(getDraftFromHistory())
+        } else {
+            dispatch(updateDraft(draft, copyCurrElement, id))
         }
-    }
-
-    // Remove element
-    const removeElement = () => {
-        let copyCurrElement = { ...currElement }
-        dispatch(setElement(copyCurrElement))
-        dispatch(updateDraft(draft, copyCurrElement, true))
-    }
-
-    // Duplicate element
-    const copyElement = () => {
-        let copyCurrElement = { ...currElement }
-        dispatch(setElement(copyCurrElement))
-        dispatch(duplicateElement(draft, copyCurrElement))
     }
 
     return (
         <section className="edit-elements">
 
             {/* Text Decoration */}
-            <div>
+            <div className='underline'>
                 <span>Decoration</span>
                 <div className='text-decoration'>
                     {decorOpts.map(decorOpt =>
                         <img key={decorOpt}
                             src={require(`../../assets/img/icons/${decorOpt}.svg`)}
-                            alt={`${decorOpt}`} onClick={toggleDecoration} />)}
+                            alt={`${decorOpt}`} onClick={(ev) => toggleDecoration(ev)} />)}
                 </div>
             </div>
 
             {/* Font Size */}
-            <div>
+            <div className='underline'>
                 <span>Font Size</span>
                 <input className="slider" type="range"
                     name="fontSize"
@@ -203,7 +164,7 @@ export const EditText = () => {
             </div>
 
             {/* Border Radius */}
-            <div>
+            <div className='underline'>
                 <span>Border Radius</span>
                 <input
                     className="slider"
@@ -218,7 +179,7 @@ export const EditText = () => {
             </div>
 
             {/* Font Select */}
-            <div className="custom-select" >
+            <div className="custom-select underline" >
                 <label htmlFor='styledSelect'>Font</label>
                 <select className='select-font' id="styledSelect" name='options' onChange={handleFont}>
                     {fonts.map(font => <option key={font} value={font}>{font}</option>)}
@@ -226,7 +187,7 @@ export const EditText = () => {
             </div>
 
             {/* Text Shadow */}
-            <div>
+            <div className="underline">
                 <span>Text Shadow</span>
                 <input className="slider"
                     type="range"
@@ -241,30 +202,30 @@ export const EditText = () => {
             </div>
 
             {/* Font Color */}
-            <div className="pallete-container">
+            <div className="pallete-container underline">
                 <span>Font Color</span>
                 <Pallete onSelect={onSelectFontColor} />
             </div>
 
             {/* Background color */}
-            <div className="pallete-container">
+            <div className="pallete-container underline">
                 <span>Backgroud Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 
-            {/* Control elements */}
+            {/* element actions-delete, duplicate, undo */}
             <div className='element-control'>
-                {textControls.map(textControl =>
+                {actions.map(action =>
                     <div
                         className='element-control-container'
-                        id={`${textControl}`}
-                        onClick={toggleTextControl}
-                        key={`${textControl}div`}>
-                        <img key={textControl}
-                            id={`${textControl}`}
-                            src={require(`../../assets/img/icons/${textControl}-icon.svg`)}
-                            alt={`${textControl}`} />
-                        {textControl}
+                        id={`${action}`}
+                        onClick={toggleActions}
+                        key={`${action}div`}>
+                        <img key={action}
+                            id={`${action}`}
+                            src={require(`../../assets/img/icons/${action}-icon.svg`)}
+                            alt={`${action}`} />
+                        {action}
                     </div>)}
             </div>
         </section >

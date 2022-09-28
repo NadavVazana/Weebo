@@ -8,12 +8,14 @@ import { eventBusService, showSuccessMsg } from "../../services/event-bus.servic
 import { UserMsg } from "../user-msg"
 import { socketService } from "../../services/socket.service"
 import { siteService } from "../../services/site-service"
-export const Form = ({ cmp, isPublished,isPreview }) => {
+import { utilService } from '../../services/util.service'
+
+export const Form = ({ cmp, isPublished, isPreview }) => {
     const [details, setDetails] = useState({})
     const params = useParams()
     const dispatch = useDispatch()
     const handleChange = (ev) => {
-        if(isPreview) return
+        if (isPreview) return
         const value = ev.target.value
         const field = ev.target.name
 
@@ -22,12 +24,18 @@ export const Form = ({ cmp, isPublished,isPreview }) => {
 
     const handleSubmit = async (ev) => {
         ev.preventDefault()
+<<<<<<< HEAD
+        console.log(details);
+        if (isPreview) return
+        const site = await siteService.getSitesByUserId({ siteId: params.siteId })
+=======
         if(isPreview) return
         const site = await siteService.getSitesByUserId({siteId:params.siteId})
+>>>>>>> 63544432c317b87a69dac966c550b0b11c1d4ab1
         site[0].usersData.push(details)
-        socketService.emit('add-contact-details',{details:details,siteId:site[0]._id})
+        socketService.emit('add-contact-details', { details: details, siteId: site[0]._id })
         await siteService.updateSite(site[0])
-        
+
 
 
 
@@ -39,8 +47,8 @@ export const Form = ({ cmp, isPublished,isPreview }) => {
                 {Object.values(cmp.info).map(input => {
                     return (
                         input.tag === 'input' ?
-                            <input className={input.name} name={input.name} onChange={handleChange} type={input.type} placeholder={input.placeholder} />
-                            : <textarea name={input.name} onChange={handleChange} placeholder={input.placeholder}></textarea>)
+                            <input key={cmp.id + utilService.makeId()} className={input.name} name={input.name} onChange={handleChange} type={input.type} placeholder={input.placeholder} />
+                            : <textarea key={cmp.id + utilService.makeId()} name={input.name} onChange={handleChange} placeholder={input.placeholder}></textarea>)
 
 
 

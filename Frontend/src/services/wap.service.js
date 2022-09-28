@@ -11,9 +11,10 @@ export const wapService = {
     getDraft,
     setDraft,
     updateDraft,
-    removeElement,
-    duplicateElement,
-    updateDraftTheme
+    updateDraftTheme,
+    uploadImage,
+    setDraftHistory,
+    changeDraftHistory
 }
 
 const WAP = 'wap/'
@@ -76,101 +77,80 @@ function setDraft(wap) {
 function getDraft() {
     const draft = JSON.parse(localStorage.getItem(DRAFT_KEY))
     return draft
-
 }
 
-// Removing function
-function removeElement(draft, element) {
-    let copyDraft = { ...draft }
+function setDraftHistory(draft, draftHistory) {
+    const copyDraftHistory = [...draftHistory]
+    copyDraftHistory.push(draft)
+    return copyDraftHistory
+}
 
-    copyDraft.cmps = _removeById(draft.cmps, element.id)
+function changeDraftHistory(draftHistory) {
+    let copyDraftHistory = [...draftHistory]
+    copyDraftHistory.pop()
+    return copyDraftHistory
+}
+
+// Update function
+function updateDraft(draft, element, action) {
+    const copyDraft = { ...draft }
+
+    copyDraft.cmps = _updateById(draft.cmps, element, action)
     return copyDraft
 
 }
 
-// Removing function
-function _removeById(arr, targetId) {
+// Update function
+function _updateById(arr, element, action) {
     return arr.reduce((acc, cmp) => {
-        if (cmp.id === targetId) {
-            return acc
-        } else {
-            return [...acc,
-            {
-                ...cmp,
-                ...(cmp.cmps && { cmps: [..._removeById(cmp.cmps, targetId)] })
-            }
-            ]
-        }
-    }, [])
-}
-
-// Duplicating element
-function duplicateElement(draft, element) {
-    let copyDraft = { ...draft }
-
-    copyDraft.cmps = _duplicateById(draft.cmps, element.id)
-    return copyDraft
-
-}
-
-// Duplicating element function
-function _duplicateById(arr, targetId) {
-    return arr.reduce((acc, cmp) => {
-
-        if (cmp.id === targetId) {
-            let copyCmp = { ...cmp }
-            copyCmp.id = copyCmp.id + utilService.makeId()
-            return [...acc, cmp, copyCmp]
-        } else {
-            return [...acc,
-            {
-                ...cmp,
-                ...(cmp.cmps && { cmps: [..._duplicateById(cmp.cmps, targetId)] })
-            }
-            ]
-        }
-    }, [])
-}
-
-// Update draft
-function updateDraft(draft, element) {
-    let copyDraft = { ...draft }
-
-    if (draft.cmps) {
-        copyDraft.cmps = draft.cmps.map(cmp => {
-            if (cmp.id === element.id) {
-                return { ...element }
+        if (cmp.id === element.id) {
+            if (action === 'Delete') {
+                return acc
+            } else if (action === 'Copy') {
+                let copyCmp = { ...cmp }
+                copyCmp.id = copyCmp.id + utilService.makeId()
+                return [...acc, cmp, copyCmp]
             } else {
-                return updateDraft(cmp, element)
+                return [...acc, element]
             }
-            return cmp
-        })
-
-    }
-
-    return copyDraft
+        } else {
+            return [...acc,
+            {
+                ...cmp,
+                ...(cmp.cmps && { cmps: [..._updateById(cmp.cmps, element, action)] })
+            }
+            ]
+        }
+    }, [])
 }
 
-function getCmpWithBackground(cmp, theme, index) {
+function getCmpWithStyles(cmp, theme, index) {
     return {
-        ...cmp, styles: { ...cmp?.styles, backgroundColor: theme.backgroundColor[index] }
+        ...cmp, styles: {
+            ...cmp?.styles,
+            background: theme.backgroundColor[index],
+            backgroundColor: theme.backgroundColor[index],
+            fontFamily: theme.fontFamily,
+            fontSize: theme.fontSize
+        }
     }
 }
 
 
 // Change Theme
 function updateDraftTheme(draft, theme) {
-    const copyDraft = getCmpWithBackground({ ...draft }, theme, 0)
+    const copyDraft = getCmpWithStyles({ ...draft }, theme, 0)
 
     if (copyDraft.cmps) {
         copyDraft.cmps = copyDraft.cmps.map(cmp => {
             let copyCmp = { ...cmp }
-            const backgroundNum = (cmp.name.includes('header') ||
-                cmp.name.includes('footer')) && 1 ||
-                cmp.name.includes('card') && 2
+            const backgroundNum = (cmp.name.includes('footer') ||
+                cmp.name.includes('header') || cmp.name.includes('map')) && 3 ||
+                (cmp.name.includes('form') || cmp.name.includes('gallery')) && 1 ||
+                (!cmp.styles?.backgroundImage && cmp.name.includes('hero') || cmp.name.includes('card')) && 2
 
             if (backgroundNum) {
-                copyCmp = getCmpWithBackground(copyCmp, theme, backgroundNum)
+                copyCmp = getCmpWithStyles(copyCmp, theme, backgroundNum)
             }
 
             return { ...copyCmp }
@@ -181,4 +161,20 @@ function updateDraftTheme(draft, theme) {
     return copyDraft
 }
 
+function uploadImage(currElement, image) {
+    let copyCurrElement = { ...currElement }
+
+    if (currElement.type === 'container') {
+        let backgroundImage = `url(${image})`
+        copyCurrElement = {
+            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundImage }
+        }
+    } else {
+        copyCurrElement = {
+            ...copyCurrElement, info: { ...copyCurrElement?.info, image }
+        }
+    }
+
+    return copyCurrElement
+}
 

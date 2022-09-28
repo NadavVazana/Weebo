@@ -17,12 +17,6 @@ export const EditElements = () => {
             return <EditButton />
         case 'image':
             return <EditImage/>
-        // case 'video':
-        //     return <EditVideo/>
-        // case 'input':
-        //     return <EditInput/>
-        // case 'map':
-        //     return <EditMap/>
         default: return <h1>Click on element to edit</h1>
     }
 }

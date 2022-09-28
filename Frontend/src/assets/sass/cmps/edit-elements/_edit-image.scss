@@ -1,4 +1,4 @@
-.edit-image{
+.edit-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,16 +6,33 @@
     width: 100%;
     justify-content: flex-start;
 
-    input{
+    .underline {
+        border-bottom: 1px solid #cacaca;
+    }
+
+    .preview-image {
+        margin-top: 10px;
+        width: 75%;
+        max-height: 300px;
+        
+        img {
+            width: 100%;
+        }
+
+    }
+
+    input {
         display: none;
     }
-    span{
+
+    span {
         cursor: pointer;
         padding: 12px 22px;
         border-radius: 5px;
         background-color: #ffd146;
         color: #000;
-        &:hover{
+
+        &:hover {
             font-size: 18px;
         }
     }

@@ -79,14 +79,20 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
 
             </div>
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu) ? 'open' : ''} `}>
-
+                <div className={`side-bar-header`}>
+                    <span>
+                        {(!(isEditMenu || isEdit) && !isThemesMenu && isAddMenu && `Add Something!`)||
+                        (!isAddMenu && !(isEditMenu || isEdit) && isThemesMenu && `Choose your theme`)||
+                        (!isThemesMenu && !isAddMenu && (isEdit || isEditMenu) && `Edit your website`)} 
+                    </span>
+                    {/* <button onClick={closeSideBar}>x</button> */}
+                </div>
                 {(isEditMenu || isEdit) && <EditElements />}
                 {isThemesMenu && !isEdit && <ThemesList />}
                 {isAddMenu && !isEdit &&
-                    <React.Fragment>
+                    <div className="add-options">
                         <AddAccordion setOptionList={setOptionList} key={'accordion'} setOptionsMenu={setOptionsMenu} toggleOptionsMenu={toggleOptionsMenu} addElement={addElement} isOptionsMenu={isOptionsMenu} />
-
-                    </React.Fragment>}
+                    </div>}
             </div>
             {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) && <div className={`side-bar-close`}>
 
