@@ -343,6 +343,7 @@
 
         .mobile-nav,
         .mobile-nav.mobile-open {
+            z-index: 999999999999999;
             top: -100vh;
             opacity: 0;
             display: none;
