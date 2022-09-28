@@ -88,8 +88,8 @@ export const Dashboard = () => {
         const name = ev.target[0].value
         if (name === site.siteName) {
             setDeleteModal(false)
-            const currSiteIndex = sites.findIndex(currSite=> currSite._id === site._id)
-            if(currSiteIndex === 0 ) setSite(sites[currSiteIndex + 1])
+            const currSiteIndex = sites.findIndex(currSite => currSite._id === site._id)
+            if (currSiteIndex === 0) setSite(sites[currSiteIndex + 1])
             else setSite(sites[currSiteIndex - 1])
             await siteService.deleteSite(site._id)
             loadSites()
@@ -169,23 +169,7 @@ export const Dashboard = () => {
                         <h1 className="title">Website name</h1>
                         <h1 className="website-name">{site.siteName}</h1>
                         <div className="divider"></div>
-
-                        <div className="publish-title-container">
-                            {/* {site.isPublished ? <img className="published-icon" src={require(`../assets/img/icons/published-icon.svg`).default} alt="publish-icon" /> */}
-                                {/* // : <img className="not-published-icon" src={require(`../assets/img/icons/not-published-icon.svg`).default} alt="publish-icon" />} */}
-                            {/* <h1 className={site.isPublished ? 'published-title' : 'not-published-title'}>{`This website is ${site.isPublished ? `published` : `not published`}`}</h1> */}
-                        </div>
                     </div>
-
-                    {/* EDIT COUNT
-                    <div className="site-dtl site-edits">
-                        <div className="site-dtl-title">
-                            <img src={require('../assets/img/icons/dash-edit-icon.svg').default} alt="edit-icon" />
-                            <h1>Edit count</h1>
-                        </div>
-
-                        <h1>{site.editCount}</h1>
-                    </div> */}
 
                     {/* SITE CREATION DATE */}
                     <div className="site-dtl site-creation-date">
@@ -208,7 +192,7 @@ export const Dashboard = () => {
 
                     {/* Subscriber count */}
                     <div className="site-dtl site-subscriber-count">
-                        <img className="dtl-img" src={require('../assets/img/icons/dash-calendar-icon.svg').default} alt="calendar-icon" />
+                        <img className="dtl-img" src={require('../assets/img/icons/dashboard-sub-icon.png')} alt="calendar-icon" />
                         <h1 className="title">Subscribers</h1>
                         <div className="divider"></div>
                         <h1 className="detail-line">You have <span className="detail">{site.usersData.length} </span> subscribers</h1>
@@ -234,14 +218,14 @@ export const Dashboard = () => {
                     </section>
                     <section className="views-subs-ratio">
                         Views | Subscribers Ratio
-                        {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount)*100).toFixed(2)}%`}
+                        {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount) * 100).toFixed(2)}%`}
                     </section>
 
                     <section className="chart-views" style={{ padding: '20px' }}>
                         <ViewsChart />
                     </section>
                     <section className="chart-subscribers" style={{ padding: '20px' }}>
-                    <SubscribersChart />
+                        <SubscribersChart />
                     </section>
 
 

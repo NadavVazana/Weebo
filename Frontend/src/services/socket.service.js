@@ -3,6 +3,7 @@ const BASE_URL = (process.env.NODE_ENV === 'production') ? '' : '//localhost:303
 
 const SOCKET_LOGIN_USER = 'socket_login_user'
 const SOCKET_LOGOUT_USER = 'socket_logout_user'
+export const SOCKET_MOUSE_MOVE = 'socket_mouse_move'
 
 export const socketService = createSocketService()
 

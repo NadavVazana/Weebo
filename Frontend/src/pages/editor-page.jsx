@@ -11,6 +11,9 @@ import { loadWap } from '../store/wap/wap.action'
 import { setElement } from '../store/draft/draft.action'
 import { useSelector } from 'react-redux'
 import { utilService } from '../services/util.service'
+import { socketService, SOCKET_MOUSE_MOVE } from '../services/socket.service'
+import { Mouse } from '../cmps/mouse'
+import { userService } from '../services/user.service'
 // import { wapExample5 } from '../assets/templates'
 
 
@@ -18,6 +21,7 @@ export const Editor = () => {
     const navigate = useNavigate()
     let { exampleId } = useParams()
     let { draft } = useSelector(state => state.draftModule)
+    const {loggedInUser} = useSelector(state=> state.userModule)
     const dispatch = useDispatch()
     const [optionList, setOptionList] = useState({})
     const [isEdit, setIsEdit] = useState(false)
@@ -27,6 +31,7 @@ export const Editor = () => {
     }
 
     useEffect(() => {
+
         dispatch(setElement(null))
         if (!draft || draft._id === 'empty' || draft._id !== exampleId) {
             dispatch(setElement(null))
@@ -37,6 +42,14 @@ export const Editor = () => {
             dispatch(setDraft(draft))
         }
     }, [])
+
+    const onMouseMove = (ev)=>{
+        socketService.emit(SOCKET_MOUSE_MOVE,{x:ev.pageX,y:ev.pageY,_id: loggedInUser._id})
+    }
+
+
+
+  
 
 
     const onEditElement = (clickedElement, ev) => {
@@ -77,11 +90,14 @@ export const Editor = () => {
         }
 
     }
-
     if (!draft) return <section></section>
-
     return (
-        <section className='editor'>
+        <section onMouseMove={onMouseMove}  className='editor'>
+            {/* {Object.values(userMice).map(pos=>{
+                return <Mouse  pos={pos}  />
+            })} */}
+            <Mouse />
+            
             <DragDropContext onDragEnd={handleOnDragEnd}>
                 <EditorNav setOptionList={setOptionList} addElement={addElement} isEdit={isEdit} isEditToggle={isEditToggle} />
                 <Droppable droppableId='editor'>
