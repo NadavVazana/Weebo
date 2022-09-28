@@ -33,9 +33,10 @@ export function setDraftHistory(draft) {
         try {
             const state = getState()
             let { draftHistory } = state.draftModule
+            if (draft === draftHistory[draftHistory.length - 1]) return
             let copyDraftHistory = [...draftHistory]
-            if(draftHistory.length){
-                if (draftHistory[draftHistory.length-1]._id !== draft._id) {
+            if (draftHistory.length) {
+                if (draftHistory[draftHistory.length - 1]._id !== draft._id && draftHistory.length) {
                     copyDraftHistory = []
                 }
             }
@@ -52,9 +53,9 @@ export function getDraftFromHistory() {
         try {
             const state = getState()
             let { draft, draftHistory } = state.draftModule
-            draftHistory = wapService.changeDraftHistory(draftHistory)
-            dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })
-            if (draftHistory.length) {
+            if (draftHistory.length !== 1) {
+                draftHistory = wapService.changeDraftHistory(draftHistory)
+                dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })
                 draft = draftHistory[draftHistory.length - 1]
                 dispatch(setDraft(draft))
             }
@@ -115,7 +116,7 @@ export function setElementImage(ev) {
             copyCurrElement = wapService.uploadImage(currElement, image)
             dispatch(setElement(copyCurrElement))
             dispatch(updateDraft(draft, copyCurrElement))
-            
+
         } catch (err) {
             console.log('could not update image!:', err)
         }

@@ -14,12 +14,13 @@ export const wapService = {
     updateDraftTheme,
     uploadImage,
     setDraftHistory,
-    changeDraftHistory
+    changeDraftHistory, 
 }
 
 const WAP = 'wap/'
 const WAP_KEY = 'waps_DB'
 const DRAFT_KEY = 'draft_DB'
+const DRAFT_HISTORY = 'history_DB'
 
 
 async function getWaps(exampleId) {
@@ -79,6 +80,7 @@ function getDraft() {
     return draft
 }
 
+
 function setDraftHistory(draft, draftHistory) {
     const copyDraftHistory = [...draftHistory]
     copyDraftHistory.push(draft)
@@ -107,7 +109,7 @@ function _updateById(arr, element, action) {
                 return acc
             } else if (action === 'Copy') {
                 let copyCmp = { ...cmp }
-                copyCmp.id = copyCmp.id + utilService.makeId()
+                copyCmp.id = utilService.makeId()
                 return [...acc, cmp, copyCmp]
             } else {
                 return [...acc, element]
