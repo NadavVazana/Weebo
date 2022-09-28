@@ -109,13 +109,13 @@
         align-items: center;
         background-color: #fff;
         gap: 40px;
-        // padding: 20px 40px;
+        padding: 50px;
     }
 
     .hero-2-image {
         margin-top: 100px;
-        margin-inline: auto;
         width: 100%;
+        margin: 20px;
     }
 
     .title {
@@ -141,10 +141,6 @@
             max-width: 550px;
         }
 
-        .hero-item-1 {
-            // padding: 40px 0;
-            // gap: 50px;
-        }
     }
 }
 

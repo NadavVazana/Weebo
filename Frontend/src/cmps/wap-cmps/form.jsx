@@ -29,9 +29,6 @@ export const Form = ({ cmp, isPublished, isPreview }) => {
         socketService.emit('add-contact-details', { details: details, siteId: site[0]._id })
         await siteService.updateSite(site[0])
 
-
-
-
     }
     return (
         <section>

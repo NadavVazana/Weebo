@@ -33,10 +33,11 @@ export function setDraftHistory(draft) {
         try {
             const state = getState()
             let { draftHistory } = state.draftModule
-            let copyDraftHistory = [ ...draftHistory ]
-            console.log('copyDraftHistorycopyDraftHistory',copyDraftHistory)
-            if (draftHistory.length > 3) {
-                copyDraftHistory = []
+            let copyDraftHistory = [...draftHistory]
+            if(draftHistory.length){
+                if (draftHistory[draftHistory.length-1]._id !== draft._id) {
+                    copyDraftHistory = []
+                }
             }
             draftHistory = wapService.setDraftHistory(draft, copyDraftHistory)
             dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })

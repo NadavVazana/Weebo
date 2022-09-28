@@ -100,7 +100,6 @@ function updateDraft(draft, element, action) {
 
 }
 
-// Update function
 function _updateById(arr, element, action) {
     return arr.reduce((acc, cmp) => {
         if (cmp.id === element.id) {
@@ -123,6 +122,7 @@ function _updateById(arr, element, action) {
         }
     }, [])
 }
+
 
 function getCmpWithStyles(cmp, theme, index) {
     return {
