@@ -56,7 +56,7 @@ export function getDraftFromHistory() {
             dispatch({ type: 'SET_DRAFT_HISTORY', draftHistory })
             if (draftHistory.length) {
                 draft = draftHistory[draftHistory.length - 1]
-                dispatch({ type: 'SET_DRAFT', draft })
+                dispatch(setDraft(draft))
             }
         } catch (err) {
             console.log('could not set draft!:', err)
@@ -70,7 +70,7 @@ export function updateDraftTheme(draft, theme) {
         try {
             const copyDraft = { ...draft }
             draft = wapService.updateDraftTheme(copyDraft, theme)
-            dispatch({ type: 'SET_DRAFT', draft })
+            dispatch(setDraft(draft))
             dispatch(setDraftHistory(draft))
         } catch (err) {
             console.log('could not update draft theme!:', err)
@@ -96,7 +96,7 @@ export function updateDraft(draft, element, action) {
         try {
             const copyDraft = { ...draft }
             draft = wapService.updateDraft(copyDraft, element, action)
-            dispatch({ type: 'SET_DRAFT', draft })
+            dispatch(setDraft(draft))
             dispatch(setDraftHistory(draft))
         } catch (err) {
             console.log('could not update draft!:', err)
@@ -115,6 +115,7 @@ export function setElementImage(ev) {
             copyCurrElement = wapService.uploadImage(currElement, image)
             dispatch(setElement(copyCurrElement))
             dispatch(updateDraft(draft, copyCurrElement))
+            
         } catch (err) {
             console.log('could not update image!:', err)
         }
