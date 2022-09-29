@@ -217,8 +217,13 @@ export const Dashboard = () => {
                             : <h2>No Subscribers Yet!</h2>}
                     </section>
                     <section className="views-subs-ratio">
-                        Views | Subscribers Ratio
-                        {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount) * 100).toFixed(2)}%`}
+                        <p className="title">
+                            Subscribers : Views Ratio
+                        </p>
+                        <p className="detail">
+                            {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount) * 100).toFixed(2)}%`}
+                        </p>
+
                     </section>
 
                     <section className="chart-views" style={{ padding: '20px' }}>
