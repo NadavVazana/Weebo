@@ -1,6 +1,4 @@
 .homepage {
-    position: relative;
-    z-index: -1;
     background-image: url();
 
     .section-3 {
@@ -473,14 +471,12 @@
                 }
 
                 .number-1 {
-                    position: relative;
                     z-index: 11111;
                     display: block;
 
                 }
 
                 .number-1::before {
-                    position: relative;
                     z-index: -11111;
                     content: '';
 
@@ -507,7 +503,6 @@
 
             .card-2 {
                 .number-2 {
-                    position: relative;
                     display: block;
                     z-index: 1;
                 }
