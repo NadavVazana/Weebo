@@ -1,6 +1,6 @@
 .app-header {
     height: $header-height;
-    position: sticky;
+    position: relative;
     font-family: Madefor;
     user-select: none;
     display: flex;
@@ -273,6 +273,7 @@
 
 
         .site-name-modal {
+            z-index: 90000000000000000;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
@@ -342,6 +343,8 @@
 
         .mobile-nav,
         .mobile-nav.mobile-open {
+            position: relative;
+            z-index: 999999999999999;
             top: -100vh;
             opacity: 0;
             display: none;

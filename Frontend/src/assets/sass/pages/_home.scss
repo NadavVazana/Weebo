@@ -1,5 +1,4 @@
 .homepage {
-
     background-image: url();
 
     .section-3 {
@@ -359,6 +358,7 @@
         }
         .section-1{
             .home-photo{
+                
                 width: 60%;
                 user-select: none;
             }
@@ -466,6 +466,7 @@
 
                 font-family: Madefor;
                 img{
+                    position: relative;
                     z-index: 1;
                 }
 

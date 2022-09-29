@@ -42,7 +42,6 @@ export const AppHeader = () => {
         const user = loggedInUser
         // user.waps.push(draft)
         const site = await siteService.addSite(draft)
-        navigate('/dashboard')
 
 
         
