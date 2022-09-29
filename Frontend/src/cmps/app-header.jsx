@@ -40,8 +40,11 @@ export const AppHeader = () => {
         var date = new Date()
         draft.createdAt = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
         const user = loggedInUser
+        
         // user.waps.push(draft)
         const site = await siteService.addSite(draft)
+        console.log(site);
+        
 
 
         
@@ -49,6 +52,7 @@ export const AppHeader = () => {
         // dispatch(updateUser(user))
         dispatch(setDraft(draft))
         showSuccessMsg(`New site has been saved!`)
+        window.open(`/publish/${site._id}`, '_blank')
     }
 
 
@@ -68,7 +72,7 @@ export const AppHeader = () => {
             // user.waps[wapIndex] = draft
             const site = await siteService.updateSite(draft)
             dispatch(updateUser(user))
-            
+           
             showSuccessMsg(`Site has been saved!`)
         }
     }
@@ -77,6 +81,7 @@ export const AppHeader = () => {
         const draft = dispatch(getDraft())
         draft.isPublished = true
         dispatch(setDraft(draft))
+        
        setNameModal(true)
        
     }

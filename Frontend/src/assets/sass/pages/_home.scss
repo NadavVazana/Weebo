@@ -416,9 +416,10 @@
        
         }
         .number {
+            display: none;
             color: rgb(34, 33, 33);
             user-select: none;
-            background-color: white;
+            background-color: #f5f5f5;
             border: 1px rgb(73, 56, 119) solid;
             font-weight: 700;
             border-radius: 50%;

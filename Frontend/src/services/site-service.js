@@ -10,6 +10,7 @@ export const siteService = {
 const SITE = 'site'
 async function addSite(site){
     const newSite =  await httpService.post(SITE,site)
+    return newSite
 }
 
 
