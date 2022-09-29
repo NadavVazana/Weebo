@@ -158,7 +158,7 @@ export const Dashboard = () => {
                     <div className="action-btns">
                         <button onClick={onPublish} className="btn visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
                         <button onClick={() => { onEdit() }} className="btn edit-btn">Edit</button>
-                        <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+   
                     </div>
                 </div>
 
@@ -232,7 +232,9 @@ export const Dashboard = () => {
                     <section className="chart-subscribers" style={{ padding: '20px' }}>
                         <SubscribersChart />
                     </section>
-
+                    <div className="action-btns">
+                    <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+                    </div>
 
                 </div>
 

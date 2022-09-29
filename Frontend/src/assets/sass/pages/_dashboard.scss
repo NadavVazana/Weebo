@@ -106,13 +106,17 @@
             .visit-btn {
                 background-color:#50C878;
             }
-            .delete-btn {
-                background-color: rgb(185, 63, 63);
-            }
+           
             .edit-btn {
                 background-color: rgb(221, 214, 201);
             }
 
+        }
+        .delete-btn {
+            background-color: rgb(185, 63, 63);
+            border: none;
+            padding: 7px;
+            color: rgb(230, 230, 230);
         }
 
         .details-grid {
@@ -783,7 +787,8 @@
                     .title {
                         width: fit-content;
                         margin-top: 1em;
-                        margin-inline: auto;
+                        // margin-inline: auto;
+                        text-align: start;
                     }
     
                     .detail {

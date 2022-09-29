@@ -27,6 +27,12 @@ ChartJS.register(
 export const options = {
   responsive: true,
   plugins: {
+    legend:{
+      display:false
+    },
+    tooltips: {
+      enabled: false
+   },
   
     title: {
       display: true,

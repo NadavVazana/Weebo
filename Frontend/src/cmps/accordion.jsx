@@ -26,7 +26,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails style={{marginTop:0}}>
-                    <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'All' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -44,7 +43,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Headers' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -61,7 +59,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Heroes' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu} />}
                 </AccordionDetails>
@@ -78,7 +75,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Cards' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -95,7 +91,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Forms' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -112,7 +107,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Maps' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -129,7 +123,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Galleries' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>
@@ -146,7 +139,6 @@ export const AddAccordion = ({ setOptionList, addElement, isOptionsMenu, toggleO
 
                 </AccordionSummary>
                 <AccordionDetails>
-                <hr />
                     {isOptionsMenu.isOpen && isOptionsMenu.cmpType === 'Footers' && 
                     <AddOptions setOptionList={setOptionList} addElement={addElement} isOptionsMenu={isOptionsMenu}  />}
                 </AccordionDetails>

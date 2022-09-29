@@ -52,7 +52,7 @@ export const EditContainer = () => {
 
             {/* Pallete Background color */}
             <div className="pallete-container underline">
-                <span>Backgroud Color</span>
+                <span>Background Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 

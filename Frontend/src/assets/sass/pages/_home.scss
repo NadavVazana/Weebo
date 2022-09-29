@@ -240,6 +240,14 @@
 
 
     .section-5 {
+        h1{
+            font-weight: 700;
+            color: rgb(26 18 18);
+            text-align: center;
+            font-family: Madefor;
+            padding-top: 80px;
+            font-size: 3rem;
+        }
         padding-top: 200px;
         padding-bottom: 200px;
         position: relative;
@@ -418,6 +426,7 @@
             padding-inline: 15px;
             position: absolute;
             left: 50%;
+            height: 12px;
             transform: translate(-50%);
         }
         .cards-container {
@@ -484,7 +493,7 @@
                     background: linear-gradient(90deg, rgba(97, 97, 197, 1) 100%, rgba(97, 97, 197, 0.8435749299719888) 77%, rgba(97, 97, 197, 0) 0%);
                     width: 110px;
                     position: absolute;
-                    right: 36px;
+                    right: 30px;
                     top: 50%;
                     transform: translate(0, -50%);
                     display: block;
