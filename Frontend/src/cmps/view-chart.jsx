@@ -25,8 +25,15 @@ ChartJS.register(
 );
 
 export const options = {
+ 
   responsive: true,
   plugins: {
+    legend:{
+      display:false
+    },
+    tooltips: {
+      enabled: false
+   },
   
     title: {
       display: true,
@@ -39,10 +46,12 @@ const labels = ['29/9', '30/9', '1/10', '2/10', '3/10', '4/10', '5/10'];
 
 export const data = {
   labels,
+  
+
   datasets: [
     {
       fill: true,
-      label: 'Views',
+      label:'',
       data: [4,8,4,6,3,8,2],
       borderColor: 'rgb(53, 162, 235)',
       backgroundColor: 'rgba(53, 162, 235, 0.5)',

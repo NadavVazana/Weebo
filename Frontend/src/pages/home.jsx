@@ -42,7 +42,7 @@ export const Home = () => {
                   <h1>Themes</h1>
                   <p>change your website style with one click!</p>
                   </div>
-                  <div className="number-1 number">1</div>
+                  <div className="number-1 number"></div>
                   <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016703/themes_lv1wk4.png" alt="" />
                  
 
@@ -52,7 +52,7 @@ export const Home = () => {
                   <h1>Templates</h1>
                   <p>choose a template to start building your website from! </p>
                   </div>
-                  <div className="number-2 number">2</div>
+                  <div className="number-2 number"></div>
                   <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664017019/Untitled_kvvicf.png" alt="" />
               </div>
               </div>
@@ -70,6 +70,7 @@ export const Home = () => {
           
 
           <div className="section-5">
+            <h1>Choose your template!</h1>
             <HomeSwiper/>
 
 

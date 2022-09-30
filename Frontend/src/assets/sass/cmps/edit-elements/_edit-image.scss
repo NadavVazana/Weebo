@@ -29,12 +29,10 @@
         cursor: pointer;
         padding: 12px 22px;
         border-radius: 5px;
-        background-color: #ffd146;
-        color: #000;
+        background-color: $main-color;
+        color: whitesmoke;
 
-        &:hover {
-            font-size: 18px;
-        }
+     
     }
 
 }

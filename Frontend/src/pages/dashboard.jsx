@@ -158,7 +158,7 @@ export const Dashboard = () => {
                     <div className="action-btns">
                         <button onClick={onPublish} className="btn visit-btn">{site.isPublished ? 'Visit' : 'Publish'}</button>
                         <button onClick={() => { onEdit() }} className="btn edit-btn">Edit</button>
-                        <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+   
                     </div>
                 </div>
 
@@ -184,8 +184,8 @@ export const Dashboard = () => {
                         <img className="dtl-img" src={require('../assets/img/icons/dash-views-icon.svg').default} alt="views-icon" />
                         <h1 className="title">Views</h1>
                         <div className="divider"></div>
-                        <h1 className="detail-line">Viewed <span className="detail">{site.viewCount} </span>
-                            times
+                        <h1 className="detail-line"><span className="detail">{site.viewCount} </span>
+                            
                         </h1>
 
                     </div>
@@ -195,7 +195,7 @@ export const Dashboard = () => {
                         <img className="dtl-img" src={require('../assets/img/icons/dashboard-sub-icon.png')} alt="calendar-icon" />
                         <h1 className="title">Subscribers</h1>
                         <div className="divider"></div>
-                        <h1 className="detail-line">You have <span className="detail">{site.usersData.length} </span> subscribers</h1>
+                        <h1 className="detail-line"><span className="detail">{site.usersData.length} </span> </h1>
                     </div>
 
 
@@ -218,7 +218,7 @@ export const Dashboard = () => {
                     </section>
                     <section className="views-subs-ratio">
                         <p className="title">
-                            Subscribers : Views Ratio
+                            Subscribers | Views Ratio
                         </p>
                         <p className="detail">
                             {site.usersData.length === 0 ? '0.00%' : `${((site.usersData.length / site.viewCount) * 100).toFixed(2)}%`}
@@ -232,7 +232,9 @@ export const Dashboard = () => {
                     <section className="chart-subscribers" style={{ padding: '20px' }}>
                         <SubscribersChart />
                     </section>
-
+                    <div className="action-btns">
+                    <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+                    </div>
 
                 </div>
 

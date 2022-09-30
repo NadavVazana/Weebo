@@ -106,13 +106,18 @@
             .visit-btn {
                 background-color:#50C878;
             }
-            .delete-btn {
-                background-color: rgb(185, 63, 63);
-            }
+           
             .edit-btn {
                 background-color: rgb(221, 214, 201);
             }
 
+        }
+        .delete-btn {
+            cursor: pointer;
+            background-color: rgb(185, 63, 63);
+            border: none;
+            padding: 7px;
+            color: rgb(230, 230, 230);
         }
 
         .details-grid {
@@ -130,6 +135,7 @@
             }
 
             .views-subs-ratio {
+                font-weight: bold;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -166,7 +172,7 @@
 
                 .detail-line {
                     font-family: Monsterrat;
-                    margin: 10px 0 10px 20px;
+                    // margin: 10px 0 10px 20px;
                     .detail {
                         color: #4da550;
                         font-weight: bold;
@@ -176,7 +182,8 @@
 
                 .website-name {
                     font-family: Monsterrat;
-                    font-size: 2em;
+                    font-size: 2rem;
+                    
                     text-transform:capitalize;
                 }
 
@@ -525,7 +532,7 @@
                 
                 .publish-title-container {
                     align-items: center;
-                margin-bottom: 50px;
+                // margin-bottom: 50px;
                 }
                 .action-btns {
                     display: flex;
@@ -684,20 +691,26 @@
                     }
     
                     .detail-line {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
                         font-family: Monsterrat;
-                        margin: 10px 0 10px 20px;
+                        // margin: 10px 0 10px 20px;
                         .detail {
-                            color: #4da550;
+                            color: #252725;
                             font-weight: bold;
-                            font-size: 1em;
+                            font-size: 1.6em;
                         }
                     }
     
                     .website-name {
-                        font-family: Monsterrat;
+                        font-family: Madefor;
+                        letter-spacing: 1.2px;
                         position: absolute;
                         top: 50%;
                         left: 50%;
+                        font-weight: bold;
                         transform: translate(-50%, -50%);
                         font-size: 3em;
                         text-transform:capitalize;
@@ -783,7 +796,8 @@
                     .title {
                         width: fit-content;
                         margin-top: 1em;
-                        margin-inline: auto;
+                        // margin-inline: auto;
+                        text-align: start;
                     }
     
                     .detail {

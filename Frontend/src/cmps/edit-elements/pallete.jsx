@@ -14,7 +14,7 @@ export const Pallete = ({ onSelect }) => {
             <div className="color-container" key={`${color}C`}>
                 <div
                     key={color}
-                    style={{ backgroundColor: color }}
+                    style={{ backgroundColor: color, border:'1px #D0D0D0 solid' }}
                     id={color}
                     className="color"
                     onClick={onSelect} />

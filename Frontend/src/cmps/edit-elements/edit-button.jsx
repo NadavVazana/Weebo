@@ -69,7 +69,7 @@ export const EditButton = () => {
 
             {/* Background Color */}
             <div className="pallete-container">
-                <span>Backgroud Color</span>
+                <span>Background Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 
