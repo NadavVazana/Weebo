@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e83e4510.css",
-    "main.js": "/static/js/main.541dbbb6.js",
+    "main.css": "/static/css/main.be3bfaa4.css",
+    "main.js": "/static/js/main.1e3c8b56.js",
     "static/media/piano.jpg": "/static/media/piano.06fa549cca1a859fcf61.jpg",
     "static/media/woman-flowers.jpg": "/static/media/woman-flowers.4ce85d74d5aa5d2bb050.jpg",
     "static/media/form2-bg.png": "/static/media/form2-bg.36911faf47e185438000.png",
@@ -88,13 +88,13 @@
     "static/media/dash-views-icon.svg": "/static/media/dash-views-icon.13edde4a40e842cd107da28b5d2c3b25.svg",
     "static/media/Copy-icon.svg": "/static/media/Copy-icon.dfc48c204d19d380d751.svg",
     "static/media/edit-icon.svg": "/static/media/edit-icon.16c828a8b295ddb752d5c8f7252a5421.svg",
-    "static/media/fontWeight.svg": "/static/media/fontWeight.5d56d9251e6cdb6a267e.svg",
+    "static/media/fontStyle.svg": "/static/media/fontStyle.bc105928191e60bb9a38.svg",
     "static/media/double-underline-icon.svg": "/static/media/double-underline-icon.f0d0c6666e032f55e675.svg",
-    "static/media/textDecoration.svg": "/static/media/textDecoration.fad93ae76dd2edd295d0.svg",
     "static/media/publish-icon.svg": "/static/media/publish-icon.5a9a8e1b30dd5a4a3ef0.svg",
     "static/media/add-icon.svg": "/static/media/add-icon.a6ff1a9bf68d76577fab4ed705090e1a.svg",
     "static/media/Undo-icon.svg": "/static/media/Undo-icon.5a0ab283a98e1fb61edfbe3d28eceb03.svg",
     "static/media/published-icon.svg": "/static/media/published-icon.ad60a413dd441cb979f0a0b623802ca4.svg",
+    "static/media/fontWeight.svg": "/static/media/fontWeight.fb80a2bc985bf6b0a9ca.svg",
     "static/media/image-upload-icon.svg": "/static/media/image-upload-icon.e032d650d449747f7c8e.svg",
     "static/media/text-align-center-icon.svg": "/static/media/text-align-center-icon.5ef7e0cba2a0ef4306ab.svg",
     "static/media/text-align-right-icon.svg": "/static/media/text-align-right-icon.623fa92992bbf98de19f.svg",
@@ -106,15 +106,16 @@
     "static/media/Pink.PNG": "/static/media/Pink.55be3a4936ab12440d82.PNG",
     "static/media/Delete-icon.svg": "/static/media/Delete-icon.4cfa926ffef7dd54e17c.svg",
     "static/media/Soft.PNG": "/static/media/Soft.3afa1ec36d5a65cf758c.PNG",
-    "static/media/fontStyle.svg": "/static/media/fontStyle.babb75d7af4f379b8d14.svg",
+    "static/media/textDecoration.svg": "/static/media/textDecoration.a49e69bb9e01d6417634.svg",
     "index.html": "/index.html",
     "static/media/log-out-icon.svg": "/static/media/log-out-icon.ca69f1be32c022825a6a7a7b9ae3612a.svg",
-    "static/media/less-than.svg": "/static/media/less-than.d52aaed172c4d628b31a72d9de9721bb.svg",
-    "main.e83e4510.css.map": "/static/css/main.e83e4510.css.map",
-    "main.541dbbb6.js.map": "/static/js/main.541dbbb6.js.map"
+    "static/media/less-than.svg": "/static/media/less-than.d52aaed172c4d628b31a.svg",
+    "static/media/left-arrow.svg": "/static/media/left-arrow.dec388af73ef9b765d7fff89f95fdc93.svg",
+    "main.be3bfaa4.css.map": "/static/css/main.be3bfaa4.css.map",
+    "main.1e3c8b56.js.map": "/static/js/main.1e3c8b56.js.map"
   },
   "entrypoints": [
-    "static/css/main.e83e4510.css",
-    "static/js/main.541dbbb6.js"
+    "static/css/main.be3bfaa4.css",
+    "static/js/main.1e3c8b56.js"
   ]
 }
