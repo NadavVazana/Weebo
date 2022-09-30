@@ -7,11 +7,12 @@ export const EditText = () => {
     const { currElement, draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
+
     const fonts = ['IndieFlower', 'Bahnschrift', 'Poppins', 'Eurofurence', 'Greatvibes', 'Lato', 'LobsterTwo', 'Madefor', 'Montserrat', 'Satisfy-Regular', 'Shrikhand', 'Orbitron']
-    const decorOpts = ['textDecoration', 'fontWeight', 'fontStyle']
+    const decorOpts = ['fontWeight', 'fontStyle', 'textDecoration']
     const actions = ['Delete', 'Copy', 'Undo']
 
-  
+
 
     // Change Font
     const handleFont = (ev) => {
@@ -105,7 +106,7 @@ export const EditText = () => {
                 break
             case 'fontWeight':
                 value = copyCurrElement?.styles?.fontWeight === '700' ? '300' : '700'
-                
+
                 break
             case 'fontStyle':
                 value = copyCurrElement?.styles?.fontStyle === 'italic' ? 'normal' : 'italic'
@@ -135,13 +136,33 @@ export const EditText = () => {
         }
     }
 
+    const getTextShadow = (value) => {
+        if (value !== 'unset') return value.slice(0, 1)
+        else return 0
+    }
+
     return (
         <section className="edit-elements">
+            {/* Font Size */}
+            <div className='underline'>
+                <span>Font size: <output>{currElement?.styles?.fontSize ? currElement?.styles?.fontSize : ''}</output></span>
+
+                <input className="slider" type="range"
+                    name="fontSize"
+                    id="num"
+                    min="10"
+                    max="48"
+                    step="1"
+                    value={Number(currElement?.styles?.fontSize?.slice(0, 2) || 18)}
+                    onChange={handleFontSize}
+                />
+
+            </div>
 
             {/* Text Decoration */}
             <div className='underline'>
-                <span>Decoration</span>
-                <div className='text-decoration'>
+                <span>Decoration: </span>
+                <div className='decoration'>
                     {decorOpts.map(decorOpt =>
                         <img key={decorOpt}
                             src={require(`../../assets/img/icons/${decorOpt}.svg`)}
@@ -149,23 +170,9 @@ export const EditText = () => {
                 </div>
             </div>
 
-            {/* Font Size */}
-            <div className='underline'>
-                <span>Font Size</span>
-                <input className="slider" type="range"
-                    name="fontSize"
-                    id=""
-                    min="10"
-                    max="48"
-                    step="1"
-                    value={Number(currElement?.styles?.fontSize?.slice(0, 2) || 14)}
-                    onChange={handleFontSize}
-                />
-            </div>
-
             {/* Border Radius */}
             <div className='underline'>
-                <span>Border Radius</span>
+                <span>Border Radius: <output>{currElement?.styles?.borderRadius ? currElement?.styles?.borderRadius.slice(0, 2) : ''}</output></span>
                 <input
                     className="slider"
                     type="range"
@@ -180,7 +187,7 @@ export const EditText = () => {
 
             {/* Font Select */}
             <div className="custom-select underline" >
-                <label htmlFor='styledSelect'>Font</label>
+                <label htmlFor='styledSelect'>Font: </label>
                 <select className='select-font' id="styledSelect" name='options' onChange={handleFont}>
                     {fonts.map(font => <option key={font} value={font}>{font}</option>)}
                 </select>
@@ -188,7 +195,7 @@ export const EditText = () => {
 
             {/* Text Shadow */}
             <div className="underline">
-                <span>Text Shadow</span>
+                <span>Text Shadow: <output>{currElement?.styles?.textShadow ? getTextShadow(currElement?.styles?.textShadow) : ''}</output></span>
                 <input className="slider"
                     type="range"
                     name="textShadow"
@@ -203,13 +210,13 @@ export const EditText = () => {
 
             {/* Font Color */}
             <div className="pallete-container underline">
-                <span>Font Color</span>
+                <span>Font Color:</span>
                 <Pallete onSelect={onSelectFontColor} />
             </div>
 
             {/* Background color */}
             <div className="pallete-container underline">
-                <span>Background Color</span>
+                <span>Background Color:</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 

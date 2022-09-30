@@ -169,9 +169,12 @@ function uploadImage(currElement, image) {
     let copyCurrElement = { ...currElement }
 
     if (currElement.type === 'container') {
-        let backgroundImage = `url(${image})`
+        const backgroundImage = `url(${image})`
+        const backgroundRepeat = `no-repeat`
+        const backgroundSize = `cover`
+        const backgroundPosition= `center`
         copyCurrElement = {
-            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundImage }
+            ...copyCurrElement, styles: { ...copyCurrElement?.styles, backgroundImage, backgroundRepeat, backgroundSize, backgroundPosition }
         }
     } else {
         copyCurrElement = {

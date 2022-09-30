@@ -3,9 +3,9 @@ export const Pallete = ({ onSelect }) => {
 
     // Colors
     const colors = [
-        '#ffffff', '#000000', '#fee440', '#f15bb5', '#9b5de5', '#73d2de',
-        '#218380', '#8f2d56', '#d81159', '#ffd670', '#7796cb', '#faf3dd',
-        '#d3f8e2', '#7c98b3'
+        '#ffffff', '#000000', '#9b5de5', '#f15bb5', '#fee440', '#00bbf9',
+        '#00f5d4', '#e4c1f9', '#fcf6bd', '#d0f4de', '#a9def9', '#fec89a',
+        '#ffb5a7', 'transparent'
     ]
 
     // Color Pallete

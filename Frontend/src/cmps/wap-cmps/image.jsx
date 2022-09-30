@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux"
 import React from "react"
-export const Image = ({ cmp, isPublished, onEditElement }) => {
 
+export const Image = ({ cmp, isPublished, onEditElement }) => {
+    const { currElement } = useSelector(state => state.draftModule)
 
     const image = (cmp?.info?.image?.slice(0, 4) === 'http') ? cmp.info.image : require(`../../assets/img/${cmp.info.image}`)
 
@@ -18,7 +20,7 @@ export const Image = ({ cmp, isPublished, onEditElement }) => {
         <React.Fragment>
             {/* EDIT MODE */}
             {!isPublished ? <section className={`image ${cmp.name}`}>
-                <img className={cmp.name}
+                <img className={`${cmp.name} ${cmp.id === currElement?.id ? 'focus' : ''}`}
                     src={image}
                     alt={cmp.name}
                     onClick={(ev) => handleEditElement(ev, cmp)}

@@ -29,7 +29,7 @@ export const Button = ({ cmp, onEditElement ,isPublished}) => {
         <React.Fragment>
                 {/* EDIT MODE */}
         {!isPublished ? <section className={`${cmp.info.class}` } >
-            <button className={`button`} 
+            <button className={`button clicked`} 
                 contentEditable
                 suppressContentEditableWarning
                 style={{ ...cmp?.styles }}

@@ -42,14 +42,14 @@ export const EditImage = () => {
         <section className="edit-elements">
 
             {/* Upload Image to Image Element */}
-            <div className='edit-image underline'>
-                <form id="form1" runat="server" className='edit-image'>
+            <div className='edit-image'>
+                <form id="form1" runat="server" >
                     <span onClick={handleUploadImage}>Upload Image</span>
                     <input ref={ref} onChange={handleImage} type="file" />
                 </form>
-                <div className='preview-image'>
+                {/* <div className='preview-image'> */}
                     <img src={image} alt={currElement.name} />
-                </div>
+                {/* </div> */}
 
             </div>
 

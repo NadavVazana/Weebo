@@ -8,7 +8,7 @@
 }
 
 .focus {
-  outline: 2px dashed rgb(93, 89, 89);
+  outline: 3px dashed #6161c5;
 }
 
 // .cooking {
@@ -20,7 +20,4 @@
 
 
 
-[contenteditable]{
-  @include contenteditable
-}
 

@@ -38,7 +38,7 @@ async function setupSocketAPI(http) {
         })
 
         socket.on('change_draft',draft=>{
-            socket.broadcast.emit('update_draft',draft)
+            socket.broadcast.emit('draft-updated',draft)
         })
 
 

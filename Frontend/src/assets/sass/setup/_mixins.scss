@@ -1,10 +1,7 @@
-@mixin contenteditable($width: 0px, $color: transparent) {
-   outline: $width solid $color;
-   focus: outline-none;
-}
+
 
 @mixin focus {
-    outline: 3px dotted yellowgreen;
+    outline: 3px dotted #6161c5;
 }
 
 

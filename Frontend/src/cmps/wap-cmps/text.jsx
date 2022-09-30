@@ -4,7 +4,7 @@ import React from 'react'
 
 
 export const Text = ({ cmp, onEditElement, isPublished }) => {
-    const { draft } = useSelector(state => state.draftModule)
+    const { draft, currElement } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
 
     function placeCaretAtEnd(el) {
@@ -46,19 +46,16 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
         ev.stopPropagation()
         onEditElement(cmp)
     }
-function ttt(params) {
-    console.log('eeeee');
-    
-}
+
     return (
         <React.Fragment>
             {/* EDIT MODE */}
-            {!isPublished ? <section className="text">
+            {!isPublished ? <section className={`text ${cmp.id === currElement?.id ? 'focus' : ''}`}>
                 <h1
                     contentEditable
                     suppressContentEditableWarning
                     style={{ ...cmp?.styles }}
-                    className={cmp.info.class}
+                    className={`${cmp.info.class} `}
                     onInput={handleChange}
                     onClick={(ev) => handleEditElement(ev, cmp)} 
                 >{cmp.info.value||''}</h1>

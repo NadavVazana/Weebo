@@ -24,7 +24,7 @@ export function ThemesList() {
 
     return (
         <section className="edit-themes">
- 
+
             <div className="themes-list" >
                 {themes.map(theme =>
                     <div key={theme.color} className="theme" onClick={() => changeTheme(theme)}>
@@ -37,8 +37,10 @@ export function ThemesList() {
                     </div>)}
             </div>
 
-            <span onClick={handleUndo}><img src={require('../assets/img/icons/Undo-icon.svg').default}
-                alt={`Undo`} />Undo</span>
+            <span className="undo-theme" onClick={handleUndo}>
+                <img src={require('../assets/img/icons/Undo-icon.svg').default} alt={`Undo`} />
+                <span>Undo</span>
+            </span>
 
         </section>
     )

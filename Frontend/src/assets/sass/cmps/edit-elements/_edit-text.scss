@@ -1,22 +1,32 @@
-.text-decoration {
+.decoration {
     display: flex;
     align-items: center;
     padding: 0;
-    min-width: 100px;
+    min-width: 80px;
     cursor: pointer;
-    filter: invert(0.4);
+    
 
     img {
-        width: 1rem;
+        width: 1.1rem;
     }
 
     img:hover {
-        filter: invert(0.4);
+        filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
+    }
+
+    :first-child{
+        width: 1.01rem;
+    }
+
+    :nth-child(2){
+        width: 1.05rem;
     }
 
     :last-child {
-        width: 0.8rem;
+        width: 1.1rem;
     }
+
+
 
 }
 
@@ -31,7 +41,7 @@
     width: calc(100% - 28px);
     bottom: 8px;
     display: flex;
-    padding: 0;
+    padding: 8px 8px 0px 8px;
     cursor: pointer;
     color: #fff;
     justify-content: space-around;
@@ -48,17 +58,16 @@
             width: 1.5rem;
             padding: 5px;
             margin-bottom: 5px;
-            filter: invert(0.4);
 
             :hover {
-                filter: invert(1);
+                filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
             }
         }
 
     }
 
     .element-control-container:hover {
-        filter: invert(0.4);
+        filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
     }
 
 }

@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux"
 import { DynamicCmp } from "./dynamic-cmp"
-import { useState }   from "react"
+// import { useState }   from "react"
 import React from 'react';
 export function Container({ cmp, onEditElement, isPublished, isPreview }) {
     const { cmps, name } = cmp
-    const currElement = useSelector(state => state.draftModule.currElement)
-    const [hover,setHover] = useState(false)
+    const { currElement } = useSelector(state => state.draftModule)
+    // const [hover,setHover] = useState(false)
 
     const handleContainer = (ev, cmp) => {
         ev.stopPropagation()
@@ -15,10 +15,10 @@ export function Container({ cmp, onEditElement, isPublished, isPreview }) {
     return (
         <React.Fragment>
             {/* EDIT MODE */}
-            {!isPublished ? <section onMouseLeave={()=>setHover(false)} onMouseEnter={()=>setHover(true)} onClick={() => onEditElement(cmp)} >
-            {/* {!isPublished ? <section> */}
+            {/* {!isPublished ? <section onMouseLeave={()=>setHover(false)} onMouseEnter={()=>setHover(true)} onClick={() => onEditElement(cmp)} > */}
+            {!isPublished ? <section onClick={() => onEditElement(cmp)}>
                 <div
-                    className={`container ${name} ${cmp.id === currElement?.id ? 'focus' : ''} ${hover && 'cmp-hovered'}`}
+                    className={`container ${name} ${cmp.id === currElement?.id ? 'focus' : ''}`}
                     // className={`container ${name}`}
                     style={{ ...cmp?.styles }}
                     onClick={(ev) => handleContainer(ev, cmp)}

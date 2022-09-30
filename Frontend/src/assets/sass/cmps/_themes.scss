@@ -2,16 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    height: calc(100% - 50px);
 
-    span {
-        width: 30px;
+    .undo-theme {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
         cursor: pointer;
-        padding: 10px;
+
+        img{
+            width: 30px;
+        }
+
+        span{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        &:hover{
+            filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
+        }
     }
 
-
     .themes-list {
-
 
         .theme {
             width: 100%;
@@ -36,6 +52,10 @@
                     // font-family: GreatVibes;
                     font-size: 2rem;
                     font-weight: 600;
+                }
+
+                p{
+                    font-size: 0.8rem;
                 }
             }
 

@@ -31,7 +31,7 @@ export const Editor = () => {
     }
 
     useEffect(() => {
-        socketService.on('update_draft',updateDraft)
+        socketService.on('draft-updated',draftUpdated)
         dispatch(setElement(null))
         if (!draft || draft._id === 'empty' || draft._id !== exampleId) {
             dispatch(setElement(null))
@@ -47,7 +47,7 @@ export const Editor = () => {
         socketService.emit(SOCKET_MOUSE_MOVE,{x:ev.pageX,y:ev.pageY})
     }
 
-    const updateDraft = (draft)=>{
+    const draftUpdated = (draft)=>{
         dispatch(setDraft(draft))
     }
 

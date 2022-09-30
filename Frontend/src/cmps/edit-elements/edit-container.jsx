@@ -57,7 +57,7 @@ export const EditContainer = () => {
             </div>
 
             {/* Upload Image to Image Element */}
-            <div className='edit-image underline'>
+            <div className='edit-image'>
                 <form id="form1" runat="server" className='edit-image'>
                     <span onClick={handleUploadImage}>Upload Image</span>
                     <input id="files" ref={ref} onChange={handleImage} type="file" />

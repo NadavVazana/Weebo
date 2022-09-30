@@ -20,8 +20,6 @@
         font-size: 1.2rem;
         font-weight: 300;
         cursor: text;
-
-    
     }
 
     .hero-item-2 {
@@ -33,22 +31,31 @@
         font-style: normal;
 
     }
+    .hero-item-3{
+        button {
+            background-color: grey;
+            color: #fff;
+            border-radius: 0.4rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 300;
+            color: rgb(221, 217, 217);
+            font-weight: 500;
+            padding: 20px 30px;
 
-    .hero-item-3 {
+            &.clicked:hover{
+                outline: 3px dashed #6161c5;
+            }
+        }
 
-        color: #fff;
-        background: none;
-        border: none;
-        background-color: transparent;
+        a{
+            color: #fff;
+        }
 
-        // border-radius: 0.4rem;
-        // cursor: pointer;
-        // font-weight: 300;
+        // [contenteditable]:focus {
+        //     outline: 3px dashed #6161c5;
+        // }
     }
-
-    // .hero-item-3:hover {
-    //     opacity: 0.6;
-    // }
 
     @include for-mobile-layout {
         .hero-item-2 {
@@ -81,21 +88,14 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
+    background-repeat: no-repeat;
     font-size: 20px;
-
-    .title{
-        margin-top: 30px;
-    }
-
-    .paragraph{
-        margin-bottom: 30px;
-    }
-
     background: linear-gradient(to top right,
             #fad255 50%,
             #aae6f0 0 100%);
     // padding-inline: auto;
     padding-block: 50px;
+
 
     &:first-child {
         width: 100%;
@@ -435,21 +435,19 @@
         }
     }
 
-    @include for-mobile-layout{
-        
-    }
-    @include for-narrow-layout{
-        
-    }
-    @include for-mid-layout{
-        .hero-container4{ 
+    @include for-mobile-layout {}
+
+    @include for-narrow-layout {}
+
+    @include for-mid-layout {
+        .hero-container4 {
             width: 600px;
 
             .hero-title {
                 font-size: 72px;
             }
         }
-        
+
     }
 }
 
@@ -461,20 +459,22 @@
     padding-block: 60px;
     padding-block-end: 100px;
     font-family: Poppins;
+
     img {
         width: 100%;
     }
-    .hero-grid{ 
+
+    .hero-grid {
         display: flex;
         flex-direction: column;
         color: #fff;
         width: 90%;
         margin: 0 auto;
 
-        & > section {
+        &>section {
             width: 95%;
         }
- 
+
 
         .hero-title {
             display: flex;
@@ -482,8 +482,8 @@
             flex-direction: column;
             justify-content: space-evenly;
             text-align: center;
-            
-            & > * {
+
+            &>* {
                 margin-bottom: 30px;
             }
 
@@ -493,9 +493,11 @@
                 width: fit-content;
                 margin: 0 auto;
             }
+
             .subtitle {
                 font-size: 1.5em;
             }
+
             .paragraph {
                 font-size: 1.2em;
             }
@@ -508,44 +510,49 @@
 
     section.bottom-image {
         width: 100%;
-        max-height:20px ;
+        max-height: 20px;
         position: absolute;
         bottom: 0;
         left: 0;
     }
 
 
-    @include for-mobile-layout{
-    }
-    @include for-narrow-layout{
+    @include for-mobile-layout {}
+
+    @include for-narrow-layout {
         .hero-grid {
             flex-direction: row;
             width: 90%;
 
-            & > section:first-child {
+            &>section:first-child {
                 width: 65%;
                 margin-inline-end: 50px;
             }
-            & > section:last-child {
+
+            &>section:last-child {
                 width: 35%;
             }
         }
-        
+
     }
-    @include for-mid-layout{
+
+    @include for-mid-layout {
         .hero-grid {
             width: 70%;
         }
     }
+
     @include for-normal-layout {
         padding-block: 100px;
         padding-block-end: 250px;
+
         .hero-grid {
             width: 55%;
 
             .hero-title {
                 text-align: left;
-                & > * {
+
+                &>* {
                     margin-bottom: 0;
                 }
             }
