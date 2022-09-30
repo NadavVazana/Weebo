@@ -24,7 +24,7 @@ export const MobileNav = ({ loggedInUser, dispatch, logoutUser, draftId, onSave,
                 {!loggedInUser ?
                     <button className='login-btn' onClick={() => { navigate('/login'); closeMenu() }}>LOGIN</button>
                     : <button onClick={() => { dispatch(logoutUser()); setMenuOpen(false) }}
-                        className='login-btn'>LOGOUT
+                        className='login-btn'>Logout
                         <img className='logout-icon' src={require('../assets/img/icons/log-out-icon.svg').default} alt="logout-icon" />
                     </button>}
             </div>
