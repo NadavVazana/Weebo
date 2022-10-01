@@ -247,7 +247,7 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            width: 30%;
+            width: 50%;
             text-align: center;
             background-color: #0a3a7e;
             padding: 80px 90px;
@@ -477,10 +477,7 @@
             }
         }
 
-        .black-screen {
-            position: relative;
-            z-index: 10;
-        }
+        
 
         .hamburger {
             cursor: pointer;
@@ -908,6 +905,11 @@
     }
     // 1200
     @include for-normal-layout {
+        .delete-modal-container {
+            .delete-modal {
+                width: 30%;
+
+        }}
         .sites-nav {
             display: block;
             position: relative;
