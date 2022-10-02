@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.be3bfaa4.css",
-    "main.js": "/static/js/main.1e3c8b56.js",
+    "main.css": "/static/css/main.f0de69bd.css",
+    "main.js": "/static/js/main.264f9b44.js",
     "static/media/piano.jpg": "/static/media/piano.06fa549cca1a859fcf61.jpg",
     "static/media/woman-flowers.jpg": "/static/media/woman-flowers.4ce85d74d5aa5d2bb050.jpg",
     "static/media/form2-bg.png": "/static/media/form2-bg.36911faf47e185438000.png",
@@ -111,11 +111,11 @@
     "static/media/log-out-icon.svg": "/static/media/log-out-icon.ca69f1be32c022825a6a7a7b9ae3612a.svg",
     "static/media/less-than.svg": "/static/media/less-than.d52aaed172c4d628b31a.svg",
     "static/media/left-arrow.svg": "/static/media/left-arrow.dec388af73ef9b765d7fff89f95fdc93.svg",
-    "main.be3bfaa4.css.map": "/static/css/main.be3bfaa4.css.map",
-    "main.1e3c8b56.js.map": "/static/js/main.1e3c8b56.js.map"
+    "main.f0de69bd.css.map": "/static/css/main.f0de69bd.css.map",
+    "main.264f9b44.js.map": "/static/js/main.264f9b44.js.map"
   },
   "entrypoints": [
-    "static/css/main.be3bfaa4.css",
-    "static/js/main.1e3c8b56.js"
+    "static/css/main.f0de69bd.css",
+    "static/js/main.264f9b44.js"
   ]
 }
