@@ -20,7 +20,8 @@ export const Image = ({ cmp, isPublished, onEditElement }) => {
         <React.Fragment>
             {/* EDIT MODE */}
             {!isPublished ? <section className={`image ${cmp.name}`}>
-                <img className={`${cmp.name} ${cmp.id === currElement?.id ? 'focus' : ''}`}
+                <img className={`${cmp.name} ${cmp.id === currElement?.id ? 'focus' : ''} imghover`}
+                // <img className={`${cmp.name}`}
                     src={image}
                     alt={cmp.name}
                     onClick={(ev) => handleEditElement(ev, cmp)}
