@@ -76,8 +76,10 @@
         .save-btn,
         .together-btn {
             background-color: transparent;
-            padding: 0;
         }
+
+
+     
 
         &.mobile-open {
             display: flex;
@@ -138,6 +140,8 @@
             &::before {
                 transform: translateY(-10px);
             }
+
+           
 
             &::after {
                 transform: translateY(10px);
@@ -229,10 +233,12 @@
     .save-btn {
         background-color: #61605c;
         border: none;
+        padding-inline: 20px;
         color: rgb(255, 255, 255);
     }
 
     .together-btn {
+        padding-inline: 10px;
         background-color: #61605c;
         border: none;
         color: rgb(255, 255, 255);

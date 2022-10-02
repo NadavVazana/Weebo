@@ -21,6 +21,6 @@ export const store = createStore(rootReducer,
 
 
 // For debug only!
-store.subscribe(() => {
-    console.log('Store state is:', store.getState())
-})
+// store.subscribe(() => {
+//     console.log('Store state is:', store.getState())
+// })
