@@ -249,7 +249,7 @@ export const Dashboard = () => {
                     <section className="chart-subscribers" style={{ padding: '20px' }}>
                         <SubscribersChart />
                     </section>
-                    <div className="action-btns">
+                    <div className=" delete-container">
                     <button  onClick={() => { onDeleteClick() }}  className="btn delete-btn">{!site.isPublished ? 'Delete website' : 'Unpublish'}</button>
                     </div>
 
