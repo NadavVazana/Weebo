@@ -73,8 +73,8 @@
             width: 100%;
             justify-content: space-between;
             padding-top: 15px;
-            padding-bottom: 5px;
- 
+            padding-bottom: 0;
+
 
             .header-title {
                 font-size: 0.8rem;
@@ -83,28 +83,30 @@
                 padding-top: 5px;
             }
 
-            .undo-theme{
+            .undo-theme {
                 padding-right: 15px;
                 flex-direction: row-reverse;
                 align-items: center;
                 gap: 5px;
+                filter: invert(27%) sepia(0%) saturate(2419%) hue-rotate(278deg) brightness(98%) contrast(91%);
 
-                span{
+                span {
                     padding-top: 5px;
                     font-size: 0.8rem;
                     font-weight: 700;
                 }
 
-                img {
-                    width: 25px;
+                .undo-img {
+                    width: 20px;
                 }
+
             }
         }
 
-        .themes-list{
-            .theme{
-                .theme-inner-text{
-                    img{
+        .themes-list {
+            .theme {
+                .theme-inner-text {
+                    img {
                         max-height: 20px;
                         object-fit: cover;
                     }
@@ -129,28 +131,28 @@
                 display: none;
             }
 
-            .undo-theme{
+            .undo-theme {
                 flex-direction: column;
                 gap: 10px;
                 padding-bottom: 10px;
                 padding-right: 0;
 
-                img {
-                    width: 30px;
+                .undo-img {
+                    width: 20px;
                 }
             }
         }
 
-        
-        .themes-list{
-            .theme{
-                .theme-inner-text{
-                    
-                        img {
-                            max-height: 50px;
-                            object-fit: cover;
-                        }
-                  
+
+        .themes-list {
+            .theme {
+                .theme-inner-text {
+
+                    img {
+                        max-height: 50px;
+                        object-fit: cover;
+                    }
+
                 }
             }
         }

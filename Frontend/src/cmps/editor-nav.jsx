@@ -62,15 +62,15 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
             <div className="side-bar">
                 {/* <div className="side-bar-buttons"> */}
                 <button className={`add-btn ${isAddMenu && !isEdit && 'active'}`} onClick={openAddMenu}>
-                    <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
+                    <img className={`add-img`} src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
                     <span>Add</span>
                 </button>
                 <button className={`themes-btn ${isThemesMenu && !isEdit && 'active'}`} onClick={openThemesMenu}>
-                    <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
+                    <img className={`themes-img`} src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
                     <span>Themes</span>
                 </button>
                 <button className={`edit-btn ${(isEditMenu || isEdit) && 'active'}`} onClick={openEditMenu}>
-                    <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
+                    <img className={`edit-img`} src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
                     <span>Edit</span>
                 </button>
                 {/* </div> */}
@@ -92,8 +92,11 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
             </div>
             {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) &&
                 <div className={`side-bar-close`}>
-                    <button onClick={closeSideBar} >
-                        <img src={require('../assets/img/icons/left-arrow.svg').default} alt="" />
+                    <button onClick={closeSideBar} className={`side-bar-close-narrow`}>
+                        <img className="close-img" src={require('../assets/img/icons/left-arrow.svg').default} alt="" />
+                    </button>
+                    <button onClick={closeSideBar} className={`side-bar-close-mobile`}>
+                        <img className="close-img" src={require('../assets/img/icons/down-icon.svg').default} alt="" />
                     </button>
                 </div>}
         </section >

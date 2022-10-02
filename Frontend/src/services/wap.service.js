@@ -135,7 +135,6 @@ function getCmpWithStyles(cmp, theme, index) {
             background: theme.backgroundColor[index],
             backgroundColor: theme.backgroundColor[index],
             fontFamily: theme.fontFamily,
-            fontSize: theme.fontSize
         }
     }
 }

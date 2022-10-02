@@ -66,7 +66,7 @@ export const EditImage = () => {
                             id={`${action}`}
                             src={require(`../../assets/img/icons/${action}-icon.svg`)}
                             alt={`${action}`} />
-                        {action}
+                        <span className={`${action.toLowerCase()}`}>{action}</span>
                     </div>)}
             </div>
         </section>

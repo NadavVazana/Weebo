@@ -7,10 +7,10 @@ export function ThemesList() {
     const { draft } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const themes = [
-        { title: 'Blue Lagoon', color: 'Blue', description: 'Calm & Peaceful', backgroundColor: ['#274c77', '#6096ba', '#a3cef1', '#274c77'], fontFamily: 'Satisfy-Regular', fontSize: '1.1rem' },
-        { title: 'Pink Mood', color: 'Pink', description: 'Rosy & Blushing', backgroundColor: ['#604d53', '#db7f8e', '#ffdbda', '#604d53'], fontFamily: 'GreatVibes', fontSize: '1.1rem' },
-        { title: 'Soft Spirit', color: 'Soft', description: 'Pastel & Hazy', backgroundColor: ['#cbc0d3', '#efd3d7', '#feeafa', '#cbc0d3'], fontFamily: 'IndieFlower', fontSize: '1.1rem' },
-        { title: 'Go Green', color: 'Green', description: 'Rural & Pastoral', backgroundColor: ['#6b9080', '#a4c3b2', '#cce3de', '#6b9080'], fontFamily: 'LobsterTwo', fontSize: '1.1rem' }
+        { title: 'Blue Lagoon', color: 'Blue', description: 'Calm & Peaceful', backgroundColor: ['#274c77', '#6096ba', '#a3cef1', '#274c77'], fontFamily: 'Satisfy-Regular' },
+        { title: 'Pink Mood', color: 'Pink', description: 'Rosy & Blushing', backgroundColor: ['#604d53', '#db7f8e', '#ffdbda', '#604d53'], fontFamily: 'GreatVibes' },
+        { title: 'Soft Spirit', color: 'Soft', description: 'Pastel & Hazy', backgroundColor: ['#cbc0d3', '#efd3d7', '#feeafa', '#cbc0d3'], fontFamily: 'IndieFlower' },
+        { title: 'Go Green', color: 'Green', description: 'Rural & Pastoral', backgroundColor: ['#6b9080', '#a4c3b2', '#cce3de', '#6b9080'], fontFamily: 'LobsterTwo' }
     ]
 
     const changeTheme = (theme) => {
@@ -39,7 +39,7 @@ export function ThemesList() {
             <div className="themes-action-menu">
                 <span className="header-title">Choose your theme!</span>
                 <span className="undo-theme" onClick={handleUndo}>
-                    <img src={require('../assets/img/icons/Undo-icon.svg').default} alt={`Undo`} />
+                    <img className="undo-img" src={require('../assets/img/icons/Undo-icon.svg').default} alt={`Undo`} />
                     <span>Undo</span>
                 </span>
             </div>

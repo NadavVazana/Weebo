@@ -145,7 +145,7 @@
         padding: 0;
         font-weight: bold;
         padding-top: 50px;
-        font-family: Monsterrat;
+        // font-family: Monsterrat;
     }
 
     .paragraph {
@@ -218,11 +218,7 @@
 
     }
 
-    >* {
-        // width: 50%;
-    }
-
-
+  
 
     & section:last-child {
         width: 100%;
@@ -279,17 +275,18 @@
 
     .title {
         font-size: 1.2rem;
-        font-family: Monsterrat;
+        font-size: 1.3rem;
+        // font-family: Monsterrat;
         font-weight: bold;
     }
 
 
     .paragraph {
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 2rem;
         padding: 0;
-        font-family: Monsterrat;
+        // font-family: Monsterrat;
     }
 
     .sweetpies-btn {
@@ -298,7 +295,7 @@
 
         button {
 
-            font-family: Monsterrat;
+            // font-family: Monsterrat;
             background-color: #fbcaec;
             width: fit-content;
             // margin-bottom: 20px;
@@ -398,16 +395,16 @@
             max-height: 100%;
 
             .title {
-                font-size: 1rem;
+                font-size: 1.3rem;
                 padding-top: 20px;
             }
 
             .paragraph {
-                font-size: 0.8rem;
+                font-size: 1.2rem;
             }
 
             button {
-                font-size: .9rem;
+                font-size: 1.1rem;
 
             }
         }
@@ -440,7 +437,7 @@
             word-break: none;
         }
 
-        & section:last-child {}
+       
 
         .hero-item-1 {
             width: 28%;

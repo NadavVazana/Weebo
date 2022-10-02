@@ -195,6 +195,7 @@
 }
 
 .wap-card-2 {
+    font-family: Monsterrat;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -211,7 +212,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        font-family: Monsterrat;
+        // font-family: Monsterrat;
         margin-top: 50px;
         min-height: fit-content;
         
@@ -236,8 +237,7 @@
         }
     
         .testimonial {
-            font-family: Monsterrat;
-            font-size: 0.8rem;
+            font-size: 1.1rem;
             margin-bottom: 1rem;
             padding-inline:20px;
             &::before {
@@ -250,7 +250,7 @@
     
         .testimonial-name {
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 1rem;
 
             &::before {
                 content: '- ';

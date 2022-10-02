@@ -104,9 +104,9 @@
         }
 
         .paragraph {
-            font-family: Monsterrat;
+            
             line-height: 1.5rem;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             margin: auto;
         }
 
@@ -115,6 +115,8 @@
         }
         
         input, textarea {
+            // font-family: Monsterrat;
+            font-size: 0.8rem;
             box-sizing: border-box;
             padding: 0;
             margin: 0;

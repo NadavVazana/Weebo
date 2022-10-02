@@ -72,13 +72,13 @@
 
     @include for-mobile-layout {
 
-        
+
         .element-control-container {
             flex-direction: row;
             padding-left: 10px;
             padding-right: 10px;
 
-            img{
+            img {
                 width: 1.2rem;
             }
         }
@@ -87,17 +87,21 @@
     @include for-narrow-layout {
         position: absolute;
         width: calc(100% - 28px);
-        bottom: 8px;
+        bottom: 0;
         flex: 1;
         justify-content: space-around;
 
         .element-control-container {
             flex-direction: column;
 
+            img {
+                width: 20px;
+                padding: 0;
+                filter: invert(27%) sepia(0%) saturate(2419%) hue-rotate(278deg) brightness(98%) contrast(91%);
+            }
 
-
-            img{
-                width: 1.5rem;
+            .undo{
+                padding-top: 7px;
             }
         }
     }
