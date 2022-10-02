@@ -92,28 +92,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 20px;
-    
+
     background: linear-gradient(to top right,
             #fad255 50%,
             #aae6f0 0 100%);
     // padding-inline: auto;
 
-    section.wap-hero-dec-1{
+    section.wap-hero-dec-1 {
         display: none;
 
-        
+
     }
 
-    section.wap-hero-dec-2{
+    section.wap-hero-dec-2 {
         display: none;
-       
+
     }
 
-    section.wap-hero-dec-3{
+    section.wap-hero-dec-3 {
         display: none;
-     
+
     }
-   
+
 
     &:first-child {
         width: 100%;
@@ -128,7 +128,7 @@
         align-items: center;
         background-color: #fff;
         gap: 60px;
-        padding:0 90px 0 90px;
+        padding: 0 90px 0 90px;
         margin-top: 60px;
         margin-bottom: 60px;
         // padding: 50px;
@@ -162,28 +162,30 @@
 
     @include for-mid-layout {
         padding-block-end: 350px;
-        section.wap-hero-dec-1{
+
+        section.wap-hero-dec-1 {
             display: block;
             position: absolute;
             top: 60%;
-    
-            
+
+
         }
-    
-        section.wap-hero-dec-2{
+
+        section.wap-hero-dec-2 {
             display: block;
             position: absolute;
             width: 100px;
             top: 0;
             right: 39%;
         }
-    
-        section.wap-hero-dec-3{
+
+        section.wap-hero-dec-3 {
             display: block;
             position: absolute;
             left: 16%;
             top: 35%;
         }
+
         flex-direction: row;
         align-items: flex-start;
 
@@ -191,6 +193,7 @@
             width: 100%;
             max-width: 550px;
         }
+
         .hero-2-image {
             margin-top: 40px;
             width: 70%;
@@ -207,30 +210,30 @@
     font-family: Monsterrat;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-top:100px ;
+    padding-top: 100px;
 
-    section.wap-hero-dec-4{
-      display: none;
-        
+    section.wap-hero-dec-4 {
+        display: none;
+
 
     }
 
-    > *{
+    >* {
         // width: 50%;
     }
 
- 
 
-    & section:last-child{
-        width :100%;
-        display:inline-flex;
+
+    & section:last-child {
+        width: 100%;
+        display: inline-flex;
     }
-    
+
 
 
     background: linear-gradient(to top right,
-            #fbcaec 50%,
-            #fad255 0 100%);
+        #fbcaec 50%,
+        #fad255 0 100%);
 
 
 
@@ -244,7 +247,7 @@
 
         .video-container {
             position: relative;
-            width:100%;
+            width: 100%;
             height: 100%;
 
             // padding: 56.25%;
@@ -270,8 +273,8 @@
         padding: 31px 80px 31px 80px;
         color: black;
         margin-bottom: 80px;
-        width:100%;
-        
+        width: 100%;
+
     }
 
     .title {
@@ -279,7 +282,7 @@
         font-family: Monsterrat;
         font-weight: bold;
     }
-   
+
 
     .paragraph {
         font-weight: 500;
@@ -290,15 +293,16 @@
     }
 
     .sweetpies-btn {
+        align-items: center;
+        justify-content: center;
 
         button {
-            align-items: center;
-        justify-content: center;
-        font-family: Monsterrat;
+
+            font-family: Monsterrat;
             background-color: #fbcaec;
             width: fit-content;
-        // margin-bottom: 20px;
-        margin-top: 20px;
+            // margin-bottom: 20px;
+            margin-top: 20px;
             padding: 10px 20px;
             border: none;
 
@@ -344,9 +348,9 @@
         justify-content: center;
         flex-direction: row;
 
-        .hero-item-1{
+        .hero-item-1 {
             width: 30%;
-            margin-bottom:0 ;
+            margin-bottom: 0;
         }
 
         &>* {
@@ -358,12 +362,12 @@
             // width: 100%;
             align-items: center;
             justify-content: center;
-    
+
             .video-container {
                 position: relative;
-                width:100%;
+                width: 100%;
                 height: 100%;
-    
+
                 // padding: 56.25%;
                 .video-player {
                     position: absolute;
@@ -411,19 +415,20 @@
     }
 
     @include for-normal-layout {
-        section.wap-hero-dec-4{
+        section.wap-hero-dec-4 {
             display: block;
             position: absolute;
-            top:50%;
+            top: 50%;
             right: -390px;
-    
-            
-    
+
+
+
         }
+
         justify-content: flex-end;
         padding-inline-start: auto;
 
-       
+
         .video {
             margin-bottom: 250px;
             width: 75%;
@@ -431,18 +436,17 @@
             // margin-top: 50px;
         }
 
-        .paragraph{
+        .paragraph {
             word-break: none;
         }
-        & section:last-child{
-            
-        }
+
+        & section:last-child {}
 
         .hero-item-1 {
             width: 28%;
             padding-bottom: 20px;
             padding-top: 11px;
-            margin-bottom:30px;
+            margin-bottom: 30px;
             height: 100%;
             // font-size: 1rem;
             // gap: 50px;
