@@ -236,7 +236,7 @@
         }
     
         .testimonial {
-            font-family: Monsterrat-thin;
+            font-family: Monsterrat;
             font-size: 0.8rem;
             margin-bottom: 1rem;
             padding-inline:20px;
@@ -249,6 +249,7 @@
         }
     
         .testimonial-name {
+            font-weight: bold;
             font-size: 0.9rem;
 
             &::before {
@@ -306,7 +307,7 @@
 }
 
 .wap-card-3 {
-    font-family: Monsterrat-thin;
+    font-family: Monsterrat;
     padding-block: 100px;
     .card-container {
         position: relative;
