@@ -42,7 +42,7 @@ export const Home = () => {
                   <h1>Themes</h1>
                   <p>change your website style with one click!</p>
                   </div>
-                  <div className="number-1 number"></div>
+                  <div className="number-1 number"><img className="weebo-icon" src={require('../assets/img/icons/general-site-icon.png')} alt="" /></div>
                   <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664016703/themes_lv1wk4.png" alt="" />
                  
 
@@ -52,8 +52,16 @@ export const Home = () => {
                   <h1>Templates</h1>
                   <p>choose a template to start building your website from! </p>
                   </div>
-                  <div className="number-2 number"></div>
+                  <div className="number-2 number"><img className="weebo-icon" src={require('../assets/img/icons/general-site-icon.png')} alt="" /></div>
                   <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664017019/Untitled_kvvicf.png" alt="" />
+              </div>
+              <div className="card-3">
+                <div className="text-container">
+                  <h1>Dashboard</h1>
+                  <p>Get advanced statistics on each of your published websites </p>
+                  </div>
+                  <div className="number-2 number"><img className="weebo-icon" src={require('../assets/img/icons/general-site-icon.png')} alt="" /></div>
+                  <img className="dashboard-photo" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664708787/dashboard_efydyw.png" alt="" />
               </div>
               </div>
             </div>

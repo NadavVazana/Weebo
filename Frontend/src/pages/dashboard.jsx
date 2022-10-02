@@ -23,8 +23,12 @@ export const Dashboard = () => {
     const [site, setSite] = useState(null)
     const [siteMenu, setSiteMenu] = useState(false)
     const [details, setDetails] = useState({})
+    const useForceUpdate=()=>{
+        const [forceValue,setForce] = useState()
+        return ()=> setForce(!forceValue)
 
-
+    }
+    const handleForce = useForceUpdate()
     useEffect(() => {
 
         loadSites()
@@ -35,7 +39,6 @@ export const Dashboard = () => {
 
     }, [])
     useEffect(() => {
-
         if (!site) return
         socketService.emit('set-up-socket-site', site._id)
 
@@ -76,6 +79,20 @@ export const Dashboard = () => {
         await siteService.updateSite(site)
         console.log(site._id);
         navigate(`/editor/${site._id}`)
+    }
+
+
+
+    const onDeleteClick= async ()=>{
+        if(!site.isPublished) setDeleteModal(true)
+        else {
+            site.isPublished = false
+            await siteService.updateSite(site)
+            handleForce()
+            showSuccessMsg('Site has been unpublished!')
+
+        }
+
     }
 
 
@@ -233,7 +250,7 @@ export const Dashboard = () => {
                         <SubscribersChart />
                     </section>
                     <div className="action-btns">
-                    <button onClick={() => { setDeleteModal(true) }} className="btn delete-btn">Delete website</button>
+                    <button  onClick={() => { onDeleteClick() }}  className="btn delete-btn">{!site.isPublished ? 'Delete website' : 'Unpublish'}</button>
                     </div>
 
                 </div>
