@@ -76,4 +76,13 @@ overflow-x: hidden;
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  @include for-mobile-layout {
+  //  overflow: hidden;
+  }
+
+  @include for-narrow-layout {
+  }
+
+
 }

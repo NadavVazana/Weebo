@@ -18,6 +18,7 @@
 
 }
 
+
 @mixin for-narrow-layout {
     @media (min-width:785px) {
         @content;

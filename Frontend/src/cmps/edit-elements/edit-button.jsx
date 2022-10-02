@@ -62,20 +62,20 @@ export const EditButton = () => {
         <section className="edit-elements">
 
             {/* Font color pallete */}
-            <div className="pallete-container">
+            <div className="pallete-container underline">
                 <span>Font Color</span>
                 <Pallete onSelect={onSelectFontColor} />
             </div>
 
             {/* Background Color */}
-            <div className="pallete-container">
+            <div className="pallete-container underline">
                 <span>Background Color</span>
                 <Pallete onSelect={onSelectBackground} />
             </div>
 
             {/* Border radius */}
-            <div>
-                <span>Border Radius</span>
+            <div className="space-between underline">
+                <span>Border Radius: <output>{currElement?.styles?.borderRadius ? currElement?.styles?.borderRadius.slice(0, 2) : ''}</output></span>
                 <input
                     className="slider"
                     type="range"
@@ -89,7 +89,7 @@ export const EditButton = () => {
             </div>
 
             {/* element actions-delete, duplicate, undo */}
-            <div className='element-control'>
+            <div className='space-between element-control'>
                 {actions.map(action =>
                     <div
                         className='element-control-container'

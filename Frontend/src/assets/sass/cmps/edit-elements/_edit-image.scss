@@ -1,14 +1,14 @@
 .edit-image {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 0 0 8px;
     gap: 10px;
 
     img {
-        width: 80%;
+        max-width: 250px;
+        // object-fit: cover;
         max-height: 300px;
     }
 
@@ -22,12 +22,25 @@
         border-radius: 5px;
         background-color: $main-color;
         color: whitesmoke;
-        width: 35%
+        width: 100px;
     }
 
-    form{
+    form {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+
+    @include for-mobile-layout {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        align-items: center;
+    }
+
+    @include for-narrow-layout {
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: flex-start;
     }
 
 }

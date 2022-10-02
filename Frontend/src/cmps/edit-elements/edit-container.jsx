@@ -68,7 +68,7 @@ export const EditContainer = () => {
             </div>
 
             {/* element actions-delete, duplicate, undo */}
-            <div className='element-control'>
+            <div className='space-between element-control'>
                 {actions.map(action =>
                     <div
                         className='element-control-container'

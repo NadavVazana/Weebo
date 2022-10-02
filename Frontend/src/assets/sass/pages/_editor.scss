@@ -1,11 +1,13 @@
-.editor{
-    display: grid;
-    grid-template-columns: fit-content(20%) 8fr;
-    height: calc(100vh - $header-height );
+.editor {
+    display: flex;
+    flex-direction: column-reverse;
+    // display: grid;
+    // grid-template-columns: fit-content(20%) 8fr;
+   
 
 
 
-    .guide-title{
+    .guide-title {
         font-family: Madefor;
         position: absolute;
         top: 20%;
@@ -13,19 +15,21 @@
         font-size: 3rem;
         color: rgb(54, 52, 52);
 
-       
+
     }
-    .guide-video-container{
-        box-shadow:-1px 1px 20px 4px rgb(46 42 42 / 19%);
+
+    .guide-video-container {
+        box-shadow: -1px 1px 20px 4px rgb(46 42 42 / 19%);
         // border: 1px black solid;
         width: 75%;
         height: 55%;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            // z-index: -1;
-        .guide{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // z-index: -1;
+        .guide {
             position: relative;
             width: 100%;
             height: 100%;
@@ -33,12 +37,22 @@
         }
     }
 
-  
+    @include for-tiny-layout {}
 
-    
+    @include for-mobile-layout {
+        height: calc(100vh - $header-height);
+    }
+
+
+    @include for-narrow-layout {
+        height: calc(100vh - $header-height);
+        flex-direction: row;
+    }
+
+    @include for-mid-layout {}
+
+    @include for-normal-layout {}
+
+    @include for-wide-layout {}
+
 }
-
-
-
-
-

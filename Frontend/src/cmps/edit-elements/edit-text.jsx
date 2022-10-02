@@ -144,7 +144,7 @@ export const EditText = () => {
     return (
         <section className="edit-elements">
             {/* Font Size */}
-            <div className='underline'>
+            <div className='space-between underline'>
                 <span>Font size: <output>{currElement?.styles?.fontSize ? currElement?.styles?.fontSize : ''}</output></span>
 
                 <input className="slider" type="range"
@@ -160,7 +160,7 @@ export const EditText = () => {
             </div>
 
             {/* Text Decoration */}
-            <div className='underline'>
+            <div className='space-between underline'>
                 <span>Decoration: </span>
                 <div className='decoration'>
                     {decorOpts.map(decorOpt =>
@@ -171,7 +171,7 @@ export const EditText = () => {
             </div>
 
             {/* Border Radius */}
-            <div className='underline'>
+            <div className='space-between underline'>
                 <span>Border Radius: <output>{currElement?.styles?.borderRadius ? currElement?.styles?.borderRadius.slice(0, 2) : ''}</output></span>
                 <input
                     className="slider"
@@ -186,7 +186,7 @@ export const EditText = () => {
             </div>
 
             {/* Font Select */}
-            <div className="custom-select underline" >
+            <div className="space-between custom-select underline" >
                 <label htmlFor='styledSelect'>Font: </label>
                 <select className='select-font' id="styledSelect" name='options' onChange={handleFont}>
                     {fonts.map(font => <option key={font} value={font}>{font}</option>)}
@@ -194,7 +194,7 @@ export const EditText = () => {
             </div>
 
             {/* Text Shadow */}
-            <div className="underline">
+            <div className="space-between underline">
                 <span>Text Shadow: <output>{currElement?.styles?.textShadow ? getTextShadow(currElement?.styles?.textShadow) : ''}</output></span>
                 <input className="slider"
                     type="range"
@@ -221,20 +221,23 @@ export const EditText = () => {
             </div>
 
             {/* element actions-delete, duplicate, undo */}
-            <div className='element-control'>
-                {actions.map(action =>
-                    <div
-                        className='element-control-container'
-                        id={`${action}`}
-                        onClick={toggleActions}
-                        key={`${action}div`}>
-                        <img key={action}
+            {/* <div className='edit-element-control'> */}
+                {/* <span className='header-element-control'>Edit your website</span> */}
+                <div className='space-between element-control'>
+                    {actions.map(action =>
+                        <div
+                            className='element-control-container'
                             id={`${action}`}
-                            src={require(`../../assets/img/icons/${action}-icon.svg`)}
-                            alt={`${action}`} />
-                        {action}
-                    </div>)}
-            </div>
+                            onClick={toggleActions}
+                            key={`${action}div`}>
+                            <img key={action}
+                                id={`${action}`}
+                                src={require(`../../assets/img/icons/${action}-icon.svg`)}
+                                alt={`${action}`} />
+                            <span className={`${action.toLowerCase()}`}>{action}</span>
+                        </div>)}
+                </div>
+            {/* </div> */}
         </section >
     )
 }

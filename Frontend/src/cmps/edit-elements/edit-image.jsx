@@ -4,7 +4,7 @@ import { setElement, updateDraft, setElementImage, getDraftFromHistory } from '.
 
 export const EditImage = () => {
     const ref = useRef()
-    const { currElement, draft,  } = useSelector(state => state.draftModule)
+    const { currElement, draft, } = useSelector(state => state.draftModule)
     const dispatch = useDispatch()
     const actions = ['Delete', 'Copy', 'Undo']
     let image = ''
@@ -47,15 +47,15 @@ export const EditImage = () => {
                     <span onClick={handleUploadImage}>Upload Image</span>
                     <input ref={ref} onChange={handleImage} type="file" />
                 </form>
-                {/* <div className='preview-image'> */}
-                    <img src={image} alt={currElement.name} />
-                {/* </div> */}
+
+                <img src={image} alt={currElement.name} />
+
 
             </div>
 
 
             {/* element actions-delete, duplicate, undo */}
-            <div className='element-control'>
+            <div className='space-between element-control'>
                 {actions.map(action =>
                     <div
                         className='element-control-container'

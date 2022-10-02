@@ -36,12 +36,14 @@ export function ThemesList() {
                         </div>
                     </div>)}
             </div>
+            <div className="themes-action-menu">
+                <span className="header-title">Choose your theme!</span>
+                <span className="undo-theme" onClick={handleUndo}>
+                    <img src={require('../assets/img/icons/Undo-icon.svg').default} alt={`Undo`} />
+                    <span>Undo</span>
+                </span>
+            </div>
 
-            <span className="undo-theme" onClick={handleUndo}>
-                <img src={require('../assets/img/icons/Undo-icon.svg').default} alt={`Undo`} />
-                <span>Undo</span>
-            </span>
-
-        </section>
+        </section >
     )
 }

@@ -1,33 +1,33 @@
 .edit-themes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
-    height: calc(100% - 50px);
+    width: 100%;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex: 1;
+    // height: calc(100% - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
 
-    .undo-theme {
-        display:flex;
-        flex-direction: column;
-        gap: 10px;
-        padding-bottom: 10px;
-        cursor: pointer;
+    .themes-action-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
 
-        img{
-            width: 30px;
+        .undo-theme {
+            display: flex;
+            cursor: pointer;
+
+            &:hover {
+                filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
+            }
+
         }
 
-        span{
-            font-size: 0.8rem;
-            font-weight: 700;
-        }
-
-        &:hover{
-            filter: invert(33%) sepia(83%) saturate(712%) hue-rotate(208deg) brightness(97%) contrast(80%);
-        }
     }
 
     .themes-list {
+        width: 100%;
 
         .theme {
             width: 100%;
@@ -44,7 +44,6 @@
                 img {
                     width: 95%;
                     border-radius: 5px;
-                    
                 }
 
                 span {
@@ -54,7 +53,7 @@
                     font-weight: 600;
                 }
 
-                p{
+                p {
                     font-size: 0.8rem;
                 }
             }
@@ -64,6 +63,97 @@
             }
         }
 
+    }
+
+
+    @include for-mobile-layout {
+        flex-direction: column-reverse;
+
+        .themes-action-menu {
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-bottom: 5px;
+ 
+
+            .header-title {
+                font-size: 0.8rem;
+                font-weight: 700;
+                padding-left: 15px;
+                padding-top: 5px;
+            }
+
+            .undo-theme{
+                padding-right: 15px;
+                flex-direction: row-reverse;
+                align-items: center;
+                gap: 5px;
+
+                span{
+                    padding-top: 5px;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                }
+
+                img {
+                    width: 25px;
+                }
+            }
+        }
+
+        .themes-list{
+            .theme{
+                .theme-inner-text{
+                    img{
+                        max-height: 20px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @include for-narrow-layout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        height: calc(100% - 50px);
+
+        .themes-action-menu {
+            justify-content: center;
+
+            .header-title {
+                display: none;
+            }
+
+            .undo-theme{
+                flex-direction: column;
+                gap: 10px;
+                padding-bottom: 10px;
+                padding-right: 0;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+        
+        .themes-list{
+            .theme{
+                .theme-inner-text{
+                    
+                        img {
+                            max-height: 50px;
+                            object-fit: cover;
+                        }
+                  
+                }
+            }
+        }
     }
 
 }

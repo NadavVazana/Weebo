@@ -60,28 +60,27 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
     return (
         <section className="editor-nav">
             <div className="side-bar">
-                <div>
-                    <button className={`add-btn ${isAddMenu && !isEdit && 'active'}`} onClick={openAddMenu}>
-                        <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
-                        <span>Add</span>
-                    </button>
-                    <button className={`themes-btn ${isThemesMenu && !isEdit && 'active'}`} onClick={openThemesMenu}>
-                        <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
-                        <span>Themes</span>
-                    </button>
-                    <button className={`edit-btn ${(isEditMenu || isEdit) && 'active'}`} onClick={openEditMenu}>
-                        <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
-                        <span>Edit</span>
-                    </button>
-                </div>
-
+                {/* <div className="side-bar-buttons"> */}
+                <button className={`add-btn ${isAddMenu && !isEdit && 'active'}`} onClick={openAddMenu}>
+                    <img src={require('../assets/img/icons/add-icon.svg').default} alt="add-icon" />
+                    <span>Add</span>
+                </button>
+                <button className={`themes-btn ${isThemesMenu && !isEdit && 'active'}`} onClick={openThemesMenu}>
+                    <img src={require('../assets/img/icons/themes-icon.svg').default} alt="themes-icon" />
+                    <span>Themes</span>
+                </button>
+                <button className={`edit-btn ${(isEditMenu || isEdit) && 'active'}`} onClick={openEditMenu}>
+                    <img src={require('../assets/img/icons/edit-icon.svg').default} alt="edit-icon" />
+                    <span>Edit</span>
+                </button>
+                {/* </div> */}
             </div>
             <div className={`side-bar-actions ${((isEditMenu || isEdit) || isAddMenu || isThemesMenu) ? 'open' : ''} `}>
                 <div className={`side-bar-header`}>
                     <span>
-                        {(!(isEditMenu || isEdit) && !isThemesMenu && isAddMenu && `Add Something!`)||
-                        (!isAddMenu && !(isEditMenu || isEdit) && isThemesMenu && `Choose your theme`)||
-                        (!isThemesMenu && !isAddMenu && (isEdit || isEditMenu) && `Edit your website`)|| 'Edit your website'} 
+                        {(!(isEditMenu || isEdit) && !isThemesMenu && isAddMenu && `Add Something!`) ||
+                            (!isAddMenu && !(isEditMenu || isEdit) && isThemesMenu && `Choose your theme`) ||
+                            (!isThemesMenu && !isAddMenu && (isEdit || isEditMenu) && `Edit your website`) || 'Edit your website'}
                     </span>
                 </div>
                 {(isEditMenu || isEdit) && <EditElements />}
@@ -91,12 +90,12 @@ export const EditorNav = ({ addElement, setOptionList, isEdit, isEditToggle }) =
                         <AddAccordion setOptionList={setOptionList} key={'accordion'} setOptionsMenu={setOptionsMenu} toggleOptionsMenu={toggleOptionsMenu} addElement={addElement} isOptionsMenu={isOptionsMenu} />
                     </div>}
             </div>
-            {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) && <div className={`side-bar-close`}>
-
-                <button onClick={closeSideBar} >
-                    <img src={require('../assets/img/icons/left-arrow.svg').default} alt="" />
-                </button>
-            </div>}
+            {((isEditMenu || isEdit) || isAddMenu || isThemesMenu) &&
+                <div className={`side-bar-close`}>
+                    <button onClick={closeSideBar} >
+                        <img src={require('../assets/img/icons/left-arrow.svg').default} alt="" />
+                    </button>
+                </div>}
         </section >
     )
 }
