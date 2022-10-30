@@ -104,7 +104,7 @@ Just a taste of the mobile experience. We used different mixins, conditional ren
 
 <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667110346/Untitled_hkoat3.png"/>
 
-## <a id="#authors" /> Authors
+## <a id="authors" /> Authors
 
 > [Nadav Vazana](https://github.com/NadavVazana)
 
