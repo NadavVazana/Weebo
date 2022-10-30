@@ -8,15 +8,17 @@ this is an app inspired by Wix.com. [Here is my project link](https://tbn-weebo.
 
 ### Table Of Contents
 
-- [Weebo Description](#description)
+> [Weebo Description](#description)
 
-- [Application Features](#features)
+> [Application Features](#features)
 
-- [Getting Started](#start)
+> [Getting Started](#start)
 
-- [Showcase](#showcase)
+> [Showcase](#showcase)
 
-- [Authors](#authors)
+> [Technologies](#tech)
+
+> [Authors](#authors)
 
 ## <a id="description" /> Weebo Description
 
@@ -103,6 +105,10 @@ Here the user can follow his site's statistics and even re-edit the site and rem
 Just a taste of the mobile experience. We used different mixins, conditional rendering, and the "mobile first" approach. <br> The layout we have built from the very first moment enabled us to make the website responsive without a lot of effort.
 
 <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667110346/Untitled_hkoat3.png"/>
+
+## <a id="tecg" /> Technologies
+
+Weebo was built with React using the advanced technologies it provides such as routing, state, redux. <br> The application is an e2e application. the backend is using NodeJS and MongoDB as the database.
 
 ## <a id="authors" /> Authors
 
