@@ -16,6 +16,8 @@ this is an app inspired by Wix.com. [Here is my project link](https://tbn-weebo.
 
 - [Showcase](#showcase)
 
+- [Authors](#authors)
+
 ## <a id="description" /> Weebo Description
 
 Weebo is an app in which you can build your own site exactly as you want it. The users can choose a template and start from there or 
@@ -102,7 +104,7 @@ Just a taste of the mobile experience. We used different mixins, conditional ren
 
 <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667110346/Untitled_hkoat3.png"/>
 
-## Authors
+## <a id="#authors" /> Authors
 
 > [Nadav Vazana](https://github.com/NadavVazana)
 
