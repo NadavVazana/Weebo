@@ -118,7 +118,7 @@ Weebo was built with React using the advanced technologies it provides such as r
 
 > [Nadav Vazana](https://github.com/NadavVazana)
 
-> Boris Rejkov
+> [Boris Rejkov](https://github.com/BorisRy)
 
 > Tanya Grudinkin
 
