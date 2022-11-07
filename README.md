@@ -1,6 +1,6 @@
 # Weebo - Create your own professional website, exactly the way you want.
 
-this is an app inspired by Wix.com. [Here is my project link](https://weebo-w0b9.onrender.com/)
+this is an app inspired by Wix.com. [Here is my project link](https://weebo.onrender.com/)
 
 <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664012707/editor-home-page_shc43i.png"/>
 
