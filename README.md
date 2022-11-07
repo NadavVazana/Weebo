@@ -1,6 +1,6 @@
 # Weebo - Create your own professional website, exactly the way you want.
 
-this is an app inspired by Wix.com. [Here is my project link](https://tbn-weebo.herokuapp.com/)
+this is an app inspired by Wix.com. [Here is my project link](https://weebo-w0b9.onrender.com/)
 
 <img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664012707/editor-home-page_shc43i.png"/>
 
@@ -42,6 +42,10 @@ You are more than welcome to __check it out__ [right here](https://tbn-weebo.her
 > **Dashboard**: Manage your sites and get statistics about the viewers and visiters.
 
 ## <a id="start" /> Getting Started
+
+You can enter [this link](https://weebo-w0b9.onrender.com/) and check it out!
+
+**Or**, you can clone the repository to your system and make it work:
 
 Head to the repository on top and clone the project or download the files.
 
