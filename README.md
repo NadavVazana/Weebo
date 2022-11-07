@@ -86,7 +86,7 @@ In this page, the user can choose between starting a new project from skretch, <
 In this page, the user can add elements to his site, edit the elements to the deepest level by just pressing them, and remove them with the sidebar menu. <br> 
 **D&D**, **Work together** and **Publish** are easy for the user to use. ([Check it out](#features)) 
 
-<img src="https://im3.ezgif.com/tmp/ezgif-3-8603b6ec8d.gif" />
+<img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667806889/ezgif-2-be5ca467e3_z5elda.gif" />
 
 ### Signup
 
