@@ -119,7 +119,7 @@ export const Editor = () => {
                                     <section>
                                         <h1 className='guide-title'>Let's learn how to do it!</h1>
                                         <div className='guide-video-container'>
-                                            <video className='guide' style={{ border: 'none' }} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+                                            <video muted className='guide' style={{ border: 'none' }} autoPlay loop src='https://res.cloudinary.com/ds8xkm0ue/video/upload/v1668533343/guide_fhlku6.mp4'></video>
                                         </div>
 
                                     </section>
