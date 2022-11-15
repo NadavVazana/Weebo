@@ -36,7 +36,6 @@ export const EditImage = () => {
     image = (currElement?.info?.image?.slice(0, 4) === 'http') ? currElement.info.image : require(`../../assets/img/${currElement.info.image}`)
     if (!currElement?.info?.image) return
 
-    // console.log('imageeee',image)
 
     return (
         <section className="edit-elements">

@@ -31,7 +31,6 @@ export const Form = ({ cmp, isPublished, isPreview }) => {
 
     }
 
-    console.log('here!');
     return (
         <section>
             <form onSubmit={handleSubmit}>

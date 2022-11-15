@@ -77,7 +77,6 @@ export const Dashboard = () => {
     // NAVIGATES TO THE SITE'S EDIT PAGE
     const onEdit = async () => {
         await siteService.updateSite(site)
-        console.log(site._id);
         navigate(`/editor/${site._id}`)
     }
 

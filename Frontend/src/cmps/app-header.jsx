@@ -43,7 +43,6 @@ export const AppHeader = () => {
         
         // user.waps.push(draft)
         const site = await siteService.addSite(draft)
-        console.log(site);
         
 
 

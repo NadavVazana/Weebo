@@ -15,7 +15,6 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
             range.selectNodeContents(el);
             range.collapse(false);
             var sel = window.getSelection();
-            console.log('range',range);
             sel.removeAllRanges()
             sel.addRange(range)
         } else if (typeof document.body.createTextRange != "undefined") {
@@ -27,15 +26,11 @@ export const Text = ({ cmp, onEditElement, isPublished }) => {
     }
     const handleChange = (ev) => {
         const { innerText } = ev.target
-        console.log('evcc',ev);
-        console.log('evevev', ev.target.innerText);
-        console.log('ewrgrewg',cmp.info);
         let copyCurrElement = { ...cmp }
         const value= ev.target.innerText
         copyCurrElement = {
             ...copyCurrElement, info: { ...copyCurrElement?.info, value }
         }
-        console.log('copyCurrElement',copyCurrElement);
         dispatch(updateDraft(draft, copyCurrElement))
         dispatch(setElement(copyCurrElement))
         placeCaretAtEnd(ev.target)
