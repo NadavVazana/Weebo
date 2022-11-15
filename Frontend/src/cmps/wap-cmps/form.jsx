@@ -30,6 +30,8 @@ export const Form = ({ cmp, isPublished, isPreview }) => {
         await siteService.updateSite(site[0])
 
     }
+
+    console.log('here!');
     return (
         <section>
             <form onSubmit={handleSubmit}>

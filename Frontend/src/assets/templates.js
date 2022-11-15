@@ -626,7 +626,7 @@ export const Headers = {
                         "name": "header-logo",
                         "drag": "true",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778344/hair%20and%20there/hair_and_there_rds3vp.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847702/Screenshot_2022-09-21_193727_zspjig.png"
                         }
                     },
                     {
@@ -721,7 +721,7 @@ export const Headers = {
                 "type": "image",
                 "name": "logo",
                 "info": {
-                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/62960096ee2cee660d3eba55_tattoo_9_c9nkzz.png"
+                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/62960096ee2cee660d3eba55_tattoo_9_jdfjsk.png"
                 }
             },
             {
@@ -795,7 +795,7 @@ export const Headers = {
                         "type": "image",
                         "name": "logo",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196749/momentum/fc7570_226c5fa99a9241d59128fe58b7a54073_mv2_uc6wnn.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_226c5fa99a9241d59128fe58b7a54073_mv2_rqgcho.png"
                         }
                     },
                     {
@@ -1118,7 +1118,7 @@ export const Heroes = {
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
-                                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                                         }
                                     },
                                     {
@@ -1126,7 +1126,7 @@ export const Heroes = {
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
-                                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                                         }
                                     }
                                 ]
@@ -1144,7 +1144,7 @@ export const Heroes = {
                                 "type": "image",
                                 "name": "apple-dl",
                                 "info": {
-                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664198414/momentum/ghosts_in_phone_moztny.png"
+                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849226/ghosts/ghosts_in_phone_y8exh0.png"
                                 }
                             }
                         ]
@@ -1157,7 +1157,7 @@ export const Heroes = {
                 "type": "image",
                 "name": "bottom-image",
                 "info": {
-                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664200467/momentum/fc7570_139fa2837b294043ae48017be2af17e9_mv2_ao11fe.png"
+                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/better_color_i_guess_ndhv6p.png"
                 }
             }
         ]
@@ -1324,75 +1324,54 @@ export const Forms = {
         ]
     },
     "wap-form-3": {
-        "id": "r54tg4bg5b3Zs2fd",
-        "type": "container",
-        "name": "wap-form-3",
-        "drag": "true",
-        "cmps": [
+        "id" : "r54tg4bg5b3Zs2fd",
+        "type" : "container",
+        "name" : "wap-form-3",
+        "drag" : "true",
+        "cmps" : [ 
             {
-                "id": "444g4OFKkf0fx03",
-                "type": "text",
-                "name": "title",
-                "info": {
-                    "value": "Contact",
-                    "class": "title"
+                "id" : "444g4OFKkf0fx03",
+                "type" : "text",
+                "name" : "title",
+                "info" : {
+                    "value" : "Contact",
+                    "class" : "title"
                 }
-            },
+            }, 
             {
-                "id": "1QA2ws3ED4rf",
-                "type": "container",
-                "name": "form",
-                "drag": "true",
-                "cmps": [
-                    {
-                        "id": "1qaz2Wf33edc4RFV",
-                        "type": "input",
-                        "input_type": "text",
-                        "name": "fullname",
-                        "info": {
-                            "placeholder": "Full Name"
-                        }
+                "id" : "1QA2ws3ED4rf",
+                "type" : "form",
+                "name" : "form",
+                "info" : {
+                    "input1" : {
+                        "tag" : "input",
+                        "type" : "text",
+                        "placeholder" : "Full Name",
+                        "name" : "fullname"
                     },
-                    {
-                        "id": "1qaz243636edc4RFV",
-                        "type": "input",
-                        "input_type": "email",
-                        "name": "email",
-                        "info": {
-                            "placeholder": "Email"
-                        }
+                    "input2" : {
+                        "tag" : "input",
+                        "type" : "text",
+                        "placeholder" : "Email",
+                        "name" : "email"
                     },
-                    {
-                        "id": "1qaz2WSX3b54b44RFV",
-                        "type": "input",
-                        "input_type": "text",
-                        "name": "subject",
-                        "info": {
-                            "placeholder": "Subject"
-                        }
+                    "input3" : {
+                        "tag" : "input",
+                        "type" : "text",
+                        "placeholder" : "Subject",
+                        "name" : "subject"
                     },
-                    {
-                        "id": "1qaz2WSX3b54b44R5TGB",
-                        "type": "input",
-                        "input_type": "text",
-                        "name": "message",
-                        "info": {
-                            "placeholder": "Message"
-                        }
-                    },
-                    {
-                        "id": "1q3rv2WSX3b54b442",
-                        "type": "button",
-                        "name": "submit_btn",
-                        "info": {
-                            "value": "Submit",
-                            "class": "button"
-                        }
-                    },
-                ]
+                    "input4" : {
+                        "tag" : "input",
+                        "type" : "text",
+                        "placeholder" : "Message",
+                        "name" : "message"
+                    }
+                },
+                "cmps" : []
             }
         ]
-    },
+    }, 
     "wap-form-4": {
         "id": "3ffgrgio9ofk4ck",
         "type": "container",
@@ -1463,7 +1442,7 @@ export const Forms = {
                 "type": "image",
                 "name": "bg-image",
                 "info": {
-                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196749/momentum/fc7570_07257cf95ed8425ea8303b7d45519ecb_mv2_rj8quh.png"
+                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_07257cf95ed8425ea8303b7d45519ecb_mv2_kgbzf5.png"
                 }
             },
             {
@@ -1554,7 +1533,7 @@ export const Footers = {
                         "type": "image",
                         "name": "orange",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_25b43534e2494c909e8a83826be0551c_mv2_z7gpzc.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_25b43534e2494c909e8a83826be0551c_mv2_xmiab9.png"
                         }
                     },
                     {
@@ -1578,7 +1557,7 @@ export const Footers = {
                         "type": "image",
                         "name": "apple-dl",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                         }
                     },
                     {
@@ -1586,7 +1565,7 @@ export const Footers = {
                         "type": "image",
                         "name": "apple-dl",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                         }
                     }
                 ]
@@ -1729,7 +1708,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778196/hair%20and%20there/b47b0e3204d54a93b13108b60de2f04a_rdhcii.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847703/f65e50d6e2b14d108a0b264f5e7399f9_ryv7mr.png"
                         }
                     },
                     {
@@ -1737,7 +1716,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778196/hair%20and%20there/35582aca6a1b40f1b7a54037875ee4bd_tmcqdb.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847703/43c038_88f3e6d92c854de69c1ce087c35fe58c_mv2_d_3870_3264_s_4_2_yrcz4c.png"
                         }
                     },
                     {
@@ -1745,7 +1724,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778195/hair%20and%20there/43c038_88f3e6d92c854de69c1ce087c35fe58c_mv2_d_3870_3264_s_4_2_omeoo7.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847704/43c038_a552a6c92ff74bcb8994704fae8fe60f_mv2_d_3476_2812_s_4_2_jxluzx.png"
                         }
                     },
                     {
@@ -1753,7 +1732,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778196/hair%20and%20there/bd10eec5564a47b78638ff005f18261d_ubwmqb.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847701/b47b0e3204d54a93b13108b60de2f04a_qrm0cf.png"
                         }
                     },
                     {
@@ -1761,7 +1740,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778196/hair%20and%20there/f65e50d6e2b14d108a0b264f5e7399f9_vetsdq.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847702/35582aca6a1b40f1b7a54037875ee4bd_cptiud.png"
                         }
                     },
                     {
@@ -1769,7 +1748,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778195/hair%20and%20there/43c038_a552a6c92ff74bcb8994704fae8fe60f_mv2_d_3476_2812_s_4_2_dcuajr.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847702/bd10eec5564a47b78638ff005f18261d_wyjuu8.png"
                         }
                     },
                 ]
@@ -1842,7 +1821,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "image1",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099021/PAtattoo/62a1ccb322ec1639e7570420_629df1397d1e47d216c189db_photo_2_1_q1atgk.jpg"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848528/62a1ccb322ec1639e7570420_629df1397d1e47d216c189db_photo_2_1_ooccez.jpg"
                         }
                     },
                     {
@@ -1850,7 +1829,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "image2",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/629df37c5fd8cf1f80ff02a3_1_photo_1_ytz0wt.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848529/62a1cf835dabff578916d2a2_tattoo_projects_2_yahls8.png"
                         }
                     },
                     {
@@ -1858,7 +1837,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "image3",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/629df43339b6d1edf3c5f27b_photo_5_1_gy1t9f.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848529/629df43339b6d1edf3c5f27b_photo_5_1_mkch6n.png"
                         }
                     },
                     {
@@ -1866,7 +1845,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "image4",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/62a1cf835dabff578916d2a2_tattoo_projects_2_sthjlh.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848529/629df37c5fd8cf1f80ff02a3_1_photo_1_srdion.png"
                         }
                     },
                     {
@@ -1874,7 +1853,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "image5",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099022/PAtattoo/629df1200629524217af86a5_photo_3_1_naxcaz.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848526/629df1200629524217af86a5_photo_3_1_gboar9.png"
                         }
                     },
 
@@ -1907,7 +1886,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/84770f_c65de2275a5f4f80b2e2ddf5bc8003da_mv2_b4jd0d.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/84770f_c65de2275a5f4f80b2e2ddf5bc8003da_mv2_vzsfcf.png"
                         }
                     },
                     {
@@ -1915,7 +1894,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/84770f_79f980e6bd8b4829865f687e0618046a_mv2_sytvyw.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849228/ghosts/84770f_1104a76eb025434fb7589e0edcfbae6a_mv2_aibhsc.png"
                         }
                     },
                     {
@@ -1923,7 +1902,7 @@ export const Galleries = {
                         "type": "image",
                         "name": "gallery-item",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/84770f_1104a76eb025434fb7589e0edcfbae6a_mv2_mjx77v.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849228/ghosts/84770f_79f980e6bd8b4829865f687e0618046a_mv2_xzs4vn.png"
                         }
                     }
                 ]
@@ -2487,7 +2466,7 @@ export const Cards = {
                                         "type": "image",
                                         "name": "card-image",
                                         "info": {
-                                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778195/hair%20and%20there/43c038_88e1cc895937468ea9143ca69c933bf6_mv2_d_3104_4656_s_4_2_bwduct.png"
+                                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847703/43c038_88e1cc895937468ea9143ca69c933bf6_mv2_d_3104_4656_s_4_2_kswu4n.png"
                                         }
                                     }
                                 ]
@@ -2798,7 +2777,7 @@ export const Cards = {
                                 "type": "image",
                                 "name": "image",
                                 "info": {
-                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664108687/PAtattoo/shulamit_wry9ek.jpg"
+                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629641d83bd3a079af039fa2_tattoo_girl_2_wub8re.jpg"
                                 }
                             },
                             {
@@ -2862,7 +2841,7 @@ export const Cards = {
                                                 "id": "44g4vvczz",
                                                 "type": "image",
                                                 "info": {
-                                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/62973346142ee17af616fa63_icon_3_bjs1j1.png"
+                                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733496e481f7394bc0f6c_icon_1_vytksi.png"
                                                 }
                                             },
 
@@ -2915,7 +2894,7 @@ export const Cards = {
                                                 "id": "44dgczz",
                                                 "type": "image",
                                                 "info": {
-                                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733496e481f7394bc0f6c_icon_1_bf9xep.png"
+                                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733496e481f7394bc0f6c_icon_1_vytksi.png"
                                                 }
                                             },
 
@@ -2968,7 +2947,7 @@ export const Cards = {
                                                 "id": "44gnhh54",
                                                 "type": "image",
                                                 "info": {
-                                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733499117b8dd61028f82_icon_2_edhhf1.png"
+                                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733499117b8dd61028f82_icon_2_h7fjcc.png"
                                                 }
                                             },
 
@@ -3039,7 +3018,7 @@ export const Cards = {
                         "type": "image",
                         "name": "ghost-gif",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196750/momentum/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_tycvor.gif"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849227/ghosts/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_icckh3.gif"
                         }
                     },
                     {
@@ -3186,7 +3165,7 @@ export const All = {
                                 "type": "image",
                                 "name": "image",
                                 "info": {
-                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664108687/PAtattoo/shulamit_wry9ek.jpg"
+                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629641d83bd3a079af039fa2_tattoo_girl_2_wub8re.jpg"
                                 }
                             },
                             {
@@ -3303,7 +3282,7 @@ export const All = {
                                                 "id": "44dgczz",
                                                 "type": "image",
                                                 "info": {
-                                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733496e481f7394bc0f6c_icon_1_bf9xep.png"
+                                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848528/62973346142ee17af616fa63_icon_3_kjx80f.png"
                                                 }
                                             },
 
@@ -3356,7 +3335,7 @@ export const All = {
                                                 "id": "44gnhh54",
                                                 "type": "image",
                                                 "info": {
-                                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733499117b8dd61028f82_icon_2_edhhf1.png"
+                                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733499117b8dd61028f82_icon_2_h7fjcc.png"
                                                 }
                                             },
 
@@ -3427,7 +3406,7 @@ export const All = {
                         "type": "image",
                         "name": "ghost-gif",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196750/momentum/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_tycvor.gif"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849227/ghosts/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_icckh3.gif"
                         }
                     },
                     {
@@ -3727,7 +3706,7 @@ export const All = {
                         "type": "image",
                         "name": "orange",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_25b43534e2494c909e8a83826be0551c_mv2_z7gpzc.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_25b43534e2494c909e8a83826be0551c_mv2_xmiab9.png"
                         }
                     },
                     {
@@ -3751,7 +3730,7 @@ export const All = {
                         "type": "image",
                         "name": "apple-dl",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                         }
                     },
                     {
@@ -3759,7 +3738,7 @@ export const All = {
                         "type": "image",
                         "name": "apple-dl",
                         "info": {
-                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                         }
                     }
                 ]
@@ -3845,7 +3824,7 @@ export const All = {
                 "type": "image",
                 "name": "bg-image",
                 "info": {
-                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196749/momentum/fc7570_07257cf95ed8425ea8303b7d45519ecb_mv2_rj8quh.png"
+                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_25b43534e2494c909e8a83826be0551c_mv2_xmiab9.png"
                 }
             },
             {
@@ -3971,7 +3950,7 @@ export const All = {
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
-                                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                                         }
                                     },
                                     {
@@ -3979,7 +3958,7 @@ export const All = {
                                         "type": "image",
                                         "name": "apple-dl",
                                         "info": {
-                                            "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                                            "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                                         }
                                     }
                                 ]
@@ -3997,7 +3976,7 @@ export const All = {
                                 "type": "image",
                                 "name": "apple-dl",
                                 "info": {
-                                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664198414/momentum/ghosts_in_phone_moztny.png"
+                                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                                 }
                             }
                         ]
@@ -4010,7 +3989,7 @@ export const All = {
                 "type": "image",
                 "name": "bottom-image",
                 "info": {
-                    "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664200467/momentum/fc7570_139fa2837b294043ae48017be2af17e9_mv2_ao11fe.png"
+                    "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                 }
             }
         ]
@@ -5845,7 +5824,7 @@ export const wapExample3 = {
                                             "type": "image",
                                             "name": "card-image",
                                             "info": {
-                                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1663778195/hair%20and%20there/43c038_88e1cc895937468ea9143ca69c933bf6_mv2_d_3104_4656_s_4_2_bwduct.png"
+                                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667847703/43c038_88e1cc895937468ea9143ca69c933bf6_mv2_d_3104_4656_s_4_2_kswu4n.png"
                                             }
                                         }
                                     ]
@@ -6492,7 +6471,7 @@ export const wapExample4 = {
                                     "type": "image",
                                     "name": "image",
                                     "info": {
-                                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664108687/PAtattoo/shulamit_wry9ek.jpg"
+                                        "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629641d83bd3a079af039fa2_tattoo_girl_2_wub8re.jpg"
                                     }
                                 },
                                 {
@@ -6556,7 +6535,7 @@ export const wapExample4 = {
                                                     "id": "44g4vvczz",
                                                     "type": "image",
                                                     "info": {
-                                                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/62973346142ee17af616fa63_icon_3_bjs1j1.png"
+                                                        "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733496e481f7394bc0f6c_icon_1_vytksi.png"
                                                     }
                                                 },
 
@@ -6609,7 +6588,7 @@ export const wapExample4 = {
                                                     "id": "44dgczz",
                                                     "type": "image",
                                                     "info": {
-                                                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733496e481f7394bc0f6c_icon_1_bf9xep.png"
+                                                        "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848528/62973346142ee17af616fa63_icon_3_kjx80f.png"
                                                     }
                                                 },
 
@@ -6662,7 +6641,7 @@ export const wapExample4 = {
                                                     "id": "44gnhh54",
                                                     "type": "image",
                                                     "info": {
-                                                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664099023/PAtattoo/629733499117b8dd61028f82_icon_2_edhhf1.png"
+                                                        "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667848527/629733499117b8dd61028f82_icon_2_h7fjcc.png"
                                                     }
                                                 },
 
@@ -7107,7 +7086,7 @@ export const wapExample5 = {
                                             "type": "image",
                                             "name": "apple-dl",
                                             "info": {
-                                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                                             }
                                         },
                                         {
@@ -7115,7 +7094,7 @@ export const wapExample5 = {
                                             "type": "image",
                                             "name": "apple-dl",
                                             "info": {
-                                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                                             }
                                         }
                                     ]
@@ -7168,7 +7147,7 @@ export const wapExample5 = {
                             "type": "image",
                             "name": "ghost-gif",
                             "info": {
-                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196750/momentum/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_tycvor.gif"
+                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849227/ghosts/fc7570_13825f90a3ee4eb7899ef4f9154c5772_mv2_icckh3.gif"
                             }
                         },
                         {
@@ -7283,7 +7262,7 @@ export const wapExample5 = {
                     "type": "image",
                     "name": "bg-image",
                     "info": {
-                        "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196749/momentum/fc7570_07257cf95ed8425ea8303b7d45519ecb_mv2_rj8quh.png"
+                        "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_07257cf95ed8425ea8303b7d45519ecb_mv2_kgbzf5.png"
                     }
                 },
                 {
@@ -7342,7 +7321,7 @@ export const wapExample5 = {
                             "type": "image",
                             "name": "orange",
                             "info": {
-                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_25b43534e2494c909e8a83826be0551c_mv2_z7gpzc.png"
+                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_25b43534e2494c909e8a83826be0551c_mv2_xmiab9.png"
                             }
                         },
                         {
@@ -7366,7 +7345,7 @@ export const wapExample5 = {
                             "type": "image",
                             "name": "apple-dl",
                             "info": {
-                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_tov5cv.png"
+                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_2ceee2afeafa4aa083bc3d48986bb811_mv2_qfqmni.png"
                             }
                         },
                         {
@@ -7374,7 +7353,7 @@ export const wapExample5 = {
                             "type": "image",
                             "name": "apple-dl",
                             "info": {
-                                "image": "https://res.cloudinary.com/dowk59699/image/upload/v1664196748/momentum/fc7570_83a62c92abd54d60915647751731bc62_mv2_iccizj.png"
+                                "image": "https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667849225/ghosts/fc7570_83a62c92abd54d60915647751731bc62_mv2_jh8bdt.png"
                             }
                         }
                     ]

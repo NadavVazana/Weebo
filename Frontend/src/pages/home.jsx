@@ -71,7 +71,7 @@ export const Home = () => {
               <img className="guide-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664086499/svg_8_l50pss.png" alt="" />
               <img className="guide-purple-wave" src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1664086637/svg_9_cnxlqp.png" alt="" />
             <div className='guide-video-container'>
-                                        <video className='guide' style={{border:'none'}} autoPlay loop src={require('../assets/img/guide.mp4')}></video>
+            <video muted  className='guide' style={{ border: 'none' }} autoPlay loop src='https://res.cloudinary.com/ds8xkm0ue/video/upload/v1668533343/guide_fhlku6.mp4'></video>
                                         </div>
             </div>
 
