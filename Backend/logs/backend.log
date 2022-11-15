@@ -2091,3 +2091,42 @@
 2.10.2022, 15:34:47 - INFO - Server is running on port: 3030 
 2.10.2022, 16:05:40 - INFO - Server is running on port: 3030 
 2.10.2022, 16:44:56 - INFO - Server is running on port: 3030 
+15.11.2022, 17:40:30 - INFO - Server is running on port: 3030 
+15.11.2022, 17:47:28 - DEBUG - auth.service - signup with username: nadav, fullname: Nadav 
+15.11.2022, 17:51:04 - ERROR - while finding wap undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:51:04 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:07 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:07 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:31 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:31 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:44 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:56:44 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:57:27 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:57:27 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:59:23 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 17:59:23 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:02:24 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:02:24 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:04:58 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:04:58 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:00 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:00 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:02 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:02 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:37 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:05:37 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:08:41 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:08:41 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:10:22 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:10:22 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:13:22 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:13:22 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:21:07 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:21:07 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:26:05 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:26:05 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:28:11 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:28:11 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:29:19 - ERROR - while finding wap draft | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:29:19 - ERROR - Failed to get wap | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.11.2022, 18:34:28 - DEBUG - auth.service - signup with username: lala, fullname: lala 
