@@ -72,6 +72,7 @@ export const Editor = () => {
         if (result.source.droppableId !== 'editor') {
             let cmp = { ...optionList[result.draggableId] }
             cmp.id = utilService.makeId(15)
+            console.log(result);
             newItems.splice(result.destination.index, 0, cmp)
         }
         else {

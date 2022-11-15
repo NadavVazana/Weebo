@@ -2,6 +2,7 @@ const authService = require('./auth.service')
 const logger = require('../../services/logger.service')
 
 async function login(req, res) {
+    console.log('here');
 
     const { username, password } = req.body
     try {

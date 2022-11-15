@@ -9,6 +9,7 @@ async function query(filterBy ={}) {
 
         const collection = await dbService.getCollection('wap')
         var waps = await collection.find(criteria).toArray()
+        
 
         return waps
     } catch (err) {

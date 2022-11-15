@@ -11,8 +11,7 @@ function App() {
         <section  className="app">
             {(path[1] !== 'publish' && path[1] !== 'preview')&& <AppHeader/>}
             <main>
-                <Routes>
-                    
+                <Routes>  
                 {routes.map(route => 
                 <Route key={route.path} 
                 element={route.element} 
