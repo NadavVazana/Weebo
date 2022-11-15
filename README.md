@@ -43,7 +43,7 @@ You are more than welcome to __check it out__ [right here](https://tbn-weebo.her
 
 ## <a id="start" /> Getting Started
 
-You can enter [this link](https://weebo.onrender.com/) and check it out!
+You can enter [this link](https://weebo.onrender.com/) and check it out! (clone is a better choice for this moment because of some render issues that are getting fixed)
 
 **Or**, you can clone the repository to your system and make it work:
 
