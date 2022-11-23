@@ -216,6 +216,7 @@
         
 
         .card-2 {
+            width: 70%;
             .number-2 {
                 display: none;
                 
@@ -242,6 +243,7 @@
         }
 
         .card-3{
+            width: 80%;
             .text-container{
             }
             .number-2{
@@ -263,7 +265,7 @@
             }
             padding-top: 100px;
             .dashboard-photo{
-                width: 600px;
+                width: 350px;
             }
         }
 
@@ -426,8 +428,8 @@
     @include for-mid-layout {
 
         .cards-container{
+            
             .card-3{
-                // width: 90%;
                 .text-container{
                     p{
                         // width: 100%;
