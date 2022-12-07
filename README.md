@@ -70,7 +70,7 @@ npm start
 
 You shuold get a console ouput that the server is up and running at localhost:3000.
 
-That's it! The App should be opened automatically, enjoy!
+That's it! The App should be open automatically, enjoy!
 
 ## <a id="showcase"/> Showcase
 
